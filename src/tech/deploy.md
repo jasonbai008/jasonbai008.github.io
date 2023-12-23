@@ -66,23 +66,6 @@ ln -s /etc/nginx/sites-available/luban /etc/nginx/sites-enabled/luban
 nginx -s reload
 ```
 
-## chatGPT 的注册与使用
-
-### 1. 注册 OpenAI 并获取 Key
-
-1.  确保可以顺畅访问 [google.com](google.com)
-2.  在 [sms-activate](https://sms-activate.org/) 上注册并登录
-3.  在 sms-activate 上通过支付宝 1 美元
-4.  在 sms-activate 页面左侧搜索 OpenAI，选择一个国家点击右侧购物车，花几十卢布购买一个虚拟手机号接收验证码。
-5.  在新窗口打开 [openai](https://platform.openai.com/) 注册入口页面
-6.  选择使用谷歌账号登录
-7.  输入谷歌账号密码
-8.  提示输入国外手机号接收验证码：选择你购买的手机号的国家，填入完整号码
-9.  在 sms-activate 上接收验证码
-10. 输入收到的验证码，就登录成功了
-11. 点击头像：选择 View API Keys，创建一个 Key，并记在小本本上
-12. 每个账号赠送$18 的额度，大概可以请求 3000 次
-
 ### 2. 使用 fetch 与 chatGPT 交互
 
 ::: warning
