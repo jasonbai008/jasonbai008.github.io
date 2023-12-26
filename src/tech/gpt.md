@@ -6,8 +6,6 @@
 
 ## 可用地址
 
-**收藏不迷路！**
-
 - [https://nav.free2gpt.xyz/](https://nav.free2gpt.xyz/) :heart::heart::heart:
 - [https://ic.free-chat.asia/](https://ic.free-chat.asia/) :heart::heart:
 
@@ -20,7 +18,7 @@
 3. 可以在手机上**科学上网**
 4. 必须在谷歌应用商店中申请成为 **Beta 测试人员**，下载并安装 **Beta 版本的 ChatGPT APP**
 
-### 具体操作步骤
+### 操作步骤
 
 1. 在自己的安卓手机上，打开 **设置**，搜索 **google**，开启 **谷歌基础服务**
 2. 在应用商店里搜索 **Google Play 商店**，并安装
