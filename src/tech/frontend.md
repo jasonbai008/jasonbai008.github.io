@@ -12,7 +12,7 @@
 const clone = JSON.parse(JSON.stringify(obj));
 ```
 
-另外一种原生方法：
+另外一种原生方法（不支持IE）：
 
 ```js
 const clone = structuredClone(obj);

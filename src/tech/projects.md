@@ -242,15 +242,15 @@
   <a class="itemWrap" target="_blank">
     <img :src="$withBase('/tech/mp1.jpg')" style="width:125px">
     <h4>慧眼识材</h4>
-  </a>
-  <a class="itemWrap" target="_blank">
-    <img :src="$withBase('/tech/mp2.jpg')" style="width:125px">
-    <h4>墨水天气</h4>
-  </a>
+  </a>  
   <a class="itemWrap" target="_blank">
     <img :src="$withBase('/tech/mp3.jpg')" style="width:125px">
     <h4>颜值几何</h4>
   </a>  
+  <a class="itemWrap" target="_blank">
+    <img :src="$withBase('/tech/mp2.jpg')" style="width:125px">
+    <h4>墨水天气</h4>
+  </a>
 </div>
 
 <style scoped>
