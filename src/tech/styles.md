@@ -38,6 +38,15 @@ if (document.fullscreen) {
   // DOM展开为全屏
   dom.requestFullscreen();
 }
+
+// 用户Esc键退出全屏时，不会执行退出全屏用户自定义的逻辑，需要监听全屏的DOM，退出全屏执行对应逻辑
+// 参考文章：https://juejin.cn/post/7021437200034168869
+document
+  .querySelector(".container")
+  .addEventListener("fullscreenchange", () => {
+    isFullScreen = !!document.fullscreenElement;
+    console.log(isFullScreen);
+  });
 ```
 
 ## 子元素撑开父元素
