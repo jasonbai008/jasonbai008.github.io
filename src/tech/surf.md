@@ -33,7 +33,8 @@
 
 [https://github.com/freefq/free](https://github.com/freefq/free)
 
-> 另外一个是：https://v2rayshare.com/
+> 另外一个是：https://v2rayshare.com/  
+> 还有一个是：https://github.com/Pawdroid/Free-servers
 
 #### 2. 下载并安装 `v2rayNG`
 
@@ -47,8 +48,11 @@
 # 地址一:
 https://bulinkbulink.com/freefq/free/master/v2
 
-# 地址二:
+# 地址二:根据当天日期修改下方链接里的时间
 https://v2rayshare.com/wp-content/uploads/2023/08/20230812.txt
+
+# 地址三：
+https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 ```
 
 #### 4. 添加订阅地址
@@ -83,7 +87,8 @@ https://v2rayshare.com/wp-content/uploads/2023/08/20230812.txt
 
 [https://github.com/freefq/free](https://github.com/freefq/free)
 
-> 另外一个是：https://v2rayshare.com/
+> 另外一个是：https://v2rayshare.com/  
+> 还有一个是：https://github.com/Pawdroid/Free-servers
 
 #### 2. 下载 v2rayNG，解压并运行
 
@@ -99,6 +104,8 @@ https://v2rayshare.com/wp-content/uploads/2023/08/20230812.txt
 https://bulinkbulink.com/freefq/free/master/v2
 
 https://v2rayshare.com/wp-content/uploads/2023/08/20230812.txt
+
+https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 :::
 
 ![添加订阅](/life/fq/dingyue.png)
