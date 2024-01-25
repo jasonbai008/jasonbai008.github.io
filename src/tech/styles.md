@@ -27,6 +27,9 @@
 
 ## 全屏的简单实现
 
+`:fullscreen` 伪类代表了被全屏后的元素本身，而 `::backdrop` 伪元素代表了全屏之后的背景画面（比如一个元素全屏之后没办法铺满整个窗口 ）
+监听全屏事件：`fullscreenchange`
+
 ```js
 // 以下代码只兼容谷歌浏览器
 let dom = document.querySelector("#yourDomNode");
