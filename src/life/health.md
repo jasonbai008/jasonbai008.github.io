@@ -18,6 +18,16 @@
 5. 不生气【气伤身】
    :::
 
+::: tip 健康的六大标准
+
+1. 每天晚上可以通宵睡觉
+2. 三餐前会饿，并且想吃东西，有胃口
+3. 每天早上上厕所大便 1 次
+4. 小便每天 5-7 次
+5. 口渴后喝水，喝完不渴
+6. 手脚常年温热，头面冷
+   :::
+
 ## 追随倪师
 
 ![倪海厦](/nihaixia/nihaixia.png)
@@ -27,7 +37,7 @@
 - [《梁冬对话倪海厦》](https://www.ximalaya.com/album/30705544)
 - [《斯坦福大学演讲：从感冒一路治到癌症》](https://www.bilibili.com/video/BV1K14y1T7LW/)
 - [《广西中医大学演讲：经方的运用》](https://www.bilibili.com/video/BV17k4y1j7Cj/)
-- [《仲景心法》 22集](https://www.bilibili.com/video/BV1dD4y1s7TT/)
+- [《仲景心法》 22 集](https://www.bilibili.com/video/BV1dD4y1s7TT/)
 - [《人纪：针灸篇》](https://www.bilibili.com/video/BV1bd4y1F7Zo/)
 - [《人纪：皇帝内经》](https://www.bilibili.com/video/BV1NM4y1M7yK/)
 - [《人纪：神农本草经》](https://www.bilibili.com/video/BV1T44y1o7SL/)
@@ -45,7 +55,7 @@
 3. 多学习医学知识，才能更好的照顾好自己的身体。
 4. 身体可以缓慢自愈，前提是要学会养生和养心。
 5. 看中医，最好选上岁数的老中医。
-6. 如果是初诊，医生开药，最好开3、4付，不要开7付药，如果不管用，太浪费钱。管用再开。
+6. 如果是初诊，医生开药，最好开 3、4 付，不要开 7 付药，如果不管用，太浪费钱。管用再开。
 
 ## 精神焦虑症的自救
 
