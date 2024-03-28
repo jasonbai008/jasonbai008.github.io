@@ -528,6 +528,19 @@ npm config set electron_mirror https://npm.taobao.org/mirrors/electron/
 yarn config set electron_mirror https://npm.taobao.org/mirrors/electron/
 ```
 
+### 斐波那契数列
+
+这么小众的数列，前端面试居然常考。这个数列长这样：`1,1,2,3,5,8,13...`
+
+```js
+// 根据数列的规律，记住下面的函数就行了。递归函数
+// 传入的n是指第n项，函数返回第n项的值
+function fib(n) {
+  if (n === 1 || n === 2) return 1;
+  return fib(n - 2) + fib(n - 1);
+}
+```
+
 ## Git 不常用操作
 
 ### 临时缓存本地修改的文件
