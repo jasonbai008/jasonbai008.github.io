@@ -18,6 +18,34 @@ const clone = JSON.parse(JSON.stringify(obj));
 const clone = structuredClone(obj);
 ```
 
+## 防抖和节流
+
+```js
+// 防抖函数
+// 思路：每次都清除掉定时器，直到最后一次触发了定时器
+function debounce(fn, delay) {
+  let timer = null;
+  return function (...args) {
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(() => {
+      fn.call(this, ...args);
+    }, delay);
+  };
+}
+// 节流函数
+// 思路：每次执行回调函数前，都判断一下最近一次执行的时间差
+function throttle(fn, delay) {
+  let pre = Date.now();
+  return function (...args) {
+    let cur = Date.now();
+    if (cur - pre > delay) {
+      fn.call(this, ...args);
+      pre = cur;
+    }
+  };
+}
+```
+
 ## 省市区数据
 
 已汇总到我的 Gitee 代码仓库 [area](https://gitee.com/lubanseven/area)中的 dist 文件夹
