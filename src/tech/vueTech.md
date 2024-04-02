@@ -4,6 +4,28 @@
 工欲善其事，必先利其器
 :::
 
+## DefineProps 的坑
+
+```html
+<script setup>
+  // 只能在顶层使用，前面不能有代码，坑！
+  const props = defineProps(["myCanvas"]);
+</script>
+```
+
+## Vue3 自动引入模块
+
+使用 `unplugin-auto-import/vite` 自动引入常用模块
+
+```js
+plugins: [
+    vue(),
+    AutoImport({
+      imports: ["vue"],
+    })
+  ],
+```
+
 ## 一款插件实现 office 文件在线预览
 
 [vue-office](https://501351981.github.io/vue-office/examples/docs/)支持 **word(.docx)、excel(.xlsx)、pdf** 等各类型 office 文件预览的 vue 组件集合，提供一站式 office 文件预览方案，**支持 vue2 和 3，也支持 React 等非 Vue 框架。**
