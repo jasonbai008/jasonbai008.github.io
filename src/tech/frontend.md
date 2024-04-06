@@ -4,6 +4,18 @@
 工欲善其事，必先利其器
 :::
 
+## 前导零的原生方法
+
+```js
+// str.padStart(目标长度，填充的字符串)
+const today = new Date();
+const year = today.getFullYear();
+const month = String(today.getMonth() + 1).padStart(2, "0");
+const day = String(today.getDate()).padStart(2, "0");
+
+const formattedDate = `${year}-${month}-${day}`;
+```
+
 ## 深拷贝的另一种选择
 
 简单易用的深拷贝方法：

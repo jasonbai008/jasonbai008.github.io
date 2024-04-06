@@ -42,18 +42,13 @@
 
 #### 3. 复制订阅地址
 
-可用的订阅地址有两个：
-
-```sh
-# 地址一:
+::: tip 三个订阅地址
 https://bulinkbulink.com/freefq/free/master/v2
 
-# 地址二:根据当天日期修改下方链接里的时间
-https://v2rayshare.com/wp-content/uploads/2023/08/20230812.txt
+<p>{{`https://v2rayshare.com/wp-content/uploads/${new Date().getFullYear()}/${String(new Date().getMonth() + 1).padStart(2, '0')}/${new Date().getFullYear()}${String(new Date().getMonth() + 1).padStart(2, '0')}${String(new Date().getDate()).padStart(2, '0')}.txt`}}</p>
 
-# 地址三：
 https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
-```
+:::
 
 #### 4. 添加订阅地址
 
@@ -100,10 +95,10 @@ https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 
 双击小图标，打开主界面，点击`订阅` > `订阅设置`，在弹窗中添加两条订阅地址，并勾选`启用`。其中第二个订阅地址，使用前需要编辑，改成当天的前一天。
 
-::: tip 两个订阅地址
+::: tip 三个订阅地址
 https://bulinkbulink.com/freefq/free/master/v2
 
-https://v2rayshare.com/wp-content/uploads/2023/08/20230812.txt
+<p>{{`https://v2rayshare.com/wp-content/uploads/${new Date().getFullYear()}/${String(new Date().getMonth() + 1).padStart(2, '0')}/${new Date().getFullYear()}${String(new Date().getMonth() + 1).padStart(2, '0')}${String(new Date().getDate()).padStart(2, '0')}.txt`}}</p>
 
 https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 :::
