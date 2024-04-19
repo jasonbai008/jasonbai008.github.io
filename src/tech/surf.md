@@ -34,7 +34,8 @@
 [https://github.com/freefq/free](https://github.com/freefq/free)
 
 > 另外一个是：https://v2rayshare.com/  
-> 还有一个是：https://github.com/Pawdroid/Free-servers
+> 还有一个是：https://github.com/Pawdroid/Free-servers  
+> 还有一个是：https://freefq.com/free-ssr/
 
 #### 2. 下载并安装 `v2rayNG`
 
@@ -83,7 +84,8 @@ https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 [https://github.com/freefq/free](https://github.com/freefq/free)
 
 > 另外一个是：https://v2rayshare.com/  
-> 还有一个是：https://github.com/Pawdroid/Free-servers
+> 还有一个是：https://github.com/Pawdroid/Free-servers  
+> 还有一个是：https://freefq.com/free-ssr/
 
 #### 2. 下载 v2rayNG，解压并运行
 
