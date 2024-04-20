@@ -1,5 +1,23 @@
 # 日常办公
 
+## 恢复Win11完整右键菜单
+
+Windows11 系统的右键菜单，每次都要选择`显示更多选项`，非常烦人。如果想把 Windows11 系统的右键菜单改回 Win10 版的
+
+- **懒人方法：**`Shift`+右击鼠标
+
+- **一劳永逸的方法**：可以在任务栏的搜索框里搜索`CMD`，然后选择`以管理员身份运行`，粘贴以下命令，并按`Enter`确认，重启电脑即可。
+
+```sh
+reg add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+```
+
+如果想改回去，执行下面的命令即可：
+
+```sh
+reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" /f
+```
+
 ## 搜索替代
 
 众所周知，[**百度**](https://www.baidu.com/)搜出来的结果广告居多。[**谷歌**](https://www.google.com/)又打不开，这里推荐使用微软的[**必应**](https://cn.bing.com/)搜索引擎。搜索结果质量很高。
