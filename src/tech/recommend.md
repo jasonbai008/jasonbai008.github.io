@@ -27,6 +27,14 @@
 - [TinyPng](https://tinypng.com/)（在线压缩图片）
 - <a href="https://lubanseven.gitee.io/store/images/blog/tools/ImageToPDForXPS.zip" download="ImageToPDForXPS">ImageToPDForXPS</a>（图片转 PDF 神器）
 - <a href="https://www.cockos.com/licecap/" target="_blank">LICEcap</a>（录屏成 GIF 工具）
-- <a href="https://lubanseven.gitee.io/store/images/blog/tools/ScreenToGif.zip" download="ScreenToGif">ScreenToGif</a>（录屏成 GIF 神器）
-- <a href="https://lubanseven.gitee.io/store/images/blog/tools/httrack_x64-3.49.2.zip" download="Httrack">Httrack</a>（扒网站 神器）
+- <a href="https://gitee.com/lubanseven/store/raw/master/images/blog/tools/ScreenToGif.zip" download="ScreenToGif">ScreenToGif</a>（录屏成 GIF 神器）
+- <a href="https://gitee.com/lubanseven/store/raw/master/images/blog/tools/httrack_x64-3.49.2.rar" download="Httrack">Httrack</a>（扒网站 神器）
 - [海上冲浪](/tech/surf.md)（冲浪教程）
+
+## 浏览器插件
+
+- [离线插件市场](https://www.chajianxw.com/)
+- [Vue.js devtools](https://img.chajianxw.com/chajian/www.chajianxw.com_nhdogjmejiglipccpnnnanhbledajbpd.zip)
+- [Simple Allow Copy](https://img.chajianxw.com/chajian/www.chajianxw.com_aefehdhdciieocakfobpaaolhipkcpgc.zip)（允许复制）
+- [Global Speed](https://img.chajianxw.com/chajian/www.chajianxw.com_jpbjcnkcffbooppibceonlgknpkniiff.zip)（加速封面视频广告）
+- [GoFullpage](https://img.chajianxw.com/chajian/www.chajianxw.com_fdpohaocaechififmbbbbbknoalclacl.zip)（截屏）
