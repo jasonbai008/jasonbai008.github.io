@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://lubanseven.gitee.io/store/images/blog/home/me.gif
+heroImage: /home/me.gif
 heroText: null
 tagline: 行到水穷处，坐看云起时
 actionText: 欢迎光临 →

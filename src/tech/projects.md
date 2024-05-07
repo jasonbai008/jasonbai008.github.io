@@ -4,6 +4,10 @@
 捣鼓了这么多项目，精选了一些。
 :::
 
+::: warning 遗憾
+由于Gitee突然停止了Pages服务，导致以下个人项目全部无法预览，正在逐步迁移至Github。
+:::
+
 ## 代码仓库
 
 <!-- - [Github](https://github.com/JasonBai007)

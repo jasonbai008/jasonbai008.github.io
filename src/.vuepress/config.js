@@ -2,8 +2,8 @@ module.exports = {
   title: "行云流水",
   description: "小白的个人博客",
   head: [
-    ["link", { rel: "icon", href: "https://lubanseven.gitee.io/store/images/blog/home/logo.png" }], // favicon
-    ["script", {src: '/baiduStatics.js'}]
+    ["link", { rel: "icon", href: "/home/logo.png" }], // favicon
+    // ["script", {src: '/baiduStatics.js'}]
   ],
   host: "127.0.0.1",
   base: "/", // 同代码仓库名称
@@ -20,7 +20,7 @@ module.exports = {
     ],
   ],
   themeConfig: {
-    logo: "https://lubanseven.gitee.io/store/images/blog/home/logo.png",
+    logo: "/home/logo.png",
     nav: [
       { text: "首页", link: "/" },
       {
