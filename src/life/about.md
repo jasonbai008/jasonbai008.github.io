@@ -4,7 +4,7 @@ sidebar: false
 
 ## 介绍
 
-一枚爱折腾的水瓶座**前端开发工程师**，欢迎访问我的[**个人主页**](https://lubanseven.gitee.io)。
+一枚爱折腾的水瓶座**前端开发工程师**，欢迎访问我的[**个人主页**](https://jasonbai008.github.io/lubanseven/)。
 
 ## 博客技术栈
 
