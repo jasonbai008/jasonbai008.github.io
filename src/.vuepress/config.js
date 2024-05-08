@@ -11,13 +11,13 @@ module.exports = {
   plugins: [
     "@vuepress/back-to-top",
     "@vuepress/medium-zoom",    
-    [
-      "@vuepress-reco/vuepress-plugin-kan-ban-niang",
-      {
-        theme: ["blackCat"],
-        clean: true,
-      },
-    ],
+    // [
+    //   "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+    //   {
+    //     theme: ["blackCat"],
+    //     clean: true,
+    //   },
+    // ],
   ],
   themeConfig: {
     logo: "/home/logo.png",

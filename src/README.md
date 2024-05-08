@@ -16,5 +16,5 @@ features:
 ---
 
 ::: slot footer
-Copyright © 2022 [Jason Bai](https://lubanseven.gitee.io) & [YMXZ](https://lubanseven.gitee.io/xch/)
+Copyright © 2022 [Jason Bai](https://jasonbai008.github.io/lubanseven/) & [YMXZ](https://jasonbai008.github.io/xch/)
 :::
