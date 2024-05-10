@@ -32,7 +32,7 @@
 - [baipress](http://lubanseven.gitee.io/baipress) `曾经写的一个开发指南` -->
 
 <div class="row">
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/book">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/book">
     <img :src="$withBase('/projects/book1.png')">
     <h4>刘慈欣有声小说</h4>
   </a>
@@ -58,11 +58,11 @@
 - [vue-big-starter](https://gitee.com/lubanseven/vue-big-starter) `Vue大屏模板` -->
 
 <div class="row">
-  <a class="itemWrap" target="_blank" href="https://github.com/JasonBai007/vue-starter">
+  <a class="itemWrap" target="_blank" href="https://github.com/JasonBai008/vue-starter">
     <img :src="$withBase('/projects/template1.png')">
     <h4>vue-starter</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/vite-vue3-starter">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/vite-vue3-starter">
     <img :src="$withBase('/projects/template2.png')">
     <h4>vite-vue3-starter</h4>
   </a>
@@ -96,7 +96,7 @@
 - [suanban](http://lubanseven.gitee.io/suanban/#/movie) `蒜瓣-聪白` -->
 
 <div class="row">
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/news">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/news">
     <img :src="$withBase('/projects/tools1.png')">
     <h4>每日头条</h4>
   </a>
@@ -115,19 +115,19 @@
 </div>
 
 <div class="row">
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/chives">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/chives">
     <img :src="$withBase('/projects/tools5.png')">
     <h4>韭菜看盘</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/salary">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/salary">
     <img :src="$withBase('/projects/tools6.png')">
     <h4>工资刺客</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/qinghua">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/qinghua">
     <img :src="$withBase('/projects/tools7.png')">
     <h4>土味情话</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/douyin">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/douyin">
     <img :src="$withBase('/projects/tools8.png')">
     <h4>精神抖擞</h4>
   </a>
@@ -161,11 +161,11 @@
     <img :src="$withBase('/projects/tools14.png')">
     <h4>省市区</h4>
   </a> 
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/dream-pad">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/dream-pad">
     <img :src="$withBase('/projects/tools15.png')">
     <h4>随心画板</h4>
   </a> 
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/eye-dropper">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/eye-dropper">
     <img :src="$withBase('/projects/tools16.png')">
     <h4>小鸡拾色</h4>
   </a>  
@@ -182,7 +182,7 @@
 - [lottie](https://lubanseven.gitee.io/lottie) `LottieFiles` -->
 
 <div class="row">
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/eyesight">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/eyesight">
     <img :src="$withBase('/projects/game1.png')">
     <h4>火眼金睛</h4>
   </a>
