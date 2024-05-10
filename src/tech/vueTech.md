@@ -4,6 +4,22 @@
 工欲善其事，必先利其器
 :::
 
+## 部署路径
+
+通过设置**空路径**，可以将vue项目部署到任意子路径。
+
+```js
+// vue.config.js
+module.exports = defineConfig({  
+  publicPath: "",
+});
+
+// vite.config.js
+export default defineConfig({
+  base: "",
+})
+```
+
 ## DefineProps 的坑
 
 ```html
