@@ -5,7 +5,7 @@
 :::
 
 ::: warning 遗憾
-由于Gitee突然停止了Pages服务，导致以下个人项目全部无法预览，正在逐步迁移至Github。
+由于Gitee突然停止了Pages服务，导致以下个人项目部分无法预览，正在逐步迁移至[**Github**](https://github.com/JasonBai008)
 :::
 
 ## 代码仓库
@@ -16,7 +16,11 @@
 <div class="row" style="justify-content: flex-start">
   <a class="itemWrap" target="_blank" href="https://github.com/JasonBai007">
     <img :src="$withBase('/projects/github.png')">
-    <h4>Github</h4>
+    <h4>JasonBai007</h4>
+  </a>
+  <a class="itemWrap" target="_blank" href="https://github.com/JasonBai008">
+    <img :src="$withBase('/projects/github.png')">
+    <h4>JasonBai008</h4>
   </a>
   <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven">
     <img :src="$withBase('/projects/gitee.png')">
@@ -36,7 +40,7 @@
     <img :src="$withBase('/projects/book1.png')">
     <h4>刘慈欣有声小说</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/selfhelp">
+  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/selfhelp">
     <img :src="$withBase('/projects/book2.png')">
     <h4>精神焦虑症的自救</h4>
   </a>
@@ -44,7 +48,7 @@
     <img :src="$withBase('/projects/book3.png')">
     <h4>博客模板</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="http://lubanseven.gitee.io/baipress">
+  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/baipress">
     <img :src="$withBase('/projects/book4.png')">
     <h4>前端开发指南</h4>
   </a>
@@ -58,7 +62,7 @@
 - [vue-big-starter](https://gitee.com/lubanseven/vue-big-starter) `Vue大屏模板` -->
 
 <div class="row">
-  <a class="itemWrap" target="_blank" href="https://github.com/JasonBai008/vue-starter">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/vue-starter/#/login">
     <img :src="$withBase('/projects/template1.png')">
     <h4>vue-starter</h4>
   </a>
@@ -66,7 +70,7 @@
     <img :src="$withBase('/projects/template2.png')">
     <h4>vite-vue3-starter</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://github.com/JasonBai007/theme-starter">
+  <a class="itemWrap" target="_blank" href="https://jasonbai007.github.io/theme-starter/">
     <img :src="$withBase('/projects/template3.png')">
     <h4>theme-starter</h4>
   </a>
@@ -104,11 +108,11 @@
     <img :src="$withBase('/projects/tools2.png')">
     <h4>简繁体转换器</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="http://lubanseven.gitee.io/ai-pc">
+  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/ai-pc">
     <img :src="$withBase('/projects/tools3.png')">
     <h4>你问我答</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/microscope">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/microscope">
     <img :src="$withBase('/projects/tools4.png')">
     <h4>鼠标放大镜</h4>
   </a>
@@ -146,14 +150,14 @@
     <img :src="$withBase('/projects/tools11.png')">
     <h4>弹幕情感分析</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/age">
+  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/age">
     <img :src="$withBase('/projects/tools12.png')">
     <h4>真实年龄</h4>
   </a>
 </div>
 
 <div class="row">
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/mark-me">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/mark-me">
     <img :src="$withBase('/projects/tools13.png')">
     <h4>印象文档</h4>
   </a> 
@@ -186,51 +190,51 @@
     <img :src="$withBase('/projects/game1.png')">
     <h4>火眼金睛</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/xball">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/xball">
     <img :src="$withBase('/projects/game2.png')">
     <h4>叉烧包</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/fluid">
+  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/fluid">
     <img :src="$withBase('/projects/game3.png')">
     <h4>磁流体播放器</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/room/index.html">
+  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/room">
     <img :src="$withBase('/projects/game4.png')">
     <h4>3D房间</h4>
   </a>
 </div>
 <div class="row">
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/zither">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/zither">
     <img :src="$withBase('/projects/game5.png')">
     <h4>夜猫牌古筝</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/lottery">
+  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/lottery">
     <img :src="$withBase('/projects/game6.png')">
     <h4>趣味儿刮刮乐</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/lottie">
+  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/lottie">
     <img :src="$withBase('/projects/game7.png')">
     <h4>LottieFiles</h4>
   </a> 
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/mirror">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/mirror">
     <img :src="$withBase('/projects/game8.png')" style="margin-top: 22px;">
     <h4>镜像画板</h4>
   </a>  
 </div>
 <div class="row">
-  <a class="itemWrap jianzi" target="_blank" href="https://lubanseven.gitee.io/writing/">
+  <a class="itemWrap jianzi" target="_blank" href="https://jasonbai008.github.io/writing/">
     <img :src="$withBase('/projects/game9.png')">
     <h4>见字如面</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://lubanseven.gitee.io/random/">
+  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/random/">
     <img :src="$withBase('/projects/game10.png')">
     <h4>极限收敛</h4>
   </a>
-  <a class="itemWrap jianzi" target="_blank" href="http://lubanseven.gitee.io/suanban/#/about">
+  <a class="itemWrap jianzi" target="_blank" href="https://gitee.com/lubanseven/suanban/">
     <img :src="$withBase('/projects/game11.png')">
     <h4>蒜瓣葱白</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="http://lubanseven.gitee.io/done/#/">
+  <a class="itemWrap" target="_blank" href="https://jasonbai007.github.io/vue-have-done/">
     <img :src="$withBase('/projects/game12.png')">
     <h4>周报记录器</h4>
   </a>
