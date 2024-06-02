@@ -25,11 +25,12 @@
 - [BootCDN](https://www.bootcdn.cn/)（获取 cdn 资源）
 - [草料二维码](https://cli.im/)（制作自己的二维码）
 - [TinyPng](https://tinypng.com/)（在线压缩图片）
-- <a href="https://lubanseven.gitee.io/store/images/blog/tools/ImageToPDForXPS.zip" download="ImageToPDForXPS">ImageToPDForXPS</a>（图片转 PDF 神器）
+- <a href="https://down.wsyhn.com/23_217869" download="ImageToPDForXPS">ImageToPDForXPS</a>（图片转 PDF 神器）
 - <a href="https://www.cockos.com/licecap/" target="_blank">LICEcap</a>（录屏成 GIF 工具）
-- <a href="https://gitee.com/lubanseven/store/raw/master/images/blog/tools/ScreenToGif.zip" download="ScreenToGif">ScreenToGif</a>（录屏成 GIF 神器）
-- <a href="https://gitee.com/lubanseven/store/raw/master/images/blog/tools/httrack_x64-3.49.2.rar" download="Httrack">Httrack</a>（扒网站 神器）
+- <a href="https://www.screentogif.com/downloads" download="ScreenToGif">ScreenToGif</a>（录屏成 GIF 神器）
+- <a href="https://www.httrack.com/page/2/en/index.html" download="Httrack">Httrack</a>（扒网站 神器）
 - [海上冲浪](/tech/surf.md)（冲浪教程）
+- [歌曲宝](https://www.gequbao.com/)
 
 ## 浏览器插件
 

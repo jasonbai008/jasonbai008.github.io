@@ -29,22 +29,18 @@
 
 ### 移动端教程
 
-#### 1. 打开资源网址
+#### 1. 资源网址
 
-[https://github.com/freefq/free](https://github.com/freefq/free)
+- [https://v2rayshare.com/](https://v2rayshare.com/)
+- [https://github.com/Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers)
 
-> 另外一个是：https://v2rayshare.com/  
-> 还有一个是：https://github.com/Pawdroid/Free-servers  
-> 还有一个是：https://freefq.com/free-ssr/
+#### 2. 软件下载
 
-#### 2. 下载并安装 `v2rayNG`
+- [Android版](https://github.com/2dust/v2rayNG/releases/download/1.6.28/v2rayNG_1.6.28_arm64-v8a.apk)
 
-![下载安卓版](/life/fq/fq12.png)
+#### 3. 订阅地址
 
-#### 3. 复制订阅地址
-
-::: tip 三个订阅地址
-https://bulinkbulink.com/freefq/free/master/v2
+::: tip 哪个能用用哪个
 
 <p>{{`https://v2rayshare.com/wp-content/uploads/${new Date().getFullYear()}/${String(new Date().getMonth() + 1).padStart(2, '0')}/${new Date().getFullYear()}${String(new Date().getMonth() + 1).padStart(2, '0')}${String(new Date().getDate()).padStart(2, '0')}.txt`}}</p>
 
@@ -56,8 +52,6 @@ https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 打开`v2rayNG` > 点击左上角`菜单`图标 > 选择 `订阅设置` > 粘贴刚才复制的订阅地址 > 点击对钩保存
 
 #### 5. 更新订阅地址
-
-> 最好每 4 小时更新一次
 
 返回到主页面 > 点击右上角`菜单`图标 > 选择 `更新订阅` > 主页面就会出现节点列表
 
@@ -79,27 +73,20 @@ https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 
 ### 电脑端教程
 
-#### 1. 打开资源网址
+#### 1. 资源网址
 
-[https://github.com/freefq/free](https://github.com/freefq/free)
-
-> 另外一个是：https://v2rayshare.com/  
-> 还有一个是：https://github.com/Pawdroid/Free-servers  
-> 还有一个是：https://freefq.com/free-ssr/
+- [https://v2rayshare.com/](https://v2rayshare.com/)
+- [https://github.com/Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers)
 
 #### 2. 下载 v2rayNG，解压并运行
+点击 [Windows版](https://github.com/2dust/v2rayN/releases/download/3.27/v2rayN-Core.zip) 下载，解压后直接双击 exe 图标，不用安装，桌面右下角会出现 `v2rayNG` 小图标
 
-解压后直接双击 exe 图标，不用安装，桌面右下角会出现 `v2rayNG` 小图标
-
-![下载软件](/life/fq/fq1.png)
 
 #### 3. 添加订阅
 
 双击小图标，打开主界面，点击`订阅` > `订阅设置`，在弹窗中添加两条订阅地址，并勾选`启用`。其中第二个订阅地址，使用前需要编辑，改成当天的前一天。
 
-::: tip 三个订阅地址
-https://bulinkbulink.com/freefq/free/master/v2
-
+::: tip 哪个能用用哪个
 <p>{{`https://v2rayshare.com/wp-content/uploads/${new Date().getFullYear()}/${String(new Date().getMonth() + 1).padStart(2, '0')}/${new Date().getFullYear()}${String(new Date().getMonth() + 1).padStart(2, '0')}${String(new Date().getDate()).padStart(2, '0')}.txt`}}</p>
 
 https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
