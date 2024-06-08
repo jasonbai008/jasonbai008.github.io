@@ -53,7 +53,7 @@
     <img :src="$withBase('/projects/book5.png')">
     <h4>球状闪电</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/selfhelp">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/selfhelp/">
     <img :src="$withBase('/projects/book2.png')">
     <h4>精神焦虑症的自救</h4>
   </a>    
