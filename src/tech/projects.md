@@ -30,20 +30,7 @@
 
 ## 博客类
 
-<!-- - [book](https://lubanseven.gitee.io/book) `刘慈欣短篇小说有声合集`
-- [selfhelp](https://lubanseven.gitee.io/selfhelp) `精神焦虑症的自救`
-- [blog](https://gitee.com/lubanseven/blog) `一个开箱即用的博客模板`
-- [baipress](http://lubanseven.gitee.io/baipress) `曾经写的一个开发指南` -->
-
-<div class="row">
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/book">
-    <img :src="$withBase('/projects/book1.png')">
-    <h4>刘慈欣有声小说</h4>
-  </a>
-  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/selfhelp">
-    <img :src="$withBase('/projects/book2.png')">
-    <h4>精神焦虑症的自救</h4>
-  </a>
+<div class="row">  
   <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/blog">
     <img :src="$withBase('/projects/book3.png')">
     <h4>博客模板</h4>
@@ -52,6 +39,24 @@
     <img :src="$withBase('/projects/book4.png')">
     <h4>前端开发指南</h4>
   </a>
+</div>
+
+
+## 有声书
+
+<div class="row">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/book">
+    <img :src="$withBase('/projects/book1.png')">
+    <h4>刘慈欣有声小说</h4>
+  </a>
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/lightning/">
+    <img :src="$withBase('/projects/book5.png')">
+    <h4>球状闪电</h4>
+  </a>
+  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/selfhelp">
+    <img :src="$withBase('/projects/book2.png')">
+    <h4>精神焦虑症的自救</h4>
+  </a>    
 </div>
 
 ## 中台类
@@ -212,9 +217,9 @@
     <img :src="$withBase('/projects/game6.png')">
     <h4>趣味儿刮刮乐</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/lottie">
-    <img :src="$withBase('/projects/game7.png')">
-    <h4>LottieFiles</h4>
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/audio-v/">
+    <img :src="$withBase('/projects/game13.png')">
+    <h4>Audio-V</h4>
   </a> 
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/mirror">
     <img :src="$withBase('/projects/game8.png')" style="margin-top: 22px;">
@@ -265,7 +270,7 @@
 
 .row {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   text-align: center;
   margin-top: 20px;
 }
@@ -274,6 +279,9 @@
   width: 20%;
   opacity: 1;
   display: block;
+}
+.itemWrap:not(:last-child) {
+  margin-right: 6%
 }
 .itemWrap:hover {
   cursor: pointer;
