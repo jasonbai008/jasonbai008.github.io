@@ -60,10 +60,10 @@
 
 ## 精神焦虑症的自救
 
-> [《精神焦虑症的自救（音频朗读版）》](https://lubanseven.gitee.io/selfhelp)  
-> [《精神焦虑症的自救（病理分析卷）》](https://lubanseven.gitee.io/asset/pdf/anxiety1.pdf)  
-> [《精神焦虑症的自救（演讲访谈卷）》](https://lubanseven.gitee.io/asset/pdf/anxiety2.pdf)  
-> [《精神焦虑症的自救（病理篇、实战篇、演讲篇）》](https://lubanseven.gitee.io/asset/pdf/anxiety.pdf)
+> [《精神焦虑症的自救（音频朗读版）》](https://jasonbai008.github.io/selfhelp)  
+> [《精神焦虑症的自救（病理分析卷）》](https://jasonbai008.github.io/selfhelp/pdf/anxiety1.pdf)  
+> [《精神焦虑症的自救（演讲访谈卷）》](https://jasonbai008.github.io/selfhelp/pdf/anxiety2.pdf)  
+> [《精神焦虑症的自救（病理篇、实战篇、演讲篇）》](https://jasonbai008.github.io/selfhelp/pdf/anxiety.pdf)
 
 ## 恢复方法
 
