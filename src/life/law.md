@@ -5,6 +5,10 @@
 挨刀不要怂，法律不可少
 :::
 
+## Say NO to 996
+
+[996.ICU](https://996.icu/#/zh_CN)
+
 ## 劳动法
 
 [《中华人民共和国劳动法》](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201601/t20160119_232110.html)

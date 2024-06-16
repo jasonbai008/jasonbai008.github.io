@@ -15,3 +15,5 @@
 6. 尝试、尝试、再尝试
 
 7. All work and no play makes jack a dull boy
+
+8. Support Ukraine
