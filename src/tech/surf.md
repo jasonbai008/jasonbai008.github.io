@@ -31,8 +31,8 @@
 
 #### 1. 资源网址
 
-- [https://v2rayshare.com/](https://v2rayshare.com/)
 - [https://github.com/Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers)
+- [https://v2rayshare.com/](https://v2rayshare.com/)
 
 #### 2. 软件下载
 
@@ -40,11 +40,11 @@
 
 #### 3. 订阅地址
 
-::: tip 哪个能用用哪个
+::: tip 优先使用第一个
+
+https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 
 <p>{{`https://v2rayshare.com/wp-content/uploads/${new Date().getFullYear()}/${String(new Date().getMonth() + 1).padStart(2, '0')}/${new Date().getFullYear()}${String(new Date().getMonth() + 1).padStart(2, '0')}${String(new Date().getDate()).padStart(2, '0')}.txt`}}</p>
-
-https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 :::
 
 #### 4. 添加订阅地址
@@ -75,8 +75,8 @@ https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 
 #### 1. 资源网址
 
-- [https://v2rayshare.com/](https://v2rayshare.com/)
 - [https://github.com/Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers)
+- [https://v2rayshare.com/](https://v2rayshare.com/)
 
 #### 2. 下载 v2rayNG，解压并运行
 点击 [Windows版](https://github.com/2dust/v2rayN/releases/download/3.27/v2rayN-Core.zip) 下载，解压后直接双击 exe 图标，不用安装，桌面右下角会出现 `v2rayNG` 小图标
@@ -84,12 +84,13 @@ https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 
 #### 3. 添加订阅
 
-双击小图标，打开主界面，点击`订阅` > `订阅设置`，在弹窗中添加两条订阅地址，并勾选`启用`。其中第二个订阅地址，使用前需要编辑，改成当天的前一天。
+双击小图标，打开主界面，点击`订阅` > `订阅设置`，在弹窗中添加1个/2个订阅地址，并勾选`启用`。
 
-::: tip 哪个能用用哪个
+::: tip 优先使用第一个
+
+https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
+
 <p>{{`https://v2rayshare.com/wp-content/uploads/${new Date().getFullYear()}/${String(new Date().getMonth() + 1).padStart(2, '0')}/${new Date().getFullYear()}${String(new Date().getMonth() + 1).padStart(2, '0')}${String(new Date().getDate()).padStart(2, '0')}.txt`}}</p>
-
-https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 :::
 
 ![添加订阅](/life/fq/dingyue.png)
@@ -100,7 +101,7 @@ https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 
 #### 5. 测试节点速度
 
-在主界面，任选一个节点，`Ctrl+A`选中所有节点，点击左上角`服务器`，选择`测试服务器真连接延迟（多选）`，测试所有节点，看哪些能用
+在主界面，任选一个节点，`Ctrl+A`选中所有节点，再`Ctrl+R`，测试所有节点，看哪些能用
 
 ![测试节点](/life/fq/fq3.png)
 
