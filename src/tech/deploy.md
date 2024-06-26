@@ -1,5 +1,16 @@
 # 网站部署
 
+## 使用Cloudflare加速你的网页
+
+为了能有个免费的网页，真是太难了，先后探索了：  
+`Github Pages` > `Gitee Pages` > `Github Pages` > `Cloudflare Pages`
+
+- **Github Pages** 访问速度太慢，尤其页面上有很多图片的情况下。
+- **Gitee Pages** 本来访问速度杠杠的，但是今年五一之前突然下线了，彻底不能用了。
+- **Cloudflare Pages** 没想到出奇的好使，访问速度比Github快一倍！而且免费！
+
+下面介绍一下 Cloudflare Pages 的使用步骤：
+
 ## Nginx 开启 https
 
 ### 购买免费证书
