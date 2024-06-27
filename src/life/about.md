@@ -4,7 +4,7 @@ sidebar: false
 
 ## 介绍
 
-一枚闲不住的水瓶座**前端开发工程师**，欢迎访问我的[**个人主页**](https://jasonbai008.github.io/lubanseven/)。
+一枚闲不住的水瓶座**前端开发工程师**，欢迎访问我的[**个人主页**](https://jasonbai.pages.dev/)。
 
 ## 博客技术栈
 
@@ -14,7 +14,7 @@ sidebar: false
 - [**Valine**](https://valine.js.org/) (基于 [Leancloud](https://www.leancloud.cn/) 的留言板)
 - **@vuepress/medium-zoom** （图片放大插件）
 - **@vuepress-reco/vuepress-plugin-kan-ban-niang** （看板娘插件，需要改造源码）
-- **AWS EC2 Server**（部署在了亚马逊云服务器）
+- **Cloudflare**（相册图片使用了Cloudflare Pages服务）
 
 ## 仓库主页
 

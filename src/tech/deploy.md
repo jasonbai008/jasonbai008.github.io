@@ -7,9 +7,20 @@
 
 - **Github Pages** 访问速度太慢，尤其页面上有很多图片的情况下。
 - **Gitee Pages** 本来访问速度杠杠的，但是今年五一之前突然下线了，彻底不能用了。
-- **Cloudflare Pages** 没想到出奇的好使，访问速度比Github快一倍！而且免费！
+- **Cloudflare Pages** 没想到出奇的好使，**访问速度比Github快一倍！而且免费！**
 
 下面介绍一下 Cloudflare Pages 的使用步骤：
+
+1. 打开 [Cloudflare 中国官网](https://www.cloudflare-cn.com/)
+2. 使用个人邮箱注册并登录
+3. 进入到`个人账户` > `Workers and Pages` > 切换到 `Pages`选项卡
+4. 通过导入现有 Git 存储库创建，点击 `连接到 Git` 按钮
+5. 关联你的个人 Github 账户，根据提示赋予权限
+6. 选择一个你的 Github 上的一个代码仓库，点击 `开始设置`
+7. 自定义一个满意的`项目名称`，到时候访问的地址是：`项目名称.pages.dev`
+8. 如果是普通的html项目，直接开始部署
+9. 如果是vue项目，框架预设选择 `Vue`，构建命令 `npm run build`，构建输出目录`docs`
+10. 然后直接部署到全球节点，部署完，等待大概最多5分钟就可以访问了
 
 ## Nginx 开启 https
 
