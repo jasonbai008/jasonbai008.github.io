@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /home/me.gif
+heroImage: https://asset6.pages.dev/xiangce/home/me.gif
 heroText: null
 tagline: 行到水穷处，坐看云起时
 actionText: 欢迎光临 →
@@ -16,5 +16,5 @@ features:
 ---
 
 ::: slot footer
-Copyright © 2022 [Jason Bai](https://jasonbai008.github.io/lubanseven/) & [YMXZ](https://jasonbai008.github.io/xch/)
+Copyright © 2022 [Jason Bai](https://jasonbai008.github.io/lubanseven/) & [YMXZ](https://teacherxu.pages.dev/)
 :::
