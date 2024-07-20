@@ -2,6 +2,10 @@
 
 ## 使用Cloudflare加速你的网页
 
+::: warning 注意
+Cloudflare 的 Workers 都已被封，Pages目前可以使用
+:::
+
 为了能有个免费的网页，真是太难了，先后探索了：  
 `Github Pages` > `Gitee Pages` > `Github Pages` > `Cloudflare Pages`
 
@@ -21,6 +25,17 @@
 8. 如果是普通的html项目，直接开始部署
 9. 如果是vue项目，框架预设选择 `Vue`，构建命令 `npm run build`，构建输出目录`docs`
 10. 然后直接部署到全球节点，部署完，等待大概最多5分钟就可以访问了
+
+### 部署旧项目遇到问题
+
+```sh
+# 遇到这种报错：
+at ChildProcess.<anonymous> (/snapshot/dist/run-build.js)
+```
+在部署设置步骤，设置环境变量：`YARN VERSION = 1`
+
+如遇到其它报错，继续叠加设置环境变量：`NODE OPTIONS = --openssl-legacy-provider`
+
 
 ## Nginx 开启 https
 
