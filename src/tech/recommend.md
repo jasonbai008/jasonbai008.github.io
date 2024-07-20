@@ -29,7 +29,6 @@
 - <a href="https://www.cockos.com/licecap/" target="_blank">LICEcap</a>（录屏成 GIF 工具）
 - <a href="https://www.screentogif.com/downloads" download="ScreenToGif">ScreenToGif</a>（录屏成 GIF 神器）
 - <a href="https://www.httrack.com/page/2/en/index.html" download="Httrack">Httrack</a>（扒网站 神器）
-- [海上冲浪](/tech/surf.md)（冲浪教程）
 - [歌曲宝](https://www.gequbao.com/)
 
 ## 浏览器插件
