@@ -2,7 +2,7 @@ module.exports = {
   title: "行云流水",
   description: "小白的个人博客",
   head: [
-    ["link", { rel: "icon", href: "https://asset6.pages.dev/xiangce/home/logo.png" }], // favicon
+    ["link", { rel: "icon", href: "/home/logo.png" }], // favicon
     // ["script", {src: '/baiduStatics.js'}]
   ],
   host: "127.0.0.1",
@@ -20,7 +20,7 @@ module.exports = {
     // ],
   ],
   themeConfig: {
-    logo: "https://asset6.pages.dev/xiangce/home/logo.png",
+    logo: "/home/logo.png",
     nav: [
       { text: "首页", link: "/" },
       {

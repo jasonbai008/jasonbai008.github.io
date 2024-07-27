@@ -3,7 +3,7 @@
 ## 电子城
 
 <div class="album-wrap">
-    <img src="https://asset6.pages.dev/xiangce/bez/1.jpg" class="medium-zoom-image"/>
+    <img src="/xiangce/bez/1.jpg" class="medium-zoom-image"/>
     <img src="https://asset6.pages.dev/xiangce/bez/2.jpg" class="medium-zoom-image"/>
     <img src="https://asset6.pages.dev/xiangce/bez/3.jpg" class="medium-zoom-image"/>   
 </div>
