@@ -3,7 +3,12 @@
 ## 使用Cloudflare加速你的网页
 
 ::: warning 注意
-Cloudflare 的 Workers 都已被封，Pages目前可以使用
+Cloudflare 的 Workers 都已被封，Pages目前可以使用。  
+打开Cloudflare最好翻墙，以前不翻墙能很顺利的打开，现在有被墙的风险！
+:::
+
+::: tip 非常棒
+在 Github 上新建私人仓库，在 Cloudflare 上针对私人仓库，新建 Pages，这样就可以避免暴露源码了！ 
 :::
 
 为了能有个免费的网页，真是太难了，先后探索了：  
