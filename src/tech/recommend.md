@@ -22,6 +22,7 @@
 
 ## 工具类
 
+- [iLovePDF](https://www.ilovepdf.com/zh-cn)
 - [韩小韩 API 接口站](https://api.vvhan.com/)（免费 API 接口）
 - [BootCDN](https://www.bootcdn.cn/)（获取 cdn 资源）
 - [草料二维码](https://cli.im/)（制作自己的二维码）
