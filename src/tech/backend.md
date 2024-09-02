@@ -57,6 +57,8 @@
 - EventSource 使用 `HTTP 协议`，它是一种`单向通信协议`，只能从服务器向客户端发送数据。
 - 只能传输`文本数据`，且只能使用 UTF-8 编码。
 - 适合需要单向通信的实时应用场景，如股票行情、天气预报等。
+- 但是原生的有一些限制，比如只能GET请求，所以可以使用第三方插件：@microsoft/fetch-event-source
+- 插件参考文章：https://blog.csdn.net/SAXX2/article/details/136538314
   :::
 
 这个示例中，我们创建了一个 Node.js 的 HTTP 服务器，在 `/api/stream` 路径下返回了一个 `text/event-stream` 类型的响应。在响应头中，我们设置了 `Cache-Control` 和 `Connection`，这是必须的。在响应体中，我们通过 res.write() 方法将数据发送给客户端。客户端通过 EventSource 对象监听 /api/stream 路径下的消息，当有新的消息时，就会触发 onmessage 事件。如果出现错误，就会触发 onerror 事件。
