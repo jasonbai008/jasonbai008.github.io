@@ -4,6 +4,33 @@
 人靠衣装，美靠 CSS
 :::
 
+## Vue 中使用 svg 图标的简单方法
+
+1. 把 svg 手动创建成组件
+
+```html
+<template>
+  <svg t="1725694765569" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3043" width="48" height="48">
+    <path
+      d="M512 928C282.624 928 96 741.376 96 512S282.624 96 512 96s416 186.624 416 416-186.624 416-416 416z m0-768C317.92 160 160 317.92 160 512s157.92 352 352 352 352-157.92 352-352S706.08 160 512 160z"
+      fill="#2A323A"
+      p-id="3044"
+    ></path>
+  </svg>
+</template>
+```
+
+2. 在使用的组件中引入并注册
+3. 添加样式，鼠标移入时图标变红
+
+```css
+svg:hover * {
+  fill: red;
+}
+```
+
+4. 以上方法，**不需要安装配置插件**，只需要把 svg 代码用`<template>`标签包裹即可
+
 ## 项目代码格式化风格统一
 
 1. 在项目根目录新建配置文件：`.prettierrc.json`
@@ -44,12 +71,10 @@ if (document.fullscreen) {
 
 // 用户Esc键退出全屏时，不会执行退出全屏用户自定义的逻辑，需要监听全屏的DOM，退出全屏执行对应逻辑
 // 参考文章：https://juejin.cn/post/7021437200034168869
-document
-  .querySelector(".container")
-  .addEventListener("fullscreenchange", () => {
-    isFullScreen = !!document.fullscreenElement;
-    console.log(isFullScreen);
-  });
+document.querySelector(".container").addEventListener("fullscreenchange", () => {
+  isFullScreen = !!document.fullscreenElement;
+  console.log(isFullScreen);
+});
 ```
 
 ## 子元素撑开父元素
@@ -221,35 +246,11 @@ animation-fill-mode: forwards;
   --corner-size: 1rem;
   --corner-radius: 0;
   --corner-bg: rgba(13, 11, 26, 0.1);
-  background: linear-gradient(to left, var(--corner-color), var(--corner-color))
-      left top no-repeat, linear-gradient(
-        to bottom,
-        var(--corner-color),
-        var(--corner-color)
-      ) left top no-repeat,
-    linear-gradient(to left, var(--corner-color), var(--corner-color)) right top
-      no-repeat, linear-gradient(
-        to bottom,
-        var(--corner-color),
-        var(--corner-color)
-      ) right top no-repeat,
-    linear-gradient(to left, var(--corner-color), var(--corner-color)) left bottom
-      no-repeat, linear-gradient(
-        to bottom,
-        var(--corner-color),
-        var(--corner-color)
-      ) left bottom no-repeat,
-    linear-gradient(to left, var(--corner-color), var(--corner-color)) right bottom
-      no-repeat, linear-gradient(
-        to left,
-        var(--corner-color),
-        var(--corner-color)
-      ) right bottom no-repeat;
-  background-size: var(--corner-width) var(--corner-size), var(--corner-size) var(
-        --corner-width
-      ), var(--corner-width) var(--corner-size), var(--corner-size) var(
-        --corner-width
-      );
+  background: linear-gradient(to left, var(--corner-color), var(--corner-color)) left top no-repeat, linear-gradient(to bottom, var(--corner-color), var(--corner-color)) left top no-repeat,
+    linear-gradient(to left, var(--corner-color), var(--corner-color)) right top no-repeat, linear-gradient(to bottom, var(--corner-color), var(--corner-color)) right top no-repeat,
+    linear-gradient(to left, var(--corner-color), var(--corner-color)) left bottom no-repeat, linear-gradient(to bottom, var(--corner-color), var(--corner-color)) left bottom no-repeat,
+    linear-gradient(to left, var(--corner-color), var(--corner-color)) right bottom no-repeat, linear-gradient(to left, var(--corner-color), var(--corner-color)) right bottom no-repeat;
+  background-size: var(--corner-width) var(--corner-size), var(--corner-size) var(--corner-width), var(--corner-width) var(--corner-size), var(--corner-size) var(--corner-width);
   background-color: var(--corner-bg);
   border-radius: var(--corner-radius);
 }
