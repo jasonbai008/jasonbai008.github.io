@@ -12,9 +12,9 @@
     <img src="/xiangce/college/7.jpg" class="medium-zoom-image"/>    
     <img src="/xiangce/college/8.jpg" class="medium-zoom-image"/>    
     <img src="/xiangce/college/9.jpg" class="medium-zoom-image"/>    
-    <img src="/xiangce/college/10.jpg" class="medium-zoom-image"/>    
+    <!-- <img src="/xiangce/college/10.jpg" class="medium-zoom-image"/>    
     <img src="/xiangce/college/11.jpg" class="medium-zoom-image"/>    
-    <img src="/xiangce/college/12.jpg" class="medium-zoom-image"/>    
+    <img src="/xiangce/college/12.jpg" class="medium-zoom-image"/>     -->
 </div>
 
 ## PwC
