@@ -4,6 +4,24 @@
 人靠衣装，美靠 CSS
 :::
 
+## 切换主题的简单实现
+
+1. 切换html标签的class
+```js
+document.querySelector('html').classList.toggle('dark-mode')
+```
+
+2. 设置全局样式，单独设置图片等元素，再翻转回来
+```css
+/* 暗色主题 */
+html.dark-mode,
+html.dark-mode img,
+html.dark-mode .exclude {
+  /* invert翻转黑白，rotate处理彩色色相，再翻转回来 */
+  filter: invert(1) hue-rotate(180deg);
+}
+```
+
 ## Vue 中使用 svg 图标的简单方法
 
 1. 把 svg 手动创建成组件
