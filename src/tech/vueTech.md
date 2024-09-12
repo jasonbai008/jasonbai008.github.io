@@ -4,6 +4,50 @@
 工欲善其事，必先利其器
 :::
 
+## 滚动加载的核心逻辑
+
+1. 定义辅助变量
+```js
+cacheList: [],
+cacheIndex: 1,
+```
+
+2. 设置初始值，比如头4个item
+```js
+this.list = this.cacheList.slice(0, this.cacheIndex * 4)
+```
+
+3. 监听滚动事件
+```js
+listenScrollbar() {
+      // cacheList: [],
+      // cacheIndex: 1,
+      // 一把锁，避免多次触发滚动到底部的事件
+      let hasReachedBottom = false
+      // 滚动事件的回调函数
+      const handleScroll = (e) => {
+        // 计算距离底部的距离：实际滚动的DIV的高度 - (窗口高度 + 已滚动的距离)
+        const distanceToBottom = document.querySelector('#layout').offsetHeight - (window.innerHeight + window.scrollY)
+        // 距离页面底部小于20px时，并且还未抵达底部
+        if (distanceToBottom <= 20 && !hasReachedBottom) {
+          // 从缓存数组里截取对应的片段，这里是4个item一个片段
+          // cacheIndex初始值是1，每次截取完片段，就将其增加1
+          this.list.push(...this.cacheList.slice(this.cacheIndex * 4, (this.cacheIndex + 1) * 4))
+          this.cacheIndex++
+          hasReachedBottom = true
+        } else if (distanceToBottom > 20) {
+          hasReachedBottom = false
+        }
+      }
+      // 绑定滚动事件
+      window.addEventListener('scroll', handleScroll)
+      // 监听组件销毁事件，解除绑定
+      this.$once('hook:beforeDestroy', () => {
+        window.removeEventListener('scroll', handleScroll)
+      })
+    }
+```
+
 ## 部署路径
 
 通过设置**空路径**，可以将vue项目部署到任意子路径。
