@@ -6,12 +6,14 @@
 
 ## 切换主题的简单实现
 
-1. 切换html标签的class
+1. 切换 html 标签的 class
+
 ```js
-document.querySelector('html').classList.toggle('dark-mode')
+document.querySelector("html").classList.toggle("dark-mode");
 ```
 
 2. 设置全局样式，单独设置图片等元素，再翻转回来
+
 ```css
 /* 暗色主题 */
 html.dark-mode,

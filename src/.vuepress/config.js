@@ -83,7 +83,7 @@ module.exports = {
       {
         text: "超链接",
         items: [
-          { text: "影视资源", link: "https://www.libvio.fun/" },
+          { text: "影视资源", link: "https://www.libvio.link/" },
           { text: "博客模板", link: "https://gitee.com/lubanseven/blog" },
           { text: "主题配置", link: "https://vuepress.vuejs.org/zh/theme/default-theme-config.html" },
           { text: "编辑工具", link: "https://pandao.github.io/editor.md" },

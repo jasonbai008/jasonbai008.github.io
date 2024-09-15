@@ -7,17 +7,20 @@
 ## 滚动加载的核心逻辑
 
 1. 定义辅助变量
+
 ```js
 cacheList: [],
 cacheIndex: 1,
 ```
 
-2. 设置初始值，比如头4个item
+2. 设置初始值，比如头 4 个 item
+
 ```js
-this.list = this.cacheList.slice(0, this.cacheIndex * 4)
+this.list = this.cacheList.slice(0, this.cacheIndex * 4);
 ```
 
 3. 监听滚动事件
+
 ```js
 listenScrollbar() {
   // cacheList: [],
@@ -50,18 +53,18 @@ listenScrollbar() {
 
 ## 部署路径
 
-通过设置**空路径**，可以将vue项目部署到任意子路径。
+通过设置**空路径**，可以将 vue 项目部署到任意子路径。
 
 ```js
 // vue.config.js
-module.exports = defineConfig({  
+module.exports = defineConfig({
   publicPath: "",
 });
 
 // vite.config.js
 export default defineConfig({
   base: "",
-})
+});
 ```
 
 ## DefineProps 的坑
@@ -327,12 +330,7 @@ import "@/components/register";
 <template>
   <div class="dynamic-wrap">
     <!-- 动态匹配加载组件，并且将每一个组件对象传入到子组件 -->
-    <component
-      :is="c.name"
-      v-for="(c, i) in listData"
-      :key="i"
-      :childData="c"
-    ></component>
+    <component :is="c.name" v-for="(c, i) in listData" :key="i" :childData="c"></component>
   </div>
 </template>
 
