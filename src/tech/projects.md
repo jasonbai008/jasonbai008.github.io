@@ -14,18 +14,39 @@
 - [Gitee](https://gitee.com/lubanseven) -->
 
 <div class="row" style="justify-content: flex-start">
-  <a class="itemWrap" target="_blank" href="https://github.com/JasonBai007">
-    <img :src="$withBase('/projects/github.png')">
-    <h4>JasonBai007</h4>
-  </a>
   <a class="itemWrap" target="_blank" href="https://github.com/JasonBai008">
     <img :src="$withBase('/projects/github.png')">
     <h4>JasonBai008</h4>
+  </a>
+  <a class="itemWrap" target="_blank" href="https://github.com/JasonBai007">
+    <img :src="$withBase('/projects/github.png')">
+    <h4>JasonBai007</h4>
   </a>
   <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven">
     <img :src="$withBase('/projects/gitee.png')">
     <h4>Gitee</h4>
   </a>  
+</div>
+
+## 最新项目
+
+<div class="row">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/nihaixia/">
+    <img :src="$withBase('/projects/latest1.png')">
+    <h4>梁冬对话倪海厦</h4>
+  </a>
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/clock/">
+    <img :src="$withBase('/projects/latest2.png')">
+    <h4>缤纷时钟</h4>
+  </a>
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/vue-mobile-starter/">
+    <img :src="$withBase('/projects/latest3.png')">
+    <h4>vue-mobile-starter</h4>
+  </a>
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/wang-collapse/">
+    <img :src="$withBase('/projects/latest4.png')">
+    <h4>折叠面板王</h4>
+  </a>    
 </div>
 
 ## 博客类
