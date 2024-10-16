@@ -4,6 +4,16 @@
 人靠衣装，美靠 CSS
 :::
 
+## 背景图片叠加渐变色
+
+```css
+.element {
+  /* 同时设置背景图片 + 背景渐变色 */
+  background: url('path/to/your/image.jpg'), linear-gradient(180deg, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.5) 100%);
+  background-repeat: no-repeat;
+}
+```
+
 ## 切换主题的简单实现
 
 1. 切换 html 标签的 class

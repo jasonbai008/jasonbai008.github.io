@@ -4,6 +4,39 @@
 工欲善其事，必先利其器
 :::
 
+## 单个组件懒加载
+
+点击按钮，动态加载一个页面外的组件：
+```html
+<template>
+  <div id="app">
+    <button @click="loadComponent">加载组件</button>
+    <component :is="dynamicComponent" />
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      dynamicComponent: null,
+    };
+  },
+  methods: {
+    loadComponent() {
+      // 动态加载组件
+      import('./components/MyComponent.vue').then(module => {
+        this.dynamicComponent = module.default;
+      }).catch(error => {
+        console.error('Error loading component:', error);
+      });
+    },
+  },
+};
+</script>
+```
+
+
 ## 滚动加载的核心逻辑
 
 1. 定义辅助变量
