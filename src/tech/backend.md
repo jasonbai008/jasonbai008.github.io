@@ -7,7 +7,7 @@
 ## 双击执行nodejs脚本
 在Windows系统下，只需要创建一个bat文件，例如`run.bat`，内容如下：
 
-```bat
+```sh
 REM 这一行的作用是关闭命令行窗口的回显功能。也就是说，在运行脚本时，命令行不会显示每一条命令的具体内容，只有命令的输出结果会被显示。这让输出看起来更整洁。
 @echo off
 echo Generating temp files...

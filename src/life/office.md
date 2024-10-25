@@ -55,11 +55,8 @@ https://github.com/2dust/v2rayNG/releases/download/1.6.28/v2rayNG_1.6.28_arm64-v
 // Windows版下载地址：
 https://github.com/2dust/v2rayN/releases/download/3.27/v2rayN-Core.zip
 
-// 节点订阅地址1
-https://raw.fastgit.org/freefq/free/master/v2
-
-// 节点订阅地址2（最后的日期改成当天的日期）
-https://v2rayshare.com/wp-content/uploads/2023/03/20230325.txt
+// 节点订阅地址
+https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 ```
 
 ## 使用 PPT 录屏
