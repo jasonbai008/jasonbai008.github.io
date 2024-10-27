@@ -6,8 +6,8 @@
   "author": "JasonBai007 <byygkcg@163.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev src --temp .temp --open",
-    "build": "vuepress build src",
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev src --temp .temp --open",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build src",
     "deploy": "sh deploy.sh"
   },
   "devDependencies": {

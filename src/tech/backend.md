@@ -4,8 +4,105 @@
 工欲善其事，必先利其器
 :::
 
-## 双击执行nodejs脚本
-在Windows系统下，只需要创建一个bat文件，例如`run.bat`，内容如下：
+## i18n 半自动化两段有用的脚本
+
+1. 提取对应文件中的中文字符，并去重。
+
+```js
+// extractZh.js
+const fs = require("fs");
+const path = require("path");
+
+// 读取 .vue 文件的路径
+const filePath = path.join(__dirname, "yourFile.vue");
+
+// 读取文件内容
+fs.readFile(filePath, "utf8", (err, data) => {
+  if (err) {
+    console.error("读取文件时出错:", err);
+    return;
+  }
+
+  // 去除单行注释（// 之后的内容）
+  const singleLineCommentRegex = /\/\/.+/g;
+  data = data.replace(singleLineCommentRegex, "");
+
+  // 去除多行注释（/* 到 */ 之间的内容）
+  const multiLineCommentRegex = /\/\*.*?\*\//g;
+  data = data.replace(multiLineCommentRegex, "");
+
+  // 去除 HTML 注释（<!-- 到 --> 之间的内容）
+  // [\s\S] 匹配任意字符（包括换行符）。
+  // *? 是非贪婪量词，确保它匹配的是 <!-- 和 --> 之间最短可能的字符串，避免不小心匹配多个注释。
+  // g 是全局标志，确保所有注释都被替换。
+  // 或者使用 gs 标志与 .*?。
+  const htmlCommentRegex = /<!--[\s\S]*?-->/g; // 或者 /<!--.*?-->/gs
+  data = data.replace(htmlCommentRegex, "");
+
+  // 定义一个正则表达式来匹配连续的中文字符
+  // [\u4e00-\u9fff]+ 匹配一个或多个中文字符。
+  // ([\u4e00-\u9fff，\s]*[\u4e00-\u9fff]+)?
+  // 匹配一个可选组，该组内可以包含中文字符、中文逗号和空格，但必须以中文字符结尾。
+  const chineseRegex = /[\u4e00-\u9fff]+([\u4e00-\u9fff，\s]*[\u4e00-\u9fff]+)?/g;
+
+  // 提取中文字符
+  const chineseCharacters = data.match(chineseRegex);
+
+  // 去重
+  const uniqueChineseCharacters = new Set(chineseCharacters);
+
+  // 将 Set 转换为数组并打印
+  const uniqueArray = Array.from(uniqueChineseCharacters);
+  console.log(uniqueArray);
+});
+```
+
+2. 根据 zh-CN.json 文件生成方便复制粘贴的格式文件。
+
+```js
+// genTemp.js
+const fs = require("fs");
+const path = require("path");
+
+// 读取外层目录下的 zh-CN.json 文件
+const inputFilePath = path.join(__dirname, "../zh-CN.json");
+const outputFilePath = path.join(__dirname, "temp.json");
+
+fs.readFile(inputFilePath, "utf8", (err, data) => {
+  if (err) {
+    console.error("读取文件时出错:", err);
+    return;
+  }
+
+  try {
+    const jsonData = JSON.parse(data);
+    const outputData = {};
+
+    // 遍历 jsonData 对象，生成新的格式
+    for (const key in jsonData) {
+      for (const key2 in jsonData[key]) {
+        const value = jsonData[key][key2];
+        outputData[`${key} - ${value}`] = `{{ $t('${key}.${key2}') }}`;
+      }
+    }
+
+    // 将结果写入 temp.json 文件
+    fs.writeFile(outputFilePath, JSON.stringify(outputData, null, 2), (err) => {
+      if (err) {
+        console.error("写入文件时出错:", err);
+        return;
+      }
+      console.log("temp.json 文件已生成！");
+    });
+  } catch (parseErr) {
+    console.error("解析 JSON 时出错:", parseErr);
+  }
+});
+```
+
+## 双击执行 nodejs 脚本
+
+在 Windows 系统下，只需要创建一个 bat 文件，例如`run.bat`，内容如下：
 
 ```sh
 REM 我是注释
@@ -71,7 +168,7 @@ pause
 - EventSource 使用 `HTTP 协议`，它是一种`单向通信协议`，只能从服务器向客户端发送数据。
 - 只能传输`文本数据`，且只能使用 UTF-8 编码。
 - 适合需要单向通信的实时应用场景，如股票行情、天气预报等。
-- 但是原生的有一些限制，比如只能GET请求，所以可以使用第三方插件：@microsoft/fetch-event-source
+- 但是原生的有一些限制，比如只能 GET 请求，所以可以使用第三方插件：@microsoft/fetch-event-source
 - 插件参考文章：https://blog.csdn.net/SAXX2/article/details/136538314
   :::
 
