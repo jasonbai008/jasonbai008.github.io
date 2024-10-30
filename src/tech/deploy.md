@@ -1,5 +1,19 @@
 # 网站部署
 
+## 贪吃蛇
+<img src="/tech/github-snake.svg" alt="github-snake" />
+
+以上贪吃蛇SVG，可以直接使用：
+
+```html
+<img src="https://jasonbai008.github.io/tech/github-snake.svg" alt="github-snake" />
+```
+
+也可以根据自己Github的提交记录生成个人的svg。但是非常麻烦，以下是详细教程：
+
+- [如何在github主页放一条贪吃蛇](https://zhuanlan.zhihu.com/p/659930382)
+
+
 ## 注册免费域名
 
 网址：[https://nic.eu.org/](https://nic.eu.org/)
