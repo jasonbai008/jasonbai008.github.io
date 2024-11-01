@@ -42,8 +42,8 @@ fs.readFile(filePath, "utf8", (err, data) => {
   // 定义一个正则表达式来匹配连续的中文字符
   // [\u4e00-\u9fff]+ 匹配一个或多个中文字符。
   // ([\u4e00-\u9fff，\s]*[\u4e00-\u9fff]+)?
-  // 匹配一个可选组，该组内可以包含中文字符、中文逗号和空格，但必须以中文字符结尾。
-  const chineseRegex = /[\u4e00-\u9fff]+([\u4e00-\u9fff，\s]*[\u4e00-\u9fff]+)?/g;
+  // 匹配一个可选组，该组内可以包含中文字符、【】（）《》“”、，。和空格，但必须以中文字符结尾。
+  const chineseRegex = /[\u4e00-\u9fff]+([\u4e00-\u9fff【】（）《》“”、，。\s]*[\u4e00-\u9fff]+)?/g;
 
   // 提取中文字符
   const chineseCharacters = data.match(chineseRegex);
@@ -53,7 +53,7 @@ fs.readFile(filePath, "utf8", (err, data) => {
 
   // 将 Set 转换为数组并打印
   const uniqueArray = Array.from(uniqueChineseCharacters);
-  console.log(uniqueArray);
+  console.log(JSON.stringify(uniqueArray, null, 2));
 });
 ```
 
