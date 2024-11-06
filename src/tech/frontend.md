@@ -554,7 +554,7 @@ npm view vue
 
 ```bash
 # 因为 node-sass 模块被墙掉了
-npm i node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
+npm i node-sass --sass_binary_site=https://registry.npmmirror.com/node-sass/
 # 再安装别的依赖
 npm i
 ```
@@ -563,9 +563,9 @@ npm i
 
 ```bash
 # npm
-npm config set electron_mirror https://npm.taobao.org/mirrors/electron/
+npm config set electron_mirror https://registry.npmmirror.com/electron/
 # yarn
-yarn config set electron_mirror https://npm.taobao.org/mirrors/electron/
+yarn config set electron_mirror https://registry.npmmirror.com/electron/
 ```
 
 ### 斐波那契数列
