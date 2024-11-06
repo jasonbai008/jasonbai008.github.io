@@ -4,6 +4,19 @@
 工欲善其事，必先利其器
 :::
 
+## 发布自己的NPM包
+
+1. 登录[npm官网](https://www.npmjs.com/)，**注册账号**，需要邮箱接收验证码
+2. 在本地编写代码
+3. 在代码根目录，执行 `npm init` 初始化项目，生成 `package.json` 文件
+4. 设置 npm 镜像源 `npm config set registry https://registry.npmjs.com`，必须是**官方镜像源**，**以com结尾，否则无法登录！**
+5. 执行 `npm login` 登录
+6. 执行 `npm publish` 发布
+7. 查看 npm 包：`npm view xxx`
+8. 修改代码和 **package.json中的版本号**，再次执行 `npm publish` 发布最新版本的包
+9. 获取CDN地址：`https://unpkg.com/yourPackage@version/file`
+10. 例如：`https://unpkg.com/lazy-man-css@2.0.0/index.css`
+
 ## i18n 半自动化两段有用的脚本
 
 1. 提取对应文件中的中文字符，并去重。

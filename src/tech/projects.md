@@ -49,9 +49,13 @@
   </a>    
 </div>
 
-## 博客类
+## 未分类
 
 <div class="row">  
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/lazy-man-css/">
+    <img :src="$withBase('/projects/lazy.png')">
+    <h4>lazy-man-css</h4>
+  </a>
   <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/blog">
     <img :src="$withBase('/projects/book3.png')">
     <h4>博客模板</h4>
