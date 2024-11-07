@@ -4,6 +4,16 @@
 工欲善其事，必先利其器
 :::
 
+## nvm常用指令
+
+```sh
+nvm list                      
+nvm list available           
+nvm install 20.18.0        
+nvm use 20.18.0             
+nvm uninstall 20.18.0
+```
+
 ## 发布自己的NPM包
 
 1. 登录[npm官网](https://www.npmjs.com/)，**注册账号**，需要邮箱接收验证码
@@ -118,7 +128,7 @@ fs.readFile(inputFilePath, "utf8", (err, data) => {
 在 Windows 系统下，只需要创建一个 bat 文件，例如`run.bat`，内容如下：
 
 ```sh
-REM 我是注释
+:: 我是注释
 @echo off
 echo Generating temp files...
 node genTemp.js

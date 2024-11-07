@@ -6,10 +6,11 @@
 
 ## 可用地址
 
-- [https://nav.free2gpt.xyz/](https://nav.free2gpt.xyz/) :heart::heart::heart:
-- [https://ic.free-chat.asia/](https://ic.free-chat.asia/) :heart::heart:
+- [https://e10.free-chat.asia/](https://e10.free-chat.asia/) 
+- [https://chat1.free2gpt.com/](https://chat1.free2gpt.com/) 
 - [https://5dhfty.aitianhu1.top/#/chat/1002](https://5dhfty.aitianhu1.top/#/chat/1002)
-- [https://github.com/LiLittleCat/awesome-free-chatgpt](https://github.com/LiLittleCat/awesome-free-chatgpt)
+- [https://nav.free2gpt.xyz/](https://nav.free2gpt.xyz/) 
+- [https://ic.free-chat.asia/](https://ic.free-chat.asia/)
 
 ## 语音版 ChatGPT
 
