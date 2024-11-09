@@ -4,27 +4,27 @@
 工欲善其事，必先利其器
 :::
 
-## nvm常用指令
+## nvm 常用指令
 
 ```sh
-nvm list                      
-nvm list available           
-nvm install 20.18.0        
-nvm use 20.18.0             
+nvm list
+nvm list available
+nvm install 20.18.0
+nvm use 20.18.0
 nvm uninstall 20.18.0
 ```
 
-## 发布自己的NPM包
+## 发布自己的 NPM 包
 
-1. 登录[npm官网](https://www.npmjs.com/)，**注册账号**，需要邮箱接收验证码
+1. 登录[npm 官网](https://www.npmjs.com/)，**注册账号**，需要邮箱接收验证码
 2. 在本地编写代码
 3. 在代码根目录，执行 `npm init` 初始化项目，生成 `package.json` 文件
-4. 设置 npm 镜像源 `npm config set registry https://registry.npmjs.com`，必须是**官方镜像源**，**以com结尾，否则无法登录！**
+4. 设置 npm 镜像源 `npm config set registry https://registry.npmjs.com`，必须是**官方镜像源**，**以 com 结尾，否则无法登录！**
 5. 执行 `npm login` 登录
 6. 执行 `npm publish` 发布
 7. 查看 npm 包：`npm view xxx`
-8. 修改代码和 **package.json中的版本号**，再次执行 `npm publish` 发布最新版本的包
-9. 获取CDN地址：`https://unpkg.com/yourPackage@version/file`
+8. 修改代码和 **package.json 中的版本号**，再次执行 `npm publish` 发布最新版本的包
+9. 获取 CDN 地址：`https://unpkg.com/yourPackage@version/file`
 10. 例如：`https://unpkg.com/lazy-man-css@2.0.0/index.css`
 
 ## i18n 半自动化两段有用的脚本
@@ -149,10 +149,11 @@ pause
   "useTabs": false,
   "semi": true,
   "singleQuote": true,
-  "arrowParens": "always",
+  "trailingComma": "es5",
   "bracketSpacing": true,
-  "endOfLine": "lf",
-  "trailingComma": "all"
+  "jsxBracketSameLine": false,
+  "arrowParens": "always",
+  "endOfLine": "lf"
 }
 ```
 
@@ -160,21 +161,34 @@ pause
 
 ```js
 {
-  "printWidth": 120, // 单行最大长度
-  "tabWidth": 2, // 缩进长度
-  "useTabs": false, // 缩进使用空格还是使用 tab 制表符
-  "semi": true, // 行尾是否加分号
-  "singleQuote": true, // 是否使用单引号
-  "arrowParens": "always", // 单参数箭头函数参数周围使用圆括号
-  "bracketSpacing": true, // 在对象前后添加空格
-  "endOfLine": "lf", // 结束行形式
-  "trailingComma": "all" // 对象最后一项加上逗号
+  "printWidth": 120,               // 一行的最大长度
+  "tabWidth": 2,                   // 每个缩进级别的空格数
+  "useTabs": false,                // 是否使用制表符而不是空格
+  "semi": true,                    // 行末是否加分号
+  "singleQuote": true,             // 使用单引号而不是双引号
+  "trailingComma": "es5",          // 在ES5有效的地方（对象和数组）添加尾逗号: "none" | "es5" | "all"
+  "bracketSpacing": true,          // 在对象字面量的大括号之间打印空格
+  "jsxBracketSameLine": false,     // 在 JSX 中将 `>` 放在最后一行的末尾而不是单独放在下一行
+  "arrowParens": "always",         // 箭头函数参数是否使用括号: "avoid" | "always"
+  "endOfLine": "lf"                // 行结束符: "auto" | "lf" | "crlf" | "cr"
 }
 ```
 
-1. 设置 VSCode 默认格式化工具为：`Prettier`
+2. 在项目中安装 `prettier`
 
-打开任何一个 vue 文件，右击鼠标，选择`Format Document with...`，再选择`Configure Default Formatter`，选择`Prettier`。
+```sh
+  npm i prettier -D
+```
+
+3. 在 package.json 文件中添加批量格式化脚本
+
+```json
+"scripts": {
+  "format": "prettier --write src"
+}
+```
+
+4. 团队内每个人，设置 VSCode 默认格式化工具为：`Prettier`
 
 ## DOMContentLoaded 和 load 的区别
 
