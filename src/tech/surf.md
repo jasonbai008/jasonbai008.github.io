@@ -12,7 +12,7 @@
 2. 设置手机时间为：**美国华盛顿时间**
 3. 设置手机语言为：**英语**
 4. 在电脑上翻墙，使用邮箱注册一个**谷歌账号**
-5. 手机上：下载并安装翻墙软件[v2rayNG](https://github.com/2dust/v2rayNG/releases/download/1.6.28/v2rayNG_1.6.28_arm64-v8a.apk)
+5. 手机上：下载并安装翻墙软件[v2rayNG](https://gitee.com/lubanseven/store/releases/download/v1.0/v2Rui4Mobile.apk)
 6. 手机上：下载并安装安卓版[TikTok](https://dx17.198449.com/com.zhiliaoapp.musically2644.apk)
 7. 根据下方[移动端教程](./surf.html#移动端教程)，在手机上**实现翻墙**
 8. 打开 TikTok，尝试使用刚才注册的**谷歌账号登录**
@@ -34,10 +34,11 @@
 - [https://github.com/Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers)
 - [https://hysteria2.github.io/](https://hysteria2.github.io/)
 - [https://v2rayshare.com/](https://v2rayshare.com/)
+- [https://github.com/2dust/v2rayNG/releases](https://github.com/2dust/v2rayNG/releases)
 
 #### 2. 软件下载
 
-- [Android版](https://github.com/2dust/v2rayNG/releases/download/1.6.28/v2rayNG_1.6.28_arm64-v8a.apk)
+- [Android版](https://gitee.com/lubanseven/store/releases/download/v1.0/v2Rui4Mobile.apk)
 
 #### 3. 订阅地址
 
@@ -81,9 +82,10 @@ https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/m
 - [https://github.com/Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers)
 - [https://hysteria2.github.io/](https://hysteria2.github.io/)
 - [https://v2rayshare.com/](https://v2rayshare.com/)
+- [https://github.com/2dust/v2rayN/releases](https://github.com/2dust/v2rayN/releases)
 
 #### 2. 下载 v2rayNG，解压并运行
-点击 [Windows版](https://github.com/2dust/v2rayN/releases/download/3.27/v2rayN-Core.zip) 下载，解压后直接双击 exe 图标，不用安装，桌面右下角会出现 `v2rayNG` 小图标
+点击 [Windows版](https://gitee.com/lubanseven/store/releases/download/v1.0/v2RuiN.zip) 下载，解压后直接双击 exe 图标，不用安装，桌面右下角会出现 `v2rayNG` 小图标
 
 
 #### 3. 添加订阅

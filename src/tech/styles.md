@@ -9,7 +9,7 @@
 由于中文字体包括了所有汉字，体积经常高达 8M，所以非常有必要精简一下，思路是：**生成只包括常见字的字体文件。**
 
 1. 打开作者官网：[https://ecomfe.github.io/fontmin/#banner](https://ecomfe.github.io/fontmin/#banner)
-2. 下载字体精简工具：[Fontmin](https://github.com/ecomfe/fontmin-app/releases/download/v0.2.0/Fontmin-v0.2.0-win64.zip)
+2. 下载字体精简工具：[Fontmin](https://gitee.com/lubanseven/store/releases/download/v1.0/Fontmin-v0.2.0-win64.zip)
 3. 输入**3500+个常用文字**，并且把好几兆的目标字体文件拖拽到底部区域，点击【生成】按钮。
    ![fontmin](/tech/fontmin.png)
 4. 软件就能自动生成对应文字的字体文件，大概 **800 多 KB**
