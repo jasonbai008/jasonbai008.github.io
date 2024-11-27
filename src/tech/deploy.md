@@ -13,6 +13,35 @@
 
 - [如何在github主页放一条贪吃蛇](https://zhuanlan.zhihu.com/p/659930382)
 
+## Vite打包配置
+
+配置 `vite.config.js` 文件，内容如下：
+
+```js
+build: {
+    outDir: "dist",  // 打包输出目录
+    rollupOptions: {
+      output: {
+        // 指定 JS 输出到 `dist/js` 目录
+        entryFileNames: 'js/[name].[hash].js',
+        chunkFileNames: 'js/[name].[hash].js',
+        assetFileNames: (assetInfo) => {
+          // 指定 CSS 输出到 `dist/css` 目录
+          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
+            return 'css/[name].[hash][extname]'
+          }
+          // 指定 字体 输出到 `dist/fonts` 目录
+          if (assetInfo.name && assetInfo.name.endsWith('.ttf')) {
+            return 'fonts/[name].[hash][extname]'
+          }
+          // 其他资源文件输出到 `dist/assets` 目录
+          return 'assets/[name].[hash][extname]'
+        }
+      }
+    }
+  }
+```
+
 
 ## 注册免费域名
 
