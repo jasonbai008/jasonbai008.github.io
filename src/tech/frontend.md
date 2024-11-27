@@ -4,6 +4,24 @@
 工欲善其事，必先利其器
 :::
 
+## 更改 npm 镜像源
+
+::: warning 警告
+registry.npm.taobao.org 淘宝镜像源证书已过期  
+请使用新的镜像源：registry.npmmirror.com
+:::
+
+```bash
+# 安装依赖时，临时使用淘宝镜像源
+npm install --registry https://registry.npmmirror.com
+# 改成淘宝镜像源
+npm config set registry https://registry.npmmirror.com
+# 改回官方镜像源
+npm config set registry https://registry.npmjs.org
+# 查看镜像源
+npm config get registry
+```
+
 ## 前导零的原生方法
 
 ```js
@@ -521,24 +539,6 @@ ncu
 
 ```sh
 npm cache clean -f
-```
-
-### 更改 npm 镜像源
-
-::: warning 警告
-registry.npm.taobao.org 淘宝镜像源证书已过期  
-请使用新的镜像源：registry.npmmirror.com
-:::
-
-```bash
-# 安装依赖时，临时使用淘宝镜像源
-npm install --registry https://registry.npmmirror.com
-# 改成淘宝镜像源
-npm config set registry https://registry.npmmirror.com
-# 改回官方镜像源
-npm config set registry https://registry.npmjs.org
-# 查看镜像源
-npm config get registry
 ```
 
 ### 查看模块版本列表
