@@ -49,16 +49,16 @@
   </a>    
 </div>
 
-## 未分类
+<!-- ## 未分类 -->
 
 <div class="row">  
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/lazy-man-css/">
     <img :src="$withBase('/projects/lazy.png')">
     <h4>lazy-man-css</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/blog">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/doc/">
     <img :src="$withBase('/projects/book3.png')">
-    <h4>博客模板</h4>
+    <h4>点滴文档</h4>
   </a>
   <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/baipress">
     <img :src="$withBase('/projects/book4.png')">
