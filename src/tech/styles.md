@@ -4,6 +4,12 @@
 人靠衣装，美靠 CSS
 :::
 
+## 设置hr标签样式
+
+```html
+<hr style="background-color:blue; height:1px; border:none;"/>
+```
+
 ## 压缩中文字体
 
 由于中文字体包括了所有汉字，体积经常高达 8M，所以非常有必要精简一下，思路是：**生成只包括常见字的字体文件。**

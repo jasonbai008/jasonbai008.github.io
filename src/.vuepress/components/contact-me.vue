@@ -3,7 +3,7 @@
     <!-- 微信 -->
     <div class="item">
       <div class="left">
-        <img src="/contact/wechat.png" alt />
+        <img src="/touchme/wechat.png" alt />
       </div>
       <div class="right">
         <h2>Wechat</h2>
@@ -13,7 +13,7 @@
     <!-- 邮箱 -->
     <div class="item">
       <div class="left">
-        <img src="/contact/email.png" alt />
+        <img src="/touchme/email.png" alt />
       </div>
       <div class="right">
         <h2>Email</h2>
@@ -25,7 +25,7 @@
     <!-- 地址 -->
     <div class="item">
       <div class="left">
-        <img src="/contact/address.png" alt />
+        <img src="/touchme/address.png" alt />
       </div>
       <div class="right">
         <h2>Address</h2>
