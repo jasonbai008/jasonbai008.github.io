@@ -22,6 +22,7 @@
 
 ## 工具类
 
+- [GIF在线压缩](https://www.freeconvert.com/zh/gif-compressor)
 - [iLovePDF](https://www.ilovepdf.com/zh-cn)
 - [韩小韩 API 接口站](https://api.vvhan.com/)（免费 API 接口）
 - [BootCDN](https://www.bootcdn.cn/)（获取 cdn 资源）
