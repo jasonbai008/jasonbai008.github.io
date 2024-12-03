@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="wrap contactMe">
     <!-- 微信 -->
     <div class="item">
       <div class="left">
@@ -46,7 +46,7 @@ export default {
   margin: 50px 0;
 }
 
-.item {
+.contactMe .item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,7 +76,7 @@ export default {
   }
 }
 
-.left {
+.contactMe .left {
   flex-shrink: 0;
   width: 80px;
   height: 80px;
@@ -94,30 +94,30 @@ export default {
   background: #fedfd7;
 }
 
-.left img {
+.contactMe .left img {
   width: 30px;
   height: 30px;
   display: block;
   margin: auto;
 }
 
-.right {
+.contactMe .right {
   flex-grow: 1;
 }
 
-h2 {
+.contactMe h2 {
   margin-top: 15px;
   margin-bottom: 0;
   border: none;
 }
 
-p {
+.contactMe p {
   margin-top: 5px;
 }
-p a:hover {
+.contactMe p a:hover {
   cursor: pointer;
 }
-p::selection {
+.contactMe p::selection {
   color: #fff;
   background: #46bd87;
 }
