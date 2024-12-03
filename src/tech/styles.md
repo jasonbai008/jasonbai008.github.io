@@ -4,6 +4,28 @@
 人靠衣装，美靠 CSS
 :::
 
+## 必应壁纸免费接口
+
+### Bing今日壁纸
+
+```html
+<img src="https://bing.img.run/uhd.php" alt="Bing每日壁纸UHD超高清原图" />
+<img src="https://bing.img.run/1920x1080.php" alt="Bing每日壁纸1080P高清" />
+<img src="https://bing.img.run/1366x768.php" alt="Bing每日壁纸普清" />
+<img src="https://bing.img.run/m.php" alt="Bing每日壁纸手机版1080P高清" />
+```
+<img src="https://bing.img.run/1366x768.php" alt="Bing每日壁纸普清" />
+
+### Bing随机壁纸
+
+```html
+<img src="https://bing.img.run/rand_uhd.php" alt="随机获取Bing历史壁纸UHD超高清原图" />
+<img src="https://bing.img.run/rand.php" alt="随机获取Bing历史壁纸1080P高清" />
+<img src="https://bing.img.run/rand_1366x768.php" alt="随机获取Bing历史壁纸普清" />
+<img src="https://bing.img.run/rand_m.php" alt="随机获取Bing历史壁纸手机版1080P高清" />
+```
+<img src="https://bing.img.run/rand_1366x768.php" alt="随机获取Bing历史壁纸普清" />
+
 ## 设置hr标签样式
 
 ```html
