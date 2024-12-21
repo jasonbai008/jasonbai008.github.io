@@ -4,12 +4,12 @@
 美股要崩、大 A 要涨、国足夺冠
 :::
 
-::: tip 关灯吃面
-今天回到家，煮了点面吃，一边吃面一边哭，泪水滴落在碗里，没有开灯。—— 2011.12.15
-:::
-
 ::: tip 买烟
 他醒来看了一眼账户，说下去买烟，没有走楼梯，也没有坐电梯。—— 2024.10.09
+:::
+
+::: tip 关灯吃面
+今天回到家，煮了点面吃，一边吃面一边哭，泪水滴落在碗里，没有开灯。—— 2011.12.15
 :::
 
 ## 我的理财经历
@@ -24,6 +24,7 @@
 - 2023 年初**美股基金**艰难回本
 - 2024 重返**美股基金**和**长债基金**
 - 2024 相信了缅 a 假牛市，损失 3000 来块钱，割肉离场
+- 2024 赶上债券市场疯牛，快速回本
 
 ## 金融常识
 
@@ -66,14 +67,14 @@
 
 ## 精选好基<Badge text="自负盈亏" type="warning"/>
 
-| 名称                                 |                           类型                           | 利率债 / 信用债 |
-| :----------------------------------- | :------------------------------------------------------: | :-------------: |
-| **天弘标普 500 (QDII-FOF) C**        |  <Badge text="美股基" type="error" vertical="middle" />  |                 |
-| **博时中债 5-10 年农发行债券指数 C** |   <Badge text="利率债" type="tip" vertical="middle" />   |     120 / 0     |
-| **南方中债 3-5 年农发行债券指数 C**  |   <Badge text="利率债" type="tip" vertical="middle" />   |     100 / 0     |
-| **博时裕乾纯债 C**                   |   <Badge text="利率债" type="tip" vertical="middle" />   |     90 / 20     |
-| **国泰嘉睿纯债债券 C**               |   <Badge text="利率债" type="tip" vertical="middle" />   |     80 / 47     |
-| **招商招悦纯债债券 C**               | <Badge text="信用债" type="warning" vertical="middle" /> |   20 / **70**   |
-| 博时富发纯债债券 C                   | <Badge text="信用债" type="warning" vertical="middle" /> |   16 / **80**   |
-| 东方臻宝纯债债券 C                   |   <Badge text="利率债" type="tip" vertical="middle" />   |     50 / 20     |
-| 红土创新纯债债券 C                   |   <Badge text="利率债" type="tip" vertical="middle" />   |     55 / 31     |
+| 名称                                 |                           类型                           |    备注    |
+| :----------------------------------- | :------------------------------------------------------: | :--------: |
+| **博时标普 500ETF 联接(QDII)C**      |   <Badge text="美股" type="error" vertical="middle" />   | 大跌后买入 |
+| 天弘标普 500 (QDII-FOF) C        |   <Badge text="美股" type="error" vertical="middle" />   | 优先买博时 |
+| **博时中债 5-10 年农发行债券指数 C** |   <Badge text="利率债" type="tip" vertical="middle" />   |    最牛    |
+| **南方中债 3-5 年农发行债券指数 C**  |   <Badge text="利率债" type="tip" vertical="middle" />   |    很棒    |
+| **国泰嘉睿纯债债券 C**               |   <Badge text="利率债" type="tip" vertical="middle" />   |            |
+| **招商招悦纯债债券 C**               | <Badge text="信用债" type="warning" vertical="middle" /> |            |
+| **博时裕乾纯债 C**                   |   <Badge text="利率债" type="tip" vertical="middle" />   |            |
+| **红土创新纯债债券 C**               |   <Badge text="利率债" type="tip" vertical="middle" />   |     稳     |
+| 东方臻宝纯债债券 C                   |   <Badge text="利率债" type="tip" vertical="middle" />   |            |

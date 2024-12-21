@@ -15,7 +15,7 @@
 
 ## Vite打包配置
 
-配置 `vite.config.js` 文件，内容如下：
+为打包后的文件归类，配置 `vite.config.js` ：
 
 ```js
 build: {

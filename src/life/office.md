@@ -28,10 +28,17 @@ reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" 
 
 众所周知，[**百度**](https://www.baidu.com/)搜出来的结果广告居多。[**谷歌**](https://www.google.com/)又打不开，这里推荐使用微软的[**必应**](https://cn.bing.com/)搜索引擎。搜索结果质量很高。
 
+## 轻松访问 Github
+
+1. 下载 [FastGithub](https://gitee.com/lubanseven/store/releases/download/v1.0/fastgithub.zip)
+2. 解压后，直接运行 `FastGithub.UI.exe`
+3. 点击右上角 x 号，最小化到托盘
+
 ## 解决 Github 无法访问的问题
 
 1. Windows 用户直接在应用商店搜索 `Watt Toolkit`，下载并安装
-2. 运行软件，在首页勾选 `Github`，然后点击顶部的 `一键加速`，即可
+2. 运行软件，点击左侧菜单 `网络加速`，在右侧页面勾选 `Github`，然后点击顶部的 `一键加速`，即可
+3. 这款软件偶尔失效，推荐使用上一个方法
 
 ## Markdown 免费转 PDF
 

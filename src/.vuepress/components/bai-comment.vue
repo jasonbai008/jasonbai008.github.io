@@ -37,7 +37,7 @@ export default {
         appId: "Uycc9kGTrdbEATzhKnxlkWmo-gzGzoHsz", // "3GiiCyXCrGbOIH3EelCfJ6yw-gzGzoHsz" 官网示例
         appKey: "aHINxMHuhAb4vQxJCuSYzLFe", // "iuneD4hXPQImdHQSRE0aOcRF" 官网示例
         placeholder: "给我留言",
-        avatar: "robohash", // 默认头像
+        avatar: "mp", // 默认头像
         path: `/blog/contact/`, // 文章的路径
         visitor: this.readingNum, // 支持阅读量统计
         recordIP: true, // 记录评论者IP

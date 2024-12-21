@@ -64,9 +64,9 @@ module.exports = {
           {
             text: "资源",
             items: [
+              { text: "Free AI", link: "/tech/gpt" },
               { text: "开源项目", link: "/tech/projects" },
               { text: "实用网站", link: "/tech/recommend" },
-              { text: "Free GPT", link: "/tech/gpt" },
               { text: "海上冲浪", link: "/tech/surf" },
             ],
           },
@@ -84,9 +84,8 @@ module.exports = {
         text: "超链接",
         items: [
           { text: "影视资源", link: "https://www.libvio.link/" },
-          { text: "博客模板", link: "https://gitee.com/lubanseven/blog" },
-          { text: "主题配置", link: "https://vuepress.vuejs.org/zh/theme/default-theme-config.html" },
-          { text: "编辑工具", link: "https://pandao.github.io/editor.md" },
+          { text: "博客模板", link: "https://jasonbai008.github.io/doc/" },
+          { text: "主题配置", link: "https://v1.vuepress.vuejs.org/zh/theme/default-theme-config.html" },
         ],
       },
       { text: "联系我", link: "/contact/" },
