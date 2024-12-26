@@ -33,12 +33,7 @@ reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" 
 1. 下载 [FastGithub](https://gitee.com/lubanseven/store/releases/download/v1.0/fastgithub.zip)
 2. 解压后，直接运行 `FastGithub.UI.exe`
 3. 点击右上角 x 号，最小化到托盘
-
-## 解决 Github 无法访问的问题
-
-1. Windows 用户直接在应用商店搜索 `Watt Toolkit`，下载并安装
-2. 运行软件，点击左侧菜单 `网络加速`，在右侧页面勾选 `Github`，然后点击顶部的 `一键加速`，即可
-3. 这款软件偶尔失效，推荐使用上一个方法
+4. `Watt Toolkit` 已无法使用，FastGithub可以。
 
 ## Markdown 免费转 PDF
 
