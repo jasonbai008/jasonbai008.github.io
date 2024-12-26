@@ -4,6 +4,12 @@
 工欲善其事，必先利其器
 :::
 
+## 一行代码返回顶部
+
+```js
+window.scrollTo({ top: 0, behavior: 'smooth' })
+```
+
 ## 更改 npm 镜像源
 
 ::: warning 警告

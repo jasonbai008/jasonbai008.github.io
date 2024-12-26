@@ -34,6 +34,7 @@
 - <a href="https://www.httrack.com/page/2/en/index.html" download="Httrack">Httrack</a>（扒网站 神器）
 - <a href="https://gitee.com/lubanseven/store/releases/download/v1.0/Fontmin-v0.2.0-win64.zip" download="Httrack">Fontmin</a>（精简字体工具）
 - [歌曲宝](https://www.gequbao.com/)
+- [临时邮箱](https://www.linshi-email.com/)
 
 ## 浏览器插件
 
