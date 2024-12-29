@@ -64,7 +64,7 @@ module.exports = {
           {
             text: "资源",
             items: [
-              { text: "Free AI", link: "/tech/gpt" },
+              { text: "Free AI", link: "/tech/ai" },
               { text: "开源项目", link: "/tech/projects" },
               { text: "实用网站", link: "/tech/recommend" },
               { text: "海上冲浪", link: "/tech/surf" },

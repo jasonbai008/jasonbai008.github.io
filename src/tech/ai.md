@@ -14,6 +14,11 @@
 
 - [Kimi 会阅读文件的 AI 助手](https://kimi.moonshot.cn/)
 
+## AI 导航
+
+- [https://nav.free2gpt.xyz/](https://nav.free2gpt.xyz/)
+- [https://ic.free-chat.asia/](https://ic.free-chat.asia/)
+
 ## AI 编辑器
 
 - [Cursor](https://www.cursor.com/)
@@ -31,8 +36,3 @@
    > 回复的代码，在关键代码前需要写中文注释。  
    > 如果要根据图片生成前端代码，要严格还原图片中的界面，效果要一模一样。  
    > 如果要生成 vue 代码，要使用 vue2 的语法。
-
-## AI 导航
-
-- [https://nav.free2gpt.xyz/](https://nav.free2gpt.xyz/)
-- [https://ic.free-chat.asia/](https://ic.free-chat.asia/)
