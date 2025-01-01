@@ -7,7 +7,7 @@
 ## 一行代码返回顶部
 
 ```js
-window.scrollTo({ top: 0, behavior: 'smooth' })
+window.scrollTo({ top: 0, behavior: "smooth" });
 ```
 
 ## 更改 npm 镜像源
@@ -203,12 +203,7 @@ image.url = _url;
 <!-- 父级窗口中使用<object>标签引入子级窗口 -->
 <body>
   <!-- 子级窗口 -->
-  <object
-    data="http://127.0.0.1:5501/index.html"
-    width="100%"
-    height="100%"
-    id="childWin"
-  ></object>
+  <object data="http://127.0.0.1:5501/index.html" width="100%" height="100%" id="childWin"></object>
   <script>
     // 监听子窗口传递过来的数据
     window.addEventListener("message", (e) => {
@@ -217,9 +212,7 @@ image.url = _url;
     // 向子窗口发送数据
     setInterval(() => {
       // 获取到子窗口的window对象
-      document
-        .querySelector("#childWin")
-        .contentWindow.postMessage("Hello from Father", "*");
+      document.querySelector("#childWin").contentWindow.postMessage("Hello from Father", "*");
     }, 3000);
   </script>
 </body>
@@ -297,8 +290,7 @@ const randomArr = (arr) => arr.sort(() => Math.random() - 0.5);
 ## 生成随机颜色
 
 ```js
-const getRandomColor = () =>
-  `#${Math.floor(Math.random() * 0xffffff).toString(16)}`;
+const getRandomColor = () => `#${Math.floor(Math.random() * 0xffffff).toString(16)}`;
 ```
 
 ## 滚动到顶部/底部
@@ -380,10 +372,7 @@ domArr.forEach((node) => console.log(node.src));
 //js监听键盘ctrl+s快捷键保存
 document.addEventListener("keydown", (e) => {
   // 判断：S键被按下，并且之前也按下了Ctrl键
-  if (
-    e.keyCode == 83 &&
-    (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)
-  ) {
+  if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
     e.preventDefault();
     alert("saved");
   }
@@ -650,4 +639,10 @@ git log --oneline --author="Jason" --since=2023-03-01
 # 筛选出3月1日之后的提交记录，过滤掉merge记录，并设置格式为：hash值;提交title;作者;绝对时间
 # 例如：92c64cc7d;fix: 解决/和查询字符串的各种场景;Jason Bai;Wed Apr 26 11:51:03 2023 +0800
 git log --oneline --no-merges --since=2023-03-01 --pretty=format:"%h;%s;%an;%ad"
+```
+
+## 让 Git 区分大小写
+
+```sh
+git config core.ignorecase false
 ```
