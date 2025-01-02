@@ -641,7 +641,7 @@ git log --oneline --author="Jason" --since=2023-03-01
 git log --oneline --no-merges --since=2023-03-01 --pretty=format:"%h;%s;%an;%ad"
 ```
 
-## 让 Git 区分大小写
+### 让 Git 区分大小写
 
 ```sh
 git config core.ignorecase false
