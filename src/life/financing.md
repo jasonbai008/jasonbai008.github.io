@@ -69,12 +69,12 @@
 
 | 名称                                 |                           类型                           |    备注    |
 | :----------------------------------- | :------------------------------------------------------: | :--------: |
+| 建信纳斯达克 100 指数(QDII)C         |   <Badge text="美股" type="error" vertical="middle" />   | 大跌后买入 |
 | **博时标普 500ETF 联接(QDII)C**      |   <Badge text="美股" type="error" vertical="middle" />   | 大跌后买入 |
-| 天弘标普 500 (QDII-FOF) C        |   <Badge text="美股" type="error" vertical="middle" />   | 优先买博时 |
+| 天弘标普 500 (QDII-FOF) C            |   <Badge text="美股" type="error" vertical="middle" />   | 优先买博时 |
 | **博时中债 5-10 年农发行债券指数 C** |   <Badge text="利率债" type="tip" vertical="middle" />   |    最牛    |
 | **南方中债 3-5 年农发行债券指数 C**  |   <Badge text="利率债" type="tip" vertical="middle" />   |    很棒    |
 | **国泰嘉睿纯债债券 C**               |   <Badge text="利率债" type="tip" vertical="middle" />   |            |
 | **招商招悦纯债债券 C**               | <Badge text="信用债" type="warning" vertical="middle" /> |            |
-| **博时裕乾纯债 C**                   |   <Badge text="利率债" type="tip" vertical="middle" />   |            |
+| **博时裕乾纯债 C**                   |   <Badge text="利率债" type="tip" vertical="middle" />   |     稳     |
 | **红土创新纯债债券 C**               |   <Badge text="利率债" type="tip" vertical="middle" />   |     稳     |
-| 东方臻宝纯债债券 C                   |   <Badge text="利率债" type="tip" vertical="middle" />   |            |
