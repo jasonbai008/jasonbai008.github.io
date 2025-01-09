@@ -41,5 +41,4 @@
 - [离线插件市场](https://www.chajianxw.com/)
 - [Vue.js devtools](https://img.chajianxw.com/chajian/www.chajianxw.com_nhdogjmejiglipccpnnnanhbledajbpd.zip)
 - [Simple Allow Copy](https://img.chajianxw.com/chajian/www.chajianxw.com_aefehdhdciieocakfobpaaolhipkcpgc.zip)（允许复制）
-- [Global Speed](https://img.chajianxw.com/chajian/www.chajianxw.com_jpbjcnkcffbooppibceonlgknpkniiff.zip)（加速封面视频广告）
 - [GoFullpage](https://img.chajianxw.com/chajian/www.chajianxw.com_fdpohaocaechififmbbbbbknoalclacl.zip)（截屏）

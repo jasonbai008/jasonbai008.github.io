@@ -1,7 +1,7 @@
 # Free AI
 
 ::: tip 前言
-让 人工智能 为你干活
+一顿操作猛如虎，人工智能来帮助
 :::
 
 ## AI 问答
@@ -19,19 +19,22 @@
 - [https://nav.free2gpt.xyz/](https://nav.free2gpt.xyz/)
 - [https://ic.free-chat.asia/](https://ic.free-chat.asia/)
 
+## AI 插件
+
+- **TONGYI Lingma 通义灵码** （优秀的VSCode插件）
+
 ## AI 编辑器
 
-- [Cursor](https://www.cursor.com/)
+- [Cursor](https://www.cursor.com/) （一款智能代码编辑器）
 
 1. `Tab` 代码补全
-2. `Ctrl + K` 在当前位置调用 AI 助手
+2. `Ctrl + K` 在当前代码块儿调用 AI 助手
 3. `Ctrl + L` 打开 Chat 对话框，**可上传截屏图片，生成粗略的前端代码**
-4. `Ctrl + I` 打开 Composer 多文件编辑器，**可上传截屏图片，生成粗略的前端代码**
-5. `gpt-4o-mini` or `cursor-small` 无限免费，其余高级模型**一共有 250 次免费使用次数！**
-6. 默认模型只有 250 次体验机会，尽量切换到免费模型！
-7. 只有高级模型比如 **claude 3.5 能新建编辑文件**，免费模型不能操纵你的文件。
+4. `Ctrl + I` 打开 Composer 对话框，**可上传截屏图片，生成粗略的前端代码**
+5. `gpt-4o-mini` or `cursor-small` 免费，其余高级模型**一共有 250 次免费使用次数！**
+6. 只有高级模型比如 **claude 3.5 能新建编辑文件**，免费模型不能操纵你的文件！
 
-8. 设置全局提示语（示例）
+7. 设置全局提示语（示例）
    > 你是优秀的高级前端开发工程师。  
    > Always respond in 中文。  
    > 回复的代码，在关键代码前需要写中文注释。  
