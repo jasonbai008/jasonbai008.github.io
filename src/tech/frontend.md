@@ -4,6 +4,15 @@
 工欲善其事，必先利其器
 :::
 
+## 移动端调试
+
+复制粘贴以下两行代码：
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/vconsole@latest/dist/vconsole.min.js"></script>
+<script>new VConsole();</script>
+```
+
 ## 一行代码返回顶部
 
 ```js
