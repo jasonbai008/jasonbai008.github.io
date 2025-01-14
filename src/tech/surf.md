@@ -44,7 +44,7 @@
 
 ::: tip 优先使用第一个
 
-https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
+https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 
 <p>{{`https://hysteria2.github.io/uploads/${new Date().getFullYear()}/${String(new Date().getMonth() + 1).padStart(2, '0')}/0-${new Date().getFullYear()}${String(new Date().getMonth() + 1).padStart(2, '0')}${String(new Date().getDate()).padStart(2, '0')}.txt`}}</p>
 
@@ -94,7 +94,7 @@ https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/m
 
 ::: tip 优先使用第一个
 
-https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
+https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 
 <p>{{`https://hysteria2.github.io/uploads/${new Date().getFullYear()}/${String(new Date().getMonth() + 1).padStart(2, '0')}/0-${new Date().getFullYear()}${String(new Date().getMonth() + 1).padStart(2, '0')}${String(new Date().getDate()).padStart(2, '0')}.txt`}}</p>
 

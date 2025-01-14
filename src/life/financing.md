@@ -76,5 +76,4 @@
 | **南方中债 3-5 年农发行债券指数 C**  |   <Badge text="利率债" type="tip" vertical="middle" />   |    很棒    |
 | **国泰嘉睿纯债债券 C**               |   <Badge text="利率债" type="tip" vertical="middle" />   |            |
 | **招商招悦纯债债券 C**               | <Badge text="信用债" type="warning" vertical="middle" /> |            |
-| **博时裕乾纯债 C**                   |   <Badge text="利率债" type="tip" vertical="middle" />   |     稳     |
 | **红土创新纯债债券 C**               |   <Badge text="利率债" type="tip" vertical="middle" />   |     稳     |
