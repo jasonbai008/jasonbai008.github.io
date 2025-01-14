@@ -3,10 +3,10 @@
 ## 设置Git别名
 
 设置全局别名，例如执行：`git to develop`
-git 会自动执行：切换到 develop 分支，合并当前分支，推送到远程，切换回当前分支
+git 会自动执行：切换到 develop 分支，拉取代码，合并当前分支，推送到远程，切换回当前分支
 
 ```sh
-git config --global alias.to '!f() { current_branch=$(git branch --show-current); git checkout $1 && git merge --no-edit $current_branch && git push && git checkout $current_branch; }; f'
+git config --global alias.to '!f() { cur_branch=$(git branch --show-current); git checkout $1 && git pull && git merge --no-edit $cur_branch && git push && git checkout $cur_branch; }; f'
 ```
 
 ## 贪吃蛇
