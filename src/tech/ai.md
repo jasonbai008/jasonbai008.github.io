@@ -41,6 +41,22 @@
    > 如果要根据图片生成前端代码，要严格还原图片中的界面，效果要一模一样。  
    > 如果要生成 vue 代码，要使用 vue2 的语法。
 
+### 更新机器码，无限使用Cursor
+
+1. 可以使用临时邮箱注册多个Cursor账号
+2. 电脑上使用3个账号后，就会提示：**免费试用帐户过多。**
+3. 只能重置设备ID
+
+- Windows用户：以管理员身份运行PowerShell
+```sh
+irm https://raw.githubusercontent.com/yuaotian/go-cursor-help/master/scripts/install.ps1 | iex
+```
+
+- MacOS用户：以管理员身份运行Terminal
+```sh
+curl -fsSL https://raw.githubusercontent.com/yuaotian/go-cursor-help/master/scripts/install.sh | sudo bash
+```
+
 ### 使用示例 Claude 3.5
 
 #### 1）国际化当前文件
