@@ -31,9 +31,8 @@
 2. `Ctrl + K` 在当前代码块儿调用 AI 助手
 3. `Ctrl + L` 打开 Chat 对话框，**可上传截屏图片，生成粗略的前端代码**
 4. `Ctrl + I` 打开 Composer 对话框，**可上传截屏图片，生成粗略的前端代码**
-5. `gpt-4o-mini` or `cursor-small` 免费，其余高级模型**一共有 250 次免费使用次数！**
+5. `gpt-4o-mini` or `cursor-small` 免费试用200次，其余高级模型**一共有 50 次免费使用次数！**
 6. 只有高级模型比如 **claude 3.5 能新建编辑文件**，免费模型不能操纵你的文件！
-
 7. 设置全局提示语（示例）
    > 你是优秀的高级前端开发工程师。  
    > Always respond in 中文。  
@@ -47,12 +46,12 @@
 2. 电脑上使用3个账号后，就会提示：**免费试用帐户过多。**
 3. 只能重置设备ID
 
-- Windows用户：以管理员身份运行PowerShell
+- **Windows用户：**以管理员身份运行PowerShell
 ```sh
 irm https://raw.githubusercontent.com/yuaotian/go-cursor-help/master/scripts/install.ps1 | iex
 ```
 
-- MacOS用户：以管理员身份运行Terminal
+- **MacOS用户：**
 ```sh
 curl -fsSL https://raw.githubusercontent.com/yuaotian/go-cursor-help/master/scripts/install.sh | sudo bash
 ```
