@@ -30,7 +30,7 @@
       <div class="right">
         <h2>Address</h2>
         <p>
-          <a href="https://j.map.baidu.com/a1/ptGJ" target="_blank">Chaoyang District, Beijing</a>
+          <a href="" target="_blank">Beijing</a>
         </p>
       </div>
     </div>

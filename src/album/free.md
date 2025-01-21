@@ -1,6 +1,6 @@
 # 日常随拍
 
-## 大学时光
+<!-- ## 大学时光
 
 <div class="album-wrap">
     <img src="/xiangce/college/1.jpg" class="medium-zoom-image"/>
@@ -11,11 +11,8 @@
     <img src="/xiangce/college/6.jpg" class="medium-zoom-image"/>    
     <img src="/xiangce/college/7.jpg" class="medium-zoom-image"/>    
     <img src="/xiangce/college/8.jpg" class="medium-zoom-image"/>    
-    <img src="/xiangce/college/9.jpg" class="medium-zoom-image"/>    
-    <!-- <img src="/xiangce/college/10.jpg" class="medium-zoom-image"/>    
-    <img src="/xiangce/college/11.jpg" class="medium-zoom-image"/>    
-    <img src="/xiangce/college/12.jpg" class="medium-zoom-image"/>     -->
-</div>
+    <img src="/xiangce/college/9.jpg" class="medium-zoom-image"/>       
+</div> -->
 
 ## PwC
 
@@ -28,13 +25,13 @@
     <img src="/xiangce/pwc/6.png" class="medium-zoom-image"/>
 </div>
 
-## 灯
+<!-- ## 灯
 
 <div class="album-wrap">
     <img src="/xiangce/deng/1.jpg" class="medium-zoom-image"/>
     <img src="/xiangce/deng/2.jpg" class="medium-zoom-image"/>
     <img src="/xiangce/deng/3.jpg" class="medium-zoom-image"/>
-</div>
+</div> -->
 
 ## 春天
 
