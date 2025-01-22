@@ -1,5 +1,16 @@
 # 网站部署
 
+## 一键合并分支
+
+在 `package.json` 中添加以下命令，临时使用 bash 执行一串git命令：
+```sh
+# 重点是：bash -c \"一堆bash脚本\"
+"scripts": {
+  "merge-to-dev": "bash -c \"cur_branch=$(git branch --show-current); git checkout develop && git pull && git merge --no-edit $cur_branch && git push && git checkout $cur_branch;\""
+}
+```
+执行命令：`npm run merge-to-dev`,遍可把当前分支的代码合并到develop分支
+
 ## 设置Git别名
 
 设置全局别名，例如执行：`git to develop`
