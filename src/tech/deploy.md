@@ -9,7 +9,7 @@
   "merge-to-dev": "bash -c \"cur_branch=$(git branch --show-current); git checkout develop && git pull && git merge --no-edit $cur_branch && git push && git checkout $cur_branch;\""
 }
 ```
-执行命令：`npm run merge-to-dev`,遍可把当前分支的代码合并到develop分支
+执行命令：`npm run merge-to-dev`,便可把当前分支的代码合并到develop分支
 
 ## 设置Git别名
 
