@@ -33,14 +33,13 @@ module.exports = {
               { text: "价值信条", link: "/life/values" },
               { text: "日常记录", link: "/life/daily" },
               { text: "日常办公", link: "/life/office" },
-              { text: '坑王驾到', link: '/life/kengwang' },
             ],
           },
           {
             text: "专业",
             items: [
+              { text: '德纲说书', link: '/life/kengwang' },
               { text: "医学健康", link: "/life/health" },
-              // { text: "倪师笔记", link: "/life/nihaixia" },
               { text: "金融理财", link: "/life/financing" },
               { text: "职场法律", link: "/life/law" },
               { text: "诗词收藏", link: "/life/poems" },
