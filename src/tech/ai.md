@@ -6,6 +6,7 @@
 
 ## AI 问答
 
+- [https://chat.deepseek.com/](https://chat.deepseek.com/)
 - [https://e9.free-chat.asia/](https://e10.free-chat.asia/)
 - [https://chat1.free2gpt.com/](https://chat1.free2gpt.com/)
 - [https://5dhfty.aitianhu1.top/#/chat/1002](https://5dhfty.aitianhu1.top/#/chat/1002)
