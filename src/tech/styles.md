@@ -4,6 +4,23 @@
 人靠衣装，美靠 CSS
 :::
 
+## 饿了么按钮组件特效
+
+```css
+/* 需要在全局添加以下样式： */
+.el-button {
+  overflow: hidden;
+}
+.el-button span {  
+  display: block;
+  text-shadow: 0px 30px 0px currentColor;
+  transition: transform .3s ease-in-out;
+}
+.el-button:hover span {
+  transform: translateY(-30px);
+}
+```
+
 ## 设置hr标签样式
 
 ```html
