@@ -31,6 +31,10 @@
 ## 最新项目
 
 <div class="row">  
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/useful-cool-js/">
+    <img :src="$withBase('/projects/cool.png')">
+    <h4>useful-cool-js</h4>
+  </a>
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/circle-follower">
     <img :src="$withBase('/projects/cursor.png')">
     <h4>circle-follower</h4>
@@ -42,11 +46,7 @@
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/doc/">
     <img :src="$withBase('/projects/book3.png')">
     <h4>点滴文档</h4>
-  </a>
-  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/baipress">
-    <img :src="$withBase('/projects/book4.png')">
-    <h4>前端开发指南</h4>
-  </a>
+  </a>  
 </div>
 
 
