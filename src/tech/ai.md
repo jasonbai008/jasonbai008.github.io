@@ -17,7 +17,7 @@
 
 ## AI 导航
 
-- [https://nav.free2gpt.xyz/](https://nav.free2gpt.xyz/)
+- [https://nav.free2gpt.com/](https://nav.free2gpt.com/)
 - [https://ic.free-chat.asia/](https://ic.free-chat.asia/)
 
 ## AI 插件

@@ -4,6 +4,19 @@
 人靠衣装，美靠 CSS
 :::
 
+## 实用 Grid 网格布局
+
+```css
+.container {
+  /* 设置网格布局 */
+  display: grid;
+  /* 定义列宽：200px -- 1fr（100%宽度） */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* 行间距、列间距 */
+  gap: 20px;
+}
+```
+
 ## 饿了么按钮组件特效
 
 ```css
@@ -11,20 +24,20 @@
 .el-button {
   overflow: hidden;
 }
-.el-button span {  
+.el-button span {
   display: block;
   text-shadow: 0px 30px 0px currentColor;
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .el-button:hover span {
   transform: translateY(-30px);
 }
 ```
 
-## 设置hr标签样式
+## 设置 hr 标签样式
 
 ```html
-<hr style="background-color:blue; height:1px; border:none;"/>
+<hr style="background-color:blue; height:1px; border:none;" />
 ```
 
 ## 压缩中文字体
