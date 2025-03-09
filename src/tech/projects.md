@@ -31,14 +31,14 @@
 ## 最新项目
 
 <div class="row">  
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/vue-preview">
+    <img :src="$withBase('/projects/preview.png')">
+    <h4>vue-preview</h4>
+  </a>
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/useful-cool-js/">
     <img :src="$withBase('/projects/cool.png')">
     <h4>useful-cool-js</h4>
-  </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/circle-follower">
-    <img :src="$withBase('/projects/cursor.png')">
-    <h4>circle-follower</h4>
-  </a>
+  </a>  
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/lazy-man-css/">
     <img :src="$withBase('/projects/lazy.png')">
     <h4>lazy-man-css</h4>
