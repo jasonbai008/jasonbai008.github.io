@@ -9,7 +9,6 @@
 - [https://chat.deepseek.com/](https://chat.deepseek.com/)
 - [https://e9.free-chat.asia/](https://e10.free-chat.asia/)
 - [https://chat1.free2gpt.com/](https://chat1.free2gpt.com/)
-- [https://5dhfty.aitianhu1.top/#/chat/1002](https://5dhfty.aitianhu1.top/#/chat/1002)
 
 ## AI 阅读
 
@@ -33,9 +32,8 @@
 2. `Ctrl + K` 在当前代码块儿调用 AI 助手
 3. `Ctrl + L` 打开 Chat 对话框，**可上传截屏图片，生成粗略的前端代码**
 4. `Ctrl + I` 打开 Composer 对话框，**可上传截屏图片，生成粗略的前端代码**
-5. `gpt-4o-mini` or `cursor-small` 免费试用，其余高级模型**一共有 150 次免费使用次数！**
-6. 只有高级模型比如 **claude 3.5 能新建编辑文件**，免费模型不能操纵你的文件！
-7. 设置全局提示语（示例）
+5. `gpt-4o-mini` or `cursor-small` 免费使用，其余高级模型**一共有 150 次免费使用次数！**
+6. 设置全局提示语（示例）
    > 你是优秀的高级前端开发工程师。  
    > Always respond in 中文。  
    > 回复的代码，在关键代码前需要写中文注释。  
