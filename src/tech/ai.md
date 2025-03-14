@@ -6,9 +6,11 @@
 
 ## AI 问答
 
-- [https://chat.deepseek.com/](https://chat.deepseek.com/)
-- [https://e9.free-chat.asia/](https://e10.free-chat.asia/)
-- [https://chat1.free2gpt.com/](https://chat1.free2gpt.com/)
+- [DeepSeek 探索未至之境](https://chat.deepseek.com/)
+- [百度 AI](https://chat.baidu.com/)
+- [知乎直答](https://zhida.zhihu.com/)
+- [Endless Chat](https://e11.free-chat.asia/)
+- [Free2gpt](https://chat1.free2gpt.com/)
 
 ## AI 阅读
 
@@ -25,14 +27,16 @@
 - **Mars Code AI** （豆包 VSCode插件）
 
 ## AI 编辑器
+- [Trae 国际版](https://trae.ai/) （Claude 3.7 排队）
+- [Trae 国内版](https://www.trae.com.cn/) （only DeepSeek）
 
-- [Cursor](https://www.cursor.com/) （一款智能代码编辑器）
+- [Cursor](https://www.cursor.com/) （最好用）
 
 1. `Tab` 代码补全
 2. `Ctrl + K` 在当前代码块儿调用 AI 助手
 3. `Ctrl + L` 打开 Chat 对话框，**可上传截屏图片，生成粗略的前端代码**
 4. `Ctrl + I` 打开 Composer 对话框，**可上传截屏图片，生成粗略的前端代码**
-5. `gpt-4o-mini` or `cursor-small` 免费使用，其余高级模型**一共有 150 次免费使用次数！**
+5. `gpt-4o-mini` or `cursor-small` 免费使用，其余高级模型**一共有 50 次免费使用次数！**
 6. 设置全局提示语（示例）
    > 你是优秀的高级前端开发工程师。  
    > Always respond in 中文。  
@@ -40,11 +44,7 @@
    > 如果要根据图片生成前端代码，要严格还原图片中的界面，效果要一模一样。  
    > 如果要生成 vue 代码，要使用 vue2 的语法。
 
-### 无限使用Cursor
-
-请联系我获取白嫖教程链接
-
-### 使用示例 Claude 3.5
+## AI 提示语
 
 #### 1）国际化当前文件
    
