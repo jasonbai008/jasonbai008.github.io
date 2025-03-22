@@ -29,19 +29,21 @@
 
 - [Trae 国际版](https://trae.ai/)
 
-1. 登录使用 Github 账号，**需要翻墙**！！！
+1. 登录使用 Github 账号，**必须翻墙**！！！
 2. 登录成功后使用，不需要翻墙
-3. **使用 Claude 3.7 有可能需要排队，再次尝试大概率不用排队**
+3. **使用 Claude 3.7 有可能需要排队，点击Stop后，按↑再次尝试大概率不用排队**
 4. Chat 模式，回复更快，需手动点击 `应用` 按钮，将改动应用于当前文件
-5. 免费使用的模型：`Claude 3.7 & 3.5`、`DeepSeek R1 & V3`、`GPT-4o`
+5. **免费使用的模型：`Claude 3.7 & 3.5`、`DeepSeek R1 & V3`、`GPT-4o`**
 
 - [Trae 国内版](https://www.trae.com.cn/)
 
 1. 免费使用的模型：`DeepSeek R1 & V3`、`Doubao 1.5 Pro`
+2. 由于没有 Claude模型，所以非常不推荐
 
 - [Cursor](https://www.cursor.com/)
 
 1. `gpt-4o-mini` or `cursor-small` 免费使用，其余高级模型**一共有 50 次免费使用次数！**
+2. 所有白嫖手段全部失效
 
 ## AI 提示语
 

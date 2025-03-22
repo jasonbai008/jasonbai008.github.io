@@ -31,6 +31,7 @@
 
 #### 1. 资源网址
 
+- [https://vpnsky.github.io/](https://vpnsky.github.io/)
 - [https://github.com/Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers)
 - [https://hysteria2.github.io/](https://hysteria2.github.io/)
 - [https://v2rayshare.com/](https://v2rayshare.com/)
@@ -79,6 +80,7 @@ https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 
 #### 1. 资源网址
 
+- [https://vpnsky.github.io/](https://vpnsky.github.io/)
 - [https://github.com/Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers)
 - [https://hysteria2.github.io/](https://hysteria2.github.io/)
 - [https://v2rayshare.com/](https://v2rayshare.com/)
