@@ -44,6 +44,39 @@
 
 1. `gpt-4o-mini` or `cursor-small` 免费使用，其余高级模型**一共有 50 次免费使用次数！**
 2. 所有白嫖手段全部失效
+   
+## Cursor 对接 Mastergo MCP
+
+1. 确保 `Cursor` 版本 `>= 0.46`
+2. 登录 `mastergo` 官网，`个人设置` > `安全设置` > `生成令牌 token`
+3. 登录 `Cursor`，点击右上角的个人头像，点击 `设置`
+4. 点击 `Features`，勾选 `Enable auto-run mode`
+5. 选择 `MCP`，点击 `Add new global MCP server`
+6. 最开始提示没有配置文件，点击 `Create` 按钮，自动创建一个空的配置文件
+7. 粘贴 `mastergo` 的 `MCP` 配置，网上的都不对，必须这么写，替换你的 `token`：
+
+```json
+{
+    "mcpServers": {
+        "mastergo-magic-mcp": {
+            "command": "cmd",
+            "args": [
+                "/k",
+                "npx",
+                "-y",
+                "@mastergo/magic-mcp",
+                "--token=<YOUR TOKEN>",
+                "--url=https://mastergo.com"
+            ],
+            "env": {}
+        }
+    }
+}
+```
+8. 打开`cmd`，先全局安装： `npm i -g @mastergo/magic-mcp`
+9. 返回`Cursor`，点击`右上角刷新按钮`，自动打开`cmd`对话框，不要关闭对话框
+10. 在`mastergo`设计稿里，随便选择一个图层，复制`地址栏地址`，粘贴到 `Cursor` 的对话框中
+11. `Cursor` 要选择 `Agent` 模式，让它生成`html`代码
 
 ## AI 提示语
 
