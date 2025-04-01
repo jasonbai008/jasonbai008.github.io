@@ -1,5 +1,28 @@
 # 网站部署
 
+## 透视Vite代理地址
+
+配置 Vite 让其在终端打印实际的请求地址：
+
+```js
+export default defineConfig({
+  // ... 其他配置 ...
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://实际的后端地址',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+        configure: (proxy, options) => {
+          proxy.on('proxyReq', (proxyReq, req, res) => {
+            console.log('代理请求:', req.method, req.url, '→', options.target + proxyReq.path);
+          });
+        }
+      }
+    }
+  }
+```
+
 ## 一键合并分支
 
 在 `package.json` 中添加以下命令，临时使用 bash 执行一串git命令：
