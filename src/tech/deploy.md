@@ -1,6 +1,45 @@
 # 网站部署
 
-## 透视Vite代理地址
+## 给终端设置临时代理
+
+临时让所有命令行工具走代理，以下的代理端口号，是`翻墙工具软件上显示的 http 端口号`。
+
+```sh
+# 设置临时代理（仅当前终端有效）：
+# 作用于所有命令行工具（curl、wget、git、apt）
+export http_proxy=http://127.0.0.1:10809;
+export https_proxy=http://127.0.0.1:10809;
+
+# 测试代理是否成功：
+curl -v http://www.google.com  # 测试 HTTP
+curl -v https://www.google.com  # 测试 HTTPS
+
+# 查看临时代理：
+echo $http_proxy;
+echo $https_proxy;
+
+# 取消临时代理：
+unset http_proxy;
+unset https_proxy;
+```
+
+只让 Git 走代理，不影响其他命令：
+
+```sh
+# 设置Git长期代理：
+git config --global http.proxy "http://127.0.0.1:10809"
+git config --global https.proxy "http://127.0.0.1:10809"
+
+# 查看Git长期代理：
+git config --global --get http.proxy;
+git config --global --get https.proxy;
+
+# 取消 Git 长期代理：
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
+
+## 透视 Vite 代理地址
 
 配置 Vite 让其在终端打印实际的请求地址：
 
@@ -25,16 +64,18 @@ export default defineConfig({
 
 ## 一键合并分支
 
-在 `package.json` 中添加以下命令，临时使用 bash 执行一串git命令：
+在 `package.json` 中添加以下命令，临时使用 bash 执行一串 git 命令：
+
 ```sh
 # 重点是：bash -c \"一堆bash脚本\"
 "scripts": {
   "merge-to-dev": "bash -c \"cur_branch=$(git branch --show-current); git checkout develop && git pull && git merge --no-edit $cur_branch && git push && git checkout $cur_branch;\""
 }
 ```
-执行命令：`npm run merge-to-dev`,便可把当前分支的代码合并到develop分支
 
-## 设置Git别名
+执行命令：`npm run merge-to-dev`,便可把当前分支的代码合并到 develop 分支
+
+## 设置 Git 别名
 
 设置全局别名，例如执行：`git to develop`
 git 会自动执行：切换到 develop 分支，拉取代码，合并当前分支，推送到远程，切换回当前分支
@@ -44,19 +85,20 @@ git config --global alias.to '!f() { cur_branch=$(git branch --show-current); gi
 ```
 
 ## 贪吃蛇
+
 <img src="/tech/github-snake.svg" alt="github-snake" />
 
-以上贪吃蛇SVG，可以直接使用：
+以上贪吃蛇 SVG，可以直接使用：
 
 ```html
 <img src="https://jasonbai008.github.io/tech/github-snake.svg" alt="github-snake" />
 ```
 
-也可以根据自己Github的提交记录生成个人的svg。但是非常麻烦，以下是详细教程：
+也可以根据自己 Github 的提交记录生成个人的 svg。但是非常麻烦，以下是详细教程：
 
-- [如何在github主页放一条贪吃蛇](https://zhuanlan.zhihu.com/p/659930382)
+- [如何在 github 主页放一条贪吃蛇](https://zhuanlan.zhihu.com/p/659930382)
 
-## Vite打包配置
+## Vite 打包配置
 
 为打包后的文件归类，配置 `vite.config.js` ：
 
@@ -84,7 +126,6 @@ build: {
     }
   }
 ```
-
 
 ## 注册免费域名
 
