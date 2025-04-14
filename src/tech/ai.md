@@ -18,8 +18,12 @@
 
 ## AI 导航
 
-- [https://nav.free2gpt.com/](https://nav.free2gpt.com/)
-- [https://ic.free-chat.asia/](https://ic.free-chat.asia/)
+- [nav.free2gpt.com](https://nav.free2gpt.com/)
+- [ic.free-chat.asia](https://ic.free-chat.asia/)
+
+## AI 社区
+
+- [huggingface.co](https://huggingface.co)（需要翻墙）
 
 ## AI 插件
 
