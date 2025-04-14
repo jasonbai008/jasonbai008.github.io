@@ -1,5 +1,20 @@
 # 日常办公
 
+## 轻松访问 Hugging Face
+
+1. 在微软应用商店中下载并安装 `Watt Toolkit`
+2. 运行此软件，选择 `网络加速`，并勾选 `Github`，点击右上角 `一键加速`
+3. 访问 [huggingface.co](https://huggingface.co/) 查看效果。
+<img :src="$withBase('/tech/watt.png')" class="medium-zoom-image" style="width:80%"/>
+
+## 轻松访问 Github
+
+1. 下载 [FastGithub](https://gitee.com/lubanseven/store/releases/download/v1.0/fastgithub.zip)
+2. 解压后，直接运行 `FastGithub.UI.exe`
+3. 点击右上角 x 号，最小化到托盘
+4. 微软应用商店中的：`Watt Toolkit` 也可以开启 Github 加速。
+<img :src="$withBase('/tech/fastgithub.png')" class="medium-zoom-image" style="width:80%"/>
+
 ## Outlook 只展示托盘图标
 
 Outlook 点击关闭按钮就退出了。为了避免退出，可以设置最小化时，只展示右下角托盘图标。
@@ -27,13 +42,6 @@ reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" 
 ## 搜索替代
 
 众所周知，[**百度**](https://www.baidu.com/)搜出来的结果广告居多。[**谷歌**](https://www.google.com/)又打不开，这里推荐使用微软的[**必应**](https://cn.bing.com/)搜索引擎。搜索结果质量很高。
-
-## 轻松访问 Github
-
-1. 下载 [FastGithub](https://gitee.com/lubanseven/store/releases/download/v1.0/fastgithub.zip)
-2. 解压后，直接运行 `FastGithub.UI.exe`
-3. 点击右上角 x 号，最小化到托盘
-4. `Watt Toolkit` 已无法使用，FastGithub可以。
 
 ## Markdown 免费转 PDF
 
