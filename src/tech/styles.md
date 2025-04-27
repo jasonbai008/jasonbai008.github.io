@@ -4,6 +4,182 @@
 人靠衣装，美靠 CSS
 :::
 
+## GSAP 动画
+
+GSAP 是一个开源的 JavaScript 动画库，它提供了许多功能强大的动画效果，如缓动、动画、动画组、事件监听等。
+
+- [GSAP 官方文档](https://gsap.com/docs/v3/Installation/?tab=npm&module=esm&method=private+registry&tier=free&club=false&require=false&trial=true#install-helper)
+
+- [GSAP 简明教程](https://juejin.cn/post/7184080621831422011)
+
+CND引入：
+```html
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+<script>
+ document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(ScrollTrigger)
+  // gsap code here!
+ });
+</script>
+```
+
+常用属性示例代码：
+```js
+// 使用 gsap.fromTo() 创建一个基本的滚动触发动画
+gsap.fromTo(
+  '.animated-element', // 目标元素
+  {
+    // 起始状态
+    x: -100, // 水平位置偏移-100px
+    y: 50, // 垂直位置偏移50px
+    opacity: 0, // 完全透明
+    scale: 0.5, // 缩放到原始大小的50%
+  },
+  {
+    // 结束状态
+    x: 0, // 水平位置恢复到原位
+    y: 0, // 垂直位置恢复到原位
+    opacity: 1, // 完全不透明
+    scale: 1, // 缩放恢复到原始大小
+    
+    // 动画配置
+    duration: 1, // 动画持续时间为1秒
+    ease: 'power2.out', // 缓动函数
+    
+    // ScrollTrigger 配置
+    scrollTrigger: {
+      trigger: '.trigger-element', // 触发元素
+      start: 'top 80%', // 开始位置（触发元素顶部到达视口80%位置）
+      end: 'bottom 20%', // 结束位置（触发元素底部到达视口20%位置）
+      scrub: 1, // 平滑滚动效果，数值表示平滑程度
+      markers: false, // 是否显示标记（调试用）
+      toggleActions: 'play pause reverse reset', // 滚动行为：进入、离开、重新进入、完全离开
+      pin: false, // 是否固定元素
+      id: 'my-animation', // 动画ID
+      onEnter: () => console.log('进入动画区域'), // 进入回调
+      onLeave: () => console.log('离开动画区域'), // 离开回调
+    }
+  }
+);
+```
+
+完整属性示例代码：
+```js
+// 引入 GSAP 和 ScrollTrigger 插件
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// 注册 ScrollTrigger 插件
+gsap.registerPlugin(ScrollTrigger);
+
+// 在组件挂载后初始化动画
+function initAnimation() {
+  // ScrollTrigger 配置对象
+  const scrollTrigger = {
+    trigger: '.animation-container', // 触发元素，指定哪个元素作为触发滚动动画的参考点
+    start: 'top 80%', // 定义动画开始的位置，格式为 "[触发元素位置] [视口位置]"
+    end: 'bottom 20%', // 定义动画结束的位置，格式为 "[触发元素位置] [视口位置]"
+    scrub: 1, // 将动画进度与滚动位置绑定，数值表示平滑程度（延迟），true为默认平滑度
+    markers: true, // 显示调试标记，帮助可视化触发点和开始/结束位置
+    toggleActions: 'play pause reverse reset', // 定义四个动作：进入时、离开时、重新进入时、完全离开时
+    pin: true, // 在动画期间固定触发元素
+    pinSpacing: true, // 是否在固定元素时添加空间
+    anticipatePin: 0.5, // 提前固定元素的时间（秒）
+    snap: {
+      snapTo: 0.5, // 滚动到动画50%处
+      duration: { min: 0.2, max: 0.5 }, // 捕捉动画的持续时间范围
+      delay: 0.1, // 捕捉前的延迟
+      ease: 'power1.inOut' // 捕捉动画的缓动函数
+    },
+    id: 'my-scroll-animation', // 为此ScrollTrigger实例指定唯一ID
+    onEnter: () => console.log('进入动画区域'), // 进入触发区域时的回调
+    onLeave: () => console.log('离开动画区域'), // 离开触发区域时的回调
+    onEnterBack: () => console.log('从下方重新进入区域'), // 从下方重新进入区域的回调
+    onLeaveBack: () => console.log('从上方离开区域'), // 从上方离开区域的回调
+    onUpdate: (self) => console.log('进度更新:', self.progress.toFixed(2)), // 动画更新时的回调
+    onToggle: (self) => console.log('动画状态切换:', self.isActive), // 动画激活状态切换时的回调
+    fastScrollEnd: true, // 快速滚动结束时立即完成动画
+    preventOverlaps: true, // 防止与其他ScrollTrigger实例重叠
+    refreshPriority: 1, // 刷新优先级
+    toggleClass: 'active', // 当ScrollTrigger激活时添加到触发元素的类名
+  };
+
+  // 使用gsap.fromTo()创建动画
+  gsap.fromTo(
+    '.animated-element', // 目标元素选择器
+    {
+      // 起始状态属性
+      x: -100, // 水平位置偏移-100px
+      y: 50, // 垂直位置偏移50px
+      rotation: -45, // 旋转-45度
+      scale: 0.5, // 缩放到原始大小的50%
+      opacity: 0, // 完全透明
+      backgroundColor: '#ff0000', // 起始背景颜色为红色
+      color: '#ffffff', // 起始文字颜色为白色
+      borderRadius: '0%', // 起始边框圆角为0
+      boxShadow: '0px 0px 0px rgba(0,0,0,0)', // 起始无阴影
+      textShadow: '0px 0px 0px rgba(0,0,0,0)', // 起始无文字阴影
+      filter: 'blur(10px)', // 起始模糊效果
+      clipPath: 'circle(0% at center)', // 起始裁剪路径为中心点
+      transformOrigin: 'left top', // 变换原点在左上角
+      skewX: 20, // X轴倾斜20度
+      skewY: 10, // Y轴倾斜10度
+    },
+    {
+      // 结束状态属性
+      x: 0, // 水平位置恢复到原位
+      y: 0, // 垂直位置恢复到原位
+      rotation: 0, // 旋转恢复到0度
+      scale: 1, // 缩放恢复到原始大小
+      opacity: 1, // 完全不透明
+      backgroundColor: '#3498db', // 结束背景颜色为蓝色
+      color: '#333333', // 结束文字颜色为深灰色
+      borderRadius: '50%', // 结束边框圆角为50%（圆形）
+      boxShadow: '0px 10px 20px rgba(0,0,0,0.3)', // 结束有明显阴影
+      textShadow: '2px 2px 4px rgba(0,0,0,0.5)', // 结束有文字阴影
+      filter: 'blur(0px)', // 结束无模糊效果
+      clipPath: 'circle(100% at center)', // 结束裁剪路径为完整圆形
+      transformOrigin: 'center center', // 变换原点在中心
+      skewX: 0, // X轴倾斜恢复为0
+      skewY: 0, // Y轴倾斜恢复为0
+      
+      // 动画配置
+      duration: 1.5, // 动画持续时间为1.5秒
+      delay: 0.2, // 动画延迟0.2秒开始
+      ease: 'elastic.out(1, 0.3)', // 弹性缓动函数
+      stagger: {
+        amount: 0.5, // 如果选择器匹配多个元素，它们之间的总间隔时间
+        from: 'center', // 动画开始的参考点
+        grid: 'auto', // 自动检测网格
+        axis: 'x', // 沿x轴应用间隔
+        each: 0.1, // 每个元素之间的间隔时间
+      },
+      repeat: 0, // 动画重复次数（0表示不重复）
+      repeatDelay: 1, // 重复之间的延迟
+      yoyo: true, // 动画是否来回播放
+      paused: false, // 动画是否初始暂停
+      overwrite: 'auto', // 如何处理冲突的动画
+      
+      // 回调函数
+      onStart: () => console.log('动画开始'), // 动画开始时的回调
+      onUpdate: () => console.log('动画更新中'), // 动画更新时的回调
+      onComplete: () => console.log('动画完成'), // 动画完成时的回调
+      onRepeat: () => console.log('动画重复'), // 动画重复时的回调
+      onReverseComplete: () => console.log('反向动画完成'), // 反向动画完成时的回调
+      
+      // 绑定ScrollTrigger
+      scrollTrigger: scrollTrigger,
+    }
+  );
+}
+
+// 在组件挂载后调用初始化函数
+onMounted(() => {
+  initAnimation();
+});
+```
+
 ## 实用 Grid 网格布局
 
 ```css
