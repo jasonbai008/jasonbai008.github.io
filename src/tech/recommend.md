@@ -42,3 +42,4 @@
 - [Vue.js devtools](https://img.chajianxw.com/chajian/www.chajianxw.com_nhdogjmejiglipccpnnnanhbledajbpd.zip)
 - [Simple Allow Copy](https://img.chajianxw.com/chajian/www.chajianxw.com_aefehdhdciieocakfobpaaolhipkcpgc.zip)（允许复制）
 - [GoFullpage](https://img.chajianxw.com/chajian/www.chajianxw.com_fdpohaocaechififmbbbbbknoalclacl.zip)（截屏）
+- [沉浸式翻译](https://immersivetranslate.cn/)

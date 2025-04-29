@@ -4,6 +4,34 @@
 人靠衣装，美靠 CSS
 :::
 
+## 卡片扫光效果
+
+Card 在鼠标悬停时，有一道倾斜的白色闪光略过。
+
+参考示例代码：
+```css
+.card {
+  position: relative;
+  overflow: hidden;
+  /* other-styles... */
+}
+.card::before {
+  content: '';
+  position: absolute;
+  left: -100%;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 56%);
+}
+
+.card:hover::before {
+  left: 100%;
+  top: -100%;
+  transition: all 1s;
+}
+```
+
 ## GSAP 动画
 
 GSAP 是一个开源的 JavaScript 动画库，它提供了许多功能强大的动画效果，如缓动、动画、动画组、事件监听等。
