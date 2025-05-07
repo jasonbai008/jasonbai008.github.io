@@ -33,7 +33,8 @@
 - <a href="https://www.cockos.com/licecap/" target="_blank">LICEcap</a>（录屏成 GIF 工具）
 - <a href="https://www.screentogif.com/downloads" download="ScreenToGif">ScreenToGif</a>（录屏成 GIF 神器）
 - <a href="https://www.httrack.com/page/2/en/index.html" download="Httrack">Httrack</a>（扒网站 神器）
-- <a href="https://gitee.com/lubanseven/store/releases/download/v1.0/Fontmin-v0.2.0-win64.zip" download="Httrack">Fontmin</a>（精简字体工具）
+- <a href="https://gitee.com/lubanseven/store/releases/download/v1.0/Fontmin-v0.2.0-win64.zip" download="Fontmin">Fontmin</a>（精简字体工具）
+- <a href="https://gitee.com/lubanseven/store/releases/download/v1.0/MifareClassicTool.apk" download="MifareClassicTool">Mifare Classic Tool</a>（门禁卡读写神器）
 - [歌曲宝](https://www.gequbao.com/)
 - [临时邮箱](https://www.linshi-email.com/)
 
