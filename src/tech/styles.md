@@ -4,6 +4,36 @@
 人靠衣装，美靠 CSS
 :::
 
+## 滚动动画
+
+- [AOS](https://michalsnik.github.io/aos/)
+- [教程](https://juejin.cn/post/7018850667653496839)
+
+代码示例：
+
+```html
+<div class="box" data-aos="fade-up">...</div>
+```
+
+```js
+// 在main.js中引入
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+// 需要延迟初始化，否则实际DOM元素还不存在
+setTimeout(AOS.init, 2000)
+```
+
+```html
+<!-- CDN的引入方式 -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+```
+
+## 3D动画背景插件
+
+需要翻墙访问：
+- [Vanta.js](https://www.vantajs.com/?effect=birds)
+
 ## 卡片扫光效果
 
 Card 在鼠标悬停时，有一道倾斜的白色闪光略过。
