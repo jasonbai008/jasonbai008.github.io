@@ -6,7 +6,7 @@
 
 ## 滚动动画
 
-- [AOS](https://michalsnik.github.io/aos/)
+- [AOS.js](https://michalsnik.github.io/aos/)
 - [教程](https://juejin.cn/post/7018850667653496839)
 
 代码示例：
@@ -31,8 +31,8 @@ setTimeout(AOS.init, 2000)
 
 ## 3D动画背景插件
 
-需要翻墙访问：
 - [Vanta.js](https://www.vantajs.com/?effect=birds)
+- [Golden Birds](https://jasonbai008.github.io/birds/)
 
 ## 卡片扫光效果
 
