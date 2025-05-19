@@ -1,16 +1,5 @@
 # 郭德纲说书
 
-## 郭论
-
-1. [郭论1 - 郭德纲品俗文化史（161集）](https://www.ysts.cc/tingshu/11709/)
-2. [郭论2 - 郭德纲品俗文化史（158集）](https://www.ysts.cc/tingshu/11716/)
-3. [郭德纲于谦 - 趣品民俗（134集）](https://www.ysts.cc/tingshu/11731/)
-4. [郭德纲于谦 - 美食江湖（151集）](https://www.ysts.cc/tingshu/11708/)
-   
-## 谦道
-1. [谦道1 - 于谦首档音频脱口秀（162集）](https://www.ysts.cc/tingshu/11660/)
-2. [谦道2 - 笑玩江湖（158集）](https://www.ysts.cc/tingshu/11685/)
-
 ## 坑王驾到
 
 ### 第一季

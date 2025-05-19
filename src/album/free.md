@@ -25,23 +25,20 @@
     <img src="/xiangce/pwc/6.png" class="medium-zoom-image"/>
 </div>
 
-<!-- ## 灯
+## PwC Final
 
 <div class="album-wrap">
-    <img src="/xiangce/deng/1.jpg" class="medium-zoom-image"/>
-    <img src="/xiangce/deng/2.jpg" class="medium-zoom-image"/>
-    <img src="/xiangce/deng/3.jpg" class="medium-zoom-image"/>
-</div> -->
+    <img src="/xiangce/pwc/7.jpg" class="medium-zoom-image"/>
+    <img src="/xiangce/pwc/8.jpg" class="medium-zoom-image"/>
+    <img src="/xiangce/pwc/9.jpg" class="medium-zoom-image"/>
+</div>
 
 ## 春天
 
 <div class="album-wrap">
     <img src="/xiangce/youxian/1.jpg" class="medium-zoom-image"/>
     <img src="/xiangce/youxian/2.jpg" class="medium-zoom-image"/>
-    <img src="/xiangce/youxian/3.jpg" class="medium-zoom-image"/>
-    <img src="/xiangce/youxian/4.jpg" class="medium-zoom-image"/>
-    <img src="/xiangce/youxian/5.jpg" class="medium-zoom-image"/>
-    <img src="/xiangce/youxian/6.jpg" class="medium-zoom-image"/>
+    <img src="/xiangce/youxian/3.jpg" class="medium-zoom-image"/>    
 </div>
 
 ## 体检

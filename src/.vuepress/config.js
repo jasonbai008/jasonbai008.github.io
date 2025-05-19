@@ -89,7 +89,7 @@ module.exports = {
         ],
       },
       { text: "联系我", link: "/contact/" },
-      { text: "GitHub", link: "https://github.com/JasonBai007" },
+      { text: "GitHub", link: "https://github.com/JasonBai008" },
     ],
     sidebar: "auto", // 侧栏根据页面标题自动生成导航
     lastUpdated: "Last Updated", // string | boolean
