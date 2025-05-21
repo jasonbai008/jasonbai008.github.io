@@ -1,5 +1,12 @@
 # 日常办公
 
+## 一行代码编辑网页
+
+```js
+// 按F12打开浏览器的开发者工具，切换到 `Console`，输入以下代码：
+document.designMode = 'on'
+```
+
 ## 轻松访问 Hugging Face
 
 1. 在微软应用商店中下载并安装 `Watt Toolkit`

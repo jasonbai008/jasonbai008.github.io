@@ -4,6 +4,20 @@
 人靠衣装，美靠 CSS
 :::
 
+## 三角形
+
+```html
+<div class="triangle"></div>
+<style>
+  .triangle {
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: red;
+  }
+</style>
+```
+
 ## 滚动动画
 
 - [AOS.js](https://michalsnik.github.io/aos/)
