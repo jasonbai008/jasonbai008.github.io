@@ -17,50 +17,77 @@
   </a>
   <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven">
     <img :src="$withBase('/projects/gitee.png')">
-    <h4>Gitee</h4>
+    <h4>LubanSeven</h4>
   </a>  
 </div>
 
-## 最新项目
+## 精选项目
 
-<div class="row">  
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/vue-preview">
-    <img :src="$withBase('/projects/preview.png')">
-    <h4>vue-preview</h4>
-  </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/useful-cool-js/">
+<div class="row">    
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/useful-cool-js/"> -->
+  <a class="itemWrap" target="_blank" href="https://unpkg.com/useful-cool-js@latest/index.html">
     <img :src="$withBase('/projects/cool.png')">
     <h4>useful-cool-js</h4>
   </a>  
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/lazy-man-css/">
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/lazy-man-css/"> -->
+  <a class="itemWrap" target="_blank" href="https://unpkg.com/lazy-man-css@latest/index.html">
     <img :src="$withBase('/projects/lazy.png')">
     <h4>lazy-man-css</h4>
-  </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/doc/">
-    <img :src="$withBase('/projects/book3.png')">
-    <h4>点滴文档</h4>
+  </a>  
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/salary"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-salary.netlify.app/">
+    <img :src="$withBase('/projects/tools6.png')">
+    <h4>工资刺客</h4>
+  </a>  
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/ming/"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-birds.netlify.app/">
+    <img :src="$withBase('/projects/bird.png')">
+    <h4>黄金鸟</h4>
   </a>  
 </div>
 
-<!-- ## 未分类 -->
 <div class="row">
-  
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/drawer/">
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/drawer/"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-drawer.netlify.app/">
     <img :src="$withBase('/projects/tools15.png')">
     <h4>随心画板</h4>
   </a> 
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/mark-me">
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/vue-preview"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-preview.netlify.app/">
+    <img :src="$withBase('/projects/preview.png')">
+    <h4>vue-preview</h4>
+  </a>  
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/mark-me"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-mark.netlify.app/">
     <img :src="$withBase('/projects/tools13.png')">
     <h4>印象文档</h4>
   </a>
-   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/news">
+  <a class="itemWrap" target="_blank" href="https://bai-message.netlify.app/">
+    <img :src="$withBase('/projects/latest4.png')">
+    <h4>留言板</h4>
+  </a>      
+</div>
+
+<div class="row"> 
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/ming/"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-ming.netlify.app/">
+    <img :src="$withBase('/projects/book6.png')">
+    <h4>明朝那些事儿</h4>
+  </a>
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/news"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-news.netlify.app/">
     <img :src="$withBase('/projects/tools1.png')">
     <h4>每日头条</h4>
   </a> 
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/wang-collapse/">
-    <img :src="$withBase('/projects/latest4.png')">
-    <h4>折叠面板王</h4>
-  </a>    
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/doc/">
+    <img :src="$withBase('/projects/book3.png')">
+    <h4>点滴文档</h4>
+  </a>
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/chives"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-chives.netlify.app/">
+    <img :src="$withBase('/projects/tools5.png')">
+    <h4>韭菜看盘</h4>
+  </a>  
 </div>
 
 ## 有声书
@@ -70,7 +97,8 @@
     <img :src="$withBase('/projects/guolun.png')" style="width: auto;height: 40px;">
     <h4>郭论</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/ming/">
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/ming/"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-ming.netlify.app/">
     <img :src="$withBase('/projects/book6.png')">
     <h4>明朝那些事儿</h4>
   </a>
@@ -138,11 +166,13 @@
 </div>
 
 <div class="row">
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/chives">
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/chives"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-chives.netlify.app/">
     <img :src="$withBase('/projects/tools5.png')">
     <h4>韭菜看盘</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/salary">
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/salary"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-salary.netlify.app/">
     <img :src="$withBase('/projects/tools6.png')">
     <h4>工资刺客</h4>
   </a>
@@ -150,7 +180,8 @@
     <img :src="$withBase('/projects/tools7.png')">
     <h4>土味情话</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/douyin">
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/douyin"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-douyin.netlify.app/">
     <img :src="$withBase('/projects/tools8.png')">
     <h4>精神抖擞</h4>
   </a>
@@ -246,7 +277,6 @@
 </div>
 
 <style scoped>
-
 .row {
   display: flex;
   text-align: center;
@@ -280,5 +310,4 @@ img {
     font-size: 12px;
   }  
 }
-
 </style>
