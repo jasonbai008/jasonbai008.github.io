@@ -79,10 +79,11 @@
     <img :src="$withBase('/projects/tools1.png')">
     <h4>每日头条</h4>
   </a> 
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/doc/">
-    <img :src="$withBase('/projects/book3.png')">
-    <h4>点滴文档</h4>
-  </a>
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/eyesight"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-eyesight.netlify.app/">
+    <img :src="$withBase('/projects/game1.png')">
+    <h4>火眼金睛</h4>
+  </a>  
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/chives"> -->
   <a class="itemWrap" target="_blank" href="https://bai-chives.netlify.app/">
     <img :src="$withBase('/projects/tools5.png')">
@@ -112,15 +113,19 @@
   </a>       
 </div>
 
-<div class="row">  
+<div class="row" style="justify-content: flex-start">  
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/nihaixia/">
     <img :src="$withBase('/projects/latest1.png')">
     <h4>梁冬对话倪海厦</h4>
   </a>
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/selfhelp/">
     <img :src="$withBase('/projects/book2.png')">
-    <h4>精神焦虑症的自救</h4>
+    <h4>焦虑症的自救</h4>
   </a> 
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/doc/">
+    <img :src="$withBase('/projects/book3.png')">
+    <h4>点滴文档</h4>
+  </a>
 </div>
 
 ## 中台类
@@ -209,7 +214,8 @@
 ## 游戏类
 
 <div class="row">
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/eyesight">
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/eyesight"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-eyesight.netlify.app/">
     <img :src="$withBase('/projects/game1.png')">
     <h4>火眼金睛</h4>
   </a>
@@ -265,7 +271,7 @@
 
 ## 小程序
 
-<div class="row">
+<div class="row mini" style="justify-content: flex-start">
   <a class="itemWrap" target="_blank">
     <img :src="$withBase('/tech/mp1.jpg')" style="width:125px">
     <h4>慧眼识材</h4>
@@ -279,35 +285,42 @@
 <style scoped>
 .row {
   display: flex;
+  justify-content: space-between;
   text-align: center;
   margin-top: 20px;
 }
+
 .itemWrap {
   text-decoration: none;
-  width: 20%;
+  width: 25%;
   opacity: 1;
   display: block;
 }
-.itemWrap:not(:last-child) {
-  margin-right: 6%
-}
+
 .itemWrap:hover {
   cursor: pointer;
 }
+
 img {
   display: block;
   width:40px;
   margin: 10px auto;
 }
+
 .itemWrap h4 {
   font-weight: normal;
 }
+
+.mini .itemWrap { 
+  margin-right: 15px;
+}
+
 @media screen and (max-width: 600px) {
   .itemWrap {
-    width: 24%;
+    width: 25%;
   }
   .itemWrap h4 {
     font-size: 12px;
-  }  
+  }    
 }
 </style>
