@@ -4,6 +4,87 @@
 人靠衣装，美靠 CSS
 :::
 
+## 无缝滚动示例
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>横向无缝滚动示例</title>
+    <style>
+        /* 容器样式 */
+        .container {
+            width: 800px;
+            height: 100px;
+            margin: 50px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* 滚动区域样式 */
+        .scroll-area {
+            position: absolute;
+            display: flex;
+            left: 0;
+            top: 0;
+            animation: scrolling 10s linear infinite;
+        }
+
+        /* 滚动元素样式 */
+        .item {
+            flex-shrink: 0;
+            width: 200px;
+            height: 100px;
+            background: #3498db;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        /* 鼠标悬停时暂停动画 */
+        .scroll-area:hover {
+            animation-play-state: paused;
+        }
+
+        /* 定义滚动动画 */
+        @keyframes scrolling {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                /* 总宽度为：4个元素 * (200px宽度 + 20px间距) */
+                transform: translateX(-880px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="scroll-area">
+            <!-- 原始列表 -->
+            <div class="item">项目1</div>
+            <div class="item">项目2</div>
+            <div class="item">项目3</div>
+            <div class="item">项目4</div>
+            <!-- 复制的列表 -->
+            <div class="item">项目1 copy</div>
+            <div class="item">项目2 copy</div>
+            <div class="item">项目3 copy</div>
+            <div class="item">项目4 copy</div>
+        </div>
+    </div>
+</body>
+
+</html>
+```
+
 ## 三角形
 
 ```html
