@@ -4,6 +4,25 @@
 人靠衣装，美靠 CSS
 :::
 
+## 容器查询
+
+```html
+<div class="box">容器内容</div>
+<style>
+  /* 1. 定义容器元素 */
+  .box {
+    container: inline-size;
+    background: lightblue;     
+  }
+  /* 2. 容器查询：当.box自身宽度≥300px时改变样式 */
+  @container (min-width: 300px) {
+    .box {
+      background: lightgreen;
+    }
+  }
+</style>
+```
+
 ## 无缝滚动示例
 
 ```html
