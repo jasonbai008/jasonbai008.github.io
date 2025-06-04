@@ -4,6 +4,24 @@
 人靠衣装，美靠 CSS
 :::
 
+## 免费的随机图片
+
+官网：[https://picsum.photos/](https://picsum.photos/)
+
+```sh
+# 200像素宽，300像素高的随机图片
+https://picsum.photos/200/300
+
+# 200x200像素的正方形随机图片
+https://picsum.photos/200
+
+# 获取ID为237的图片，尺寸为200x300
+https://picsum.photos/id/237/200/300
+
+# 添加random参数防止浏览器缓存
+https://picsum.photos/200/300?random=1
+```
+
 ## 容器查询
 
 ```html
