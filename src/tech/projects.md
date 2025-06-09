@@ -103,7 +103,7 @@
     <img :src="$withBase('/projects/book6.png')">
     <h4>明朝那些事儿</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/book">
+  <a class="itemWrap" target="_blank" href="https://bai-book.netlify.app/">
     <img :src="$withBase('/projects/book1.png')">
     <h4>刘慈欣有声小说</h4>
   </a>
