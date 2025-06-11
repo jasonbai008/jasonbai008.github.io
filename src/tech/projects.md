@@ -121,11 +121,7 @@
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/selfhelp/">
     <img :src="$withBase('/projects/book2.png')">
     <h4>焦虑症的自救</h4>
-  </a> 
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/doc/">
-    <img :src="$withBase('/projects/book3.png')">
-    <h4>点滴文档</h4>
-  </a>
+  </a>   
 </div>
 
 ## 中台类
@@ -152,25 +148,6 @@
 ## 工具类
 
 <div class="row">  
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/pollen">
-    <img :src="$withBase('/projects/flower.png')">
-    <h4>花粉指数</h4>
-  </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/clock/">
-    <img :src="$withBase('/projects/latest2.png')">
-    <h4>缤纷时钟</h4>
-  </a>  
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/microscope">
-    <img :src="$withBase('/projects/tools4.png')">
-    <h4>鼠标放大镜</h4>
-  </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/eye-dropper">
-    <img :src="$withBase('/projects/tools16.png')">
-    <h4>小鸡拾色</h4>
-  </a>
-</div>
-
-<div class="row">
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/chives"> -->
   <a class="itemWrap" target="_blank" href="https://bai-chives.netlify.app/">
     <img :src="$withBase('/projects/tools5.png')">
@@ -181,6 +158,25 @@
     <img :src="$withBase('/projects/tools6.png')">
     <h4>工资刺客</h4>
   </a>
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/microscope">
+    <img :src="$withBase('/projects/tools4.png')">
+    <h4>鼠标放大镜</h4>
+  </a>
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/eye-dropper">
+    <img :src="$withBase('/projects/tools16.png')">
+    <h4>小鸡拾色</h4>
+  </a>
+</div>
+
+<div class="row"> 
+  <a class="itemWrap" target="_blank" href="https://jasonbai007.github.io/lego">
+    <img :src="$withBase('/projects/tools9.png')">
+    <h4>表单生成器</h4>
+  </a>
+  <a class="itemWrap" target="_blank" href="https://jasonbai007.github.io/json-preview">
+    <img :src="$withBase('/projects/tools10.png')" style="margin-top: 16px;">
+    <h4>Mock可视化</h4>
+  </a>  
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/qinghua">
     <img :src="$withBase('/projects/tools7.png')">
     <h4>土味情话</h4>
@@ -192,15 +188,7 @@
   </a>
 </div>
 
-<div class="row">
-  <a class="itemWrap" target="_blank" href="https://jasonbai007.github.io/lego">
-    <img :src="$withBase('/projects/tools9.png')">
-    <h4>表单生成器</h4>
-  </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai007.github.io/json-preview">
-    <img :src="$withBase('/projects/tools10.png')" style="margin-top: 16px;">
-    <h4>Mock可视化</h4>
-  </a>  
+<div class="row" style="justify-content: flex-start">   
   <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/age">
     <img :src="$withBase('/projects/tools12.png')">
     <h4>真实年龄</h4>
@@ -208,6 +196,10 @@
   <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/ai-pc">
     <img :src="$withBase('/projects/tools3.png')">
     <h4>你问我答</h4>
+  </a>
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/doc/">
+    <img :src="$withBase('/projects/book3.png')">
+    <h4>点滴文档</h4>
   </a>
 </div>
 

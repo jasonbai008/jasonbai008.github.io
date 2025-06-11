@@ -22,6 +22,7 @@
 
 ## 工具类
 
+- [GitHub Socialify](https://socialify.git.ci/)
 - [身份大全](https://www.shenfendaquan.com/)
 - [GIF在线压缩](https://www.freeconvert.com/zh/gif-compressor)
 - [iLovePDF](https://www.ilovepdf.com/zh-cn)

@@ -42,8 +42,7 @@
 
 ## 火柴棒医生
 
-链接: [https://pan.baidu.com/s/1Tc7zfpCW_XUIBIsaMqcJFQ?pwd=zrpi](https://pan.baidu.com/s/1Tc7zfpCW_XUIBIsaMqcJFQ?pwd=zrpi)  
-提取码: zrpi
+网盘链接: [https://pan.baidu.com/s/1Tc7zfpCW_XUIBIsaMqcJFQ?pwd=zrpi](https://pan.baidu.com/s/1Tc7zfpCW_XUIBIsaMqcJFQ?pwd=zrpi)  
 
 ## 焦虑症的自救
 
