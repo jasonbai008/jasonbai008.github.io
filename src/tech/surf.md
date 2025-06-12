@@ -15,7 +15,10 @@
 
 - [https://fq.jasonbaiyy.dpdns.org](https://fq.jasonbaiyy.dpdns.org)（推荐）
 - [https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub](https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub)（备用）
-- [https://fq.jasonbaiyy.dpdns.org?type=plain](https://fq.jasonbaiyy.dpdns.org?type=plain)（非base64节点数据，用于从剪切板批量导入节点）
+
+## 节点数据
+非base64节点数据，用于从剪切板批量导入节点。
+- [https://fq.jasonbaiyy.dpdns.org?type=plain](https://fq.jasonbaiyy.dpdns.org?type=plain)
 
 
 
