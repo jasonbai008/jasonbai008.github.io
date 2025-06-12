@@ -6,18 +6,19 @@
 
 ## 软件下载
 
-- [Android版](https://gitee.com/lubanseven/store/releases/download/v1.0/v2Rui4Mobile.apk)
-- [Windows版](https://gitee.com/lubanseven/store/releases/download/v1.0/v2RuiN.zip)
+- [Android版](https://gitee.com/lubanseven/store/releases/download/v1.0/v2Rui4Mobile.apk)（**v2rayNG**）
+- [Windows版](https://gitee.com/lubanseven/store/releases/download/v1.0/v2RuiN.zip)（**v2rayNG**）
+- [Mac版](https://d.lefly.cloud/clash/ClashX1.118.0.dmg)（**ClashX**）（[教程](https://help.lefly.cloud/contents/macos/clashX.html)）
 
 
 ## 订阅地址
 
-- [https://fq.jasonbaiyy.dpdns.org](https://fq.jasonbaiyy.dpdns.org)
+- [https://fq.jasonbaiyy.dpdns.org](https://fq.jasonbaiyy.dpdns.org)（推荐）
 - [https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub](https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub)（备用）
 
 
 
-## 移动端教程
+## 移动端教程 (v2rayNG)
 
 ### 1. 添加订阅
 
@@ -45,7 +46,7 @@
 
 
 
-## 电脑端教程
+## 电脑端教程 (v2rayNG)
 
 ### 1. 添加订阅
 
