@@ -10,17 +10,19 @@
 - [Windows版](https://gitee.com/lubanseven/store/releases/download/v1.0/v2RuiN.zip)（**v2rayNG**）
 - [Mac版](https://d.lefly.cloud/clash/ClashX1.118.0.dmg)（**ClashX**）（[教程](https://help.lefly.cloud/contents/macos/clashX.html)）
 
+## 免费节点
 
-## 订阅地址
+- [FreeClashNode](https://www.freeclashnode.com/)
+
+
+## 订阅地址 (v2rayNG)
 
 - [https://fq.jasonbaiyy.dpdns.org](https://fq.jasonbaiyy.dpdns.org)（推荐）
 - [https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub](https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub)（备用）
 
-## 节点数据
-非base64节点数据，用于从剪切板批量导入节点。
-- [https://fq.jasonbaiyy.dpdns.org?type=plain](https://fq.jasonbaiyy.dpdns.org?type=plain)
+## 订阅地址 (ClashX)
 
-
+- <p>{{ 'https://node.freeclashnode.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/0-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.yaml' }}</p>
 
 ## 移动端教程 (v2rayNG)
 
