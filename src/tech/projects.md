@@ -74,11 +74,10 @@
     <img :src="$withBase('/projects/book6.png')">
     <h4>明朝那些事儿</h4>
   </a>
-  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/news"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-news.netlify.app/">
-    <img :src="$withBase('/projects/tools1.png')">
-    <h4>每日头条</h4>
-  </a> 
+  <a class="itemWrap" target="_blank" href="https://bai-book.netlify.app/">
+    <img :src="$withBase('/projects/book1.png')">
+    <h4>刘慈欣有声小说</h4>
+  </a>
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/eyesight"> -->
   <a class="itemWrap" target="_blank" href="https://bai-eyesight.netlify.app/">
     <img :src="$withBase('/projects/game1.png')">
@@ -98,22 +97,10 @@
     <img :src="$withBase('/projects/guolun.png')" style="width: auto;height: 40px;">
     <h4>郭论</h4>
   </a>
-  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/ming/"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-ming.netlify.app/">
-    <img :src="$withBase('/projects/book6.png')">
-    <h4>明朝那些事儿</h4>
-  </a>
-  <a class="itemWrap" target="_blank" href="https://bai-book.netlify.app/">
-    <img :src="$withBase('/projects/book1.png')">
-    <h4>刘慈欣有声小说</h4>
-  </a>
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/lightning/">
     <img :src="$withBase('/projects/book5.png')">
     <h4>球状闪电</h4>
-  </a>       
-</div>
-
-<div class="row" style="justify-content: flex-start">  
+  </a>
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/nihaixia/">
     <img :src="$withBase('/projects/latest1.png')">
     <h4>梁冬对话倪海厦</h4>
@@ -121,7 +108,7 @@
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/selfhelp/">
     <img :src="$withBase('/projects/book2.png')">
     <h4>焦虑症的自救</h4>
-  </a>   
+  </a>         
 </div>
 
 ## 中台类
@@ -177,7 +164,7 @@
     <img :src="$withBase('/projects/tools10.png')" style="margin-top: 16px;">
     <h4>Mock可视化</h4>
   </a>  
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/qinghua">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/sweet">
     <img :src="$withBase('/projects/tools7.png')">
     <h4>土味情话</h4>
   </a>
@@ -189,7 +176,7 @@
 </div>
 
 <div class="row" style="justify-content: flex-start">   
-  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/age">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/age/">
     <img :src="$withBase('/projects/tools12.png')">
     <h4>真实年龄</h4>
   </a>
@@ -197,9 +184,13 @@
     <img :src="$withBase('/projects/tools3.png')">
     <h4>你问我答</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/doc/">
+  <a class="itemWrap" target="_blank" href="https://bai-doc.netlify.app/">
     <img :src="$withBase('/projects/book3.png')">
     <h4>点滴文档</h4>
+  </a>
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/converter/">
+    <img :src="$withBase('/projects/tools2.png')">
+    <h4>简繁转换器</h4>
   </a>
 </div>
 
