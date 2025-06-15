@@ -1,10 +1,22 @@
 # 日常办公
 
+## 自制一寸两寸照片
+
+1. 自拍一张照片，背景尽量干净，比如墙壁
+2. 使用 [RemoveBg](https://www.remove.bg/zh/upload) 去除照片背景，下载为 `png 文件`
+3. 打开 **证件照大师** 网站，选择 [PNG 证件照制作](https://id-photo.cn/png/) 菜单
+4. 点击 `重新选择照片`按钮，上传导出的`png 文件`，选择 `背景颜色` 和 `证件照尺寸`
+5. 调整选区大小，在页面下方看最终效果，点击最终证件照下载图片
+
+## 在线 Photoshop
+
+[Photopea](https://www.photopea.com/)，无需注册，直接使用
+
 ## 一行代码编辑网页
 
 ```js
 // 按F12打开浏览器的开发者工具，切换到 `Console`，输入以下代码：
-document.designMode = 'on'
+document.designMode = "on";
 ```
 
 ## 轻松访问 Hugging Face
@@ -12,7 +24,7 @@ document.designMode = 'on'
 1. 在微软应用商店中下载并安装 `Watt Toolkit`
 2. 运行此软件，选择 `网络加速`，并勾选 `Github`，点击右上角 `一键加速`
 3. 访问 [huggingface.co](https://huggingface.co/) 查看效果。
-<img :src="$withBase('/tech/watt.png')" class="medium-zoom-image" style="width:80%"/>
+   <img :src="$withBase('/tech/watt.png')" class="medium-zoom-image" style="width:80%"/>
 
 ## 轻松访问 Github
 
@@ -20,7 +32,7 @@ document.designMode = 'on'
 2. 解压后，直接运行 `FastGithub.UI.exe`
 3. 点击右上角 x 号，最小化到托盘
 4. 微软应用商店中的：`Watt Toolkit` 也可以开启 Github 加速。
-<img :src="$withBase('/tech/fastgithub.png')" class="medium-zoom-image" style="width:80%"/>
+   <img :src="$withBase('/tech/fastgithub.png')" class="medium-zoom-image" style="width:80%"/>
 
 ## Outlook 只展示托盘图标
 
@@ -62,19 +74,6 @@ reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" 
 
 1. 点击顶部的`游戏图标`，体验 10 分钟新游戏，就可以`免费试用提速5分钟`，**7M/s**，**每天只能提速 1 次**
 2. 点击：`设置` > `传输` > `优化速率` > `去开启`，点击`应用`按钮，这种方法只对**热门下载资源**有效
-
-## 海外冲浪
-
-```js
-// Android版下载地址：
-https://github.com/2dust/v2rayNG/releases/download/1.6.28/v2rayNG_1.6.28_arm64-v8a.apk
-
-// Windows版下载地址：
-https://github.com/2dust/v2rayN/releases/download/3.27/v2rayN-Core.zip
-
-// 节点订阅地址
-https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
-```
 
 ## 使用 PPT 录屏
 
