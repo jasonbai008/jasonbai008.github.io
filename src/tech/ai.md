@@ -6,9 +6,9 @@
 
 ## AI 问答
 
-- [DeepSeek](https://chat.deepseek.com/)
-- [百度 AI](https://chat.baidu.com/)
-- [知乎直答](https://zhida.zhihu.com/)
+- [DeepSeek 官网](https://chat.deepseek.com/)
+- [DeepSeek:R1 0528 (free)](https://openrouter.ai/chat?models=deepseek/deepseek-r1-0528:free)（50次免费请求/天）
+- [豆包](https://www.doubao.com/chat)
 - [Endless Chat](https://e11.free-chat.asia/)
 - [Free2gpt](https://chat1.free2gpt.com/)
 
@@ -24,6 +24,7 @@
 ## AI 社区
 
 - [huggingface.co](https://huggingface.co)（需要翻墙）
+- [openrouter.ai](https://openrouter.ai/models)
 
 ## AI 插件
 
