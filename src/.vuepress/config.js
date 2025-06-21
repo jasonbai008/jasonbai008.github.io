@@ -75,6 +75,7 @@ module.exports = {
       {
         text: "摄影集",
         items: [
+          { text: "青葱岁月", link: "/album/memory" },
           { text: "日常随拍", link: "/album/free" },
           { text: "都市街景", link: "/album/streetscape" },
           { text: "自然风光", link: "/album/nature" },

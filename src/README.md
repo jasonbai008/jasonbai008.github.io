@@ -7,15 +7,15 @@ actionText: 欢迎光临 →
 actionLink: /life/daily.html
 features:
   - title: 沟通
-    details: 沟通创造价值，传递价值。
+    details: 沟通创造价值，传递价值
   - title: 分享
-    details: 好的经验值得分享。
+    details: 好的经验值得分享
   - title: 热爱
-    details: 做自己喜欢做的事。
+    details: 做自己喜欢做的事
 # footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
 ::: slot footer
 <!-- Copyright © 2022 [Jason Bai](https://jasonbai.netlify.app/) -->
-Copyright © 2022 [Jason Bai](https://jasonbai.netlify.app) & [Night Cat](https://nightcat.netlify.app)
+Copyright © 2017.09.14 [Jason Bai](https://jasonbai.netlify.app) & [Night Cat](https://nightcat.netlify.app)
 :::
