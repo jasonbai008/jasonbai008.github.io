@@ -4,6 +4,14 @@
 人靠衣装，美靠 CSS
 :::
 
+## CSS原生垂直居中
+
+```html
+<div style="align-content: center;">
+  垂直居中
+</div>
+```
+
 ## 免费的随机图片
 
 官网：[https://picsum.photos/](https://picsum.photos/)
