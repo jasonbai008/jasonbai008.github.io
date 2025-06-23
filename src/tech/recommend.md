@@ -10,7 +10,7 @@
 - [慕课网](https://www.imooc.com/course/list)（只看上面的免费视频教程即可）
 - [掘金](https://juejin.cn/)（高质量技术文章）
 - [ES6 入门教程](https://es6.ruanyifeng.com/)（前端提高）
-- [油猴开发指南](https://learn.scriptcat.org/)（自定义一切网页）
+- [ECharts 补充图表](http://chartlib.yingxidata.cn/echarts)
 
 ## 设计类
 
