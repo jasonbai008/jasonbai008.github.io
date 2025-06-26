@@ -4,6 +4,19 @@
 人靠衣装，美靠 CSS
 :::
 
+## 隐藏显示滚动条
+
+```css
+/* 默认隐藏滚动条 */
+.container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+}
+/* 鼠标放上去显示滚动条 */
+.container:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+```
+
 ## CSS原生垂直居中
 
 ```html
