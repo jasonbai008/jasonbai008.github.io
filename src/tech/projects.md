@@ -101,7 +101,7 @@
     <img :src="$withBase('/projects/book5.png')">
     <h4>球状闪电</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/nihaixia/">
+  <a class="itemWrap" target="_blank" href="https://nihaixia.netlify.app/">
     <img :src="$withBase('/projects/latest1.png')">
     <h4>梁冬对话倪海厦</h4>
   </a>
@@ -114,11 +114,11 @@
 ## 中台类
 
 <div class="row">
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/vue-starter/#/login">
+  <a class="itemWrap" target="_blank" href="https://bai-vue-starter.netlify.app/">
     <img :src="$withBase('/projects/template1.png')">
     <h4>vue-starter</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/vite-vue3-starter">
+  <a class="itemWrap" target="_blank" href="https://vite-vue3-starter.netlify.app/">
     <img :src="$withBase('/projects/template2.png')">
     <h4>vite-vue3-starter</h4>
   </a>
