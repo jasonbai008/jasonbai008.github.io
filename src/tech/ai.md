@@ -1,7 +1,7 @@
 # Free AI
 
 ::: tip 前言
-付费上班的时代：上班为完成超额工作需要助手，助手需要付费，已闭环！
+付费上班时代：上班为完成超额工作需要助手，助手需要付费，已闭环！
 :::
 
 ## AI 问答
@@ -28,26 +28,23 @@
 
 ## AI 插件
 
-- **TONGYI Lingma 通义灵码** （阿里 VSCode 插件）
+- [TONGYI Lingma 通义灵码](https://lingma.aliyun.com/) （阿里 VSCode 插件）代码提示很不错 :tada:
 
 ## AI 工具
 
-| 名称                                                                                          | 价格/免费额度                         | 备注               |
-| --------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------ |
-| [Cursor](https://www.cursor.com/)                                                             | $20/月                                | 最贵，最好用         |
-| [Trae 国际版](https://trae.ai/)                                                               | 首月 $3/月，续订 $10/月。包年 $7.5/月 | 仅首次登录需要翻墙 |
-| [Copilot](https://docs.github.com/zh/copilot)                                                 | $10/月 或 $100/年                     | VSCode 插件        |
-| [Augment](https://www.augmentcode.com/)                                                       | 用几次就被封了。。。                  | VSCode 插件        |
-| [DeepSider](chrome-extension://dfbnddndcmilnhdfmmaolepiaefacnpo/newtab.html#/settings/reward) | 每天5次免费请求，偶尔用不了。。。     | 谷歌浏览器插件     |
-| [DeepSeek](https://chat.deepseek.com/)                                                        | 免费用                                | 网页版             |
-| [OpenRouter](https://openrouter.ai/models)                                                    | 每天50次免费模型的请求                | 网页版             |
-| [v0.dev](https://v0.dev/)                                                                     | 每月5美元免费额度，够250次请求        | 网页版             |
+| 名称                                                                   | 价格/免费额度                                     | 备注               |
+| ---------------------------------------------------------------------- | ------------------------------------------------- | ------------------ |
+| [Cursor](https://cursor.com/cn)                                        | **$20/月**                                        | 最贵，最好用       |
+| [Trae](https://trae.ai/) <Badge text="国际版" type="warning"/>         | 首月 **$3/月**，续订 **$10/月**。包年 **$7.5/月** | 仅首次登录需要翻墙 |
+| [Copilot](https://www.microsoft.com/zh-cn/microsoft-365/copilot/meet-copilot)                          | **$10/月** 或 **$100/年**                         | VSCode 插件        |
+| [DeepSider](https://deepsider.ai/) <Badge text="免费" type="tip"/>     | 每天5次免费请求，偶尔用不了...                    | Chrome 插件        |
+| [DeepSeek](https://chat.deepseek.com/) <Badge text="免费" type="tip"/> | 日常提问足够用                                    | 网页版             |
+| [v0.dev](https://v0.dev/) <Badge text="免费" type="tip"/>              | 每月5美元免费额度，够250次请求                    | 网页版             |
 
 - Cursor 最好用
 - Trae 国际版 最实惠
-- DeepSider 每天可以白嫖5次 Claude 4
-- v0 每个月可以白嫖 250次上传图片生成页面的功能
-- OpenRouter 每天白嫖50次免费模型（比如 DeepSeek 0528）的请求
+- DeepSider **每天可以白嫖5次 Claude 4**
+- v0 每个月可以**白嫖250次图片生成网面**的功能
    
 ## Cursor 对接 Mastergo MCP
 
