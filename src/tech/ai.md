@@ -1,7 +1,7 @@
 # Free AI
 
 ::: tip 前言
-一顿操作猛如虎，人工智能来帮助
+付费上班的时代：上班为完成超额工作需要助手，助手需要付费，已闭环！
 :::
 
 ## AI 问答
@@ -30,25 +30,24 @@
 
 - **TONGYI Lingma 通义灵码** （阿里 VSCode 插件）
 
-## AI 编辑器
+## AI 工具
 
-- [Trae 国际版](https://trae.ai/)
+| 名称                                                                                          | 价格/免费额度                         | 备注               |
+| --------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------ |
+| [Cursor](https://www.cursor.com/)                                                             | $20/月                                | 最贵，最好用         |
+| [Trae 国际版](https://trae.ai/)                                                               | 首月 $3/月，续订 $10/月。包年 $7.5/月 | 仅首次登录需要翻墙 |
+| [Copilot](https://docs.github.com/zh/copilot)                                                 | $10/月 或 $100/年                     | VSCode 插件        |
+| [Augment](https://www.augmentcode.com/)                                                       | 用几次就被封了。。。                  | VSCode 插件        |
+| [DeepSider](chrome-extension://dfbnddndcmilnhdfmmaolepiaefacnpo/newtab.html#/settings/reward) | 每天5次免费请求，偶尔用不了。。。     | 谷歌浏览器插件     |
+| [DeepSeek](https://chat.deepseek.com/)                                                        | 免费用                                | 网页版             |
+| [OpenRouter](https://openrouter.ai/models)                                                    | 每天50次免费模型的请求                | 网页版             |
+| [v0.dev](https://v0.dev/)                                                                     | 每月5美元免费额度，够250次请求        | 网页版             |
 
-1. 登录使用 Github 账号，**必须翻墙**！！！
-2. 登录成功后使用，不需要翻墙
-3. **使用 Claude 3.7 有可能需要排队，点击Stop后，按↑再次尝试大概率不用排队**
-4. Chat 模式，回复更快，需手动点击 `应用` 按钮，将改动应用于当前文件
-5. **免费使用的模型：`Claude 3.7 & 3.5`、`DeepSeek R1 & V3`、`GPT-4o`**
-
-- [Trae 国内版](https://www.trae.com.cn/)
-
-1. 免费使用的模型：`DeepSeek R1 & V3`、`Doubao 1.5 Pro`
-2. 由于没有 Claude模型，所以非常不推荐
-
-- [Cursor](https://www.cursor.com/)
-
-1. `gpt-4o-mini` or `cursor-small` 免费使用，其余高级模型**一共有 50 次免费使用次数！**
-2. 所有白嫖手段全部失效
+- Cursor 最好用
+- Trae 国际版 最实惠
+- DeepSider 每天可以白嫖5次 Claude 4
+- v0 每个月可以白嫖 250次上传图片生成页面的功能
+- OpenRouter 每天白嫖50次免费模型（比如 DeepSeek 0528）的请求
    
 ## Cursor 对接 Mastergo MCP
 
