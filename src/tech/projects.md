@@ -55,7 +55,7 @@
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/vue-preview"> -->
   <a class="itemWrap" target="_blank" href="https://bai-preview.netlify.app/">
     <img :src="$withBase('/projects/preview.png')">
-    <h4>vue-preview</h4>
+    <h4>web-viewer</h4>
   </a>  
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/mark-me"> -->
   <a class="itemWrap" target="_blank" href="https://bai-mark.netlify.app/">
