@@ -43,7 +43,7 @@
 
 - Cursor 最好用
 - Trae 国际版 最实惠
-- DeepSider **每天可以白嫖5次 Claude 4**
+- DeepSider **每天可以白嫖5次 Claude 4**，注册的时候输入我的邀请码：**683570c82a9318c0f3250400**，可以每天白嫖6次！
 - v0 每个月可以**白嫖250次图片生成网面**的功能
    
 ## Cursor 对接 Mastergo MCP
