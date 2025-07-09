@@ -1,5 +1,39 @@
 # 网站部署
 
+## 下载防盗链图片
+
+1、方法一
+
+1. 在开发者工具里的 `Sources` 面板中查看图片,右击图片选择：`Save images as data uri`，图片变成base64文本。
+2. 在网上找到[在线Base64转图片工具](https://phototool.cn/base64-img/)，粘贴文本，下载图片。
+
+2、方法二
+直接在所在网站的`控制台`里，输入以下代码，并替换最后的 class 属性值。
+```js
+// 方法：将背景图片转换为blob并下载
+function downloadBackgroundImage(selector) {
+    const element = document.querySelector(selector);
+    const style = window.getComputedStyle(element);
+    const backgroundImage = style.backgroundImage;
+    const url = backgroundImage.slice(5, -2);
+    
+    fetch(url)
+        .then(response => response.blob())
+        .then(blob => {
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'background-image.jpg';
+            link.click();
+            URL.revokeObjectURL(link.href);
+        })
+        .catch(error => console.error('下载失败:', error));
+}
+
+// 使用示例
+downloadBackgroundImage('.your-div-class');
+```
+
+
 ## 给终端设置临时代理
 
 临时让所有命令行工具走代理，以下的代理端口号，是`翻墙工具软件上显示的 http 端口号`。
