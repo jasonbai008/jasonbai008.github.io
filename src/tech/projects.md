@@ -105,7 +105,7 @@
     <img :src="$withBase('/projects/latest1.png')">
     <h4>梁冬对话倪海厦</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/selfhelp/">
+  <a class="itemWrap" target="_blank" href="https://bai-selfhelp.netlify.app/">
     <img :src="$withBase('/projects/book2.png')">
     <h4>焦虑症的自救</h4>
   </a>         
