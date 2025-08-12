@@ -51,6 +51,10 @@
 > [《精神焦虑症的自救（演讲访谈卷）》](https://jasonbai008.github.io/selfhelp/pdf/anxiety2.pdf)  
 > [《精神焦虑症的自救（病理篇、实战篇、演讲篇）》](https://jasonbai008.github.io/selfhelp/pdf/anxiety.pdf)
 
+## 内证观察笔记
+
+- [《内证观察笔记》](/pdf/neiZhengGuanChaBiJi.pdf)
+
 ## 恢复方法
 
 ::: tip 四步曲
