@@ -1,5 +1,12 @@
 # 日常办公
 
+## 搜索替代
+
+百度广告多，谷歌打不开，以下两个搜索引擎可以替代百度：
+
+- [**bing.com**](https://cn.bing.com/) 来自微软的搜索引擎，搜索质量很高 :+1:
+- [**yandex.com**](https://www.yandex.com/) 来自俄罗斯的搜索引擎 :point_left:
+
 ## 自制一寸两寸照片
 
 1. 自拍一张照片，背景尽量干净，比如墙壁
@@ -57,12 +64,6 @@ reg add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\Inpr
 ```sh
 reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" /f
 ```
-
-## 搜索替代
-
-众所周知，[**百度**](https://www.baidu.com/)搜出来的结果广告居多。[**谷歌**](https://www.google.com/)又打不开，这里推荐使用微软的[**必应**](https://cn.bing.com/)搜索引擎。搜索结果质量很高。  
-还有一款俄罗斯的搜索引擎：[**Yandex.com**](https://www.yandex.com/)，搜索结果也不错。
-
 
 ## Markdown 免费转 PDF
 
