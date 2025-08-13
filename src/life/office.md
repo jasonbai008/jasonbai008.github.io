@@ -60,7 +60,9 @@ reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" 
 
 ## 搜索替代
 
-众所周知，[**百度**](https://www.baidu.com/)搜出来的结果广告居多。[**谷歌**](https://www.google.com/)又打不开，这里推荐使用微软的[**必应**](https://cn.bing.com/)搜索引擎。搜索结果质量很高。
+众所周知，[**百度**](https://www.baidu.com/)搜出来的结果广告居多。[**谷歌**](https://www.google.com/)又打不开，这里推荐使用微软的[**必应**](https://cn.bing.com/)搜索引擎。搜索结果质量很高。  
+还有一款俄罗斯的搜索引擎：[**Yandex.com**](https://www.yandex.com/)，搜索结果也不错。
+
 
 ## Markdown 免费转 PDF
 
