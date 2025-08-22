@@ -14,6 +14,22 @@
 
 注册并登录 [Cloudflare](https://www.cloudflare-cn.com/)，新建 Pages，可以关联自己的 Github 仓库，这样更新仓库后，Cloudflare 会自动更新对应的 Pages，非常方便。但**国内很多省份打不开**。
 
+## Git代码提交规范
+
+| 前缀            | 含义                                                              | 示例                                       |
+| :-------------- | :---------------------------------------------------------------- | :----------------------------------------- |
+| **`feat:`**     | 新增功能 (feature)                                                | `feat: 添加用户密码重置功能`               |
+| **`fix:`**      | 修复bug (bug fix)                                                 | `fix: 修复用户列表分页错误的bug`           |
+| **`docs:`**     | 文档更新 (documentation)                                          | `docs: 更新API接口文档`                    |
+| **`style:`**    | 代码格式调整 (不影响代码运行的变动，如空格、分号、缩进等)         | `style: 按照ESLint规则格式化代码`          |
+| **`refactor:`** | 代码重构（既不是新增功能，也不是修改bug）                         | `refactor: 使用hooks重写UserInfo组件`      |
+| **`perf:`**     | 性能优化 (performance)                                            | `perf: 使用缓存优化Dashboard数据加载时间`  |
+| **`test:`**     | 增加或修改测试用例                                                | `test: 为Login模块添加单元测试`            |
+| **`build:`**    | 构建系统或外部依赖的更改 (如 webpack, npm, gulp)                  | `build: 升级webpack到v5版本`               |
+| **`ci:`**       | CI配置文件的更改 (如 Travis, Jenkins, GitLab CI)                  | `ci: 在GitHub Actions中增加自动化部署流程` |
+| **`chore:`**    | 其他不修改src或测试文件的改动（维护性任务，如重构、工具链更新等） | `chore: 优化项目目录结构`                  |
+| **`revert:`**   | 回滚之前的某个提交                                                | `revert: revert: 撤销某次错误的提交`       |
+
 ## 使用 shell 脚本部署网站
 
 我们可以在本地通过 shell 脚本进行项目打包、代码提交、部署到服务器等操作。
