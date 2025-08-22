@@ -14,21 +14,21 @@
 
 注册并登录 [Cloudflare](https://www.cloudflare-cn.com/)，新建 Pages，可以关联自己的 Github 仓库，这样更新仓库后，Cloudflare 会自动更新对应的 Pages，非常方便。但**国内很多省份打不开**。
 
-## Git代码提交规范
+## Git 代码提交规范
 
-| 前缀            | 含义                                                              | 示例                                       |
-| :-------------- | :---------------------------------------------------------------- | :----------------------------------------- |
-| **`feat:`**     | 新增功能 (feature)                                                | `feat: 添加用户密码重置功能`               |
-| **`fix:`**      | 修复bug (bug fix)                                                 | `fix: 修复用户列表分页错误的bug`           |
-| **`docs:`**     | 文档更新 (documentation)                                          | `docs: 更新API接口文档`                    |
-| **`style:`**    | 代码格式调整 (不影响代码运行的变动，如空格、分号、缩进等)         | `style: 按照ESLint规则格式化代码`          |
-| **`refactor:`** | 代码重构（既不是新增功能，也不是修改bug）                         | `refactor: 使用hooks重写UserInfo组件`      |
-| **`perf:`**     | 性能优化 (performance)                                            | `perf: 使用缓存优化Dashboard数据加载时间`  |
-| **`test:`**     | 增加或修改测试用例                                                | `test: 为Login模块添加单元测试`            |
-| **`build:`**    | 构建系统或外部依赖的更改 (如 webpack, npm, gulp)                  | `build: 升级webpack到v5版本`               |
-| **`ci:`**       | CI配置文件的更改 (如 Travis, Jenkins, GitLab CI)                  | `ci: 在GitHub Actions中增加自动化部署流程` |
-| **`chore:`**    | 其他不修改src或测试文件的改动（维护性任务，如重构、工具链更新等） | `chore: 优化项目目录结构`                  |
-| **`revert:`**   | 回滚之前的某个提交                                                | `revert: revert: 撤销某次错误的提交`       |
+|     前缀      | 描述                                 |
+| :-----------: | :----------------------------------- |
+|   **feat:**   | 新增功能                             |
+|   **fix:**    | 修复错误                             |
+|   **docs:**   | 文档更新                             |
+|  **style:**   | 代码格式调整（不影响功能的格式变动） |
+| **refactor:** | 代码重构（不涉及新功能或错误修复）   |
+|   **perf:**   | 性能优化                             |
+|   **test:**   | 测试用例的增加或修改                 |
+|  **build:**   | 构建系统或依赖项的更改               |
+|    **ci:**    | CI 配置文件和脚本的更改              |
+|  **chore:**   | 维护性任务（工具链更新、配置调整等） |
+|  **revert:**  | 回滚提交                             |
 
 ## 使用 shell 脚本部署网站
 
@@ -95,34 +95,37 @@ module.exports = defineConfig({
 
 ### 方法一
 
-1. 在开发者工具里的 `Sources` 面板中查看图片,右击图片选择：`Save images as data uri`，图片变成base64文本。
-2. 在网上找到[在线Base64转图片工具](https://phototool.cn/base64-img/)，粘贴文本，下载图片。
+1. 在开发者工具里的 `Sources` 面板中查看图片,右击图片选择：`Save images as data uri`，图片变成 base64 文本。
+2. 在网上找到[在线 Base64 转图片工具](https://phototool.cn/base64-img/)，粘贴文本，下载图片。
 
 ### 方法二
+
 直接在所在网站的`控制台`里，输入以下代码，并替换最后的 class 属性值。
+
 ```js
 // 方法：将背景图片转换为blob并下载
 function downloadBackgroundImage(selector) {
-    const element = document.querySelector(selector);
-    const style = window.getComputedStyle(element);
-    const backgroundImage = style.backgroundImage;
-    const url = backgroundImage.slice(5, -2);
-    
-    fetch(url)
-        .then(response => response.blob())
-        .then(blob => {
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = 'background-image.jpg';
-            link.click();
-            URL.revokeObjectURL(link.href);
-        })
-        .catch(error => console.error('下载失败:', error));
+  const element = document.querySelector(selector);
+  const style = window.getComputedStyle(element);
+  const backgroundImage = style.backgroundImage;
+  const url = backgroundImage.slice(5, -2);
+
+  fetch(url)
+    .then((response) => response.blob())
+    .then((blob) => {
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "background-image.jpg";
+      link.click();
+      URL.revokeObjectURL(link.href);
+    })
+    .catch((error) => console.error("下载失败:", error));
 }
 
 // 使用示例
-downloadBackgroundImage('.your-div-class');
+downloadBackgroundImage(".your-div-class");
 ```
+
 ## 透视 Vite 代理地址
 
 配置 Vite 让其在终端打印实际的请求地址：
@@ -184,8 +187,6 @@ git config --global --get https.proxy;
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 ```
-
-
 
 ## 一键合并分支
 
@@ -254,9 +255,9 @@ build: {
 
 ## 注册免费域名
 
-- 网址：[dpdns.org](https://domain.digitalplat.org/)  
+- 网址：[dpdns.org](https://domain.digitalplat.org/)
 - 教程：[https://linux.do/t/topic/571608](https://linux.do/t/topic/571608)
-- 域名：可以注册一个，给代码仓库Star后，可以注册两个免费域名
+- 域名：可以注册一个，给代码仓库 Star 后，可以注册两个免费域名
 
 ## Cloudflare 部署网页
 
@@ -365,5 +366,3 @@ server {
 ln -s /etc/nginx/sites-available/luban /etc/nginx/sites-enabled/luban
 nginx -s reload
 ```
-
-
