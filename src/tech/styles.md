@@ -4,6 +4,42 @@
 人靠衣装，美靠 CSS
 :::
 
+## Vue3 + Element Plus 切换主题色
+
+```js
+changeTheme() {
+    const root = document.documentElement
+    let c = this.themeColor
+    root.style.setProperty('--el-color-primary', c)
+    root.style.setProperty('--el-color-primary-light-3', c + 'CC')
+    root.style.setProperty('--el-color-primary-light-5', c + '99')
+    root.style.setProperty('--el-color-primary-light-7', c + '66')
+    root.style.setProperty('--el-color-primary-light-8', c + '4D')
+    root.style.setProperty('--el-color-primary-light-9', c + '33')
+    root.style.setProperty('--el-color-primary-dark-2', c + 'F5')
+    
+    // 16进制颜色标尺
+    // root.style.setProperty('--el-color-primary-light-1', color + 'E6')  // 90% 不透明度
+    // root.style.setProperty('--el-color-primary-light-2', color + 'CC')  // 80% 不透明度
+    // root.style.setProperty('--el-color-primary-light-3', color + 'B3')  // 70% 不透明度
+    // root.style.setProperty('--el-color-primary-light-4', color + '99')  // 60% 不透明度
+    // root.style.setProperty('--el-color-primary-light-5', color + '80')  // 50% 不透明度
+    // root.style.setProperty('--el-color-primary-light-6', color + '66')  // 40% 不透明度
+    // root.style.setProperty('--el-color-primary-light-7', color + '4D')  // 30% 不透明度
+    // root.style.setProperty('--el-color-primary-light-8', color + '33')  // 20% 不透明度
+    // root.style.setProperty('--el-color-primary-light-9', color + '1A')  // 10% 不透明度
+    // root.style.setProperty('--el-color-primary-dark-2', color + 'F5')   // 96% 不透明度
+}
+```
+
+在自定义组件中使用主题色：
+
+```css
+text {
+  color: var(--el-color-primary);
+}
+```
+
 ## 隐藏显示滚动条
 
 ```css
