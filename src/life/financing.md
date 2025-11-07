@@ -31,7 +31,7 @@
 
 ### 股票型基金 <Badge text="X" type="error"/>
 
-打死不买
+尽量不买
 
 ### 债券型基金 <Badge text="√" type="tip"/>
 
@@ -65,12 +65,10 @@
 - 一部分购买小银行的**定期存款**，年化 **2.x%**
   :::
 
-## 精选债基<Badge text="自负盈亏" type="warning"/>
+## 高风险基金<Badge text="自负盈亏" type="warning"/>
 
-| 名称                                 |                            类型                            | 备注 |
-| :----------------------------------- | :--------------------------------------------------------: | :--: |
-| **博时中债 5-10 年农发行债券指数 C** |    <Badge text="利率债" type="tip" vertical="middle" />    | 最牛 |
-| **方正富邦睿利纯债债券 C**           | <Badge text="信用债" type="warning" vertical="middle" /> | 不错 |
-| **南方中债 3-5 年农发行债券指数 C**  |    <Badge text="利率债" type="tip" vertical="middle" />    | 还行 |
-| **国泰嘉睿纯债债券 C**               |    <Badge text="利率债" type="tip" vertical="middle" />    | 还行 |
-| **招商招悦纯债债券 C**               |  <Badge text="信用债" type="warning" vertical="middle" />  | 还行 |
+| 名称                              |                            类型                            |    备注    |
+| :-------------------------------- | :--------------------------------------------------------: | :--------: |
+| **景顺长城稳健增益债券C**         |     <Badge text="混合债基" type="tip" vertical="middle" />     |  长期持有  |
+| **博时标普500ETF联接(QDII)C**     | <Badge text="美股基金" type="error" vertical="middle" /> | 大跌后买入 |
+| **博时纳斯达克100ETF联接(QDII)C** | <Badge text="美股基金" type="error" vertical="middle" /> | 大跌后买入 |
