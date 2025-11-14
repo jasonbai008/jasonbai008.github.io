@@ -4,6 +4,57 @@
 人靠衣装，美靠 CSS
 :::
 
+## 渐变按钮左右过渡
+
+<button class="btn">左右过渡的渐变按钮</button>
+
+<style>
+  .btn {
+    /* 左边浅蓝，中间深蓝，右边浅蓝，背景放大200%，默认左侧对齐，只露出左侧浅蓝和中间深蓝 */
+    background: linear-gradient(to right, #5E27CB 0%, #210C4B 51%, #5E27CB 100%);
+    background-size: 200% auto;
+    transition: .3s;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  .btn:hover {
+    /* 鼠标浮上去，背景位置向右移动到中心，露出中间深蓝和右边浅蓝 */
+    background-position: right center;
+  }
+</style>
+
+```css
+.btn {
+  /* 左边浅蓝，中间深蓝，右边浅蓝，背景放大200%，默认左侧对齐，只露出左侧浅蓝和中间深蓝 */
+  background: linear-gradient(to right, #5E27CB 0%, #210C4B 51%, #5E27CB 100%);
+  background-size: 200% auto;
+  transition: .3s;
+}
+.btn:hover {
+  /* 鼠标浮上去，背景位置向右移动到中心，露出中间深蓝和右边浅蓝 */
+  background-position: right center;
+}
+```
+
+## Mask 渐变遮罩
+
+在 CSS mask 中：
+
+- `white` 表示 **完全显示**（不遮罩）
+- `black` 表示 **完全隐藏**（全遮罩）
+- `transparent` 等同于 `black`，表示 **完全隐藏**
+- `灰度值` 表示 透明度级别
+
+```css
+/* 水平渐变遮罩 */
+mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+/* 垂直渐变遮罩 */
+mask: linear-gradient(transparent, white 20%, white 80%, transparent);
+```
+
 ## Vue3 + Element Plus 切换主题色
 
 ```js
