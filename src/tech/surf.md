@@ -12,17 +12,13 @@
 
 ## 免费节点
 
-- [FreeClashNode](https://www.freeclashnode.com/)
-
+- [https://proxygithub.com/free-node/](https://proxygithub.com/free-node/)
 
 ## 订阅地址 (v2rayNG)
 
-- [https://fq.jasonbaiyy.dpdns.org](https://fq.jasonbaiyy.dpdns.org)（推荐）
-- [https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub](https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub)（备用）
-
-## 订阅地址 (ClashX)
-
-- <p>{{ 'https://node.freeclashnode.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/0-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.yaml' }}</p>
+- <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/1-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
+- [https://fq.jasonbaiyy.dpdns.org](https://fq.jasonbaiyy.dpdns.org)
+- [https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub](https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub)
 
 ## 移动端教程 (v2rayNG)
 
