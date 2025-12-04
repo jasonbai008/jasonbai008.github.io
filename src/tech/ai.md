@@ -1,29 +1,17 @@
 # Free AI
 
 ::: tip 前言
-付费上班时代：上班为完成超额工作需要助手，助手需要付费，已闭环！
+付费上班时代：上班为完成超额工作需要助手，助手需要付费
 :::
 
 ## AI 问答
 
-- [DeepSeek 官网](https://chat.deepseek.com/)
-- [Endless Chat](https://e11.free-chat.asia/)
-- [Free2gpt](https://chat1.free2gpt.com/)
-- [豆包](https://www.doubao.com/chat)
+- [DeepSeek](https://chat.deepseek.com/)
+- [DouBao](https://www.doubao.com/chat)
 
 ## AI 阅读
 
 - [Kimi 会阅读文件的 AI 助手](https://kimi.moonshot.cn/)
-
-## AI 导航
-
-- [nav.free2gpt.com](https://nav.free2gpt.com/)
-- [ic.free-chat.asia](https://ic.free-chat.asia/)
-
-## AI 社区
-
-- [huggingface.co](https://huggingface.co)（需要翻墙）
-- [openrouter.ai](https://openrouter.ai/models)
 
 ## AI 插件
 
@@ -42,7 +30,6 @@
 
 - Cursor 最好用，最贵
 - Trae 国际版 最实惠（600次请求/月)
-- DeepSider 注册时输入我的邀请码：**683570c82a9318c0f3250400**，**每天白嫖6次 Claude 4！**
 - v0 每个月可以**白嫖200次左右图片生成网页**的功能
    
 ## Cursor 对接 Mastergo MCP

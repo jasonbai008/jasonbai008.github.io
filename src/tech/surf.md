@@ -16,7 +16,11 @@
 
 ## 订阅地址 (v2rayNG)
 
+- <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/0-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
 - <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/1-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
+- <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/2-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
+- <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/3-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
+- <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/4-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
 - [https://fq.jasonbaiyy.dpdns.org](https://fq.jasonbaiyy.dpdns.org)
 - [https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub](https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub)
 

@@ -14,6 +14,10 @@
 
 注册并登录 [Cloudflare](https://www.cloudflare-cn.com/)，新建 Pages，可以关联自己的 Github 仓库，这样更新仓库后，Cloudflare 会自动更新对应的 Pages，非常方便。但**国内很多省份打不开**。
 
+### 4. **PinMe** <Badge text="一般" type="warning"/>
+
+无需注册登录， 在官网 [PinMe](https://pinme.eth.limo/#/) 直接上传静态文件，生成一个文件内容链接，但不能修改，每次都生成一个新链接。
+
 ## Git 代码提交规范
 
 |     前缀      | 描述                                 |
