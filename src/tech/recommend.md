@@ -22,6 +22,7 @@
 
 ## 工具类
 
+- [Excalidraw](https://excalidraw.com/)（手绘风格的白板流程图）
 - [图片批量压缩](https://www.imgdiet.com/zh-CN/compress)
 - [GitHub Socialify](https://socialify.git.ci/)
 - [身份大全](https://www.shenfendaquan.com/)
