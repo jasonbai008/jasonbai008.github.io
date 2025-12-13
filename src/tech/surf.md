@@ -8,11 +8,13 @@
 
 - [Android版](https://gitee.com/lubanseven/store/releases/download/v1.0/v2Rui4Mobile.apk)（**v2rayNG**）
 - [Windows版](https://gitee.com/lubanseven/store/releases/download/v1.0/v2RuiN.zip)（**v2rayNG**）
-- [Mac版](https://d.lefly.cloud/clash/ClashX1.118.0.dmg)（**ClashX**）（[教程](https://help.lefly.cloud/contents/macos/clashX.html)）
+- [FLClash](https://clashproxy.net/zh-CN/flclash.html)
+- [Clash 版本列表](https://github.com/clash-version/clash-download)
 
 ## 免费节点
 
 - [https://proxygithub.com/free-node/](https://proxygithub.com/free-node/)
+- [https://v2ssr.net/freenode-ssr-v2rayn-clash](https://v2ssr.net/freenode-ssr-v2rayn-clash)
 
 ## 订阅地址 (v2rayNG)
 
