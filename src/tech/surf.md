@@ -6,18 +6,23 @@
 
 ## 软件下载
 
-- [Android版](https://gitee.com/lubanseven/store/releases/download/v1.0/v2Rui4Mobile.apk)（**v2rayNG**）
-- [Windows版](https://gitee.com/lubanseven/store/releases/download/v1.0/v2RuiN.zip)（**v2rayNG**）
+- [v2rayNG](https://gitee.com/lubanseven/store/releases/download/v1.0/v2Rui4Mobile.apk)（**Android**）
+- [v2rayNG](https://gitee.com/lubanseven/store/releases/download/v1.0/v2RuiN.zip)（**Windows**）
 - [FLClash](https://clashproxy.net/zh-CN/flclash.html)
-- [Clash 版本列表](https://github.com/clash-version/clash-download)
+- [Clash 各种版本](https://github.com/clash-version/clash-download)
 
 ## 免费节点
 
+- [https://yoyapai.com/category/mianfeijiedian](https://yoyapai.com/category/mianfeijiedian)
 - [https://proxygithub.com/free-node/](https://proxygithub.com/free-node/)
-- [https://v2ssr.net/freenode-ssr-v2rayn-clash](https://v2ssr.net/freenode-ssr-v2rayn-clash)
+
+## 订阅地址 (Clash)
+
+- <p>{{ 'https://yoyapai.com/mianfeijiedian/' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '-clash-vpn-mfjiedian-yoyapai.com.yaml'  }}</p>
 
 ## 订阅地址 (v2rayNG)
 
+- <p>{{ 'https://yoyapai.com/mianfeijiedian/' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '-ssr-v2ray-vpn-jiedian-yoyapai.com.txt'  }}</p>
 - <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/0-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
 - <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/1-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
 - <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/2-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
@@ -51,8 +56,6 @@
 ### 6. 停止科学上网
 
 再次点击`圆型图标` > 图标变灰
-
-
 
 ## 电脑端教程 (v2rayNG)
 
