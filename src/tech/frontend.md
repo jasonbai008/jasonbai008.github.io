@@ -587,6 +587,16 @@ function fib(n) {
 
 ## Git 不常用操作
 
+### 删除分支
+
+```bash
+# 删除本地分支
+git branch -D <branch-name>
+
+# 这会自动创建本地分支a并跟踪远程分支a
+git checkout -b a origin/a
+```
+
 ### 临时缓存本地修改的文件
 
 本地文件修改了一半儿，要切到别的分支修改代码。这时候可以：

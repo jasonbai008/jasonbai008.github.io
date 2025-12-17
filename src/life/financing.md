@@ -69,6 +69,5 @@
 
 | 名称                              |                            类型                            |    备注    |
 | :-------------------------------- | :--------------------------------------------------------: | :--------: |
-| **景顺长城稳健增益债券C**         |     <Badge text="混合债基" type="tip" vertical="middle" />     |  长期持有  |
 | **博时标普500ETF联接(QDII)C**     | <Badge text="美股基金" type="error" vertical="middle" /> | 大跌后买入 |
 | **博时纳斯达克100ETF联接(QDII)C** | <Badge text="美股基金" type="error" vertical="middle" /> | 大跌后买入 |

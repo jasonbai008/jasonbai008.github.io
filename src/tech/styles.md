@@ -4,6 +4,21 @@
 人靠衣装，美靠 CSS
 :::
 
+## 消除Flex布局子元素溢出
+
+设置最小宽度为0
+
+``` css
+.container {
+  display: flex;
+}
+
+/* 关键：允许子元素收缩到小于内容宽度 */
+.container > div {
+  min-width: 0;
+}
+```
+
 ## 渐变按钮左右过渡
 
 <button class="btn">左右过渡的渐变按钮</button>
