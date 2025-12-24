@@ -26,23 +26,19 @@
 - [《梁冬对话倪海厦》](https://www.ximalaya.com/album/30705544)
 - [《斯坦福大学演讲：从感冒一路治到癌症》](https://www.bilibili.com/video/BV1K14y1T7LW/)
 - [《广西中医大学演讲：经方的运用》](https://www.bilibili.com/video/BV17k4y1j7Cj/)
-- [《仲景心法》 22 集](https://www.bilibili.com/video/BV1dD4y1s7TT/)
-- [《人纪：针灸篇》](https://www.bilibili.com/video/BV1bd4y1F7Zo/)
-- [《人纪：皇帝内经》](https://www.bilibili.com/video/BV1NM4y1M7yK/)
-- [《人纪：神农本草经》](https://www.bilibili.com/video/BV1T44y1o7SL/)
-- [《人纪：伤寒论》](https://www.bilibili.com/video/BV1ov4y1v7ap/)
-- [《人纪：金匮要略》](https://www.bilibili.com/video/BV1uD4y1W7FS/)
-- [《天纪：紫微斗数与易经》](https://www.bilibili.com/video/BV1Wd4y1t7uD/)
+- [《仲景心法》](https://www.bilibili.com/video/BV1mc411T741)
+- [《人纪：针灸大成》](https://www.bilibili.com/video/BV1kC4WzsE1H)
+- [《人纪：皇帝内经》](https://www.bilibili.com/video/BV1cB4MzCEB5)
+- [《人纪：神农本草经》](https://www.bilibili.com/video/BV19w4mz6EzH)
+- [《人纪：伤寒论》](https://www.bilibili.com/video/BV1xQ4nzpEDo)
+- [《人纪：金匮要略》](https://www.bilibili.com/video/BV1UD43zwE8a)
+- [《天纪：紫微斗数与易经》](https://www.bilibili.com/video/BV1KJsLekEfA)
 
 ## 祝余中医日记
 
 -  [《针灸大成笔记》](https://zhuanlan.zhihu.com/p/594439538)
 -  [《神农本草经笔记》](https://zhuanlan.zhihu.com/p/12839943379)
 -  [《皇帝内经笔记》](https://zhuanlan.zhihu.com/p/1723018433)
-
-## 火柴棒医生
-
-网盘链接: [https://pan.baidu.com/s/1Tc7zfpCW_XUIBIsaMqcJFQ?pwd=zrpi](https://pan.baidu.com/s/1Tc7zfpCW_XUIBIsaMqcJFQ?pwd=zrpi)  
 
 ## 焦虑症的自救
 
