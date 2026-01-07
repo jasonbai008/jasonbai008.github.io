@@ -4,6 +4,95 @@
 工欲善其事，必先利其器
 :::
 
+## 带表单弹窗组件模版
+
+```html
+<template>
+  <el-dialog title="标题" v-model="visible" width="40%" :destroy-on-close="true" class="my-dialog" align-center @closed="handleClosed">
+    <el-form ref="formRef" :model="form" :rules="rules" label-width="80px">
+      <el-form-item label="名称" prop="name">
+        <el-input v-model="form.name" placeholder="请输入" />
+      </el-form-item>
+    </el-form>
+    <template #footer>
+      <span class="dialog-footer">
+        <el-button @click="visible = false">取消</el-button>
+        <el-button type="primary" @click="handleSubmit">确定</el-button>
+      </span>
+    </template>
+  </el-dialog>
+</template>
+
+<script>
+// 如何使用
+// 1. 引入组件
+// import CustomDialog from '@/components/CustomDialog.vue'
+// 2. 在模板中使用
+// <custom-dialog ref="customDialogRef"></custom-dialog>
+// 3. 打开弹窗（新增）
+// this.$refs.customDialogRef.open()
+// 4. 打开弹窗（编辑）
+// this.$refs.customDialogRef.open({ type: 'edit', data: { name: '小白' } })
+export default {
+  name: 'CustomDialog',
+  data() {
+    return {
+      visible: false,
+      isEdit: false,
+      form: {
+        name: '',
+      },
+      rules: {
+        name: [{ required: true, message: '请输入名称', trigger: 'blur' }],
+      },
+    }
+  },
+  computed: {},
+  mounted() {},
+  methods: {
+    open(params = {}) {
+      const { type = 'add', data = {} } = params
+      if (type === 'edit') {
+        this.isEdit = true
+        this.form = { ...data }
+      } else {
+        this.isEdit = false
+        this.form = {
+          name: '',
+        }
+      }
+      this.visible = true
+    },
+    async handleSubmit() {
+      // console.log(this.form)
+      this.$refs.formRef.validate(async (valid) => {
+        if (valid) {
+          this.visible = false
+        }
+      })
+    },
+    handleClosed() {
+      this.$refs.formRef?.resetFields()
+    },
+  },
+}
+</script>
+
+<style lang="scss">
+.my-dialog .el-dialog__body {
+  padding: 0 20px;
+}
+</style>
+<style lang="scss" scoped>
+.dialog-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+</style>
+
+```
+
 ## 单个组件懒加载
 
 点击按钮，动态加载一个页面外的组件：
