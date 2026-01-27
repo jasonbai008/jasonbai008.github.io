@@ -4,6 +4,91 @@
 工欲善其事，必先利其器
 :::
 
+## Class 基础示例
+
+```js
+/**
+ * 用法示例：
+ *
+ * import BaseClass from './commonClass.js' // 引入类
+ * BaseClass.version // 当前版本
+ * const base = BaseClass.createDefault()  // 自动使用默认配置初始化实例
+ * 或
+ * const base = new BaseClass({ name: 'demo', enabled: true });
+ * base.state // 'ready'
+ * base.state = 'enabled'
+ * base.enable();
+ * console.log(base.getInfo());
+ */
+
+class BaseClass {
+  // 类静态属性，直接通过类来调用
+  static version = '1.0.0'
+  // 类私有静态属性
+  static #defaultOptions = { name: 'base', enabled: false }
+  // 实例私有字段
+  #state = 'idle'
+
+  // 构造函数：初始化实例的时候执行
+  constructor(options = {}) {
+    // 合并默认配置与传入配置
+    this.options = { ...BaseClass.#defaultOptions, ...options }
+    // 实例属性
+    this.name = this.options.name
+    this.enabled = this.options.enabled
+    // 实例私有字段
+    this.#state = 'init'
+    // 初始化方法
+    this.initialize()
+  }
+
+  // 静态方法: 创建默认实例
+  static createDefault() {
+    return new BaseClass()
+  }
+
+  // 初始化
+  initialize() {
+    this.#state = 'ready'
+  }
+
+  // getter: 获取当前状态
+  get state() {
+    return this.#state
+  }
+
+  // setter: 设置当前状态
+  set state(value) {
+    this.#state = value
+  }
+
+  // 启用实例
+  enable() {
+    this.enabled = true
+    this.#state = 'enabled'
+  }
+
+  // 禁用实例
+  disable() {
+    this.enabled = false
+    this.#state = 'disabled'
+  }
+
+  // 获取实例信息
+  getInfo() {
+    return {
+      name: this.name,
+      enabled: this.enabled,
+      state: this.#state,
+      version: BaseClass.version,
+    }
+  }
+}
+
+export default BaseClass
+
+```
+
 ## nvm 常用指令
 
 ```sh
