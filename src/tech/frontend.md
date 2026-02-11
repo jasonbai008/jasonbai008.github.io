@@ -4,6 +4,19 @@
 工欲善其事，必先利其器
 :::
 
+## 监听 PostMessage 事件
+
+```js
+window.addEventListener('message', (event) => {
+  console.log('收到消息:', event.data);
+});
+
+// 或
+// monitorEvents() 是 Chrome DevTools 提供的一个非常实用的内置函数，用于实时监控 DOM 事件。
+// monitorEvents(element, eventType)
+monitorEvents(window, 'message')
+```
+
 ## 移动端调试
 
 复制粘贴以下两行代码：
