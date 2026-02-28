@@ -32,7 +32,10 @@
 
 ### 股票型基金 <Badge text="X" type="error"/>
 
-尽量不买
+- 尽量少买
+- 尽量国内外分散配置
+- 尽量买**宽基指数基金**和**混合型基金**
+- 基金波动尽量小
 
 ### 债券型基金 <Badge text="√" type="tip"/>
 
@@ -61,14 +64,19 @@
 
 ::: tip 资产配置
 
-- 零花钱放**朝朝宝**，10 万额度，年化 **1.x%** ，随时支取
+- 零花钱放**朝朝宝**，10 万额度，年化 **1%** ，随时支取
 - 一部分购买网商银行上面的**稳利宝**（代销的银行理财），年化 **2.x%**
-- 一部分购买小银行的**定期存款**，年化 **2.x%**
+- 一部分购买小银行的**定期存款**，年化 **2%**
   :::
 
-## 高风险基金<Badge text="自负盈亏" type="warning"/>
+## 基金精选<Badge text="自负盈亏" type="tip"/>
 
-| 名称                              |                            类型                            |    备注    |
-| :-------------------------------- | :--------------------------------------------------------: | :--------: |
-| **博时标普500ETF联接(QDII)C**     | <Badge text="美股基金" type="error" vertical="middle" /> | 大跌后买入 |
-| **博时纳斯达克100ETF联接(QDII)C** | <Badge text="美股基金" type="error" vertical="middle" /> | 大跌后买入 |
+| 名称                              |                            类型                            |  备注  |
+| :-------------------------------- | :--------------------------------------------------------: | :----: |
+| **国富亚洲机会股票(QDII)C**       | <Badge text="亚洲基金" type="warning" vertical="middle" /> | 闭眼买 |
+| **易方达全球成长精选混合(QDII)C** |   <Badge text="全球基金" type="tip" vertical="middle" />   | 闭眼买 |
+| **建信新兴市场优选混合(QDII)C**   |  <Badge text="美股基金" type="error" vertical="middle" />  | 跌了买 |
+| **博时标普500ETF联接(QDII)C**     |  <Badge text="美股基金" type="error" vertical="middle" />  | 跌了买 |
+| **易方达科鑫量化选股股票C**       | <Badge text="国内基金" type="warning" vertical="middle" /> | 闭眼买 |
+| **华夏中证500ETF联接C**           | <Badge text="国内基金" type="warning" vertical="middle" /> | 跌了买 |
+| **华夏国证自由现金流ETF联接C**    | <Badge text="国内基金" type="warning" vertical="middle" /> | 跌了买 |
