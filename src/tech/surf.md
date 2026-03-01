@@ -18,11 +18,11 @@
 
 ## 订阅地址 (Clash)
 
-- <p>{{ 'https://yoyapai.com/mianfeijiedian/' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '-clash-vpn-mfjiedian-yoyapai.com.yaml'  }}</p>
+- <p>{{ 'https://yoyapai.com/mianfeijiedian/' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '-clashvpnmfjiedian-yoyapai.com.yaml'  }}</p>
 
 ## 订阅地址 (v2rayNG)
 
-- <p>{{ 'https://yoyapai.com/mianfeijiedian/' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '-ssr-v2ray-vpn-jiedian-yoyapai.com.txt'  }}</p>
+- <p>{{ 'https://yoyapai.com/mianfeijiedian/' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '-ssr-v2rayvpnjiedian-yoyapai.com.txt'  }}</p>
 - <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/0-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
 - <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/1-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
 - <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/2-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
