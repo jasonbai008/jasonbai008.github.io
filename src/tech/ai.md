@@ -4,16 +4,26 @@
 付费上班时代已到来！
 :::
 
-## AI 问答
+## 免费 AI 策略
 
-- [DeepSeek](https://chat.deepseek.com/)
-- [DouBao](https://www.doubao.com/chat)
+1. 开发简单功能，使用<Badge text="Trae 国内版" type="tip" vertical="middle" />，完全免费，使用 **`GLM-4.7`** 大模型。
+
+2. 开发复杂功能，或**上传设计稿生成页面**，一定要用<Badge text="Trae 国际版" type="tip" vertical="middle" /> 的 **`Gemini-3-pro-preview`** 大模型。
+
+3. <Badge text="Trae 国际版" type="tip" vertical="middle" />，一个月免费 3美元，大约可以使用30次。额度用完后可以使用浏览器插件 <Badge text="DeepSider" type="tip" vertical="middle" /> ，一天白嫖两次 Claude 4 大模型。
+
+4. 翻墙方便的，必须使用欧美日IP节点，直接在 <Badge text="Google AI Studio" type="tip" vertical="middle" /> 中免费使用 **`Gemini-3-pro-preview`** 大模型。
 
 ## AI 大模型
 
 大模型编程能力排序：
 
 **Gemini 3 > Claude 4 > GLM-5 > DeepSeek**
+
+## AI 问答
+
+- [DeepSeek](https://chat.deepseek.com/)
+- [DouBao](https://www.doubao.com/chat)
 
 ## AI 阅读
 
