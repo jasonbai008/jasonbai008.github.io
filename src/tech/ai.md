@@ -1,7 +1,7 @@
 # Free AI
 
 ::: tip 前言
-付费上班时代已到来！
+付费上班时代已来临，今天你使用AI偷懒了吗？
 :::
 
 ## AI 免费策略
@@ -15,6 +15,13 @@
 4. 翻墙方便的，必须使用欧美日IP节点，在 <Badge text="Google AI Studio" type="tip" vertical="middle" />官网免费使用<Badge text="Gemini-3-Pro-Preview" type="warning" vertical="middle" />大模型。
 
 5. 日常提问，在官网尽情使用<Badge text="DeepSeek" type="tip" vertical="middle" />
+
+<style>
+    h2[id=ai-免费策略] + ol .badge {
+        padding: 2px 10px;
+        vertical-align: baseline !important;
+    }
+</style>
 
 ## AI 大模型
 
@@ -41,10 +48,10 @@
 | ----------------------------------------------------------------------------- | --------------------------------- | ------------------ |
 | [Cursor](https://cursor.com/cn)                                               | **$20/月**                        | 最贵，最好用       |
 | [Trae](https://trae.ai/) <Badge text="国际版" type="warning"/>                | 首月 **$3/月**，续订 **$10/月**。 | 仅首次登录需要翻墙 |
+| [Trae CN](https://trae.ai/) <Badge text="国内版" type="tip"/>                 | 免费                              | 复杂功能用国际版   |
+| [DeepSider](https://deepsider.ai/) <Badge text="免费" type="tip"/>            | **每天白嫖两次 Claude 4** 👍       | Chrome 插件        |
+| [DeepSeek](https://chat.deepseek.com/) <Badge text="免费" type="tip"/>        | 日常提问足够用                    | 官网               |
 | [Copilot](https://www.microsoft.com/zh-cn/microsoft-365/copilot/meet-copilot) | **$10/月** 或 **$100/年**         | VSCode 插件        |
-| [DeepSider](https://deepsider.ai/) <Badge text="免费" type="tip"/>            | **每天白嫖两次 Claude 4 ** 👍      | Chrome 插件        |
-| [DeepSeek](https://chat.deepseek.com/) <Badge text="免费" type="tip"/>        | 日常提问足够用                    | 网页版             |
-| [v0.dev](https://v0.dev/) <Badge text="免费" type="tip"/>                     | 每月5美元免费额度，够250次请求    | 网页版             |
    
 ## Cursor 对接 Mastergo MCP
 

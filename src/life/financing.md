@@ -102,10 +102,10 @@
 
 | 名称                              |                            类型                            |
 | :-------------------------------- | :--------------------------------------------------------: |
-| **国富亚洲机会股票(QDII)C**       | <Badge text="亚洲基金" type="warning" vertical="middle" /> |
 | **易方达全球成长精选混合(QDII)C** |   <Badge text="全球基金" type="tip" vertical="middle" />   |
+| **国富亚洲机会股票(QDII)C**       | <Badge text="亚洲基金" type="warning" vertical="middle" /> |
 | **建信新兴市场优选混合(QDII)C**   |  <Badge text="美股基金" type="error" vertical="middle" />  |
 | **博时标普 500ETF 联接(QDII)C**   |  <Badge text="美股基金" type="error" vertical="middle" />  |
 | **华夏中证 500ETF 联接 C**        | <Badge text="国内基金" type="warning" vertical="middle" /> |
-| **易方达科鑫量化选股股票 C**      | <Badge text="国内基金" type="warning" vertical="middle" /> |
 | **华夏国证自由现金流 ETF 联接 C** | <Badge text="国内基金" type="warning" vertical="middle" /> |
+| **易方达科鑫量化选股股票 C**      | <Badge text="国内基金" type="warning" vertical="middle" /> |
