@@ -30,12 +30,12 @@
 
 ## 韭菜工具
 
-1. 新浪财经 APP - 查看国内欧美指数，最常用
-2. Choice APP - 查看债券行情
+1. **新浪财经 APP** - 查看国内欧美指数，最常用
+2. **Choice APP** - 查看债券行情
 3. [华尔街见闻](https://wallstreetcn.com) - 每日财经头条
 4. [英为财情](https://cn.investing.com) - 查看日韩股票
 5. [集思录](https://www.jisilu.cn/data/qdii/#qdiie) - LOF基金套利专用
-6. 支付宝基金评论区 - 会有意想不到的收获，比如 QDII基金涨跌幅预估
+6. **支付宝基金评论区** - 会有意想不到的收获，比如QDII基金涨跌幅预估
 
 ## 金融常识
 
