@@ -11,7 +11,7 @@
 - [FLClash](https://clashproxy.net/zh-CN/flclash.html)
 - [Clash 各种版本](https://github.com/clash-version/clash-download)
 
-## 免费节点
+## 节点网站
 
 - [https://yoyapai.com/category/mianfeijiedian](https://yoyapai.com/category/mianfeijiedian)
 - [https://proxygithub.com/free-node/](https://proxygithub.com/free-node/)
@@ -29,6 +29,7 @@
 - <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/3-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
 - <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/4-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
 - [https://fq.jasonbaiyy.dpdns.org](https://fq.jasonbaiyy.dpdns.org)
+- [https://nodes.jasonbaiyy.dpdns.org](https://nodes.jasonbaiyy.dpdns.org)
 - [https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub](https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub)
 
 ## 移动端教程 (v2rayNG)
