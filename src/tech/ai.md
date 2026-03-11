@@ -8,19 +8,22 @@
 
 1. 开发简单功能，使用 <a href="https://trae.cn/" target="_blank">Trae CN 国内版</a>，完全免费，使用<Badge text="GLM-4.7" type="error" vertical="middle" />大模型。
 
-2. 开发复杂功能，或**上传设计稿生成页面**，一定要用<a href="https://trae.ai/" target="_blank">Trae 国际版</a>的<Badge text="Gemini-3-Pro-Preview" type="warning" vertical="middle" />大模型。
+2. 开发复杂功能，或**上传设计稿生成页面**，一定要用 <a href="https://trae.ai/" target="_blank">Trae 国际版</a> 的<Badge text="Gemini-3-Pro-Preview" type="warning" vertical="middle" />大模型。
 
-3.  <a href="https://trae.ai/" target="_blank">Trae 国际版</a>，一个月免费 3美元，大约可以使用30次。额度用完后可以使用浏览器插件<a href="https://deepsider.ai/zh" target="_blank">DeepSider</a> ，一天白嫖两次<Badge text="Claude-Sonnet-4.6" type="error" vertical="middle" />大模型。
+3.  <a href="https://trae.ai/" target="_blank">Trae 国际版</a>，一个月免费 3美元，大约可以使用30次。额度用完后可以使用浏览器插件 <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a>，一天白嫖两次<Badge text="Claude-Sonnet-4.6" type="error" vertical="middle" />大模型。
 
 4. 翻墙方便的，需要使用欧美日韩的IP节点，登录 <a href="https://aistudio.google.com/app/prompts/new_chat?model=gemini-3.1-pro-preview" target="_blank">Google AI Studio</a> 或 <a href="https://gemini.google.com/" target="_blank">Gemini</a> 的官网，免费使用<Badge text="Gemini-3.1-Pro-Preview" type="warning" vertical="middle" />大模型，每天免费额度50-100次。
 
 5. 日常提问，在 <a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a> 官网尽情使用<a href="https://chat.deepseek.com/" target="_blank"><Badge text="DeepSeek" type="tip" vertical="middle" /></a>。
 
-6. 在 <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a> 插件中，每天可以白嫖3次 <Badge text="Nano Banana 2" type="warning" vertical="middle" /> 大模型生成图片。
+6. 在 <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a> 插件中，每天可以白嫖3次<Badge text="Nano Banana 2" type="warning" vertical="middle" />大模型生成图片。
+
+7. AI免费去水印，可以使用线上版的 <a href="https://magiceraser.org/zh/remove-watermark-from-image/" target="_blank">Magic Eraser</a>。
 
 <style>
     h2[id=ai-免费策略] + ol .badge {
         padding: 2px 6px;
+        margin: 0 4px;
         vertical-align: baseline !important;
     }
 </style>
