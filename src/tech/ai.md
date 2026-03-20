@@ -18,7 +18,9 @@
 
 6. 在 <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a> 插件中，每天可以白嫖3次<Badge text="Nano Banana 2" type="warning" vertical="middle" />大模型生成图片。
 
-7. AI免费去水印，可以使用线上版的 <a href="https://magiceraser.org/zh/remove-watermark-from-image/" target="_blank">Magic Eraser</a>。
+7. 使用谷歌的 [Stitch](https://stitch.withgoogle.com/) 直接通过对话，免费生成UI设计稿。
+
+8. AI免费去水印，可以使用线上版的 <a href="https://magiceraser.org/zh/remove-watermark-from-image/" target="_blank">Magic Eraser</a>。
 
 <style>
     h2[id=ai-免费策略] + ol .badge {
