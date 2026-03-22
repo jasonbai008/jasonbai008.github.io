@@ -4,17 +4,42 @@
 工欲善其事，必先利其器
 :::
 
+## 通用插件模板
+
+同时支持浏览器环境和 Node.js 环境的插件包裹写法：
+
+```js
+// 定义一个立即执行函数，接收root和factory两个参数
+(function (root, factory) {
+  if (typeof module === "object" && module.exports) {
+    // Node.js环境
+    module.exports = factory();
+  } else {
+    // 浏览器环境
+    root.ZhipuChat = factory();
+  }
+})(typeof window !== "undefined" ? window : global, function () {
+  "use strict";
+
+  class ZhipuChat {
+    // ... 你的代码
+  }
+
+  return ZhipuChat;
+});
+```
+
 ## 监听 PostMessage 事件
 
 ```js
-window.addEventListener('message', (event) => {
-  console.log('收到消息:', event.data);
+window.addEventListener("message", (event) => {
+  console.log("收到消息:", event.data);
 });
 
 // 或
 // monitorEvents() 是 Chrome DevTools 提供的一个非常实用的内置函数，用于实时监控 DOM 事件。
 // monitorEvents(element, eventType)
-monitorEvents(window, 'message')
+monitorEvents(window, "message");
 ```
 
 ## 移动端调试
@@ -23,7 +48,9 @@ monitorEvents(window, 'message')
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/vconsole@latest/dist/vconsole.min.js"></script>
-<script>new VConsole();</script>
+<script>
+  new VConsole();
+</script>
 ```
 
 ## 一行代码返回顶部
