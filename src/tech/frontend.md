@@ -9,24 +9,61 @@
 同时支持浏览器环境和 Node.js 环境的插件包裹写法：
 
 ```js
-// 定义一个立即执行函数，接收root和factory两个参数
-(function (root, factory) {
-  if (typeof module === "object" && module.exports) {
-    // Node.js环境
-    module.exports = factory();
-  } else {
-    // 浏览器环境
-    root.ZhipuChat = factory();
-  }
-})(typeof window !== "undefined" ? window : global, function () {
-  "use strict";
+"use strict";
+/**
+ * MyPlugin 核心类实现
+ */
+class MyPlugin {
+  // 关键代码：静态属性定义插件的默认配置
+  static defaultOptions = {
+    autoStart: true,      // 是否在实例化时自动初始化
+    theme: 'light',       // 插件配置项示例
+    onInit: () => {},     // 生命周期：初始化完成的回调
+    onDestroy: () => {}   // 生命周期：销毁时的回调
+  };
 
-  class ZhipuChat {
-    // ... 你的代码
+  /**
+   * 构造函数：实例化插件并合并配置
+   * @param {Object} options - 用户传入的自定义配置项
+   */
+  constructor(options = {}) {
+    // 关键代码：将默认配置与用户配置进行合并
+    this.options = { ...MyPlugin.defaultOptions, ...options };    
+    // 内部状态管理（不对外暴露直接修改）
+    this.isInitialized = false;
+    this.timer = null; // 模拟可能产生的定时器或资源引用
+    // 根据配置决定是否立即启动
+    if (this.options.autoStart) {
+      this.init();
+    }
   }
 
-  return ZhipuChat;
-});
+  /**
+   * 核心方法：初始化插件资源（绑定事件、渲染 DOM 等）
+   * @returns {MyPlugin} 返回实例本身，支持链式调用
+   */
+  init() {
+    // 防止重复初始化
+    if (this.isInitialized) return this;
+    // 关键代码：执行初始化相关的私有逻辑
+    this.#bindEvents();    
+    this.isInitialized = true;    
+    // 触发初始化完成的回调，并将当前实例暴露给外部
+    this.options.onInit(this);
+    return this;
+  }  
+}
+/**
+ * 跨环境导出逻辑
+ * globalThis 能够自动适配环境：在浏览器中指向 window，在 Node.js 中指向 global
+ */
+if (typeof module === "object" && module.exports) {
+  // Node.js 环境 (CommonJS 规范)
+  module.exports = MyPlugin;
+} else {
+  // 浏览器环境 (挂载到全局对象)
+  globalThis.MyPlugin = MyPlugin;
+}
 ```
 
 ## 监听 PostMessage 事件

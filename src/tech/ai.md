@@ -12,7 +12,7 @@
 
 3.  <a href="https://trae.ai/" target="_blank">Trae 国际版</a>，一个月免费 3美元，大约可以使用30次。额度用完后可以使用浏览器插件 <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a>，一天白嫖两次<Badge text="Claude-Sonnet-4.6" type="error" vertical="middle" />大模型。
 
-4. 翻墙方便的，需要使用欧美日韩的IP节点，登录 <a href="https://aistudio.google.com/app/prompts/new_chat?model=gemini-3.1-pro-preview" target="_blank">Google AI Studio</a> 或 <a href="https://gemini.google.com/" target="_blank">Gemini</a> 的官网，免费使用<Badge text="Gemini-3.1-Pro-Preview" type="warning" vertical="middle" />大模型，每天免费额度50-100次。
+4. 翻墙方便的，需要使用欧美日韩的IP节点，登录 <a href="https://aistudio.google.com/app/prompts/new_chat?model=gemini-3.1-pro-preview" target="_blank">Google AI Studio</a> 或 <a href="https://gemini.google.com/" target="_blank">Gemini</a> 的官网，免费使用<Badge text="Gemini-3.1-Pro-Preview" type="warning" vertical="middle" />等大模型，每个模型每天免费额度10次左右。
 
 5. 日常提问，在 <a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a> 官网尽情使用<a href="https://chat.deepseek.com/" target="_blank"><Badge text="DeepSeek" type="tip" vertical="middle" /></a>。
 
@@ -30,11 +30,13 @@
     }
 </style>
 
-## AI 大模型
+## AI 使用策略
 
-大模型代码生成能力排序：
-
-**Gemini 3 > Claude 4 > GLM-5 > DeepSeek**
+- 日常提问：**DeepSeek**
+- 日常开发：**GLM-4.7**
+- 前端开发：**Gemini-3.x**
+- 后端开发：**GPT-5.x**
+- 不差钱：**Claude Opus 4.6**
 
 ## AI 问答
 
