@@ -6,27 +6,26 @@
 
 ## AI 免费策略
 
-1. 开发简单功能，使用 <a href="https://trae.cn/" target="_blank">Trae CN 国内版</a>，完全免费，使用<Badge text="GLM-4.7" type="error" vertical="middle" />大模型。
-
-2. 开发复杂功能，或**上传设计稿生成页面**，一定要用 <a href="https://trae.ai/" target="_blank">Trae 国际版</a> 的<Badge text="Gemini-3-Pro-Preview" type="warning" vertical="middle" />大模型。
-
-3.  <a href="https://trae.ai/" target="_blank">Trae 国际版</a>，一个月免费 3美元，大约可以使用30次。额度用完后可以使用浏览器插件 <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a>，一天白嫖两次<Badge text="Claude-Sonnet-4.6" type="error" vertical="middle" />大模型。
-
-4. 翻墙方便的，需要使用欧美日韩的IP节点，登录 <a href="https://aistudio.google.com/app/prompts/new_chat?model=gemini-3.1-pro-preview" target="_blank">Google AI Studio</a> 或 <a href="https://gemini.google.com/" target="_blank">Gemini</a> 的官网，免费使用<Badge text="Gemini-3.1-Pro-Preview" type="warning" vertical="middle" />等大模型，每个模型每天免费额度10次左右。
-
-5. 日常提问，在 <a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a> 官网尽情使用<a href="https://chat.deepseek.com/" target="_blank"><Badge text="DeepSeek" type="tip" vertical="middle" /></a>。
-
-6. 在 <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a> 插件中，每天可以白嫖3次<Badge text="Nano Banana 2" type="warning" vertical="middle" />大模型生成图片。
-
-7. 使用谷歌的 [Stitch](https://stitch.withgoogle.com/) 直接通过对话，免费生成UI设计稿。
-
-8. AI免费去水印，可以使用线上版的 <a href="https://magiceraser.org/zh/remove-watermark-from-image/" target="_blank">Magic Eraser</a>。
+| 功能场景          | 官网                                                                                                                         | 核心模型                                                     | 备注 / 额度                      |
+| :---------------- | :--------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------- | :------------------------------- |
+| **开发简单功能**  | <a href="https://trae.cn/" target="_blank">Trae CN 国内版</a>                                                                | **<span style="color: #3064F4">GLM-4.7</span>**              | 完全免费                         |
+| **开发复杂功能**  | <a href="https://trae.ai/" target="_blank">Trae 国际版</a>                                                                   | **<span style="color: #4285F4">Gemini-3-Pro-Preview</span>** | 每月$3免费额度                   |
+| **额度补充**      | <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a>                                                              | **<span style="color: #d97757">Claude-Sonnet-4.6</span>**    | Trae 额度用完后，每天可白嫖 2 次 |
+| **额度补充**      | <a href="https://aistudio.google.com/app/prompts/new_chat?model=gemini-3.1-pro-preview" target="_blank">Google AI Studio</a> | **<span style="color: #4285F4">Gemini-3-Pro-Preview</span>** | 免费使用，每个模型每天约 10 次   |
+| **日常提问**      | <a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a>                                                            | **<span style="color: #6066FF">DeepSeek</span>**             | 官网尽情使用                     |
+| **AI 图片生成**   | <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a>                                                              | **<span style="color: #f76707">Nano Banana 2</span>**        | 每天可以白嫖 3 次                |
+| **UI 设计稿生成** | [Stitch](https://stitch.withgoogle.com/)                                                                                     | -                                                            | 目前免费                         |
+| **AI 免费去水印** | <a href="https://magiceraser.org/zh/remove-watermark-from-image/" target="_blank">Magic Eraser</a>                           | -                                                            | 免费                             |
 
 <style>
-    h2[id=ai-免费策略] + ol .badge {
-        padding: 2px 6px;
-        margin: 0 4px;
-        vertical-align: baseline !important;
+    /* 调整表格样式以适应大模型颜色展示 */
+    table {
+        width: 100%;
+        display: table;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
     }
 </style>
 
