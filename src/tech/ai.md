@@ -32,20 +32,16 @@
 
 ## AI 使用策略
 
-- 日常提问：**DeepSeek**
-- 日常开发：**GLM-4.7**
-- 前端开发：**Gemini-3.x**
-- 后端开发：**GPT-5.x**
-- 不差钱：**Claude Opus 4.6**
+- 日常提问：**<span style="color: #6066FF">DeepSeek</span>**
+- 日常开发：**<span style="color: #3064F4">GLM-4.7</span>**
+- 前端开发：**<span style="color: #4285F4">Gemini-3.x</span>**
+- 后端开发：**<span style="color: #10a37f">GPT-5.x</span>**
+- 不差钱的：**<span style="color: #d97757">Claude Opus 4.6</span>**
 
 ## AI 问答
 
 - [DeepSeek](https://chat.deepseek.com/)
 - [DouBao](https://www.doubao.com/chat)
-
-## AI 阅读
-
-- [Kimi 会阅读文件的 AI 助手](https://kimi.moonshot.cn/)
 
 ## AI 插件
 
