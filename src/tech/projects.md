@@ -24,6 +24,13 @@
 ## 精选项目
 
 <div class="row">    
+  <a class="itemWrap" target="_blank" href="https://easymaker.netlify.app">
+    <img :src="$withBase('/projects/easy-ui.png')">
+    <h4>Easy Maker</h4>
+  </a>    
+</div>
+
+<div class="row">    
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/useful-cool-js/"> -->
   <a class="itemWrap" target="_blank" href="https://unpkg.com/useful-cool-js@latest/index.html">
     <img :src="$withBase('/projects/cool.png')">
