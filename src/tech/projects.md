@@ -28,6 +28,19 @@
     <img :src="$withBase('/projects/easy-ui.png')">
     <h4>Easy Maker</h4>
   </a>    
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/drawer/"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-drawer.netlify.app/">
+    <img :src="$withBase('/projects/tools15.png')">
+    <h4>随心画板</h4>
+  </a> 
+  <a class="itemWrap" target="_blank" href="https://zhizi.netlify.app/">
+    <img :src="$withBase('/projects/tools3.png')">
+    <h4>你问我答</h4>
+  </a>
+  <a class="itemWrap" target="_blank" href="https://feedback-me.netlify.app/">
+    <img :src="$withBase('/projects/latest4.png')">
+    <h4>留言板</h4>
+  </a> 
 </div>
 
 <div class="row">    
@@ -51,28 +64,6 @@
     <img :src="$withBase('/projects/bird.png')">
     <h4>黄金鸟</h4>
   </a>  
-</div>
-
-<div class="row">
-  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/drawer/"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-drawer.netlify.app/">
-    <img :src="$withBase('/projects/tools15.png')">
-    <h4>随心画板</h4>
-  </a> 
-  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/web-viewer"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-preview.netlify.app/">
-    <img :src="$withBase('/projects/preview.png')">
-    <h4>web-viewer</h4>
-  </a>  
-  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/mark-me"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-mark.netlify.app/">
-    <img :src="$withBase('/projects/tools13.png')">
-    <h4>印象文档</h4>
-  </a>
-  <a class="itemWrap" target="_blank" href="https://feedback-me.netlify.app/">
-    <img :src="$withBase('/projects/latest4.png')">
-    <h4>留言板</h4>
-  </a>      
 </div>
 
 <div class="row"> 
@@ -187,14 +178,16 @@
 </div>
 
 <div class="row" style="justify-content: flex-start">   
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/age/">
-    <img :src="$withBase('/projects/tools12.png')">
-    <h4>真实年龄</h4>
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/mark-me"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-mark.netlify.app/">
+    <img :src="$withBase('/projects/tools13.png')">
+    <h4>印象文档</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/ai-pc">
-    <img :src="$withBase('/projects/tools3.png')">
-    <h4>你问我答</h4>
-  </a>
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/web-viewer"> -->
+  <a class="itemWrap" target="_blank" href="https://bai-preview.netlify.app/">
+    <img :src="$withBase('/projects/preview.png')">
+    <h4>web-viewer</h4>
+  </a> 
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/doc/ -->
   <a class="itemWrap" target="_blank" href="https://bai-doc.netlify.app/">
     <img :src="$withBase('/projects/book3.png')">
