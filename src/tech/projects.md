@@ -90,11 +90,7 @@
 
 ## 有声书
 
-<div class="row">
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/guolun/">
-    <img :src="$withBase('/projects/guolun.png')" style="width: auto;height: 40px;">
-    <h4>郭论</h4>
-  </a>
+<div class="row">  
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/lightning/">
     <img :src="$withBase('/projects/book5.png')">
     <h4>球状闪电</h4>
