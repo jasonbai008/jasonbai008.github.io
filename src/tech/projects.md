@@ -90,7 +90,7 @@
 
 ## 有声书
 
-<div class="row">  
+<div class="row" style="justify-content: flex-start">  
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/lightning/">
     <img :src="$withBase('/projects/book5.png')">
     <h4>球状闪电</h4>
