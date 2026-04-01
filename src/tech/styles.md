@@ -4,6 +4,123 @@
 人靠衣装，美靠 CSS
 :::
 
+## 开场动画最佳实践
+
+Loading示例网站：
+- [https://cssloaders.github.io/](https://cssloaders.github.io/)
+- [https://css-loaders.com/](https://css-loaders.com/)
+
+页面完全加载前，展示Loading动画的核心逻辑：
+
+```html
+<!-- 开场加载动画 -->
+<div id="loading-overlay">
+  <span class="loader"></span>
+</div>
+
+<style>
+/* 开场加载动画样式 */
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* 下面的样式可以在Loading示例网站中复制 */
+.loader {
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  position: relative;
+}
+
+.loader:before {
+  content: '';
+  width: 48px;
+  height: 5px;
+  background: #000;
+  opacity: 0.25;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border-radius: 50%;
+  animation: shadow 0.5s linear infinite;
+}
+
+.loader:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: var(--netlify-teal);
+  /* 使用主题色 */
+  animation: bxSpin 0.5s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+}
+
+@keyframes bxSpin {
+  17% {
+    border-bottom-right-radius: 3px;
+  }
+
+  25% {
+    transform: translateY(9px) rotate(22.5deg);
+  }
+
+  50% {
+    transform: translateY(18px) scale(1, .9) rotate(45deg);
+    border-bottom-right-radius: 40px;
+  }
+
+  75% {
+    transform: translateY(9px) rotate(67.5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
+@keyframes shadow {
+
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1);
+  }
+} 
+</style>
+
+<script>
+  // 页面所有资源加载完成后隐藏开场动画
+  window.addEventListener('load', function () {
+    setTimeout(() => {
+      const loader = document.getElementById('loading-overlay');
+      if (loader) {
+        loader.style.opacity = 0;
+        // 动画结束后完全隐藏元素，避免遮挡交互
+        setTimeout(() => {
+          loader.style.display = 'none';
+        }, 500);
+      }
+    }, 1000); // 用户可以多看1s
+  });
+</script>
+```
+
 ## 消除Flex布局子元素溢出
 
 设置最小宽度为0
