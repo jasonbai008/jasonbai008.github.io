@@ -1,5 +1,34 @@
 # 网站部署
 
+## 国内CDN
+
+在国内访问 jsDelivr 或 Cloudflare 上的静态资源（JS/CSS 库）时，经常出现“卡住”、“加载慢”甚至“无法连接”的情况，主要是因为这些域名的 CDN 节点在国内存在**路由绕行**或**间歇性阻断**。
+
+以下是国内常用的、速度更快的 CDN 替代方案，按推荐程度排序：
+
+### 一、国内主流 CDN 服务商
+
+| CDN 名称       | 示例域名           | 特点                                                                |
+| -------------- | ------------------ | ------------------------------------------------------------------- |
+| **BootCDN**    | `cdn.bootcdn.net`  | 国内最早、最知名的开源 CDN，由 Bootstrap 中文网维护，覆盖主流前端库 |
+| **饿了么 CDN** | `npm.elemecdn.com` | 饿了么团队维护，支持 npm 包直接映射，速度快                         |
+| **知乎 CDN**   | `unpkg.zhimg.com`  | 知乎镜像的 unpkg，稳定且国内访问极快                                |
+
+### 二、npm 镜像 CDN
+
+如果你习惯用 `npm` 包名直接引用（像 jsDelivr 那样），**饿了么 CDN** 和 **知乎 unpkg 镜像** 是最方便的替代：
+
+- **饿了么 CDN（npm 镜像）**  
+  `https://npm.elemecdn.com/package@version/file`
+  - 示例：`https://npm.elemecdn.com/vue@2.7.16/dist/vue.js`
+
+- **知乎 unpkg 镜像**  
+  `https://unpkg.zhimg.com/package@version/file`
+  - 示例：`https://unpkg.zhimg.com/vue@2.7.16/dist/vue.js`
+
+这两个都是国内节点，速度非常快，且路径规则和 jsDelivr/unpkg 几乎一致，迁移成本极低。
+
+
 ## Netlify VS Cloudflare
 <br>
 <details>
