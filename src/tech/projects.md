@@ -239,7 +239,7 @@
     <img :src="$withBase('/projects/game9.png')">
     <h4>见字如面</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://gitee.com/lubanseven/random/">
+  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/random/">
     <img :src="$withBase('/projects/game10.png')">
     <h4>极限收敛</h4>
   </a>
