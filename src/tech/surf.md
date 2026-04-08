@@ -28,8 +28,7 @@
 - <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/2-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
 - <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/3-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
 - <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/4-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
-- [https://fq.jasonbaiyy.dpdns.org?type=base64](https://fq.jasonbaiyy.dpdns.org)
-- [https://nodes.jasonbaiyy.dpdns.org?type=base64](https://nodes.jasonbaiyy.dpdns.org)
+- [https://fq.jasonbai.dpdns.org?type=base64](https://fq.jasonbai.dpdns.org)
 - [https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub](https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub)
 
 ## 移动端教程 (v2rayNG)
