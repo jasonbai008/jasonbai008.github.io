@@ -1,5 +1,80 @@
 # 网站部署
 
+## 免费站长之路
+
+### 1. 开通 Github 个人账号
+
+### 2. 注册免费域名
+
+- 去 [DigitalPlat Domains](https://dash.domain.digitalplat.org/signup?ref=4Yy2qKIrVx) 填写表单注册新用户
+- 表单填写使用你自己的邮箱，和虚假的美国人信息：[美国地址生成器](https://www.meiguodizhi.com/)
+- 进入平台，选择左侧`注册`菜单，输入你想要的子域名，选择`.dpdns.org` 后缀域名，检测可用性
+- 如果可用，就在弹窗完成域名注册，比如：`xiaobai.dpdns.org`
+- 域名有效时间：每次到期前 180 天内续期一次，续期365天
+- 详细教程：[永久免费域名](https://juejin.cn/post/7564716291446325286)
+
+### 3. 在 Cloudflare 上托管域名
+
+- 教程：[白嫖申请一个DPDNS.ORG免费域名并托管到Cloudflare](https://blog.fridayssheep.top/archives/how-to-get-a-free-dpdns-domain)
+- 托管完成后，你的域名就会在 Cloudflare 上生效，你可以通过 Cloudflare 的 DNS 设置来管理你的域名解析
+- 以后你在 Cloudflare 上创建了新的 Page 或者 Worker后，可以绑定自己的域名，在国内可以比较稳定的打开
+
+### 4. 创建代码仓库
+
+- 在 Github 上创建代码仓库，编写页面，开通 `github pages` 功能，你会得到一个项目页面访问链接：`https://[username].github.io/[repository-name]/`
+- 但这个链接国内经常打不开，很遗憾
+
+### 5. 创建 Cloudflare Page
+
+- 在 Cloudflare 上创建一个新的 Page，关联自己的 github 代码仓库，自动部署到 Cloudflare 上，获得一个新域名：`https://[pagename].pages.dev/`
+- 这个域名在国内也经常打不开，很遗憾，然后绑定自己的域名：`xxx.xiaoobai.dpdns.org`
+- 这样，你访问`xxx.xiaoobai.dpdns.org`，就可以正常打开你在 Cloudflare 上部署的页面了
+- 以后每次更新代码，只需要在 Github 上推送代码，Cloudflare 会自动部署到最新版本
+
+### 6. 创建 Netlify Page
+
+- 新建一个 Site，关联自己的 github 代码仓库，自动部署到 Netlify 上，获得一个新域名：`https://[sitename].netlify.app/`
+- 这个域名在国内打开速度还可以，不要绑定自己的域名，我试过绑定不了。
+
+### 7. 注册智谱AI
+
+- 去 [智谱AI](https://www.zhipuai.com/) 注册账号账号，获得一个 API Key
+- 这个 API Key 会在后续的代码中使用，用于调用智谱AI的 API
+- 新用户有 200万的免费 token
+- 智谱AI 提供的免费的大模型：`GLM-4.7-Flash` 和 `GLM-4-Flash-250414`，前者限制调用频率，用一次等好几分钟。。。
+
+### 8. 编写 Netlify Edge Functions
+
+- Netlify Edge Functions 是 Netlify 提供的一种边缘函数
+- 在 Site 里配置环境变量，设置 `ZHIPHUAI_API_KEY` 为你的 API Key
+- 指挥机器人编写 Edge Functions 函数，转发前端请求，到智谱AI的服务器，只有这种边缘函数支持长时间的流式响应
+- 边缘函数在项目根目录的文件路径：`/netlify/edge-functions/zhipu.js`
+- 这样就实现了使用边缘函数转发前端请求，转发国内外API，例如Gemini API
+
+### 9. 编写 Cloudflare Worker
+
+- Cloudflare Worker 是 Cloudflare 提供的一种Serverless函数
+- 在 Cloudflare 上里配置环境变量，设置 `ZHIPHUAI_API_KEY` 为你的 API Key
+- 指挥机器人编写 Worker 函数，转发前端请求，到智谱AI的服务器，worker 也支持长时间的流式响应
+- workers 也提供接口地址：`https://[workername].workers.dev/`，但是被国内屏蔽了
+- 这时候还得绑定你的域名，比如：`yyy.xiaoobai.dpdns.org`，才能正常使用这个worker
+- 你把worker当做接口就行，语法是javascript
+- 这样，你就可以在前端代码里，调用这个worker，转发前端请求，拿到 Gemini API 的响应了
+
+### 10. 建议
+
+- Netlify 自动分配的域名打开速度经常很快，基本上够用，用它的边缘函数转发前端请求，比较稳定，可以轻松拿到谷歌的 Gemini API 响应
+- Cloudflare Pages 和 Workers 都可以绑定自己的域名，也还不错
+- 所有的 API Key，首次获得的时候，都要存到自己的txt文件里，因为只显示一次
+
+### 11. 注册 Gemini API 密钥
+
+- 使用欧美节点翻墙
+- 去 [Google AI Studio](https://aistudio.google.com/app/prompts/new_chat?model=gemini-3.1-pro-preview) 注册账号，获得一个 API Key
+- 这个 API Key 会在后续的代码中使用，用于调用 Gemini API
+- 谷歌提供的免费大模型API：Gemini-2.5-Flash 和 Gemini-2.5-Flash-Lite
+
+
 ## 网络连通性检测
 
 ```js
@@ -60,7 +135,7 @@ async function checkUrl(url, dot) {
 | **带宽**       | 100 GB/月                     | **无限**（免费套餐不限带宽）   |
 | **HTTPS**      | 自动免费 SSL（Let's Encrypt） | 自动免费 SSL + 通用 SSL        |
 | **CDN**        | 全球 CDN（部分节点）          | **全球 300+ 节点**（核心优势） |
-| **自定义域名** | ✅ 支持                       | ✅ 支持                        |
+| **自定义域名** | ✅ 支持                        | ✅ 支持                         |
 
 **个人开发者价值**：Cloudflare 带宽不限，如果你的个人项目意外爆火（比如上了热搜），Netlify 可能流量超额停服，Cloudflare 不会。
 
@@ -68,11 +143,11 @@ async function checkUrl(url, dot) {
 
 #### 2. 部署与 Git 集成
 
-| 服务               | Netlify                                | Cloudflare                                     |
-| ------------------ | -------------------------------------- | ---------------------------------------------- |
+| 服务               | Netlify                               | Cloudflare                                    |
+| ------------------ | ------------------------------------- | --------------------------------------------- |
 | **Git 自动部署**   | ✅ 原生支持（GitHub/GitLab/Bitbucket） | ⚠️ 需搭配 **Cloudflare Pages**（也是原生支持） |
 | **预览部署（PR）** | ✅ 每个 PR 自动生成预览链接            | ✅ Pages 同样支持 PR 预览                      |
-| **构建分钟数**     | 300 分钟/月（可能不够用）              | **500 构建分钟/月**（Pages 免费套餐）          |
+| **构建分钟数**     | 300 分钟/月（可能不够用）             | **500 构建分钟/月**（Pages 免费套餐）         |
 | **回滚**           | ✅ 一键回滚到任意历史版本              | ✅ Pages 支持回滚                              |
 
 **注意**：Cloudflare 的托管产品叫 **Cloudflare Pages**（对标 Netlify），Workers 是另一条产品线。很多人会混淆。
@@ -81,15 +156,15 @@ async function checkUrl(url, dot) {
 
 #### 3. 后端能力（对前端开发者最有价值的部分）
 
-| 服务             | Netlify                                   | Cloudflare                                                                      |
-| ---------------- | ----------------------------------------- | ------------------------------------------------------------------------------- |
-| **无服务器函数** | **Functions**（Node.js 环境）             | **Workers**（V8 环境，JS/TS/Rust）                                              |
-| **免费额度**     | 100 万次调用/月                           | 10 万次请求/天（≈300 万/月）                                                    |
+| 服务             | Netlify                                  | Cloudflare                                                                    |
+| ---------------- | ---------------------------------------- | ----------------------------------------------------------------------------- |
+| **无服务器函数** | **Functions**（Node.js 环境）            | **Workers**（V8 环境，JS/TS/Rust）                                            |
+| **免费额度**     | 100 万次调用/月                          | 10 万次请求/天（≈300 万/月）                                                  |
 | **数据库/存储**  | ❌ 无原生数据库                           | ✅ **D1**（SQLite 边缘数据库，免费 5GB）<br>✅ **R2**（对象存储，免费 10GB/月） |
-| **KV 存储**      | ❌ 无                                     | ✅ **Workers KV**（免费 1GB，全局低延迟缓存）                                   |
-| **表单处理**     | ✅ **Netlify Forms**（免费 100 条/月）    | ❌ 无原生（需自己实现）                                                         |
-| **身份认证**     | ✅ **Netlify Identity**（免费 1000 用户） | ❌ 无原生（可搭配 Auth0 等）                                                    |
-| **定时任务**     | ❌ 无                                     | ✅ **Cron Triggers**（免费套餐可用）                                            |
+| **KV 存储**      | ❌ 无                                     | ✅ **Workers KV**（免费 1GB，全局低延迟缓存）                                  |
+| **表单处理**     | ✅ **Netlify Forms**（免费 100 条/月）    | ❌ 无原生（需自己实现）                                                        |
+| **身份认证**     | ✅ **Netlify Identity**（免费 1000 用户） | ❌ 无原生（可搭配 Auth0 等）                                                   |
+| **定时任务**     | ❌ 无                                     | ✅ **Cron Triggers**（免费套餐可用）                                           |
 
 **个人开发者价值差异**：
 
@@ -100,12 +175,12 @@ async function checkUrl(url, dot) {
 
 #### 4. 边缘计算与性能优化
 
-| 服务            | Netlify                     | Cloudflare                            |
-| --------------- | --------------------------- | ------------------------------------- |
-| **边缘函数**    | Edge Functions（基于 Deno） | Workers（V8，更成熟）                 |
-| **图片优化**    | ❌ 无原生                   | ✅ **Image Resizing**（免费额度有限） |
-| **重定向/改写** | `_redirects` 文件配置       | Workers 或 Pages 的 `_redirects`      |
-| **A/B 测试**    | Split Testing（需配置）     | Workers 可灵活实现                    |
+| 服务            | Netlify                     | Cloudflare                           |
+| --------------- | --------------------------- | ------------------------------------ |
+| **边缘函数**    | Edge Functions（基于 Deno） | Workers（V8，更成熟）                |
+| **图片优化**    | ❌ 无原生                    | ✅ **Image Resizing**（免费额度有限） |
+| **重定向/改写** | `_redirects` 文件配置       | Workers 或 Pages 的 `_redirects`     |
+| **A/B 测试**    | Split Testing（需配置）     | Workers 可灵活实现                   |
 
 ---
 
@@ -114,9 +189,9 @@ async function checkUrl(url, dot) {
 | 服务         | Netlify                           | Cloudflare                             |
 | ------------ | --------------------------------- | -------------------------------------- |
 | **本地开发** | `netlify dev`（模拟函数和重定向） | `wrangler`（功能强大，但学习曲线稍陡） |
-| **分析工具** | 基础流量分析                      | ✅ **Web Analytics**（免费、隐私友好） |
-| **域名注册** | ❌ 不提供                         | ✅ 成本价注册（不赚差价）              |
-| **邮件转发** | ❌ 不提供                         | ✅ **Email Routing**（免费邮箱转发）   |
+| **分析工具** | 基础流量分析                      | ✅ **Web Analytics**（免费、隐私友好）  |
+| **域名注册** | ❌ 不提供                          | ✅ 成本价注册（不赚差价）               |
+| **邮件转发** | ❌ 不提供                          | ✅ **Email Routing**（免费邮箱转发）    |
 | **团队协作** | 免费邀请协作成员                  | 免费套餐协作功能有限                   |
 
 ---
