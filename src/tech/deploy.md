@@ -4,76 +4,85 @@
 
 ### 1. 开通 Github 个人账号
 
-### 2. 注册免费域名
+### 2. 注册免费域名 (DPDNS)
 
-- 去 [DigitalPlat Domains](https://dash.domain.digitalplat.org/signup?ref=4Yy2qKIrVx) 填写表单注册新用户
-- 表单填写使用你自己的邮箱，和虚假的美国人信息：[美国地址生成器](https://www.meiguodizhi.com/)
-- 进入平台，选择左侧`注册`菜单，输入你想要的子域名，选择`.dpdns.org` 后缀域名，检测可用性
-- 如果可用，就在弹窗完成域名注册，比如：`xiaobai.dpdns.org`
-- 域名有效时间：每次到期前 180 天内续期一次，续期365天
-- 详细教程：[永久免费域名](https://juejin.cn/post/7564716291446325286)
+- **账号注册**：访问 [DigitalPlat Domains](https://dash.domain.digitalplat.org/signup?ref=4Yy2qKIrVx) 注册。建议使用自己的邮箱，地址信息参考 [美国地址生成器](https://www.meiguodizhi.com/)
+- **申请域名**：登录后点击左侧 `注册` 菜单，输入你想要的子域名，后缀选择 `.dpdns.org` 检测可用性
+- **完成注册**：如果可用，在弹窗中确认完成注册，例如：`xiaobai.dpdns.org`
+- **到期续期**：域名永久免费，但需在到期前 180 天内手动续期一次，每次续期延长 365 天
+- **详细教程**：[永久免费域名详细指南](https://juejin.cn/post/7564716291446325286)
 
 ### 3. 在 Cloudflare 上托管域名
 
-- 教程：[白嫖申请一个DPDNS.ORG免费域名并托管到Cloudflare](https://blog.fridayssheep.top/archives/how-to-get-a-free-dpdns-domain)
-- 托管完成后，你的域名就会在 Cloudflare 上生效，你可以通过 Cloudflare 的 DNS 设置来管理你的域名解析
-- 以后你在 Cloudflare 上创建了新的 Page 或者 Worker后，可以绑定自己的域名，在国内可以比较稳定的打开
+- **添加站点**：登录 [Cloudflare](https://dash.cloudflare.com/)，点击 `添加站点`，输入你的域名（如 `xiaobai.dpdns.org`），计划选择 `Free`。
+- **修改 NS 服务器**：Cloudflare 会给出两个名称服务器（Nameservers）。回到 DPDNS 平台，在域名管理界面将 NS 修改为 Cloudflare 提供的地址。
+- **等待生效**：DNS 变更通常在几分钟内生效。完成后，你就可以在 Cloudflare 的 DNS 设置中自由管理解析记录了。
+- **绑定应用**：托管后，可将 Cloudflare Pages 或 Workers 绑定到此域名，有效解决国内无法直接访问 `*.pages.dev` 或 `*.workers.dev` 的问题。
+- **参考教程**：[DPDNS 托管到 Cloudflare 教程](https://blog.fridayssheep.top/archives/how-to-get-a-free-dpdns-domain)
 
-### 4. 创建代码仓库
+### 4. 创建代码仓库 (GitHub)
 
-- 在 Github 上创建代码仓库，编写页面，开通 `github pages` 功能，你会得到一个项目页面访问链接：`https://[username].github.io/[repository-name]/`
-- 但这个链接国内经常打不开，很遗憾
+- **新建仓库**：在 [GitHub](https://github.com/) 上创建一个新的公开或私有仓库，并将你的前端代码推送（Push）上去。
+- **开启 Pages**：在仓库的 `Settings` -> `Pages` 中，将 `Build and deployment` 设置为从分支部署（通常是 `main` 分支的 `/root` 目录）。
+- **访问限制**：完成后你会得到一个 `https://[username].github.io/[repo]/` 的链接。由于网络环境原因，该域名在国内经常无法直接访问，建议将其作为源码托管和自动部署的源头。
 
-### 5. 创建 Cloudflare Page
+### 5. 部署 Cloudflare Pages
 
-- 在 Cloudflare 上创建一个新的 Page，关联自己的 github 代码仓库，自动部署到 Cloudflare 上，获得一个新域名：`https://[pagename].pages.dev/`
-- 这个域名在国内也经常打不开，很遗憾，然后绑定自己的域名：`xxx.xiaoobai.dpdns.org`
-- 这样，你访问`xxx.xiaoobai.dpdns.org`，就可以正常打开你在 Cloudflare 上部署的页面了
-- 以后每次更新代码，只需要在 Github 上推送代码，Cloudflare 会自动部署到最新版本
+- **关联 GitHub**：登录 Cloudflare 控制台，进入 `Workers & Pages` -> `Pages`，点击 `Connect to Git` 并选择你的 GitHub 仓库。
+- **构建配置**：如果你的项目是纯 HTML，则无需构建命令；如果是 Vue/React 等框架，需设置相应的 `Build command`（如 `npm run build`）和 `Output directory`（如 `dist`）。
+- **绑定自定义域名**：在 Pages 项目的 `Custom domains` 中，绑定你之前在 Cloudflare 托管的子域名（如 `web.xiaobai.dpdns.org`）。
+- **优势**：绑定域名后，国内用户可以非常稳定地访问你的网站，且支持自动集成生产环境的 SSL 证书。
 
-### 6. 创建 Netlify Page
+### 6. 部署 Netlify Pages
 
-- 新建一个 Site，关联自己的 github 代码仓库，自动部署到 Netlify 上，获得一个新域名：`https://[sitename].netlify.app/`
-- 这个域名在国内打开速度还可以，不要绑定自己的域名，我试过绑定不了。
+- **快速部署**：在 [Netlify](https://www.netlify.com/) 中点击 `Add new site` -> `Import an existing project`，关联 GitHub 仓库即可实现全自动部署。
+- **默认域名优势**：Netlify 分配的 `*.netlify.app` 域名在国内目前的访问速度相对理想。
+- **局限性**：虽然也支持绑定自定义域名，但由于其 DNS 解析节点多在海外，若追求极致的国内访问速度，建议首选 Cloudflare 方案。
 
-### 7. 注册智谱AI
+### 7. 注册智谱AI (中转方案)
 
-- 去 [智谱AI](https://www.zhipuai.com/) 注册账号账号，获得一个 API Key
-- 这个 API Key 会在后续的代码中使用，用于调用智谱AI的 API
-- 新用户有 200万的免费 token
-- 智谱AI 提供的免费的大模型：`GLM-4.7-Flash` 和 `GLM-4-Flash-250414`，前者限制调用频率，用一次等好几分钟。。。
+- **获取密钥**：访问 [智谱AI 开放平台](https://bigmodel.cn/) 注册账号，在控制台获取 `API Key`。
+- **免费额度**：新用户有200万免费 Token 额度，支持所有模型，非常适合作为初学者的第一个 AI 接口。
+- **安全提示**：API Key 是极其敏感的信息，切勿直接写在前端代码中，需通过边缘函数（Edge Functions）或服务器进行转发。
 
 ### 8. 编写 Netlify Edge Functions
 
-- Netlify Edge Functions 是 Netlify 提供的一种边缘函数
-- 在 Site 里配置环境变量，设置 `ZHIPHUAI_API_KEY` 为你的 API Key
-- 指挥机器人编写 Edge Functions 函数，转发前端请求，到智谱AI的服务器，只有这种边缘函数支持长时间的流式响应
-- 边缘函数在项目根目录的文件路径：`/netlify/edge-functions/zhipu.js`
-- 这样就实现了使用边缘函数转发前端请求，转发国内外API，例如Gemini API
+- **核心功能**：利用边缘函数转发前端请求到智谱AI或 Gemini 的服务器，实现跨域访问并隐藏 API Key。
+- **文件路径**：在项目根目录创建 `netlify/edge-functions/proxy.js`。边缘函数支持流式响应（Streaming），能让 AI 的回复像打字机一样逐字显示。
+- **环境配置**：在 Netlify 的 `Site settings` -> `Environment variables` 中配置你的 `ZHIPUAI_API_KEY`。
 
-### 9. 编写 Cloudflare Worker
+### 9. 编写 Cloudflare Workers
 
-- Cloudflare Worker 是 Cloudflare 提供的一种Serverless函数
-- 在 Cloudflare 上里配置环境变量，设置 `ZHIPHUAI_API_KEY` 为你的 API Key
-- 指挥机器人编写 Worker 函数，转发前端请求，到智谱AI的服务器，worker 也支持长时间的流式响应
-- workers 也提供接口地址：`https://[workername].workers.dev/`，但是被国内屏蔽了
-- 这时候还得绑定你的域名，比如：`yyy.xiaoobai.dpdns.org`，才能正常使用这个worker
-- 你把worker当做接口就行，语法是javascript
-- 这样，你就可以在前端代码里，调用这个worker，转发前端请求，拿到 Gemini API 的响应了
+- **Serverless 接口**：Cloudflare Workers 类似轻量级的后端接口，适合处理 API 转发逻辑。
+- **解决域名屏蔽**：默认的 `*.workers.dev` 域名在国内是被屏蔽的。你必须在 Worker 的 `Triggers` -> `Custom Domains` 中绑定自己的域名（如 `api.xiaobai.dpdns.org`）才能正常调用。
+- **代码实现**：使用 JavaScript 编写简单的 `fetch` 转发逻辑，并配置环境变量以确保安全。
 
-### 10. 建议
+### 10. 总结建议
 
-- Netlify 自动分配的域名打开速度经常很快，基本上够用，用它的边缘函数转发前端请求，比较稳定，可以轻松拿到谷歌的 Gemini API 响应
-- Cloudflare Pages 和 Workers 都可以绑定自己的域名，也还不错
-- 所有的 API Key，首次获得的时候，都要存到自己的txt文件里，因为只显示一次
+- **最佳组合**：使用 **GitHub** 托管代码 + **Cloudflare Pages** 部署前端 + **Cloudflare Workers** 或 **Netlify Edge Functions** 转发 API 请求。
+- **域名管理**：所有对外的服务（网页、接口）都建议绑定自己的 DPDNS 子域名，以获得最稳定的国内访问体验。
+- **密钥管理**：务必将所有的 API Key 记录在本地的 `.env` 或备忘录中，因为平台通常只会在创建时完整显示一次。
 
 ### 11. 注册 Gemini API 密钥
 
-- 使用欧美节点翻墙
-- 去 [Google AI Studio](https://aistudio.google.com/app/prompts/new_chat?model=gemini-3.1-pro-preview) 注册账号，获得一个 API Key
-- 这个 API Key 会在后续的代码中使用，用于调用 Gemini API
-- 谷歌提供的免费大模型API：Gemini-2.5-Flash 和 Gemini-2.5-Flash-Lite
+- **环境要求**：注册和使用 Google AI Studio 需使用特定地区的网络环境（如美国、新加坡等）。
+- **获取途径**：访问 [Google AI Studio](https://aistudio.google.com/)，点击 `Get API key` 即可。
+- **模型选择**：目前可以免费调用API接口的模型有： `Gemini-2.5-Flash` 和 `Gemini-2.5-Flash-Lite`。
+- **注意事项**：只能通过上面的边缘函数转发请求，并且模型字段的值必须全部小写。
 
+### 12. 进阶：Netlify Form
+
+- **功能描述**：无需后端代码即可收集表单数据。Netlify 会自动解析 HTML 中的表单并保存提交记录。
+- **开启服务**：在 HTML 的 `<form>` 标签上添加 `netlify`属性即可自动激活。
+- **防骚扰配置**：建议添加 `netlify-honeypot` 属性以启用简单的垃圾邮件防护。
+- **管理提交**：登录 Netlify 控制台，在 `Site configuration` -> `Forms` 中查看和导出所有提交的数据。
+
+### 13. 进阶：Netlify Identity
+
+- **功能描述**：全套的用户管理方案，支持注册、登录、找回密码以及社交账号登录（如 GitHub/Google）。
+- **开启服务**：在 Netlify 控制台进入 `Site settings` -> `Identity` -> 点击 `Enable Identity`。
+- **快捷使用**：引入 `netlify-identity-widget` 脚本，几行代码即可调起一个完整的登录弹窗。
+- **用户管理**：在 `Identity` 标签页下可以管理已注册用户，或设置“仅限邀请（Invite only）”模式来限制访问。
 
 ## 网络连通性检测
 
