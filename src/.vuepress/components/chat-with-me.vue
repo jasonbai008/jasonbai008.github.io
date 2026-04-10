@@ -269,6 +269,7 @@ export default {
   padding: 2px 4px;
   border-radius: 4px;
   font-family: monospace;
+  color: #333; /* 显式设置代码文本颜色，防止在某些主题下变透明或白色 */
 }
 .message-content >>> pre {
   background-color: #f6f8fa;
@@ -276,10 +277,12 @@ export default {
   border-radius: 6px;
   overflow-x: auto;
   margin: 8px 0;
+  color: #333; /* 显式设置代码块文本颜色 */
 }
 .message-content >>> pre code {
   background-color: transparent;
   padding: 0;
+  color: inherit; /* 继承 pre 的颜色 */
 }
 .message-content >>> blockquote {
   border-left: 4px solid #dfe2e5;
@@ -311,10 +314,14 @@ export default {
 /* 用户消息中的代码块背景色调整 */
 .message.user .message-content >>> code {
   background-color: rgba(255, 255, 255, 0.2);
+  color: white; /* 用户消息中的代码颜色设为白色 */
 }
 .message.user .message-content >>> pre {
   background-color: rgba(0, 0, 0, 0.1);
-  color: white;
+  color: white; /* 用户消息中的代码块背景和文字颜色 */
+}
+.message.user .message-content >>> pre code {
+  color: inherit; /* 继承 pre 的白色 */
 }
 
 .message.assistant {
