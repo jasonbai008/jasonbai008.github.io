@@ -16,6 +16,5 @@ features:
 ---
 
 ::: slot footer
-<!-- Copyright © 2022 [Jason Bai](https://jasonbai.netlify.app/) & [Night Cat](https://nightcat.netlify.app)-->
-Copyright © 2017.09.14 [Jason Bai](https://jasonbai008.github.io/lubanseven)
+Copyright © 2017.09.14 [Jason Bai](https://jasonbai.dpdns.org)
 :::

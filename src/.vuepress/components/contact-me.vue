@@ -46,12 +46,27 @@ export default {
   margin: 50px 0;
 }
 
+.contactMe {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .contactMe .item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   opacity: 0; /* 开头隐藏 */
+}
+
+@media (max-width: 719px) {
+  .contactMe {
+    flex-direction: column;
+  }
+  .contactMe .item {
+    margin-bottom: 20px;
+  }
 }
 
 /* forwards表示：动画结束后，元素将保持动画的最后一帧状态 */

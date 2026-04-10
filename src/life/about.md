@@ -8,15 +8,24 @@ sidebar: false
 
 ## 博客技术栈
 
-本博客基于 **VuePress** 搭建，使用了如下关键技术：
+本博客基于 [VuePress V1.x](https://v1.vuepress.vuejs.org/zh/) 搭建
 
-- [**VuePress**](https://vuepress.vuejs.org/zh/guide/)
-- [**Valine**](https://valine.js.org/) (基于 [Leancloud](https://www.leancloud.cn/) 的留言板)
-- **@vuepress/medium-zoom** （图片放大插件）
-- **@vuepress-reco/vuepress-plugin-kan-ban-niang** （看板娘插件，需要改造源码）
+## Q&A
 
-## 仓库主页
+### 1. 我有哪些爱好？<br>
 
-- [**Gitee**](https://gitee.com/lubanseven)
-- [**Github**](https://github.com/JasonBai007)(JasonBai007)
-- [**Github**](https://github.com/JasonBai008)(JasonBai008)
+**`拍照`、`做家务`、`开发好玩的网页`、`理财`、`看电影`、`分享`**
+
+### 2. 我最喜欢的美剧？<br>
+
+**`绝命毒师`、`风骚律师`、`毒枭`、`毒枭·墨西哥`、`匹兹堡医护前线`**  
+
+**`冰血暴`、`黑镜`、`鱿鱼游戏`、`IT狂人`、`大器晚成`、`黑钱胜地`**
+
+### 3. 我最喜欢的综艺？
+
+**`吐槽大会`**、**`脱口秀大会`**、**`坑王驾到`**
+
+### 4. 我最喜欢的零食？<br>
+
+**`虾条`**、**`饼干`**
