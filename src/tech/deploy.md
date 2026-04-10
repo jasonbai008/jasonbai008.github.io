@@ -37,7 +37,7 @@
 
 - **快速部署**：在 [Netlify](https://www.netlify.com/) 中点击 `Add new site` -> `Import an existing project`，关联 GitHub 仓库即可实现全自动部署。
 - **默认域名优势**：Netlify 分配的 `*.netlify.app` 域名在国内目前的访问速度相对理想。
-- **局限性**：虽然也支持绑定自定义域名，但由于其 DNS 解析节点多在海外，若追求极致的国内访问速度，建议首选 Cloudflare 方案。
+- **局限性**：虽然也支持绑定自定义域名，但比较麻烦。
 
 ### 7. 注册智谱AI (中转方案)
 
