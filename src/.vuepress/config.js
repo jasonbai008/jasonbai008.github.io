@@ -55,9 +55,9 @@ module.exports = {
             items: [
               { text: "样式技巧", link: "/tech/styles" },
               { text: "前端技术", link: "/tech/frontend" },
+              { text: "后端技术", link: "/tech/backend" },
               { text: "Vue专场", link: "/tech/vueTech" },
               { text: "站长之路", link: "/tech/deploy" },
-              { text: "技术杂项", link: "/tech/backend" },
             ],
           },
           {

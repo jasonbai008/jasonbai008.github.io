@@ -168,16 +168,6 @@ function throttle(fn, delay) {
 }
 ```
 
-## 省市区数据
-
-已汇总到我的 Gitee 代码仓库 [area](https://gitee.com/lubanseven/area)中的 dist 文件夹
-
-- 原始数据来自 [Administrative-divisions-of-China](https://github.com/modood/Administrative-divisions-of-China)
-
-- 港澳台数据来自 [ChinaProvinceCityJsonData](https://github.com/wu-jianyong/ChinaProvinceCityJsonData)
-
-- 移动端级联选择器 [vue-pickers](https://www.npmjs.com/package/vue-pickers)
-
 ## replace 高级用法
 
 ```js
@@ -661,6 +651,22 @@ function fib(n) {
   return fib(n - 2) + fib(n - 1);
 }
 ```
+
+## Git 代码提交规范
+
+|     前缀      | 描述                                 |
+| :-----------: | :----------------------------------- |
+|   **feat:**   | 新增功能                             |
+|   **fix:**    | 修复错误                             |
+|   **docs:**   | 文档更新                             |
+|  **style:**   | 代码格式调整（不影响功能的格式变动） |
+| **refactor:** | 代码重构（不涉及新功能或错误修复）   |
+|   **perf:**   | 性能优化                             |
+|   **test:**   | 测试用例的增加或修改                 |
+|  **build:**   | 构建系统或依赖项的更改               |
+|    **ci:**    | CI 配置文件和脚本的更改              |
+|  **chore:**   | 维护性任务（工具链更新、配置调整等） |
+|  **revert:**  | 回滚提交                             |
 
 ## Git 不常用操作
 
