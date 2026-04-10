@@ -1,4 +1,22 @@
-# 网站部署
+# 站长之路
+
+## 免费部署网页
+
+::: tip
+以下三种方式部署的网页，都可以绑定自己的域名，在国内顺利打开。
+:::
+
+### 1. **Github Pages** <Badge text="一般" type="error"/>
+
+将网站代码托管到 Github 上的仓库里，开启 Pages 服务，即可实现免费的 https 网站。可惜**国内经常打不开**。
+
+### 2. **Cloudflare Pages** <Badge text="还行" type="warning"/>
+
+注册并登录 [Cloudflare](https://www.cloudflare-cn.com/)，新建 Pages，可以关联自己的 Github 仓库，这样更新仓库后，Cloudflare 会自动更新对应的 Pages，非常方便。但**也经常打不开**。
+
+### 3. **Netlify Pages** <Badge text="不错" type="tip"/>
+
+代码仓库还是在 Github，注册登录 [Netlify](https://www.netlify.com/)，新建 Site，选择 GitHub，选择对应的仓库，点击 Deploy。**国内打开速度杠杠的快**, 可惜微信屏蔽了。
 
 ## 免费站长之路
 
@@ -83,39 +101,6 @@
 - **开启服务**：在 Netlify 控制台进入 `Site settings` -> `Identity` -> 点击 `Enable Identity`。
 - **快捷使用**：引入 `netlify-identity-widget` 脚本，几行代码即可调起一个完整的登录弹窗。
 - **用户管理**：在 `Identity` 标签页下可以管理已注册用户，或设置“仅限邀请（Invite only）”模式来限制访问。
-
-## 网络连通性检测
-
-```js
-/* URL check */
-/**
- * 检查指定 URL 的连通性
- * @param {string} url - 待检查的网址
- * @param {HTMLElement} dot - 状态指示灯元素
- */
-async function checkUrl(url, dot) {
-  // 1. 设置指示灯样式为“检测中”状态
-  dot.className = "dot checking";
-  // 2. 创建 AbortController 用于手动中止 fetch 请求（实现超时控制）
-  const ctrl = new AbortController();
-  // 3. 设置 6 秒超时：如果 6 秒内没有响应，则中止请求
-  const tid = setTimeout(() => ctrl.abort(), 6000);
-  try {
-    // 4. 发起 fetch 请求
-    // mode: "no-cors" 允许跨域请求但会返回一个“不透明(opaque)”的响应
-    // 这意味着你无法读取响应体、状态码或响应头，但能确认服务器是否响应
-    await fetch(url, { mode: "no-cors", signal: ctrl.signal });
-    // 5. 如果 fetch 成功完成（即使返回的是 404 或 500 错误，在 no-cors 模式下也会 resolve）
-    dot.className = "dot ok";
-  } catch {
-    // 6. 如果发生网络错误（如 DNS 解析失败、连接被拒绝）或请求被超时中止，则标记为失败
-    dot.className = "dot fail";
-  } finally {
-    // 7. 无论请求结果如何，清除定时器以释放资源
-    clearTimeout(tid);
-  }
-}
-```
 
 ## Netlify VS Cloudflare
 
@@ -277,39 +262,38 @@ async function checkUrl(url, dot) {
 
 </details>
 
-## 免费部署个人网页
+## 网络连通性检测
 
-### 1. **Netlify** <Badge text="最棒" type="tip"/>
-
-代码仓库还是在 Github，注册登录 [Netlify](https://www.netlify.com/)，新建 Project，选择 GitHub，选择对应的仓库，点击 Deploy。**国内打开速度杠杠的快**, 可惜微信屏蔽了。
-
-### 2. **Github Pages** <Badge text="一般" type="warning"/>
-
-将网站代码托管到 Github 上的仓库里，开启 Pages 服务，即可实现免费的 https 网站。可惜**国内经常打不开**。
-
-### 3. **Cloudflare Pages** <Badge text="一般" type="warning"/>
-
-注册并登录 [Cloudflare](https://www.cloudflare-cn.com/)，新建 Pages，可以关联自己的 Github 仓库，这样更新仓库后，Cloudflare 会自动更新对应的 Pages，非常方便。但**国内很多省份打不开**。
-
-### 4. **PinMe** <Badge text="一般" type="warning"/>
-
-无需注册登录， 在官网 [PinMe](https://pinme.eth.limo/#/) 直接上传静态文件，生成一个文件内容链接，但不能修改，每次都生成一个新链接。
-
-## Git 代码提交规范
-
-|     前缀      | 描述                                 |
-| :-----------: | :----------------------------------- |
-|   **feat:**   | 新增功能                             |
-|   **fix:**    | 修复错误                             |
-|   **docs:**   | 文档更新                             |
-|  **style:**   | 代码格式调整（不影响功能的格式变动） |
-| **refactor:** | 代码重构（不涉及新功能或错误修复）   |
-|   **perf:**   | 性能优化                             |
-|   **test:**   | 测试用例的增加或修改                 |
-|  **build:**   | 构建系统或依赖项的更改               |
-|    **ci:**    | CI 配置文件和脚本的更改              |
-|  **chore:**   | 维护性任务（工具链更新、配置调整等） |
-|  **revert:**  | 回滚提交                             |
+```js
+/* URL check */
+/**
+ * 检查指定 URL 的连通性
+ * @param {string} url - 待检查的网址
+ * @param {HTMLElement} dot - 状态指示灯元素
+ */
+async function checkUrl(url, dot) {
+  // 1. 设置指示灯样式为“检测中”状态
+  dot.className = "dot checking";
+  // 2. 创建 AbortController 用于手动中止 fetch 请求（实现超时控制）
+  const ctrl = new AbortController();
+  // 3. 设置 6 秒超时：如果 6 秒内没有响应，则中止请求
+  const tid = setTimeout(() => ctrl.abort(), 6000);
+  try {
+    // 4. 发起 fetch 请求
+    // mode: "no-cors" 允许跨域请求但会返回一个“不透明(opaque)”的响应
+    // 这意味着你无法读取响应体、状态码或响应头，但能确认服务器是否响应
+    await fetch(url, { mode: "no-cors", signal: ctrl.signal });
+    // 5. 如果 fetch 成功完成（即使返回的是 404 或 500 错误，在 no-cors 模式下也会 resolve）
+    dot.className = "dot ok";
+  } catch {
+    // 6. 如果发生网络错误（如 DNS 解析失败、连接被拒绝）或请求被超时中止，则标记为失败
+    dot.className = "dot fail";
+  } finally {
+    // 7. 无论请求结果如何，清除定时器以释放资源
+    clearTimeout(tid);
+  }
+}
+```
 
 ## 使用 shell 脚本部署网站
 
@@ -351,27 +335,6 @@ npm run deploy
 yarn deploy
 ```
 
-## 本地预览打包后的应用
-
-1.  安装 VSCode 插件：`Live Server`
-2.  修改根目录下的 vue.config.js 文件
-
-```js {4}
-const { defineConfig } = require("@vue/cli-service");
-module.exports = defineConfig({
-  transpileDependencies: true,
-  publicPath: "/dist/", // 这里改成dist
-  devServer: {
-    host: "localhost",
-  },
-});
-```
-
-3.  确保应用的路由模式是 `hash` 模式
-4.  执行打包命令：`yarn build`
-5.  VSCode 左侧文件树中，在 dist/index.html 上右击鼠标选择：`Open with Live Server`
-6.  在浏览器里输入：`http://localhost:5500/dist/index.html` 即可
-
 ## 下载防盗链图片
 
 ### 方法一
@@ -406,181 +369,6 @@ function downloadBackgroundImage(selector) {
 // 使用示例
 downloadBackgroundImage(".your-div-class");
 ```
-
-## 透视 Vite 代理地址
-
-配置 Vite 让其在终端打印实际的请求地址：
-
-```js
-export default defineConfig({
-  // ... 其他配置 ...
-  server: {
-    proxy: {
-      '/api': {
-        target: 'http://实际的后端地址',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-        configure: (proxy, options) => {
-          proxy.on('proxyReq', (proxyReq, req, res) => {
-            console.log('代理请求:', req.method, req.url, '→', options.target + proxyReq.path);
-          });
-        }
-      }
-    }
-  }
-```
-
-## 给终端设置临时代理
-
-临时让所有命令行工具走代理，以下的代理端口号，是`翻墙工具软件上显示的 http 端口号`。
-
-```sh
-# 设置临时代理（仅当前终端有效）：
-# 作用于所有命令行工具（curl、wget、git、apt）
-export http_proxy=http://127.0.0.1:10809;
-export https_proxy=http://127.0.0.1:10809;
-
-# 测试代理是否成功：
-curl -v http://www.google.com  # 测试 HTTP
-curl -v https://www.google.com  # 测试 HTTPS
-
-# 查看临时代理：
-echo $http_proxy;
-echo $https_proxy;
-
-# 取消临时代理：
-unset http_proxy;
-unset https_proxy;
-```
-
-只让 Git 走代理，不影响其他命令：
-
-```sh
-# 设置Git长期代理：
-git config --global http.proxy "http://127.0.0.1:10809"
-git config --global https.proxy "http://127.0.0.1:10809"
-
-# 查看Git长期代理：
-git config --global --get http.proxy;
-git config --global --get https.proxy;
-
-# 取消 Git 长期代理：
-git config --global --unset http.proxy
-git config --global --unset https.proxy
-```
-
-## 一键合并分支
-
-在 `package.json` 中添加以下命令，临时使用 bash 执行一串 git 命令：
-
-```sh
-# 重点是：bash -c \"一堆bash脚本\"
-"scripts": {
-  "merge-to-dev": "bash -c \"cur_branch=$(git branch --show-current); git checkout develop && git pull && git merge --no-edit $cur_branch && git push && git checkout $cur_branch;\""
-}
-```
-
-执行命令：`npm run merge-to-dev`,便可把当前分支的代码合并到 develop 分支
-
-## 设置 Git 别名
-
-设置全局别名，例如执行：`git to develop`
-git 会自动执行：切换到 develop 分支，拉取代码，合并当前分支，推送到远程，切换回当前分支
-
-```sh
-git config --global alias.to '!f() { cur_branch=$(git branch --show-current); git checkout $1 && git pull && git merge --no-edit $cur_branch && git push && git checkout $cur_branch; }; f'
-```
-
-## 贪吃蛇
-
-<img src="/tech/github-snake.svg" alt="github-snake" />
-
-以上贪吃蛇 SVG，可以直接使用：
-
-```html
-<img src="https://jasonbai008.github.io/tech/github-snake.svg" alt="github-snake" />
-```
-
-也可以根据自己 Github 的提交记录生成个人的 svg。但是非常麻烦，以下是详细教程：
-
-- [如何在 github 主页放一条贪吃蛇](https://zhuanlan.zhihu.com/p/659930382)
-
-## Vite 打包配置
-
-为打包后的文件归类，配置 `vite.config.js` ：
-
-```js
-build: {
-    outDir: "dist",  // 打包输出目录
-    rollupOptions: {
-      output: {
-        // 指定 JS 输出到 `dist/js` 目录
-        entryFileNames: 'js/[name].[hash].js',
-        chunkFileNames: 'js/[name].[hash].js',
-        assetFileNames: (assetInfo) => {
-          // 指定 CSS 输出到 `dist/css` 目录
-          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
-            return 'css/[name].[hash][extname]'
-          }
-          // 指定 字体 输出到 `dist/fonts` 目录
-          if (assetInfo.name && assetInfo.name.endsWith('.ttf')) {
-            return 'fonts/[name].[hash][extname]'
-          }
-          // 其他资源文件输出到 `dist/assets` 目录
-          return 'assets/[name].[hash][extname]'
-        }
-      }
-    }
-  }
-```
-
-## 注册免费域名
-
-- 网址：[dpdns.org](https://domain.digitalplat.org/)
-- 教程：[https://linux.do/t/topic/571608](https://linux.do/t/topic/571608)
-- 域名：可以注册一个，给代码仓库 Star 后，可以注册两个免费域名
-
-## Cloudflare 部署网页
-
-::: warning 注意
-Cloudflare 的 Workers 都已被封，Pages 目前可以使用。  
-打开 Cloudflare 最好翻墙，以前不翻墙能很顺利的打开，现在有被墙的风险！
-:::
-
-::: tip 非常棒
-在 Github 上新建私人仓库，在 Cloudflare 上针对私人仓库，新建 Pages，这样就可以避免暴露源码了！
-:::
-
-为了能有个免费的网页，真是太难了，先后探索了：  
-`Github Pages` > `Gitee Pages` > `Github Pages` > `Cloudflare Pages`
-
-- **Github Pages** 访问速度太慢，尤其页面上有很多图片的情况下。
-- **Gitee Pages** 本来访问速度杠杠的，但是今年五一之前突然下线了，彻底不能用了。
-- **Cloudflare Pages** 没想到出奇的好使，**访问速度比 Github 快一倍！而且免费！**
-
-下面介绍一下 Cloudflare Pages 的使用步骤：
-
-1.  打开 [Cloudflare 中国官网](https://www.cloudflare-cn.com/)
-2.  使用个人邮箱注册并登录
-3.  进入到`个人账户` > `Workers and Pages` > 切换到 `Pages`选项卡
-4.  通过导入现有 Git 存储库创建，点击 `连接到 Git` 按钮
-5.  关联你的个人 Github 账户，根据提示赋予权限
-6.  选择一个你的 Github 上的一个代码仓库，点击 `开始设置`
-7.  自定义一个满意的`项目名称`，到时候访问的地址是：`项目名称.pages.dev`
-8.  如果是普通的 html 项目，直接开始部署
-9.  如果是 vue 项目，框架预设选择 `Vue`，构建命令 `npm run build`，构建输出目录`docs`
-10. 然后直接部署到全球节点，部署完，等待大概最多 5 分钟就可以访问了
-
-### 部署旧项目遇到问题
-
-```sh
-# 遇到这种报错：
-at ChildProcess.<anonymous> (/snapshot/dist/run-build.js)
-```
-
-在部署设置步骤，设置环境变量： `YARN VERSION = 1`
-
-如遇到其它报错，继续叠加设置环境变量： `NODE OPTIONS = --openssl-legacy-provider`
 
 ## Nginx 开启 https
 

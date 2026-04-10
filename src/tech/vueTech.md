@@ -4,6 +4,58 @@
 工欲善其事，必先利其器
 :::
 
+## 透视 Vite 代理地址
+
+配置 Vite 让其在终端打印实际的请求地址：
+
+```js
+export default defineConfig({
+  // ... 其他配置 ...
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://实际的后端地址',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+        configure: (proxy, options) => {
+          proxy.on('proxyReq', (proxyReq, req, res) => {
+            console.log('代理请求:', req.method, req.url, '→', options.target + proxyReq.path);
+          });
+        }
+      }
+    }
+  }
+```
+
+## Vite 打包配置
+
+为打包后的文件归类，配置 `vite.config.js` ：
+
+```js
+build: {
+    outDir: "dist",  // 打包输出目录
+    rollupOptions: {
+      output: {
+        // 指定 JS 输出到 `dist/js` 目录
+        entryFileNames: 'js/[name].[hash].js',
+        chunkFileNames: 'js/[name].[hash].js',
+        assetFileNames: (assetInfo) => {
+          // 指定 CSS 输出到 `dist/css` 目录
+          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
+            return 'css/[name].[hash][extname]'
+          }
+          // 指定 字体 输出到 `dist/fonts` 目录
+          if (assetInfo.name && assetInfo.name.endsWith('.ttf')) {
+            return 'fonts/[name].[hash][extname]'
+          }
+          // 其他资源文件输出到 `dist/assets` 目录
+          return 'assets/[name].[hash][extname]'
+        }
+      }
+    }
+  }
+```
+
 ## 带表单弹窗组件模版
 
 ```html

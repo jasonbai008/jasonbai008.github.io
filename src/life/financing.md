@@ -1,15 +1,8 @@
 # 金融理财
 
 ::: tip 赠汪伦
-李白清仓准备走，忽闻汪纶岸上吼。
-当初约定一起守，谁先逃跑谁小狗。
-
-李白朝岸摆摆手，满仓套牢难开口。
-牛市根本就没有，宁愿当狗也要走。
-:::
-
-::: tip 人生三大错觉
-美股要崩、大 A 要涨、国足夺冠
+李白清仓准备走，忽闻汪纶岸上吼。当初约定一起守，谁先逃跑谁小狗。<br>
+李白朝岸摆摆手，满仓套牢难开口。牛市根本就没有，宁愿当狗也要走。
 :::
 
 ::: tip 买烟
@@ -55,7 +48,8 @@
 
 ### 股票型基金 <Badge text="X" type="error"/>
 
-坚决不要炒A股，A股基金都不要买！！！
+- A股基金，只有在股灾的时候买入，赚10%左右卖出，才能赚到钱
+- 海外基金，长期拿着海外混合基金最好
 
 ### 债券型基金 <Badge text="√" type="tip"/>
 
@@ -105,10 +99,10 @@
   :::
 
 <style scoped>
-  ol {
+  .custom-block.tip ol {
     margin-bottom: 0;
   }
-  ul {
+  .custom-block.tip ul {
     margin-top: 0;
   }
 </style>
@@ -118,8 +112,8 @@
 | 名称                              |                            类型                            |
 | :-------------------------------- | :--------------------------------------------------------: |
 | **国富亚洲机会股票(QDII)C**       | <Badge text="亚洲基金" type="warning" vertical="middle" /> |
-| **易方达全球成长精选混合(QDII)C** |   <Badge text="全球基金" type="tip" vertical="middle" />   |
 | **建信新兴市场优选混合(QDII)C**   |   <Badge text="全球基金" type="tip" vertical="middle" />   |
+| **易方达全球成长精选混合(QDII)C** |   <Badge text="全球基金" type="tip" vertical="middle" />   |
 | **博时标普 500ETF 联接(QDII)C**   |  <Badge text="美股基金" type="error" vertical="middle" />  |
 | **华夏中证 500ETF 联接 C**        | <Badge text="国内基金" type="warning" vertical="middle" /> |
 | **华夏国证自由现金流 ETF 联接 C** | <Badge text="国内基金" type="warning" vertical="middle" /> |

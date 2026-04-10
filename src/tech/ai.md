@@ -8,7 +8,7 @@
 
 | 功能场景          | 官网                                                                                                                         | 推荐模型                                                     | 备注 / 额度                      |
 | :---------------- | :--------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------- | :------------------------------- |
-| **开发简单功能**  | <a href="https://trae.cn/" target="_blank">Trae CN 国内版</a>                                                                | **<span style="color: #3064F4">GLM-5</span>**                | 完全免费，可惜需要排队           |
+| **开发简单功能**  | <a href="https://trae.cn/" target="_blank">Trae CN 国内版</a>                                                                | -                                                            | 完全免费，选择不用排队的二流模型 |
 | **开发复杂功能**  | <a href="https://trae.ai/" target="_blank">Trae 国际版</a>                                                                   | **<span style="color: #4285F4">Gemini-3-Pro-Preview</span>** | 每月$3免费额度                   |
 | **额度补充**      | <a href="https://aistudio.google.com/app/prompts/new_chat?model=gemini-3.1-pro-preview" target="_blank">Google AI Studio</a> | **<span style="color: #4285F4">Gemini-3-Pro-Preview</span>** | 免费10多次/天，翻墙必须欧美节点  |
 | **额度补充**      | <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a>                                                              | **<span style="color: #d97757">Claude-Sonnet-4.6</span>**    | Trae 额度用完后，每天可白嫖 2 次 |

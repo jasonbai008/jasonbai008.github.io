@@ -1,8 +1,6 @@
 # 样式技巧
 
-::: tip 前言
-人靠衣装，美靠 CSS
-:::
+<img src="/tech/github-snake.svg" alt="github-snake" />
 
 ## 开场动画最佳实践
 

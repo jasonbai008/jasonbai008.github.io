@@ -4,7 +4,7 @@ sidebar: false
 
 ## 介绍
 
-一枚闲不住的**前端开发工程师**，实用主义者，欢迎访问我的[**个人主页**](https://jasonbai008.github.io/lubanseven)。
+一枚闲不住的**前端开发工程师**，实用主义者，欢迎访问我的[**个人主页**](https://jasonbai.dpdns.org)。
 
 ## 博客技术栈
 
