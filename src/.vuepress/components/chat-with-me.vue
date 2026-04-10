@@ -41,7 +41,7 @@
         placeholder="输入消息，按 Enter 发送，同时按 Shift + Enter 换行..."
         rows="2"
       ></textarea>
-      <button @click="sendMessage" :disabled="isLoading || !userInput.trim()">
+      <button class="send-btn" @click="sendMessage" :disabled="isLoading || !userInput.trim()">
         发送
       </button>
     </div>
@@ -254,34 +254,45 @@ export default {
 
 <style scoped>
 .chat-container {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 500px;
-  background: #f9f9f9;
+  height: 600px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
 .chat-messages {
   flex: 1;
-  padding: 16px;
+  padding: 20px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
+  scrollbar-width: thin;
+  scrollbar-color: #42b983 #f1f1f1;
 }
 
 .message {
-  max-width: 85%;
-  padding: 10px 14px;
-  border-radius: 12px;
-  line-height: 1.5;
-  word-wrap: break-word;
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 16px;
+  line-height: 1.6;
+  font-size: 14.5px;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .message-content {
-  word-break: break-all;
+  word-break: break-word;
 }
 
 /* 适配 Markdown 渲染后的样式 */
@@ -289,93 +300,109 @@ export default {
   margin: 0;
 }
 .message-content >>> p + p {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 .message-content >>> ul,
 .message-content >>> ol {
-  margin: 8px 0;
-  padding-left: 20px;
+  margin: 10px 0;
+  padding-left: 24px;
 }
 .message-content >>> code {
-  background-color: rgba(0, 0, 0, 0.05);
-  padding: 2px 4px;
+  background-color: rgba(66, 185, 131, 0.1);
+  padding: 2px 6px;
   border-radius: 4px;
-  font-family: monospace;
-  color: #333; /* 显式设置代码文本颜色，防止在某些主题下变透明或白色 */
+  font-family: "Fira Code", monospace;
+  color: #2c3e50;
+  font-size: 0.9em;
 }
 .message-content >>> pre {
-  background-color: #f6f8fa;
-  padding: 12px;
-  border-radius: 6px;
+  background-color: #282c34;
+  padding: 16px;
+  border-radius: 8px;
   overflow-x: auto;
-  margin: 8px 0;
-  color: #333; /* 显式设置代码块文本颜色 */
+  margin: 12px 0;
+  color: #abb2bf;
 }
 .message-content >>> pre code {
   background-color: transparent;
   padding: 0;
-  color: inherit; /* 继承 pre 的颜色 */
+  color: inherit;
+  font-size: 13px;
 }
 .message-content >>> blockquote {
-  border-left: 4px solid #dfe2e5;
-  color: #6a737d;
-  padding-left: 10px;
-  margin: 8px 0;
+  border-left: 4px solid #42b983;
+  background: rgba(66, 185, 131, 0.05);
+  color: #4a5568;
+  padding: 8px 16px;
+  margin: 12px 0;
+  border-radius: 0 4px 4px 0;
 }
 .message-content >>> img {
   max-width: 100%;
+  border-radius: 8px;
+  margin: 8px 0;
 }
 .message-content >>> table {
   border-collapse: collapse;
   width: 100%;
-  margin: 8px 0;
-  background-color: white; /* 机器人返回的表格背景设为白色 */
+  margin: 12px 0;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #e2e8f0;
+}
+.message-content >>> th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  text-align: left;
 }
 .message-content >>> th,
 .message-content >>> td {
-  border: 1px solid #dfe2e5;
-  padding: 6px 13px;
+  border: 1px solid #e2e8f0;
+  padding: 10px 14px;
 }
 
 .message.user {
   align-self: flex-end;
-  background-color: #007bff;
+  background-color: #42b983;
   color: white;
-  border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 4px 12px rgba(66, 185, 131, 0.2);
 }
 
 /* 用户消息中的代码块背景色调整 */
 .message.user .message-content >>> code {
   background-color: rgba(255, 255, 255, 0.2);
-  color: white; /* 用户消息中的代码颜色设为白色 */
+  color: white;
 }
 .message.user .message-content >>> pre {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: white; /* 用户消息中的代码块背景和文字颜色 */
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #eee;
 }
 .message.user .message-content >>> pre code {
-  color: inherit; /* 继承 pre 的白色 */
+  color: inherit;
 }
 
 .message.assistant {
   align-self: flex-start;
-  background-color: #e9e9eb;
-  color: #333;
-  border-bottom-left-radius: 2px;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  border-bottom-left-radius: 4px;
+  border: 1px solid #e2e8f0;
 }
 
 /* 三个小球的跳动动画 */
 .dot-typing {
   display: flex;
   align-items: center;
-  gap: 4px;
-  height: 20px;
+  gap: 5px;
+  height: 24px;
 }
 
 .dot-typing span {
-  width: 6px;
-  height: 6px;
-  background-color: #909399;
+  width: 8px;
+  height: 8px;
+  background-color: #42b983;
   border-radius: 50%;
   animation: dot-typing 1.4s infinite ease-in-out both;
 }
@@ -389,11 +416,9 @@ export default {
 }
 
 @keyframes dot-typing {
-  0%,
-  80%,
-  100% {
+  0%, 80%, 100% {
     transform: scale(0.6);
-    opacity: 0.6;
+    opacity: 0.4;
   }
   40% {
     transform: scale(1);
@@ -402,75 +427,98 @@ export default {
 }
 
 .chat-input-area {
-  padding: 12px;
-  border-top: 1px solid #ddd;
+  padding: 16px;
+  border-top: 1px solid #e2e8f0;
   display: flex;
-  gap: 10px;
+  gap: 12px;
   background: white;
+  align-items: center;
 }
 
 textarea {
   flex: 1;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 14px;
   resize: none;
   font-family: inherit;
   font-size: 14px;
-  line-height: 1.5; /* 显式设置行高，便于计算 */
-  box-sizing: border-box; /* 确保 padding 不会影响高度计算 */
+  line-height: 1.5;
+  box-sizing: border-box;
+  background: #f8fafc;
+  transition: all 0.2s;
 }
 
 textarea:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #42b983;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(66, 185, 131, 0.1);
 }
 
 button {
-  padding: 0 16px;
-  background: #007bff;
+  padding: 10px 20px;
+  background: #42b983;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.2s;
+  font-weight: 600;
+  transition: all 0.2s;
+  height: 40px; /* 固定高度，或者让它自适应内容但不随 textarea 变高 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button:disabled {
-  background: #ccc;
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+button.send-btn:disabled {
+  background: #8bccaf;
   cursor: not-allowed;
 }
 
 button:hover:not(:disabled) {
-  background: #0056b3;
+  background: #33a06f;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(66, 185, 131, 0.2);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
 }
 
 .clear-history-divider {
   display: flex;
   align-items: center;
-  margin: 10px 0;
-  gap: 10px;
+  margin: 16px 0;
+  gap: 7px;
 }
 
 .divider-line {
   flex: 1;
-  border-top: 1px dashed #ccc;
+  border-top: 1px solid #e2e8f0;
 }
 
 .clear-history-btn {
-  background: none;
-  /* border: 1px solid #ddd; */
-  color: #999;
+  background: #f8fafc;
+  border: 1px solid transparent;
+  color: #64748b;
   font-size: 12px;
-  padding: 4px 12px;
-  border-radius: 12px;
+  padding: 5px 16px;
+  border-radius: 20px;
   cursor: pointer;
   transition: all 0.2s;
+  font-weight: 500;
+  height: auto;
 }
 
 .chat-container .clear-history-btn:hover {
-  color: #666;
-  border-color: #bbb;
-  background-color: #f0f0f0;
+  color: #42b983;
+  border-color: #42b983;
+  background-color: rgba(66, 185, 131, 0.05);
 }
 </style>
