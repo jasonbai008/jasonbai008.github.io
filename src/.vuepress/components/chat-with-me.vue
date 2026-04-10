@@ -39,10 +39,15 @@
         @keydown.enter.exact.prevent="sendMessage"
         @input="adjustTextareaHeight"
         placeholder="输入消息，按 Enter 发送，同时按 Shift + Enter 换行..."
-        rows="2"
+        rows="3"
       ></textarea>
       <button class="send-btn" @click="sendMessage" :disabled="isLoading || !userInput.trim()">
-        发送
+        <svg v-if="isLoading" viewBox="0 0 24 24" width="16" height="16">
+          <rect x="6" y="6" width="12" height="12" rx="1" fill="currentColor" />
+        </svg>
+        <svg v-else viewBox="0 0 24 24" width="18" height="18">
+          <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
       </button>
     </div>
   </div>
@@ -272,13 +277,33 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  /* Firefox 滚动条样式 */
   scrollbar-width: thin;
-  scrollbar-color: #42b983 #f1f1f1;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+/* Webkit 滚动条样式 (Chrome, Safari, Edge) */
+.chat-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 10px;
+}
+
+/* 隐藏滚动条两端的箭头按钮 */
+.chat-messages::-webkit-scrollbar-button {
+  display: none;
 }
 
 .message {
   max-width: 80%;
-  padding: 12px 16px;
+  padding: 10px 16px;
   border-radius: 16px;
   line-height: 1.6;
   font-size: 14.5px;
@@ -430,16 +455,15 @@ export default {
   padding: 16px;
   border-top: 1px solid #e2e8f0;
   display: flex;
-  gap: 12px;
   background: white;
-  align-items: center;
+  position: relative;
 }
 
 textarea {
   flex: 1;
   border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  padding: 10px 14px;
+  border-radius: 20px;
+  padding: 10px 44px 10px 14px;
   resize: none;
   font-family: inherit;
   font-size: 14px;
@@ -456,39 +480,36 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(66, 185, 131, 0.1);
 }
 
-button {
-  padding: 10px 20px;
+.send-btn {
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  width: 34px;
+  height: 34px;
   background: #42b983;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 50%;
   cursor: pointer;
-  font-weight: 600;
-  transition: all 0.2s;
-  height: 40px; /* 固定高度，或者让它自适应内容但不随 textarea 变高 */
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s;
+  padding: 0;
 }
 
-button:disabled {
-  background: #cbd5e1;
+.send-btn:disabled {
+  background: #a6e7ca;
   cursor: not-allowed;
 }
 
-button.send-btn:disabled {
-  background: #8bccaf;
-  cursor: not-allowed;
-}
-
-button:hover:not(:disabled) {
+.send-btn:not(:disabled):hover {
   background: #33a06f;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(66, 185, 131, 0.2);
+  transform: scale(1.05);
 }
 
-button:active:not(:disabled) {
-  transform: translateY(0);
+.send-btn:not(:disabled):active {
+  transform: scale(0.95);
 }
 
 .clear-history-divider {
