@@ -3,7 +3,8 @@ module.exports = {
   description: "小白的个人博客",
   head: [
     ["link", { rel: "icon", href: "/home/logo.png" }], // favicon
-    // ["script", {src: '/baiduStatics.js'}]
+    ["script", {src: '/lib/api-client.js'}],
+    ["script", {src: '/lib/markdown-it.min.js'}]
   ],
   host: "127.0.0.1",
   base: "/", // 同代码仓库名称
@@ -23,6 +24,7 @@ module.exports = {
     logo: "/home/logo.png",
     nav: [
       { text: "首页", link: "/" },
+      { text: "聊聊天", link: "/chat/" },
       {
         text: "爱生活",
         items: [
