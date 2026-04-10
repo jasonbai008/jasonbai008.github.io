@@ -34,8 +34,10 @@
 
     <div class="chat-input-area">
       <textarea
+        ref="inputTextArea"
         v-model="userInput"
         @keydown.enter.exact.prevent="sendMessage"
+        @input="adjustTextareaHeight"
         placeholder="输入消息，按 Enter 发送，同时按 Shift + Enter 换行..."
         rows="2"
       ></textarea>
@@ -76,8 +78,35 @@ export default {
         typographer: true,
       });
     }
+    // 初始化输入框高度
+    this.adjustTextareaHeight();
   },
   methods: {
+    /**
+     * 自动调整输入框高度，最多 4 行
+     */
+    adjustTextareaHeight() {
+      const textarea = this.$refs.inputTextArea;
+      if (textarea) {
+        // 先重置高度以便重新计算 scrollHeight
+        textarea.style.height = "auto";
+        // 获取计算出的样式
+        const style = window.getComputedStyle(textarea);
+        const padding =
+          parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
+        const lineHeight = parseFloat(style.lineHeight) || 21; // 默认 1.5 倍行高
+        const maxHeight = padding + lineHeight * 4; // 计算 4 行的最大高度
+
+        // 设置新高度，但不超过 4 行
+        if (textarea.scrollHeight > maxHeight) {
+          textarea.style.height = `${maxHeight}px`;
+          textarea.style.overflowY = "auto";
+        } else {
+          textarea.style.height = `${textarea.scrollHeight}px`;
+          textarea.style.overflowY = "hidden";
+        }
+      }
+    },
     /**
      * 使用 markdown-it 渲染 Markdown 文本
      * @param {string} text - 需要渲染的文本
@@ -99,6 +128,11 @@ export default {
       this.messages.push({ role: "user", content: prompt });
       this.userInput = "";
       this.isLoading = true;
+
+      // 发送后重置输入框高度
+      this.$nextTick(() => {
+        this.adjustTextareaHeight();
+      });
 
       // 推送消息后立即滚动到底部
       this.scrollToBottom();
@@ -202,18 +236,16 @@ export default {
      * 清空聊天记录，保留初始欢迎语
      */
     clearMessages() {
-      if (confirm("确定要清空所有聊天记录吗？")) {
-        this.messages = [
-          {
-            role: "assistant",
-            content: "你好！我是 AI 小白，有什么可以帮你的吗？",
-          },
-        ];
-        // 如果正在加载，停止当前的请求
-        if (this.isLoading && this.controller) {
-          this.controller.abort();
-          this.isLoading = false;
-        }
+      this.messages = [
+        {
+          role: "assistant",
+          content: "你好！我是 AI 小白，有什么可以帮你的吗？",
+        },
+      ];
+      // 如果正在加载，停止当前的请求
+      if (this.isLoading && this.controller) {
+        this.controller.abort();
+        this.isLoading = false;
       }
     },
   },
@@ -297,6 +329,7 @@ export default {
   border-collapse: collapse;
   width: 100%;
   margin: 8px 0;
+  background-color: white; /* 机器人返回的表格背景设为白色 */
 }
 .message-content >>> th,
 .message-content >>> td {
@@ -384,6 +417,8 @@ textarea {
   resize: none;
   font-family: inherit;
   font-size: 14px;
+  line-height: 1.5; /* 显式设置行高，便于计算 */
+  box-sizing: border-box; /* 确保 padding 不会影响高度计算 */
 }
 
 textarea:focus {
