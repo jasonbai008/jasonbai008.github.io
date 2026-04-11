@@ -4,8 +4,8 @@
  * // 1. ESM 方式引入
  * // import { fetchSSE } from './api-client.js';
  *
- * // 2. 非模块化方式引入 (通过 <script> 标签)
- * // <script src="js/api-client.js"></script>
+ * // 2. <script> 标签方式引入，也得添加模块标识 'type="module"'
+ * // <script type="module" src="js/api-client.js"></script>
  * // 然后直接使用 fetchSSE(...)
  *
  * const controller = new AbortController();

@@ -3,15 +3,15 @@ module.exports = {
   description: "小白的个人博客",
   head: [
     ["link", { rel: "icon", href: "/home/logo.png" }], // favicon
-    ["script", {src: '/lib/api-client.js'}],
-    ["script", {src: '/lib/markdown-it.min.js'}]
+    ["script", { src: "/lib/markdown-it.min.js" }],
+    ["script", { src: "/lib/api-client.js", type: "module" }],
   ],
   host: "127.0.0.1",
   base: "/", // 同代码仓库名称
   dest: "docs", // 因为GitHub的Pages服务仅支持docs目录
   plugins: [
     "@vuepress/back-to-top",
-    "@vuepress/medium-zoom",    
+    "@vuepress/medium-zoom",
     // [
     //   "@vuepress-reco/vuepress-plugin-kan-ban-niang",
     //   {
@@ -40,7 +40,7 @@ module.exports = {
           {
             text: "专业",
             items: [
-              { text: '德纲说书', link: '/life/kengwang' },
+              { text: "德纲说书", link: "/life/kengwang" },
               { text: "医学健康", link: "/life/health" },
               { text: "金融理财", link: "/life/financing" },
               { text: "职场法律", link: "/life/law" },
