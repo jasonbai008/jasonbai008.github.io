@@ -1,6 +1,13 @@
 /**
  * 使用示例:
  *
+ * // 1. ESM 方式引入
+ * // import { fetchSSE } from './api-client.js';
+ *
+ * // 2. 非模块化方式引入 (通过 <script> 标签)
+ * // <script src="js/api-client.js"></script>
+ * // 然后直接使用 fetchSSE(...)
+ *
  * const controller = new AbortController();
  * try {
  *   await fetchSSE(
@@ -30,9 +37,8 @@
  *       console.log("请求错误:", err);
  *       this.error = true;
  *       // 优先从 err.data 中获取结构化错误信息
- *       this.outputText = this.outputText = err.data?.error?.message || err.message || err;
+ *       this.outputText = err.data?.error?.message || err.message || err;
  *       // 在发生错误时，确保 error 状态也被记录下来
- *       fullAiResponse = this.outputText;
  *     }
  *   );
  * } catch (e) {
@@ -55,7 +61,7 @@
  * @param {function} onMessage 收到消息时的回调函数 (text: string, accumulatedText: string, rawData: object) => void
  * @param {function} onError 发生错误时的回调函数 (error: Error) => void
  */
-window.fetchSSE = async function(url, type, options, onMessage, onError) {
+async function fetchSSE(url, type, options, onMessage, onError) {
   let reader;
   try {
     const { signal, ...fetchOptions } = options;
@@ -187,3 +193,16 @@ window.fetchSSE = async function(url, type, options, onMessage, onError) {
     }
   }
 }
+
+// 暴露到全局对象 (支持非模块化引入)
+if (typeof window !== "undefined") {
+  window.fetchSSE = fetchSSE;
+}
+
+// 支持 ESM 导出 (通过 try-catch 避免在非模块环境报错是不够的，
+// 因为 export 是关键字，解析阶段就会报错。
+// 但由于目前浏览器大多支持模块化，
+// 如果用户通过 <script src="..."> 引入，他们通常需要一个没有 export 关键字的文件。
+//
+// 为了保持一个文件同时支持两种方式，我们使用下面的技巧：
+export { fetchSSE };
