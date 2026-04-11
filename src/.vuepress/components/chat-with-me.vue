@@ -1,11 +1,7 @@
 <template>
   <div class="chat-container">
     <div class="chat-messages" ref="messagesContainer">
-      <div
-        v-for="(msg, index) in messages"
-        :key="index"
-        :class="['message', msg.role]"
-      >
+      <div v-for="(msg, index) in messages" :key="index" :class="['message', msg.role]">
         <div class="message-content">
           <!-- 只有当内容不为空时才渲染 Markdown -->
           <template v-if="msg.content">
@@ -25,28 +21,19 @@
       <!-- 对话末尾的清空聊天记录按钮和灰色虚线 -->
       <div v-if="messages.length > 1" class="clear-history-divider">
         <div class="divider-line"></div>
-        <button class="clear-history-btn" @click="clearMessages">
-          清空聊天记录
-        </button>
+        <button class="clear-history-btn" @click="clearMessages">清空聊天记录</button>
         <div class="divider-line"></div>
       </div>
     </div>
 
     <div class="chat-input-area">
-      <textarea
-        ref="inputTextArea"
-        v-model="userInput"
-        @keydown.enter.exact.prevent="sendMessage"
-        @input="adjustTextareaHeight"
-        placeholder="输入消息，按 Enter 发送，同时按 Shift + Enter 换行..."
-        rows="3"
-      ></textarea>
+      <textarea ref="inputTextArea" v-model="userInput" @keydown.enter.exact.prevent="sendMessage" @input="adjustTextareaHeight" placeholder="输入消息，按 Enter 发送，同时按 Shift + Enter 换行..." rows="3"></textarea>
       <button class="send-btn" @click="sendMessage" :disabled="isLoading || !userInput.trim()">
         <svg v-if="isLoading" viewBox="0 0 24 24" width="16" height="16">
           <rect x="6" y="6" width="12" height="12" rx="1" fill="currentColor" />
         </svg>
         <svg v-else viewBox="0 0 24 24" width="18" height="18">
-          <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
         </svg>
       </button>
     </div>
@@ -97,8 +84,7 @@ export default {
         textarea.style.height = "auto";
         // 获取计算出的样式
         const style = window.getComputedStyle(textarea);
-        const padding =
-          parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
+        const padding = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
         const lineHeight = parseFloat(style.lineHeight) || 21; // 默认 1.5 倍行高
         const maxHeight = padding + lineHeight * 4; // 计算 4 行的最大高度
 
@@ -188,33 +174,8 @@ export default {
             this.scrollToBottom();
           },
           (err) => {
-            if (err.name === "AbortError") {
-              console.log("用户终止了请求");
-            } else {
-              console.error("SSE 错误:", err);
-              // 尝试解析错误消息，如果是 JSON 字符串则进一步提取
-              let errorMsg = err.message || "无法连接到服务";
-
-              // 处理可能包含 JSON 的错误消息
-              if (errorMsg.includes("请求失败: ")) {
-                try {
-                  const jsonStr = errorMsg.replace("请求失败: ", "");
-                  const errorObj = JSON.parse(jsonStr);
-                  if (errorObj.error) {
-                    errorMsg =
-                      typeof errorObj.error === "string"
-                        ? errorObj.error
-                        : errorObj.error.message ||
-                          JSON.stringify(errorObj.error);
-                  }
-                } catch (e) {
-                  // 解析失败则保留原样
-                }
-              }
-
-              assistantMsg.content += `\n\n[错误: ${errorMsg}]`;
-            }
-          }
+            assistantMsg.content = err.data?.error?.message || err.message || err;
+          },
         );
       } catch (e) {
         console.error("发送失败:", e);
@@ -264,7 +225,7 @@ export default {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 530px;
   background: #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
@@ -312,8 +273,14 @@ export default {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .message-content {
@@ -441,7 +408,9 @@ export default {
 }
 
 @keyframes dot-typing {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
     transform: scale(0.6);
     opacity: 0.4;
   }
