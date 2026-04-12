@@ -4,7 +4,7 @@ module.exports = {
   head: [
     ["link", { rel: "icon", href: "/home/logo.png" }], // favicon
     ["script", { src: "/lib/markdown-it.min.js" }],
-    ["script", { src: "/lib/api-client.js", type: "module" }],
+    ["script", { src: "/lib/api-client.js" }],
   ],
   host: "127.0.0.1",
   base: "/", // 同代码仓库名称

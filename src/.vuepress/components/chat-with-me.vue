@@ -19,7 +19,7 @@
       </div>
 
       <!-- 对话末尾的清空聊天记录按钮和灰色虚线 -->
-      <div v-if="messages.length > 1" class="clear-history-divider">
+      <div v-if="messages.length > 1 && !isLoading" class="clear-history-divider">
         <div class="divider-line"></div>
         <button class="clear-history-btn" @click="clearMessages">清空聊天记录</button>
         <div class="divider-line"></div>
@@ -156,31 +156,33 @@ export default {
           content: msg.content,
         }));
 
-        await fetchSSE(
-          url,
-          type,
-          {
-            method: "POST",
-            // 智谱 AI 要求的格式，使用 messages 字段发送数组
-            body: JSON.stringify({
-              messages: history,
-              model: "glm-4-flash-250414",
-            }),
-            signal: this.controller.signal,
-          },
-          (text, accumulated) => {
+        fetchSSE(url, type, {
+          method: "POST",
+          signal: this.controller.signal,
+          // 智谱 AI 要求的格式，使用 messages 字段发送数组
+          body: JSON.stringify({
+            messages: history,
+            model: "glm-4-flash-250414",
+          }),
+        })
+          .then((text, accumulated) => {
             // 收到流式回复
             assistantMsg.content = accumulated;
             this.scrollToBottom();
-          },
-          (err) => {
+          })
+          .catch((err) => {
+            // 错误处理
             assistantMsg.content = err.data?.error?.message || err.message || err;
-          },
-        );
+          })
+          .finally(() => {
+            // 无论成功还是失败，最终都会重置状态
+            this.isLoading = false;
+            this.controller = null;
+            this.scrollToBottom();
+          });
       } catch (e) {
-        console.error("发送失败:", e);
+        console.error("初始化发送失败:", e);
         assistantMsg.content = "抱歉，发送消息时出现了问题。";
-      } finally {
         this.isLoading = false;
         this.controller = null;
         this.scrollToBottom();
