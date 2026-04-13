@@ -102,6 +102,16 @@
 - **快捷使用**：引入 `netlify-identity-widget` 脚本，几行代码即可调起一个完整的登录弹窗。
 - **用户管理**：在 `Identity` 标签页下可以管理已注册用户，或设置“仅限邀请（Invite only）”模式来限制访问。
 
+### 14. 进阶：Cloudflare Email Routing
+
+- **功能描述**：利用 Cloudflare Email Routing，可以为你的域名创建无数个自定义邮箱地址（如 `me@yourdomain.com`），并将所有发往这些地址的邮件自动转发到你的常用邮箱（如 Gmail 或 QQ 邮箱）。
+- **前提条件**：域名必须托管在 Cloudflare 上，并已开启 DNS 解析。
+- **启用步骤**：在 Cloudflare 控制台选择你的域名，进入 `Email` -> `Email Routing`，点击 `Get started`。
+- **配置目标地址**：在 `Destination addresses` 中添加你用来接收转发邮件的真实邮箱，并根据收到的验证邮件完成激活。
+- **创建自定义地址**：在 `Routing rules` 中点击 `Create address`，输入你想要的邮箱前缀（如 `info`、`support` 等），选择转发到已验证的目标地址。
+- **万能接收 (Catch-all)**：如果想接收发往该域名下“任何”不存在地址的邮件，可以开启 `Catch-all address` 功能，这对于防止因拼写错误错过邮件非常有用。
+- **发送邮件**：注意，Cloudflare Email Routing 目前仅支持**接收和转发**。如果需要以自定义域名身份**发送**邮件，建议配合 Resend 或 Gmail 的 SMTP 服务使用。
+
 ## Netlify VS Cloudflare
 
 <br>
