@@ -2,6 +2,12 @@
 
 <img src="/tech/github-snake.svg" alt="github-snake" />
 
+## LottieFiles to GIF
+
+下载免费的Lottie动画JSON文件，再使用第二个链接转换成500x500px的GIF，最好翻墙，尝试很多次才可以。
+- [Free Animations](https://lottiefiles.com/free-animations)
+- [Lottie to GIF](https://lottiefiles.com/tools/lottie-to-gif)
+
 ## 开场动画最佳实践
 
 Loading示例网站：
