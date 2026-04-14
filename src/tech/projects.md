@@ -162,9 +162,9 @@
     <img :src="$withBase('/projects/tools10.png')" style="margin-top: 16px;">
     <h4>Mock可视化</h4>
   </a>  
-  <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/sweet">
-    <img :src="$withBase('/projects/tools7.png')">
-    <h4>土味情话</h4>
+  <a class="itemWrap" target="_blank" href="https://lottie.jasonbai.dpdns.org/">
+    <img :src="$withBase('/projects/Lottie.png')">
+    <h4>Lottie Maker</h4>
   </a>
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/douyin"> -->
   <a class="itemWrap" target="_blank" href="https://bai-douyin.netlify.app/">
