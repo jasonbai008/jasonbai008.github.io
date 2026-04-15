@@ -208,7 +208,7 @@ export default {
       this.messages = [
         {
           role: "assistant",
-          content: "你好！我是 AI 小白，有什么可以帮你的吗？",
+          content: "你好！我是聊天搭子小白，有什么可以帮你的吗？",
         },
       ];
       // 如果正在加载，停止当前的请求
