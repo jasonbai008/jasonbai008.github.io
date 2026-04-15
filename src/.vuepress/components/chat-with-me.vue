@@ -52,16 +52,24 @@ export default {
       messages: [
         {
           role: "assistant",
-          content: "你好！我是 AI 小白，有什么可以帮你的吗？",
+          content: "你好！我是聊天搭子小白，有什么可以帮你的吗？",
         },
       ],
       userInput: "",
       isLoading: false,
       controller: null,
       md: null, // 存储 markdown-it 实例
+      ai: null, // 存储 ZhipuChat 实例
     };
   },
   mounted() {
+    // 初始化 ZhipuChat 实例
+    if (typeof window !== "undefined" && window.ZhipuChat) {
+      this.ai = new window.ZhipuChat({
+        systemPrompt: "你是一个有用的AI助手，你的名字叫小白。你是 JasonBai 的个人博客助手，负责回答读者的各种问题，语气要亲切友好。",
+      });
+    }
+
     // 初始化 markdown-it 实例
     if (typeof window !== "undefined" && window.markdownit) {
       this.md = window.markdownit({
@@ -142,47 +150,40 @@ export default {
       this.controller = new AbortController();
 
       try {
-        // 这里的 URL 和 type 需要根据您的实际后端接口进行调整
-        const url = "https://zhipu.jasonbai.dpdns.org"; // 示例接口
-        const type = "glm"; // 示例类型
-
-        if (typeof fetchSSE === "undefined") {
-          throw new Error("fetchSSE 工具未加载成功");
+        if (!this.ai) {
+          throw new Error("ZhipuChat 工具未加载成功");
         }
 
-        // 构造发送给智谱 AI 的对话历史，排除掉最后一个空的回复消息
-        const history = this.messages.slice(0, -1).map((msg) => ({
-          role: msg.role,
-          content: msg.content,
-        }));
+        // 构造发送给智谱 AI 的对话历史，包含系统提示词，排除掉最后一个空的回复消息
+        const history = [
+          { role: "system", content: this.ai.config.systemPrompt },
+          ...this.messages.slice(0, -1).map((msg) => ({
+            role: msg.role,
+            content: msg.content,
+          })),
+        ];
 
-        fetchSSE(url, type, {
-          method: "POST",
+        // 使用 ZhipuChat 进行流式对话
+        const stream = await this.ai.chatStream(history, {
           signal: this.controller.signal,
-          // 智谱 AI 要求的格式，使用 messages 字段发送数组
-          body: JSON.stringify({
-            messages: history,
-            model: "glm-4-flash-250414",
-          }),
-        })
-          .then((text, accumulated) => {
-            // 收到流式回复
-            assistantMsg.content = accumulated;
+        });
+
+        for await (const chunk of stream) {
+          // 收到流式回复内容
+          if (chunk.content) {
+            assistantMsg.content += chunk.content;
             this.scrollToBottom();
-          })
-          .catch((err) => {
-            // 错误处理
-            assistantMsg.content = err.data?.error?.message || err.message || err;
-          })
-          .finally(() => {
-            // 无论成功还是失败，最终都会重置状态
-            this.isLoading = false;
-            this.controller = null;
-            this.scrollToBottom();
-          });
-      } catch (e) {
-        console.error("初始化发送失败:", e);
-        assistantMsg.content = "抱歉，发送消息时出现了问题。";
+          }
+        }
+      } catch (err) {
+        if (err.name === "AbortError") {
+          console.log("请求已手动中断");
+        } else {
+          console.error("对话发生错误:", err);
+          assistantMsg.content = err.message || "抱歉，发送消息时出现了问题。";
+        }
+      } finally {
+        // 无论成功还是失败，最终都会重置状态
         this.isLoading = false;
         this.controller = null;
         this.scrollToBottom();
