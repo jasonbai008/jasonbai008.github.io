@@ -4,6 +4,44 @@
 工欲善其事，必先利其器
 :::
 
+## Html 使用 vue 组件
+
+使用 `http-vue-loader` 直接在 HTML 中加载 `.vue` 文件。
+
+```html
+<!-- index.html -->
+<div id="app">
+  <my-component></my-component>
+</div>
+<script src="https://unpkg.com/vue@2"></script>
+<script src="https://unpkg.com/http-vue-loader"></script>
+<script>
+  new Vue({
+    el: '#app',
+    components: {
+      'my-component': httpVueLoader('my-component.vue')
+    }
+  });
+</script>
+```
+
+```vue
+<!-- my-component.vue -->
+<template>
+  <div class="hello">Hello {{ name }}</div>
+</template>
+<script>
+module.exports = {
+  data: function() {
+    return { name: 'World' }
+  }
+}
+</script>
+<style scoped>
+.hello { color: red; }
+</style>
+```
+
 ## 透视 Vite 代理地址
 
 配置 Vite 让其在终端打印实际的请求地址：
