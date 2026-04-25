@@ -4,8 +4,8 @@ sidebar: false
 
 ## 联系我
 
-<contact-me/>
+<contact-me />
 
 ## 留言板
 
-<bai-comment :readingNum="true"/>
+<cf-comment />
