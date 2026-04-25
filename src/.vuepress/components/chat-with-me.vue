@@ -157,7 +157,7 @@ export default {
         signal: this.controller.signal,
         body: JSON.stringify({
           messages: history,
-          model: "glm-4-flash-250414",
+          model: "glm-4-flash",
         }),
       })
         .then((text, accumulated) => {
