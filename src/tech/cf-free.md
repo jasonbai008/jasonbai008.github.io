@@ -1,6 +1,6 @@
 # 免费帆樯
 
-> edgetunnel 是一个基于 CF Workers/Pages 平台的边缘计算隧道解密方案。它能够高效地处理网络流量，并提供强大的管理面板和灵活的节点配置能力。
+> edgetunnel 是一个基于 CF Workers/Pages 平台的边缘计算隧道解密方案。它能够高效地处理网络流量，并提供强大的管理面板和灵活的节点配置能力。每天 10 万次请求额度，早上 8 点更新。
 
 ## 1. 教程视频
 
@@ -29,8 +29,8 @@
 
 ## 3. 详细教程
 
-- [教程一](https://www.freedidi.com/23618.html)
-- [教程二](https://blog.cmliussss.com/p/edt2/)
+- [零度教程](https://www.freedidi.com/23618.html)
+- [官方教程](https://blog.cmliussss.com/p/edt2/)
 - [代码仓库](https://github.com/cmliu/edgetunnel)
 
 ## 4. 使用教程
@@ -48,8 +48,8 @@
 
 ### 订阅地址
 
-1. 自适应订阅：https://fq.jasonbaiyy.dpdns.org/sub?token=5e452acea3d0f4e7f583bf8888ce81f1
-2. Clash 订阅：https://fq.jasonbaiyy.dpdns.org/sub?token=5e452acea3d0f4e7f583bf8888ce81f1&clash
+1. 自适应订阅：联系我获取
+2. Clash 订阅：联系我获取
 
 ### 下载客户端
 
