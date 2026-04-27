@@ -25,7 +25,7 @@
 15. `Ctrl + A` 全选节点，`Ctrl + R`，测试所有节点真实速度
 16. 按 `Enter` 键，选择一个有速度的节点
 17. 在最下方选择 `自动配置系统代理`，就翻出去了
-18. 打开 [https://ipcheck.ing](https://ipcheck.ing)，查看自己 IP 所在的地区
+18. 打开 [lite.ipcheck.ing](https://lite.ipcheck.ing)，查看自己 IP 所在的地区
 
 ## 3. 详细教程
 
