@@ -1,26 +1,26 @@
 # 站长之路
 
-## 免费部署网页
-
 ::: tip
-以下三种方式部署的网页，都可以绑定自己的域名，在国内顺利打开。
+DpDNS免费域名 + 大善人Cloudflare = 零成本建站！
 :::
+
+## 免费部署网页
 
 ### 1. **Github Pages** <Badge text="一般" type="error"/>
 
 将网站代码托管到 Github 上的仓库里，开启 Pages 服务，即可实现免费的 https 网站。可惜**国内经常打不开**。
 
-### 2. **Cloudflare Pages** <Badge text="还行" type="warning"/>
+### 2. **Cloudflare Pages** <Badge text="推荐" type="tip"/>
 
-注册并登录 [Cloudflare](https://www.cloudflare-cn.com/)，新建 Pages，可以关联自己的 Github 仓库，这样更新仓库后，Cloudflare 会自动更新对应的 Pages，非常方便。但**也经常打不开**。
+注册并登录 [Cloudflare](https://www.cloudflare-cn.com/)，新建 Pages，关联自己的 Github 仓库，仓库更新后，Pages也会自动更新，非常方便。但需要**绑定自己的域名**，才能在国内顺利打开。
 
-### 3. **Netlify Pages** <Badge text="不错" type="tip"/>
+### 3. **Netlify Pages** <Badge text="备选" type="warning"/>
 
-代码仓库还是在 Github，注册登录 [Netlify](https://www.netlify.com/)，新建 Site，选择 GitHub，选择对应的仓库，点击 Deploy。**国内打开速度杠杠的快**, 可惜微信屏蔽了。
+注册登录 [Netlify](https://www.netlify.com/)，新建 Site，选择 GitHub，选择对应的仓库，点击 Deploy。由于国内网络封锁，**页面打开速度时快时慢**，总体还行，可以绑定自己的域名。
 
-### 4. **Deno Deploy** <Badge text="不错" type="tip"/>
+### 4. **Deno Deploy** <Badge text="备选" type="warning"/>
 
-代码仓库还是在 Github，注册登录 [Deno](https://deno.com/deploy)，新建 Site，选择 GitHub，选择对应的仓库，点击 Deploy。**国内打开速度杠杠的快**。
+注册登录 [Deno](https://deno.com/deploy)，关联 GitHub 上的仓库，一键部署。
 
 ## 免费站长之路
 
@@ -71,7 +71,7 @@
 
 - **环境要求**：注册和使用 Google AI Studio 需使用特定地区的网络环境（如美国、新加坡等）。
 - **获取途径**：访问 [Google AI Studio](https://aistudio.google.com/)，点击 `Get API key` 即可。
-- **模型选择**：目前可以免费调用API接口的模型有： `Gemini-2.5-Flash` 和 `Gemini-2.5-Flash-Lite`。
+- **模型选择**：目前可以免费调用API接口的模型有： `Gemini-2.5-Flash`、`Gemini-2.5-Flash-Lite` 和 `Gemini-3-Flash`。
 - **注意事项**：只能通过上面的边缘函数转发请求，并且模型字段的值必须全部小写。
 
 ### 9. 总结建议
@@ -108,7 +108,7 @@
 - **开发体验**：支持通过 Web 控制台直接运行 SQL 语句，也支持使用 `wrangler` 工具进行本地开发、迁移和部署。
 - **新手友好**：无需管理服务器或复杂的数据库配置，一键创建，即开即用，新手学习后端开发最佳起点。
 
-## Netlify
+## Netlify 探索
 
 ### 1. 部署 Netlify Pages
 
@@ -141,7 +141,7 @@
 
 <br>
 <details>
-<summary>关键信息对比</summary>
+<summary>关键信息对比 - 来自 DeepSeek</summary>
 
 ---
 
@@ -292,8 +292,6 @@
 - 需要表单/登录时，在 Netlify 单独部署一个服务（或通过函数转发）
 - 用 **Cloudflare 的域名注册 + DNS**（成本价，不赚差价）
 - 用 **Cloudflare Web Analytics** 统一看流量（免费且不耗性能）
-
-如果你告诉我你想做具体什么类型的项目（博客、工具类应用、带后台的管理系统等），我可以给你画一个具体的架构方案。
 
 </details>
 
