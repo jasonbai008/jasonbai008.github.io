@@ -48,7 +48,7 @@
 
 ### 股票型基金 <Badge text="X" type="error"/>
 
-- A股基金，只有在股灾的时候买入，赚10%左右卖出，才能赚到钱
+- A股基金，只有在股灾的时候买入，持有2周，立马卖出，才能赚到钱
 - 海外基金，长期拿着海外混合基金最好
 
 ### 债券型基金 <Badge text="√" type="tip"/>
@@ -109,12 +109,13 @@
 
 ## 基金精选<Badge text="自负盈亏" type="tip"/>
 
-| 名称                              |                            类型                            |
-| :-------------------------------- | :--------------------------------------------------------: |
-| **国富亚洲机会股票(QDII)C**       | <Badge text="亚洲基金" type="warning" vertical="middle" /> |
-| **建信新兴市场优选混合(QDII)C**   |   <Badge text="全球基金" type="tip" vertical="middle" />   |
-| **易方达全球成长精选混合(QDII)C** |   <Badge text="全球基金" type="tip" vertical="middle" />   |
-| **博时标普 500ETF 联接(QDII)C**   |  <Badge text="美股基金" type="error" vertical="middle" />  |
-| **华夏中证 500ETF 联接 C**        | <Badge text="国内基金" type="warning" vertical="middle" /> |
-| **华夏国证自由现金流 ETF 联接 C** | <Badge text="国内基金" type="warning" vertical="middle" /> |
-| **易方达科鑫量化选股股票 C**      | <Badge text="国内基金" type="warning" vertical="middle" /> |
+| 名称                                |                            类型                            |
+| :---------------------------------- | :--------------------------------------------------------: |
+| **国富亚洲机会股票(QDII)C**         | <Badge text="亚洲基金" type="warning" vertical="middle" /> |
+| **天弘全球高端制造混合(QDII)C**     | <Badge text="全球基金" type="warning" vertical="middle" /> |
+| **建信新兴市场优选混合(QDII)C**     |   <Badge text="全球基金" type="tip" vertical="middle" />   |
+| **易方达全球成长精选混合(QDII)C**   |   <Badge text="全球基金" type="tip" vertical="middle" />   |
+| **浦银安盛全球智能科技股票(QDII)C** |   <Badge text="全球基金" type="tip" vertical="middle" />   |
+| **博时标普 500ETF 联接(QDII)C**     |  <Badge text="美股基金" type="error" vertical="middle" />  |
+| **易方达科鑫量化选股股票 C**        | <Badge text="国内基金" type="warning" vertical="middle" /> |
+| **华夏中证 500ETF 联接 C**          | <Badge text="国内基金" type="warning" vertical="middle" /> |

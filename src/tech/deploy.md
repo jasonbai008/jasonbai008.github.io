@@ -18,6 +18,10 @@
 
 代码仓库还是在 Github，注册登录 [Netlify](https://www.netlify.com/)，新建 Site，选择 GitHub，选择对应的仓库，点击 Deploy。**国内打开速度杠杠的快**, 可惜微信屏蔽了。
 
+### 4. **Deno Deploy** <Badge text="不错" type="tip"/>
+
+代码仓库还是在 Github，注册登录 [Deno](https://deno.com/deploy)，新建 Site，选择 GitHub，选择对应的仓库，点击 Deploy。**国内打开速度杠杠的快**。
+
 ## 免费站长之路
 
 ### 1. 开通 Github 个人账号
@@ -51,11 +55,11 @@
 - **绑定自定义域名**：在 Pages 项目的 `Custom domains` 中，绑定你之前在 Cloudflare 托管的子域名（如 `web.xiaobai.dpdns.org`）。
 - **优势**：绑定域名后，国内用户可以非常稳定地访问你的网站，且支持自动集成生产环境的 SSL 证书。
 
-### 6. 部署 Netlify Pages
+### 6. 编写 Cloudflare Workers
 
-- **快速部署**：在 [Netlify](https://www.netlify.com/) 中点击 `Add new site` -> `Import an existing project`，关联 GitHub 仓库即可实现全自动部署。
-- **默认域名优势**：Netlify 分配的 `*.netlify.app` 域名在国内目前的访问速度相对理想。
-- **局限性**：虽然也支持绑定自定义域名，但比较麻烦。
+- **Serverless 接口**：Cloudflare Workers 类似轻量级的后端接口，适合处理 API 转发逻辑。
+- **解决域名屏蔽**：默认的 `*.workers.dev` 域名在国内是被屏蔽的。你必须在 Worker 的 `Triggers` -> `Custom Domains` 中绑定自己的域名（如 `api.xiaobai.dpdns.org`）才能正常调用。
+- **代码实现**：使用 JavaScript 编写简单的 `fetch` 转发逻辑，并配置环境变量以确保安全。
 
 ### 7. 注册智谱AI (中转方案)
 
@@ -63,46 +67,22 @@
 - **免费额度**：新用户有200万免费 Token 额度，支持所有模型，非常适合作为初学者的第一个 AI 接口。
 - **安全提示**：API Key 是极其敏感的信息，切勿直接写在前端代码中，需通过边缘函数（Edge Functions）或服务器进行转发。
 
-### 8. 编写 Netlify Edge Functions
-
-- **核心功能**：利用边缘函数转发前端请求到智谱AI或 Gemini 的服务器，实现跨域访问并隐藏 API Key。
-- **文件路径**：在项目根目录创建 `netlify/edge-functions/proxy.js`。边缘函数支持流式响应（Streaming），能让 AI 的回复像打字机一样逐字显示。
-- **环境配置**：在 Netlify 的 `Site settings` -> `Environment variables` 中配置你的 `ZHIPUAI_API_KEY`。
-
-### 9. 编写 Cloudflare Workers
-
-- **Serverless 接口**：Cloudflare Workers 类似轻量级的后端接口，适合处理 API 转发逻辑。
-- **解决域名屏蔽**：默认的 `*.workers.dev` 域名在国内是被屏蔽的。你必须在 Worker 的 `Triggers` -> `Custom Domains` 中绑定自己的域名（如 `api.xiaobai.dpdns.org`）才能正常调用。
-- **代码实现**：使用 JavaScript 编写简单的 `fetch` 转发逻辑，并配置环境变量以确保安全。
-
-### 10. 总结建议
-
-- **最佳组合**：使用 **GitHub** 托管代码 + **Cloudflare Pages** 部署前端 + **Cloudflare Workers** 或 **Netlify Edge Functions** 转发 API 请求。
-- **域名管理**：所有对外的服务（网页、接口）都建议绑定自己的 DPDNS 子域名，以获得最稳定的国内访问体验。
-- **密钥管理**：务必将所有的 API Key 记录在本地的 `.env` 或备忘录中，因为平台通常只会在创建时完整显示一次。
-
-### 11. 注册 Gemini API 密钥
+### 8. 注册 Gemini API 密钥
 
 - **环境要求**：注册和使用 Google AI Studio 需使用特定地区的网络环境（如美国、新加坡等）。
 - **获取途径**：访问 [Google AI Studio](https://aistudio.google.com/)，点击 `Get API key` 即可。
 - **模型选择**：目前可以免费调用API接口的模型有： `Gemini-2.5-Flash` 和 `Gemini-2.5-Flash-Lite`。
 - **注意事项**：只能通过上面的边缘函数转发请求，并且模型字段的值必须全部小写。
 
-### 12. 进阶：Netlify Form
+### 9. 总结建议
 
-- **功能描述**：无需后端代码即可收集表单数据。Netlify 会自动解析 HTML 中的表单并保存提交记录。
-- **开启服务**：在 HTML 的 `<form>` 标签上添加 `netlify`属性即可自动激活。
-- **防骚扰配置**：建议添加 `netlify-honeypot` 属性以启用简单的垃圾邮件防护。
-- **管理提交**：登录 Netlify 控制台，在 `Site configuration` -> `Forms` 中查看和导出所有提交的数据。
+- **最佳组合**：**GitHub** 托管代码 + **Cloudflare Pages** 部署前端 + **Cloudflare Workers** 转发 API 请求。
+- **域名管理**：所有对外的服务（网页、接口）都建议绑定自己的 DPDNS 子域名，以获得最稳定的国内访问体验。
+- **密钥管理**：务必将所有的 API Key 记录在本地的 `.env` 或备忘录中，因为平台通常只会在创建时完整显示一次。
 
-### 13. 进阶：Netlify Identity
+## Cloudflare 进阶
 
-- **功能描述**：全套的用户管理方案，支持注册、登录、找回密码以及社交账号登录（如 GitHub/Google）。
-- **开启服务**：在 Netlify 控制台进入 `Site settings` -> `Identity` -> 点击 `Enable Identity`。
-- **快捷使用**：引入 `netlify-identity-widget` 脚本，几行代码即可调起一个完整的登录弹窗。
-- **用户管理**：在 `Identity` 标签页下可以管理已注册用户，或设置“仅限邀请（Invite only）”模式来限制访问。
-
-### 14. 进阶：Cloudflare Email Routing
+### 1. Cloudflare Email Routing
 
 - **功能描述**：利用 Cloudflare Email Routing，可以为你的域名创建无数个自定义邮箱地址（如 `me@yourdomain.com`），并将所有发往这些地址的邮件自动转发到你的常用邮箱（如 Gmail 或 QQ 邮箱）。
 - **前提条件**：域名必须托管在 Cloudflare 上，并已开启 DNS 解析。
@@ -111,6 +91,51 @@
 - **创建自定义地址**：在 `Routing rules` 中点击 `Create address`，输入你想要的邮箱前缀（如 `info`、`support` 等），选择转发到已验证的目标地址。
 - **万能接收 (Catch-all)**：如果想接收发往该域名下“任何”不存在地址的邮件，可以开启 `Catch-all address` 功能，这对于防止因拼写错误错过邮件非常有用。
 - **发送邮件**：注意，Cloudflare Email Routing 目前仅支持**接收和转发**。如果需要以自定义域名身份**发送**邮件，建议配合 Resend 或 Gmail 的 SMTP 服务使用。
+
+### 2. Cloudflare R2 存储
+
+- **对象存储**：兼容 AWS S3 协议的对象存储服务，适合存放图片、视频、静态资源等文件。
+- **零出口费用 (Zero Egress)**：这是 R2 的核心优势，不收取任何下载流量费，非常适合作为个人图床或文件下载服务器。
+- **免费额度**：每月提供 10GB 免费存储容量，100 万次 A 类操作（写）和 1000 万次 B 类操作（读）。
+- **简单使用**：在控制台创建 Bucket 后，可以直接上传文件，并绑定你的自定义域名（如 `cdn.xiaobai.dpdns.org`）实现公开访问。
+- **进阶玩法**：配合 Cloudflare Workers 可以实现图片处理（缩略图、加水印）或更复杂的访问权限控制。
+
+### 3. Cloudflare D1 数据库
+
+- **关系型数据库**：基于 SQLite 的 Serverless 数据库，适合存储结构化数据，如用户系统、文章评论、小工具配置等。
+- **边缘优势**：与 Workers 紧密集成，数据存储在 Cloudflare 边缘节点，访问速度极快。
+- **免费额度**：提供慷慨的免费额度，包括每日 500 万次读取和 10 万次写入，完全够个人小项目使用。
+- **开发体验**：支持通过 Web 控制台直接运行 SQL 语句，也支持使用 `wrangler` 工具进行本地开发、迁移和部署。
+- **新手友好**：无需管理服务器或复杂的数据库配置，一键创建，即开即用，新手学习后端开发最佳起点。
+
+## Netlify
+
+### 1. 部署 Netlify Pages
+
+- **快速部署**：在 [Netlify](https://www.netlify.com/) 中点击 `Add new site` -> `Import an existing project`，关联 GitHub 仓库即可实现全自动部署。
+- **默认域名优势**：Netlify 分配的 `*.netlify.app` 域名在国内目前的访问速度相对理想。
+- **局限性**：虽然也支持绑定自定义域名，但比较麻烦。
+
+### 2. 编写 Netlify Edge Functions
+
+- **核心功能**：利用边缘函数转发前端请求到智谱AI或 Gemini 的服务器，实现跨域访问并隐藏 API Key。
+- **文件路径**：在项目根目录创建 `netlify/edge-functions/proxy.js`。边缘函数支持流式响应（Streaming），能让 AI 的回复像打字机一样逐字显示。
+- **环境配置**：在 Netlify 的 `Site settings` -> `Environment variables` 中配置你的 `ZHIPUAI_API_KEY`。
+
+### 3. 进阶：Netlify Form
+
+- **功能描述**：无需后端代码即可收集表单数据。Netlify 会自动解析 HTML 中的表单并保存提交记录。
+- **开启服务**：在 HTML 的 `<form>` 标签上添加 `netlify`属性即可自动激活。
+- **防骚扰配置**：建议添加 `netlify-honeypot` 属性以启用简单的垃圾邮件防护。
+- **管理提交**：登录 Netlify 控制台，在 `Site configuration` -> `Forms` 中查看和导出所有提交的数据。
+
+### 4. 进阶：Netlify Identity
+
+- **功能描述**：全套的用户管理方案，支持注册、登录、找回密码以及社交账号登录（如 GitHub/Google）。
+- **开启服务**：在 Netlify 控制台进入 `Site settings` -> `Identity` -> 点击 `Enable Identity`。
+- **快捷使用**：引入 `netlify-identity-widget` 脚本，几行代码即可调起一个完整的登录弹窗。
+- **用户管理**：在 `Identity` 标签页下可以管理已注册用户，或设置“仅限邀请（Invite only）”模式来限制访问。
+
 
 ## Netlify VS Cloudflare
 
