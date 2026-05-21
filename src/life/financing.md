@@ -1,5 +1,9 @@
 # 金融理财
 
+::: tip 警示
+富贵险中求，也在险中丢。求时十之一，丢时十之九。
+:::
+
 ::: tip 赠汪伦
 李白清仓准备走，忽闻汪纶岸上吼。当初约定一起守，谁先逃跑谁小狗。<br>
 李白朝岸摆摆手，满仓套牢难开口。牛市根本就没有，宁愿当狗也要走。
@@ -28,6 +32,7 @@
 - 2024 赶上债券市场疯牛，快速回本
 - 2025 美股和债券暴跌，5 年收益 1 个月跌没
 - 2026 全球配置，赶上伊朗战争，24h 亏钱
+- 2026 4月份赶上了美股AI科技牛市
 
 ## 韭菜工具
 
@@ -37,6 +42,7 @@
 4. [英为财情](https://cn.investing.com) - 查看日韩股票
 5. [集思录](https://www.jisilu.cn/data/qdii/#qdiie) - LOF基金套利专用
 6. **支付宝基金评论区** - 会有意想不到的收获，比如QDII基金涨跌幅预估
+7. **小红书** - 招行理财抢购攻略
 
 ## 金融常识
 
@@ -48,8 +54,9 @@
 
 ### 股票型基金 <Badge text="X" type="error"/>
 
-- A股基金，只有在股灾的时候买入，持有2周，立马卖出，才能赚到钱
-- 海外基金，长期拿着海外混合基金最好
+- 珍爱生命，远离诈骗市场：**缅A**
+- 割韭菜的市场A股唯一可以挣钱的策略：千股跌停时，买入指数基金，最多拿2个星期，然后空仓等下次千股跌停
+- 美股大跌后，可以购买多只**QDII海外基金**，布局全球
 
 ### 债券型基金 <Badge text="√" type="tip"/>
 
@@ -94,8 +101,8 @@
 
 4. **购买基金（10%）：**
 
-- 熊市时，支付宝上购买**长债基金**，年化 **3-4%**
-- 牛市时，支付宝上购买**QDII海外基金**，布局全球，实现 24h 亏钱
+- 美股大跌后，支付宝上购买**QDII海外基金**，布局全球，实现 24h 亏钱
+- 诈骗市场A股，千股跌停时，可以买入，最多拿2个星期，然后空仓等下次千股跌停
   :::
 
 <style scoped>
@@ -112,10 +119,9 @@
 | 名称                                |                            类型                            |
 | :---------------------------------- | :--------------------------------------------------------: |
 | **国富亚洲机会股票(QDII)C**         | <Badge text="亚洲基金" type="warning" vertical="middle" /> |
-| **天弘全球高端制造混合(QDII)C**     | <Badge text="全球基金" type="warning" vertical="middle" /> |
-| **建信新兴市场优选混合(QDII)C**     |   <Badge text="全球基金" type="tip" vertical="middle" />   |
 | **易方达全球成长精选混合(QDII)C**   |   <Badge text="全球基金" type="tip" vertical="middle" />   |
-| **浦银安盛全球智能科技股票(QDII)C** |   <Badge text="全球基金" type="tip" vertical="middle" />   |
+| **天弘全球高端制造混合(QDII)C**     |   <Badge text="全球基金" type="tip" vertical="middle" />   |
+| **建信新兴市场优选混合(QDII)C**     |  <Badge text="美股基金" type="error" vertical="middle" />  |
+| **浦银安盛全球智能科技股票(QDII)C** |  <Badge text="美股基金" type="error" vertical="middle" />  |
 | **博时标普 500ETF 联接(QDII)C**     |  <Badge text="美股基金" type="error" vertical="middle" />  |
 | **易方达科鑫量化选股股票 C**        | <Badge text="国内基金" type="warning" vertical="middle" /> |
-| **华夏中证 500ETF 联接 C**          | <Badge text="国内基金" type="warning" vertical="middle" /> |
