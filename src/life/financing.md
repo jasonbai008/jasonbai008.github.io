@@ -55,7 +55,7 @@
 ### 股票型基金 <Badge text="X" type="error"/>
 
 - 珍爱生命，远离诈骗市场：**缅A**
-- 割韭菜的市场A股唯一可以挣钱的策略：千股跌停时，买入指数基金，最多拿2个星期，然后空仓等下次千股跌停
+- A股涨上天也不要买！！！
 - 美股大跌后，可以购买多只**QDII海外基金**，布局全球
 
 ### 债券型基金 <Badge text="√" type="tip"/>
@@ -101,8 +101,8 @@
 
 4. **购买基金（10%）：**
 
-- 美股大跌后，支付宝上购买**QDII海外基金**，布局全球，实现 24h 亏钱
-- 诈骗市场A股，千股跌停时，可以买入，最多拿2个星期，然后空仓等下次千股跌停
+- 美股大跌后，支付宝上购买多只**QDII海外基金**，布局全球，实现 24h 亏钱
+- 远离诈骗市场A股，打死不买A股基金
   :::
 
 <style scoped>
@@ -124,4 +124,3 @@
 | **建信新兴市场优选混合(QDII)C**     |  <Badge text="美股基金" type="error" vertical="middle" />  |
 | **浦银安盛全球智能科技股票(QDII)C** |  <Badge text="美股基金" type="error" vertical="middle" />  |
 | **博时标普 500ETF 联接(QDII)C**     |  <Badge text="美股基金" type="error" vertical="middle" />  |
-| **易方达科鑫量化选股股票 C**        | <Badge text="国内基金" type="warning" vertical="middle" /> |
