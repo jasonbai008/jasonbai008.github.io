@@ -2,6 +2,21 @@
 
 <img src="/tech/github-snake.svg" alt="github-snake" />
 
+## 图片拉伸父级元素
+
+```css
+.parent {
+  width: 固定值;
+  aspect-ratio: 宽/高;
+  overflow: hidden;
+}
+.parent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+```
+
 ## 开场动画最佳实践
 
 Loading示例网站：
