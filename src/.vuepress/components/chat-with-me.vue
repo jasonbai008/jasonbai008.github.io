@@ -28,7 +28,7 @@
 
     <div class="chat-input-area">
       <textarea ref="inputTextArea" v-model="userInput" @keydown.enter.exact.prevent="sendMessage" @input="adjustTextareaHeight" placeholder="输入消息，按 Enter 发送，同时按 Shift + Enter 换行..." rows="3"></textarea>
-      <button class="send-btn" @click="sendMessage" :disabled="isLoading || !userInput.trim()">
+      <button class="send-btn" @click="isLoading ? stopConversation() : sendMessage()" :disabled="!isLoading && !userInput.trim()">
         <svg v-if="isLoading" viewBox="0 0 24 24" width="16" height="16">
           <rect x="6" y="6" width="12" height="12" rx="1" fill="currentColor" />
         </svg>
@@ -151,34 +151,34 @@ export default {
         })),
       ];
 
-      // 使用 fetchSSE 进行流式对话
-      window.fetchSSE("https://zhipu.jasonbai.dpdns.org", "glm", {
-        method: "POST",
+      // 使用 FreeAI SDK 进行流式对话
+      FreeAI.chat({
+        model: "glm-4-flash",
+        messages: history,
         signal: this.controller.signal,
-        body: JSON.stringify({
-          messages: history,
-          model: "glm-4-flash",
-        }),
-      })
-        .then((text, accumulated) => {
-          // 收到流式回复内容，直接更新累计文本
-          assistantMsg.content = accumulated;
+        onMessage: (delta) => {
+          // 收到流式回复片段，追加到内容中
+          assistantMsg.content += delta;
           this.scrollToBottom();
-        })
-        .catch((err) => {
+        },
+        onError: (err) => {
           if (err.name === "AbortError") {
             console.log("请求已手动中断");
           } else {
             console.error("对话发生错误:", err);
             assistantMsg.content = err.message || "抱歉，发送消息时出现了问题。";
           }
-        })
-        .finally(() => {
-          // 无论成功还是失败，最终都会重置状态
           this.isLoading = false;
           this.controller = null;
           this.scrollToBottom();
-        });
+        },
+        onFinish: () => {
+          // 生成完成
+          this.isLoading = false;
+          this.controller = null;
+          this.scrollToBottom();
+        },
+      });
     },
 
     scrollToBottom() {
@@ -190,6 +190,17 @@ export default {
           container.scrollTop = container.scrollHeight;
         }
       });
+    },
+
+    /**
+     * 中断当前的 AI 对话
+     */
+    stopConversation() {
+      if (this.controller) {
+        this.controller.abort();
+        this.controller = null;
+      }
+      this.isLoading = false;
     },
 
     /**
