@@ -2,7 +2,7 @@
  * Free AI SDK
  * 用于简化大模型流式请求的调用
  * 支持Glm系列和Gemini系列模型
- * 
+ *
  * 如何传递图片：
  * 在 messages 数组中，将 content 设置为数组形式，包含文字和图片对象。
  * 示例：
@@ -28,10 +28,11 @@ const FreeAI = {
    * @param {AbortSignal} [options.signal] 取消请求的信号 (可选)
    * @param {Function} [options.onMessage] 收到消息片段的回调 (delta) => {}
    * @param {Function} [options.onFinish] 生成完成的回调 () => {}
+   * @param {Function} [options.onUsage] 收到 Token 使用信息的回调 (usage) => {}
    * @param {Function} [options.onError] 出错的回调 (error) => {}
    * @param {Function} [options.onStatus] 状态变更的回调 (statusText) => {}
    */
-  async chat({ model, messages, apiUrl, signal, onMessage, onFinish, onError, onStatus }) {
+  async chat({ model, messages, apiUrl, signal, onMessage, onFinish, onUsage, onError, onStatus }) {
     const url = apiUrl || this.defaultApiUrl;
 
     if (onStatus) onStatus("正在请求接口...");
@@ -40,6 +41,7 @@ const FreeAI = {
       model: model,
       messages: messages,
       stream: true,
+      stream_options: { include_usage: true }, // 请求包含使用量信息
     };
 
     try {
@@ -78,9 +80,16 @@ const FreeAI = {
 
           try {
             const data = JSON.parse(dataStr);
+
+            // 提取内容
             if (data.choices && data.choices[0] && data.choices[0].delta && data.choices[0].delta.content) {
               const content = data.choices[0].delta.content;
               if (onMessage) onMessage(content);
+            }
+
+            // 提取使用量 (OpenAI / GLM 格式)
+            if (data.usage) {
+              if (onUsage) onUsage(data.usage);
             }
           } catch (e) {
             console.error("解析单行 JSON 失败", e, line);
