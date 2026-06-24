@@ -17,7 +17,7 @@
  * ]
  */
 const FreeAI = {
-  defaultApiUrl: "https://aiapi.jasonbai.dpdns.org",
+  defaultApiUrl: "https://freeai.jasonbai.dpdns.org",
 
   /**
    * 发送聊天请求
