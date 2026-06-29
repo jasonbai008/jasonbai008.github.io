@@ -12,6 +12,10 @@
 
 ## 2. 完整思路
 
+::: warning 注意事项
+以下通过Pages部署的方式（第5-9步）好像已经失效，建议使用 [Workers 部署](https://github.com/cmliu/edgetunnel#%EF%B8%8F-workers-%E9%83%A8%E7%BD%B2)
+:::
+
 1. 注册免费域名（[教程](/tech/deploy.html#_2-注册免费域名-dpdns)），例如：`jack.dpdns.org`
 2. 注册 Cloudflare 账号
 3. 在 Cloudflare 中托管域名（[教程](/tech/deploy.html#_3-在-cloudflare中托管域名)）
@@ -36,8 +40,8 @@
 ## 3. 详细教程
 
 - [零度教程](https://www.freedidi.com/23618.html)
-- [官方教程](https://blog.cmliussss.com/p/edt2/)
-- [代码仓库](https://github.com/cmliu/edgetunnel)
+- [官方教程](https://blog.cmliussss.com/p/edt2/)（重点参考）
+- [代码仓库](https://github.com/cmliu/edgetunnel)（重点参考）
 
 ## 4. 番蔷软件
 
@@ -49,8 +53,11 @@
 | **MacOS**   | [FlClash](https://github.com/chen08209/FlClash), [mihomo-party](https://github.com/mihomo-party-org/mihomo-party), [Clash Verge Rev](https://github.com/ClashVerge/ClashVerge-Rev), [Surge](https://surgeapp.com/)      | M1/M2 完美兼容     |
 
 ## 5. 软件界面
+V2RayN 软件界面：  
 
 ![软件界面](/tech/v2rayn.png)
 
 ## 6. 使用统计
+默认后台不开启用量统计，如需开启，需要手动设置一下：[开启统计](https://blog.cmliussss.com/p/edt2/#%F0%9F%93%8A-%E8%AE%BE%E7%BD%AE-Workers-Pages-%E5%8F%AF%E7%94%A8%E8%AF%B7%E6%B1%82%E6%95%B0%E7%BB%9F%E8%AE%A1)
+
 ![使用统计](https://blog.cmliussss.com/img/edt2/cf1-0-1.png)
