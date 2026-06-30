@@ -35,6 +35,7 @@ module.exports = {
               { text: "价值信条", link: "/life/values" },
               { text: "日常记录", link: "/life/daily" },
               { text: "日常办公", link: "/life/office" },
+              { text: "隐私政策", link: "/life/privacy" },
             ],
           },
           {

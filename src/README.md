@@ -16,5 +16,5 @@ features:
 ---
 
 ::: slot footer
-Copyright © 2017.09.14 [Jason Bai](https://jasonbai.dpdns.org)
+Copyright © 2017.09.14 [Jason Bai](https://jasonbai.dpdns.org) | [Privacy Policy](/life/privacy.html)
 :::
