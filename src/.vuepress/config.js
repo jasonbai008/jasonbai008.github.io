@@ -5,6 +5,15 @@ module.exports = {
     ["link", { rel: "icon", href: "/home/logo.png" }], // favicon
     ["script", { src: "/lib/markdown-it.min.js" }],
     ["script", { src: "/lib/freeai-sdk.js" }],
+    // 谷歌广告 (Google AdSense)
+    [
+      "script",
+      {
+        async: true,
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9360084862556378",
+        crossorigin: "anonymous",
+      },
+    ],
   ],
   host: "127.0.0.1",
   base: "/", // 同代码仓库名称
