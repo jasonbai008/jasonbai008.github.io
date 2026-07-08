@@ -21,6 +21,12 @@ module.exports = {
   plugins: [
     "@vuepress/back-to-top",
     "@vuepress/medium-zoom",
+    [
+      "sitemap",
+      {
+        hostname: "https://jasonbaiblog.netlify.app",
+      },
+    ],
     // [
     //   "@vuepress-reco/vuepress-plugin-kan-ban-niang",
     //   {
