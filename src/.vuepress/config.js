@@ -6,15 +6,6 @@ module.exports = {
     ["script", { src: "/lib/markdown-it.min.js" }],
     ["script", { src: "/lib/freeai-sdk.js" }],
     ["script", { type: "module", src: "https://512502a3-0156-43b4-bf09-24c29c13ef69.search.ai.cloudflare.com/assets/v0.0.40/search-snippet.es.js" }],
-    // 谷歌广告 (Google AdSense)
-    [
-      "script",
-      {
-        async: true,
-        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9360084862556378",
-        crossorigin: "anonymous",
-      },
-    ],
   ],
   host: "127.0.0.1",
   base: "/", // 同代码仓库名称
