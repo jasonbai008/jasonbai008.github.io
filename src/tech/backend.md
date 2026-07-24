@@ -4,6 +4,26 @@
 工欲善其事，必先利其器
 :::
 
+## 合并分支懒人方法
+
+以下是一个示例的 `package.json` 文件，其中包含一个自定义的脚本 `todev`，用于合并当前分支到 `develop` 分支。
+
+- `bash -c "..."` - 使用 bash shell 执行引号内的命令字符串
+- `cur_branch=$(git branch --show-current)` - 获取当前分支名，存入变量 cur_branch
+- `git checkout develop` - 切换到 develop 分支
+- `git pull` - 拉取远程最新代码，确保 develop 是最新的
+- `git merge --no-edit $cur_branch` - 将原分支合并到 develop，`--no-edit` 使用默认提交信息
+- `git push` - 推送到远程仓库
+- `git checkout $cur_branch` - 切回原分支，继续开发
+
+```json
+{
+  "scripts": {    
+    "todev": "bash -c \"cur_branch=$(git branch --show-current); git checkout develop && git pull && git merge --no-edit $cur_branch && git push && git checkout $cur_branch;\""
+  }
+}
+```
+
 ## nvm 常用指令
 
 ```sh
