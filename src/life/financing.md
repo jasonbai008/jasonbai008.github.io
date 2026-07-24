@@ -19,7 +19,7 @@
 
 ## 理财日历
 
-- 2026 6月份持续布局招商银行自营理财
+- 2026 7月份科技基金暴跌，清仓转战招商银行理财
 - 2026 4月份赶上了美股AI科技牛市，基金爆赚
 - 2026 3月份赶上伊朗战争，24h 亏钱
 - 2025 美股和债券暴跌，5 年收益 1 个月跌没
@@ -58,8 +58,8 @@
 ### 股票型基金 <Badge text="X" type="error"/>
 
 - 珍爱生命，远离诈骗市场：**缅A**
-- 国内方向：最多买点长期上涨的A股混合型基金
-- 美股大跌后，可以购买多只**QDII海外基金**，布局全球
+- **购买股票型基金 = 赌博**
+- 股票型基金不适合长期持有，见好就收
 
 ### 债券型基金 <Badge text="√" type="tip"/>
 
@@ -119,17 +119,13 @@
 
 ## 基金精选<Badge text="自负盈亏" type="tip"/>
 
-| 名称                                  |                            类型                            |
-| :------------------------------------ | :--------------------------------------------------------: |
-| **易方达全球成长精选混合(QDII)C**     |   <Badge text="全球基金" type="tip" vertical="middle" />   |
-| **天弘全球高端制造混合(QDII)C**       |   <Badge text="全球基金" type="tip" vertical="middle" />   |
-| **建信新兴市场优选混合(QDII)C**       |  <Badge text="美股基金" type="error" vertical="middle" />  |
-| **华夏全球科技先锋混合(QDII)C**       |   <Badge text="全球基金" type="tip" vertical="middle" />   |
-| **天弘全球新能源汽车股票(QDII-LOF)C** |   <Badge text="全球基金" type="tip" vertical="middle" />   |
-| **富国全球科技互联网股票(QDII)C**     | <Badge text="亚洲基金" type="warning" vertical="middle" /> |
-| **国富亚洲机会股票(QDII)C**           | <Badge text="亚洲基金" type="warning" vertical="middle" /> |
-| **博时标普 500ETF 联接(QDII)C**       |  <Badge text="美股基金" type="error" vertical="middle" />  |
-| **华商均衡成长混合C**                 |   <Badge text="国内基金" type="tip" vertical="middle" />   |
+| 名称                              |                            类型                            |
+| :-------------------------------- | :--------------------------------------------------------: |
+| **易方达全球成长精选混合(QDII)C** |   <Badge text="全球基金" type="tip" vertical="middle" />   |
+| **天弘全球高端制造混合(QDII)C**   |   <Badge text="全球基金" type="tip" vertical="middle" />   |
+| **建信新兴市场优选混合(QDII)C**   |  <Badge text="美股基金" type="error" vertical="middle" />  |
+| **博时标普 500ETF 联接(QDII)C**   |  <Badge text="美股基金" type="error" vertical="middle" />  |
+| **国富亚洲机会股票(QDII)C**       | <Badge text="亚洲基金" type="warning" vertical="middle" /> |
 
 ## 招银理财
 

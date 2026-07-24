@@ -7,7 +7,7 @@
 ## 浏览器插件
 
 [FanVPN](https://fanvpn.net/)支持谷歌浏览器、Edge浏览器，一键冲浪。
- - [从应用店安装](https://fanvpn.net/#install)
+ - [从应用商店安装](https://fanvpn.net/#install)
  - [下载 ZIP 手动安装](https://fanvpn.net/#install)
  - [下载 安卓 APK](https://fanvpn.net/#install)
 
