@@ -4,6 +4,15 @@
 工欲善其事，必先利其器
 :::
 
+## 合并分支取消弹出编辑器
+
+设置环境变量，然后重启bash终端
+
+```sh
+vim ~/.bashrc
+export GIT_MERGE_AUTOEDIT=no
+```
+
 ## 合并分支懒人方法
 
 以下是一个示例的 `package.json` 文件，其中包含一个自定义的脚本 `todev`，用于合并当前分支到 `develop` 分支。
