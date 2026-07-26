@@ -24,23 +24,22 @@
 ## 精选项目
 
 <div class="row">    
-  <a class="itemWrap" target="_blank" href="https://easymaker.netlify.app">
+  <a class="itemWrap" target="_blank" href="https://easy-maker.netlify.app">
     <img :src="$withBase('/projects/easy-ui.png')">
     <h4>Easy Maker</h4>
   </a>    
-  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/drawer/"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-drawer.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://easy-deployer.netlify.app">
+    <img :src="$withBase('/projects/easy-deploy.png')">
+    <h4>Easy Deploy</h4>
+  </a>    
+  <a class="itemWrap" target="_blank" href="https://easy-differ.netlify.app">
+    <img :src="$withBase('/projects/easy-differ.png')">
+    <h4>Easy Differ</h4>
+  </a>    
+  <a class="itemWrap" target="_blank" href="https://easy-drawer.netlify.app">
     <img :src="$withBase('/projects/tools15.png')">
     <h4>随心画板</h4>
-  </a> 
-  <a class="itemWrap" target="_blank" href="https://zhizi.netlify.app/">
-    <img :src="$withBase('/projects/tools3.png')">
-    <h4>你问我答</h4>
-  </a>
-  <a class="itemWrap" target="_blank" href="https://feedback-me.netlify.app/">
-    <img :src="$withBase('/projects/latest4.png')">
-    <h4>留言板</h4>
-  </a> 
+  </a>      
 </div>
 
 <div class="row">    
@@ -54,15 +53,14 @@
     <img :src="$withBase('/projects/lazy.png')">
     <h4>lazy-man-css</h4>
   </a>  
+  <a class="itemWrap" target="_blank" href="https://zhizi.netlify.app/">
+    <img :src="$withBase('/projects/tools3.png')">
+    <h4>你问我答</h4>
+  </a>
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/salary"> -->
   <a class="itemWrap" target="_blank" href="https://bai-salary.netlify.app/">
     <img :src="$withBase('/projects/tools6.png')">
     <h4>工资刺客</h4>
-  </a>  
-  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/birds/"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-birds.netlify.app/">
-    <img :src="$withBase('/projects/bird.png')">
-    <h4>黄金鸟</h4>
   </a>  
 </div>
 
@@ -72,10 +70,11 @@
     <img :src="$withBase('/projects/book6.png')">
     <h4>明朝那些事儿</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://bai-book.netlify.app/">
-    <img :src="$withBase('/projects/book1.png')">
-    <h4>刘慈欣有声小说</h4>
-  </a>
+  <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/birds/"> -->
+  <a class="itemWrap" target="_blank" href="https://golden-birds.netlify.app">
+    <img :src="$withBase('/projects/bird.png')">
+    <h4>黄金鸟</h4>
+  </a> 
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/eyesight"> -->
   <a class="itemWrap" target="_blank" href="https://bai-eyesight.netlify.app/">
     <img :src="$withBase('/projects/game1.png')">
@@ -90,7 +89,11 @@
 
 ## 有声书
 
-<div class="row" style="justify-content: flex-start">  
+<div class="row" style="justify-content: flex-start"> 
+  <a class="itemWrap" target="_blank" href="https://bai-book.netlify.app/">
+    <img :src="$withBase('/projects/book1.png')">
+    <h4>刘慈欣有声小说</h4>
+  </a> 
   <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/lightning/">
     <img :src="$withBase('/projects/book5.png')">
     <h4>球状闪电</h4>
@@ -162,9 +165,9 @@
     <img :src="$withBase('/projects/tools10.png')" style="margin-top: 16px;">
     <h4>Mock可视化</h4>
   </a>  
-  <a class="itemWrap" target="_blank" href="https://lottie.jasonbai.dpdns.org/">
-    <img :src="$withBase('/projects/Lottie.png')">
-    <h4>Lottie Maker</h4>
+  <a class="itemWrap" target="_blank" href="https://feedback-me.netlify.app/">
+    <img :src="$withBase('/projects/latest4.png')">
+    <h4>留言板</h4>
   </a>
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/douyin"> -->
   <a class="itemWrap" target="_blank" href="https://bai-douyin.netlify.app/">
@@ -175,7 +178,7 @@
 
 <div class="row" style="justify-content: flex-start">   
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/mark-me"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-mark.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://easy-markit.netlify.app">
     <img :src="$withBase('/projects/tools13.png')">
     <h4>印象文档</h4>
   </a>
@@ -243,7 +246,7 @@
     <img :src="$withBase('/projects/game10.png')">
     <h4>极限收敛</h4>
   </a>
-  <a class="itemWrap jianzi" target="_blank" href="https://gitee.com/lubanseven/suanban/">
+  <a class="itemWrap jianzi" target="_blank" href="https://github.com/JasonBai007/suanban">
     <img :src="$withBase('/projects/game11.png')">
     <h4>蒜瓣葱白</h4>
   </a>

@@ -1,7 +1,24 @@
 # 免费帆樯
 
-::: tip
-高速免费海外冲浪，每天 10 万次请求额度，早上 8 点更新。
+## FanVPN
+
+[FanVPN](https://fanvpn.net/) 是**一款免费的 Chrome 浏览器 VPN 插件**，高速稳定👍，一键冲浪❤️。
+
+✅ Chrome 浏览器  
+✅ Edge 浏览器  
+✅ Android 手机  
+❌ iOS 手机
+
+### 安装教程
+
+- [从 Chrome 应用商店安装](https://fanvpn.net/#install)
+- [下载 ZIP 安装到浏览器](https://fanvpn.net/#install)
+- [下载 APK 安装到安卓手机](https://fanvpn.net/#install)
+
+## EdgeTunnel
+
+::: tip 介绍
+个人搭建方案。高速免费海外冲浪，每天 10 万次请求额度，早上 8 点更新。
 :::
 
 > edgetunnel 是一个基于 CF Workers/Pages 平台的边缘计算隧道解密方案。它能够高效地处理网络流量，并提供强大的管理面板和灵活的节点配置能力。
@@ -13,7 +30,7 @@
 ## 2. 完整思路
 
 ::: warning 注意事项
-以下通过Pages部署的方式（第5-9步）好像已经失效，建议使用 [Workers 部署](https://github.com/cmliu/edgetunnel#%EF%B8%8F-workers-%E9%83%A8%E7%BD%B2)
+以下通过 Pages 部署的方式（第 5-9 步）好像已经失效，建议使用 [Workers 部署](https://github.com/cmliu/edgetunnel#%EF%B8%8F-workers-%E9%83%A8%E7%BD%B2)
 :::
 
 1. 注册免费域名（[教程](/tech/deploy.html#_2-注册免费域名-dpdns)），例如：`jack.dpdns.org`
@@ -35,7 +52,7 @@
 17. 在最下方选择 `自动配置系统代理`，开始翻墙
 18. 打开 [lite.ipcheck.ing](https://lite.ipcheck.ing)，查看自己 IP 所在的地区
 19. 在最下方选择 `清除系统代理`，结束翻墙
-20. 根据 [设置 Workers/Pages 可用请求数统计](https://blog.cmliussss.com/p/edt2/#%F0%9F%93%8A-%E8%AE%BE%E7%BD%AE-Workers-Pages-%E5%8F%AF%E7%94%A8%E8%AF%B7%E6%B1%82%E6%95%B0%E7%BB%9F%E8%AE%A1) 在Admin页面，显示每日请求额度使用情况
+20. 根据 [设置 Workers/Pages 可用请求数统计](https://blog.cmliussss.com/p/edt2/#%F0%9F%93%8A-%E8%AE%BE%E7%BD%AE-Workers-Pages-%E5%8F%AF%E7%94%A8%E8%AF%B7%E6%B1%82%E6%95%B0%E7%BB%9F%E8%AE%A1) 在 Admin 页面，显示每日请求额度使用情况
 
 ## 3. 详细教程
 
@@ -53,11 +70,13 @@
 | **MacOS**   | [FlClash](https://github.com/chen08209/FlClash), [mihomo-party](https://github.com/mihomo-party-org/mihomo-party), [Clash Verge Rev](https://github.com/ClashVerge/ClashVerge-Rev), [Surge](https://surgeapp.com/)      | M1/M2 完美兼容     |
 
 ## 5. 软件界面
-V2RayN 软件界面：  
+
+V2RayN 软件界面：
 
 ![软件界面](/tech/v2rayn.png)
 
 ## 6. 使用统计
+
 默认后台不开启用量统计，如需开启，需要手动设置一下：[开启统计](https://blog.cmliussss.com/p/edt2/#%F0%9F%93%8A-%E8%AE%BE%E7%BD%AE-Workers-Pages-%E5%8F%AF%E7%94%A8%E8%AF%B7%E6%B1%82%E6%95%B0%E7%BB%9F%E8%AE%A1)
 
 ![使用统计](https://blog.cmliussss.com/img/edt2/cf1-0-1.png)

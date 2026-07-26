@@ -4,22 +4,12 @@
 世界那么大，我想去看看
 :::
 
-## 浏览器插件
-
-[FanVPN](https://fanvpn.net/)支持谷歌浏览器、Edge浏览器，一键冲浪。
- - [从应用商店安装](https://fanvpn.net/#install)
- - [下载 ZIP 手动安装](https://fanvpn.net/#install)
- - [下载 安卓 APK](https://fanvpn.net/#install)
-
-
-
-
 ## 软件下载
 
 - [v2rayNG](https://gitee.com/lubanseven/store/releases/download/v1.0/v2Rui4Mobile.apk)（**Android**）
 - [v2rayNG](https://gitee.com/lubanseven/store/releases/download/v1.0/v2RuiN.zip)（**Windows**）
 - [FLClash](https://clashproxy.net/zh-CN/flclash.html)
-- [Clash 各种版本](https://github.com/clash-version/clash-download)
+- [Clash](https://github.com/clash-version/clash-download)（各种版本）
 
 ## 节点网站
 
@@ -32,12 +22,6 @@
 
 ## 订阅地址 (v2rayNG)
 
-- <p>{{ 'https://yoyapai.com/mianfeijiedian/' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '-ssr-v2rayvpn-jiedian-yoyapai.com.txt'  }}</p>
-- <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/0-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
-- <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/1-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
-- <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/2-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
-- <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/3-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
-- <p>{{ 'https://node.proxygithub.com/uploads/' + new Date().getFullYear() + '/' + (new Date().getMonth() + 1).toString().padStart(2, '0') + '/4-' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '.txt' }}</p>
 - [https://fq.jasonbai.dpdns.org?type=base64](https://fq.jasonbai.dpdns.org)
 - [https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub](https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub)
 
