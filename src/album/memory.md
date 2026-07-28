@@ -47,7 +47,7 @@
 ## 赶飞机
 
 <div class="album-wrap">    
-    <img src="/xiangce/memory/25.jpg" class="medium-zoom-image"/>
+    <img src="/xiangce/memory/25.JPG" class="medium-zoom-image"/>
     <img src="/xiangce/memory/26.jpg" class="medium-zoom-image"/>
-    <img src="/xiangce/memory/27.jpg" class="medium-zoom-image"/>
+    <img src="/xiangce/memory/27.JPG" class="medium-zoom-image"/>
 </div>
