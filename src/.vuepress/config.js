@@ -104,7 +104,7 @@ module.exports = {
     ],
     sidebar: "auto", // 侧栏根据页面标题自动生成导航
     lastUpdated: "Last Updated", // string | boolean
-    smoothScroll: true,
+    smoothScroll: false,  //  VuePress 默认主题里 smoothScroll 与内置 active-header-links 的已知冲突
   },
   markdown: {
     extractHeaders: ["h2", "h3", "h4"], // 默认值: ['h2', 'h3']，可用在左侧展示更多级别的标题
