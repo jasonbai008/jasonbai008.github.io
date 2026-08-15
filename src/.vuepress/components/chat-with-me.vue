@@ -151,34 +151,54 @@ export default {
         })),
       ];
 
-      // 使用 FreeAI SDK 进行流式对话
-      FreeAI.chat({
-        model: "glm-4-flash",
-        messages: history,
-        signal: this.controller.signal,
-        onMessage: (delta) => {
-          // 收到流式回复片段，追加到内容中
-          assistantMsg.content += delta;
-          this.scrollToBottom();
-        },
-        onError: (err) => {
-          if (err.name === "AbortError") {
-            console.log("请求已手动中断");
-          } else {
+      // 使用 fetchEventSource 进行流式对话
+      try {
+        const { fetchEventSource } = await import("../public/lib/fetch-event-source.js");
+        await fetchEventSource("https://freeapi.jasonbai.dpdns.org/v1/chat/completions", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            model: "gemini-3.5-flash-lite",
+            messages: history,
+            stream: true,
+          }),
+          signal: this.controller.signal,
+          onmessage: (ev) => {
+            if (ev.data === "[DONE]") return;
+            try {
+              const data = JSON.parse(ev.data);
+              if (data.choices && data.choices[0] && data.choices[0].delta && data.choices[0].delta.content) {
+                assistantMsg.content += data.choices[0].delta.content;
+                this.scrollToBottom();
+              }
+            } catch (e) {
+              console.error("解析 JSON 失败", e, ev.data);
+            }
+          },
+          onerror: (err) => {
+            if (this.controller?.signal.aborted || err.name === "AbortError") {
+              console.log("请求已手动中断");
+              return;
+            }
             console.error("对话发生错误:", err);
             assistantMsg.content = err.message || "抱歉，发送消息时出现了问题。";
-          }
-          this.isLoading = false;
-          this.controller = null;
-          this.scrollToBottom();
-        },
-        onFinish: () => {
-          // 生成完成
-          this.isLoading = false;
-          this.controller = null;
-          this.scrollToBottom();
-        },
-      });
+            this.isLoading = false;
+            this.controller = null;
+            this.scrollToBottom();
+            throw err; // 抛出错误以停止自动重连
+          },
+          onclose: () => {
+            this.isLoading = false;
+            this.controller = null;
+            this.scrollToBottom();
+          },
+          openWhenHidden: true,
+        });
+      } catch (err) {
+        // 错误已经在 onerror 中处理，或者是因为手动中断导致的
+      }
     },
 
     scrollToBottom() {

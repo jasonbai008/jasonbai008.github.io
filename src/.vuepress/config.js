@@ -4,8 +4,7 @@ module.exports = {
   head: [
     ["link", { rel: "icon", href: "/home/logo.png" }], // favicon
     ["script", { src: "/lib/markdown-it.min.js" }],
-    ["script", { src: "/lib/freeai-sdk.js" }],
-    ["script", { type: "module", src: "https://512502a3-0156-43b4-bf09-24c29c13ef69.search.ai.cloudflare.com/assets/v0.0.40/search-snippet.es.js" }],
+    ["script", { type: "module", src: "/lib/fetch-event-source.js" }],
   ],
   host: "127.0.0.1",
   base: "/", // 同代码仓库名称
@@ -27,7 +26,6 @@ module.exports = {
     //   },
     // ],
   ],
-  globalUIComponents: ["CloudflareChat"],
   themeConfig: {
     logo: "/home/logo.png",
     nav: [
