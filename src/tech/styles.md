@@ -2,6 +2,14 @@
 
 <img src="/tech/github-snake.svg" alt="github-snake" />
 
+## SVG 的 favicon
+
+```html
+<link rel="icon" type="image/svg+xml" href="/tech/github-snake.svg" />
+<!-- 或者：href='外面是单引号'，SVG图标里的所有fill颜色的#，需要全部替换为%23 -->
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path d="M512.....fill="%23654115" p-id="1559"></path></svg>'/>
+```
+
 ## 图片拉伸父级元素
 
 ```css

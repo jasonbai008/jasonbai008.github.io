@@ -6,16 +6,16 @@
 
 ## AI 免费策略
 
-| 功能场景          | 官网                                                                                                                         | 推荐模型                                                     | 备注 / 额度                       |
-| :---------------- | :--------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------- | :-------------------------------- |
-| **开发简单功能**  | <a href="https://trae.cn/" target="_blank">Trae CN 国内版</a>                                                                | GLM-5                                                        | 勉强免费                          |
-| **开发复杂功能**  | <a href="https://trae.ai/" target="_blank">Trae 国际版</a>                                                                   | **<span style="color: #4285F4">Gemini-3-Pro-Preview</span>** | 每月$1 免费额度                   |
-| **额度补充**      | <a href="https://aistudio.google.com/app/prompts/new_chat?model=gemini-3.1-pro-preview" target="_blank">Google AI Studio</a> | **<span style="color: #4285F4">Gemini-3-Pro-Preview</span>** | 免费 10 多次/天，翻墙必须欧美节点 |
-| **额度补充**      | <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a>                                                              | **<span style="color: #d97757">Claude-Sonnet-4.6</span>**    | Trae 额度用完后，每天可白嫖 2 次  |
-| **日常提问**      | <a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a>                                                            | **<span style="color: #6066FF">DeepSeek</span>**             | 官网尽情使用                      |
-| **AI 图片生成**   | <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a>                                                              | **<span style="color: #f76707">Nano Banana 2</span>**        | 每天可以白嫖 3 次                 |
-| **UI 设计稿生成** | [Stitch](https://stitch.withgoogle.com/)                                                                                     | **<span style="color: #4285F4">Gemini</span>**               | 目前免费                          |
-| **AI 免费去水印** | <a href="https://magiceraser.org/zh/remove-watermark-from-image/" target="_blank">Magic Eraser</a>                           | -                                                            | 免费                              |
+| 功能场景          | 官网                                                                                                                         | 推荐模型                                                       | 备注 / 额度      |
+| :---------------- | :--------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------- | :--------------- |
+| **简单编码**      | <a href="https://trae.cn/" target="_blank">Trae CN 国内版</a>                                                                | GLM-5.2                                                        | 每月500积分      |
+| **复杂编码**      | <a href="https://trae.ai/" target="_blank">Trae 国际版</a>                                                                   | **<span style="color: #4285F4">Gemini-3-Flash-Preview</span>** | 每月$1 免费额度  |
+| **额度补充**      | <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a>                                                              | **<span style="color: #d97757">*</span>**                      | 白嫖各路大模型   |
+| **日常提问**      | <a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a>                                                            | **<span style="color: #6066FF">DeepSeek</span>**               | 官网尽情使用     |
+| **翻墙提问**      | <a href="https://aistudio.google.com/app/prompts/new_chat?model=gemini-3.1-pro-preview" target="_blank">ChatGPT</a>          | **<span style="color: #10a37f">GPT-5.6 luna</span>**           | 翻墙必须欧美节点 |
+| **翻墙提问**      | <a href="https://aistudio.google.com/app/prompts/new_chat?model=gemini-3.1-pro-preview" target="_blank">Google AI Studio</a> | **<span style="color: #4285F4">Gemini-3.1-Pro-Preview</span>** | 翻墙必须欧美节点 |
+| **UI 设计稿生成** | [Stitch](https://stitch.withgoogle.com/)                                                                                     | **<span style="color: #4285F4">Gemini</span>**                 | 目前免费         |
+| **AI 免费去水印** | <a href="https://paint.jasonbai.dpdns.org/" target="_blank">水印魔术擦</a>                                                   | lama                                                           | 我镜像的         |
 
 <style>
     /* 调整表格样式以适应大模型颜色展示 */
@@ -33,10 +33,10 @@
 ## AI 使用策略
 
 - 日常提问：**<span style="color: #6066FF">DeepSeek</span>**
-- 日常开发：**<span style="color: #3064F4">GLM-5</span>**
-- 前端开发：**<span style="color: #4285F4">Gemini-3.x</span>**
+- 翻墙提问：**<span style="color: #10a37f">GPT-5.6</span>**
+- 日常开发：**<span style="color: #3064F4">GLM-5.2</span>**
+- 前端开发：**<span style="color: #4285F4">Gemini-3-Flash-Preview</span>**
 - 后端开发：**<span style="color: #10a37f">GPT-5.x</span>**
-- 不差钱的：**<span style="color: #d97757">Claude Opus 4.6</span>**
 
 ## AI 问答
 
@@ -49,7 +49,7 @@
 | ---------------------------------------------------------------------- | ---------------------- | ------------ |
 | [Cursor](https://cursor.com/cn)                                        | **$20/月**             | 最贵，最好用 |
 | [Trae](https://trae.ai/) <Badge text="国际版" type="warning"/>         | 每月 **$1/月**免费额度 | 复杂功能用它 |
-| [Trae CN](https://trae.ai/) <Badge text="国内版" type="tip"/>          | 勉强免费               | 简单功能用它 |
+| [Trae CN](https://trae.ai/) <Badge text="国内版" type="tip"/>          | 每月 500 积分            | 简单功能用它 |
 | [DeepSider](https://deepsider.ai/) <Badge text="免费" type="tip"/>     | 每天 200 积分          | Chrome 插件  |
 | [DeepSeek](https://chat.deepseek.com/) <Badge text="免费" type="tip"/> | 日常提问足够用         | 官网         |
 
