@@ -4,6 +4,17 @@
 工欲善其事，必先利其器
 :::
 
+## 看见才必填：行内 `rules` + `v-if`
+
+在 `el-form-item` 上写 `:rules`，再用 `v-if` 控制是否渲染。显示时必填；隐藏时组件卸载，提交不会校验该字段。  
+不要用 `v-show`（只是隐藏，仍会校验）。
+
+```html
+<el-form-item v-if="showPhone" prop="phone" :rules="[{ required: true, message: '请输入手机号' }]">
+  <el-input v-model="form.phone" />
+</el-form-item>
+```
+
 ## Html 使用 vue 组件
 
 使用 `http-vue-loader` 直接在 HTML 中加载 `.vue` 文件。
