@@ -6,7 +6,7 @@
 
 ## 一键提交代码
 
-```jsonc
+```json
 // 在 package.json 中添加 push 脚本，用于一键提交代码
 // 执行 `npm run push` 即可提交代码
 "scripts": {   
