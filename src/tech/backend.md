@@ -4,6 +4,16 @@
 工欲善其事，必先利其器
 :::
 
+## 一键提交代码
+
+```jsonc
+// 在 package.json 中添加 push 脚本，用于一键提交代码
+// 执行 `npm run push` 即可提交代码
+"scripts": {   
+  "push": "git add . && bash -c 'read -p \"提交信息: \" msg; git commit -m \"$msg\"; git push'"
+}
+```
+
 ## 合并分支取消弹出编辑器
 
 设置环境变量，然后重启bash终端
