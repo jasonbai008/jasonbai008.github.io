@@ -5,7 +5,7 @@
 ✅ Edge 浏览器
 
 1. 使用 **Edge 浏览器**，打开 [Astar VPN](https://microsoftedge.microsoft.com/addons/detail/astar-vpn-%E9%80%82%E5%90%88%E6%89%80%E6%9C%89%E4%BA%BA%E7%9A%84%E5%85%8D%E8%B4%B9%E4%B8%94%E5%BF%AB%E9%80%9F%E7%9A%84-/phnnpafoelnadmgjkinijkbaogoekoff)，点击右上角的 `获取` 按钮，将插件安装到浏览器里。
-2. 安装完成后，点击浏览器右上角的 `扩展拼图` 图标，点击插件右侧的 `📌` 将插件固定到任务栏。
+2. 安装完成后，点击浏览器右上角的 `🧩` 图标，点击插件右侧的 `📌` 将插件固定到任务栏。
 3. 选择一个免费节点（前三个节点免费），点击 `连接` 按钮即可自由上网。
 
 ## Fan VPN
