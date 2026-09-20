@@ -1,5 +1,48 @@
 # 日常办公
 
+## 一键生成日报
+
+通过在桌面上新建`daily.bat`脚本，双击后可以把目标代码仓库当天各个分支的提交汇总到 txt 文件中。
+
+使用前改脚本里这几个变量：
+
+1. `REPO`：仓库路径
+2. `AUTHOR`：本仓库的 `git user.name`
+
+```bash
+@echo off
+chcp 65001 >nul
+setlocal
+
+REM ===== 仓库路径 =====
+set REPO=E:\projects\yourRepoName
+
+REM ===== 作者（本仓库 git user.name）=====
+set AUTHOR=JasonBai
+
+REM ===== 输出文件 =====
+set OUT=%USERPROFILE%\Desktop\git日报.txt
+
+set PATH=%PATH%;C:\Program Files\Git\cmd
+
+cd /d "%REPO%"
+if errorlevel 1 (
+  echo 仓库路径不存在: %REPO%
+  pause
+  exit /b 1
+)
+
+echo. >> "%OUT%"
+echo ========== %date% ========== >> "%OUT%"
+
+git --no-pager log --all --author="%AUTHOR%" --since="today 00:00" --no-merges --pretty=format:"%%s" >> "%OUT%"
+
+echo. >> "%OUT%"
+echo 已更新: %OUT%
+pause
+
+```
+
 ## 搜索替代
 
 百度广告多，谷歌打不开，以下两个搜索引擎可以替代百度：
