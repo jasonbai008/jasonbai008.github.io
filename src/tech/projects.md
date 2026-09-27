@@ -66,7 +66,7 @@
 
 <div class="row"> 
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/ming/"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-ming.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://ming-story.netlify.app/">
     <img :src="$withBase('/projects/book6.png')">
     <h4>明朝那些事儿</h4>
   </a>
@@ -76,12 +76,12 @@
     <h4>黄金鸟</h4>
   </a> 
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/eyesight"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-eyesight.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://fiery-eyes.netlify.app/">
     <img :src="$withBase('/projects/game1.png')">
     <h4>火眼金睛</h4>
   </a>  
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/chives"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-chives.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://chives.netlify.app/">
     <img :src="$withBase('/projects/tools5.png')">
     <h4>韭菜看盘</h4>
   </a>  
@@ -90,7 +90,7 @@
 ## 有声书
 
 <div class="row" style="justify-content: flex-start"> 
-  <a class="itemWrap" target="_blank" href="https://bai-book.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://fictions.netlify.app/">
     <img :src="$withBase('/projects/book1.png')">
     <h4>刘慈欣有声小说</h4>
   </a> 
@@ -137,7 +137,7 @@
 
 <div class="row">  
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/chives"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-chives.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://chives.netlify.app/">
     <img :src="$withBase('/projects/tools5.png')">
     <h4>韭菜看盘</h4>
   </a>
@@ -202,11 +202,11 @@
 
 <div class="row">
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/eyesight"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-eyesight.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://fiery-eyes.netlify.app/">
     <img :src="$withBase('/projects/game1.png')">
     <h4>火眼金睛</h4>
   </a>
-  <a class="itemWrap" target="_blank" href="https://bai-xball.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://x-ball.netlify.app/">
     <img :src="$withBase('/projects/game2.png')">
     <h4>叉烧包</h4>
   </a>

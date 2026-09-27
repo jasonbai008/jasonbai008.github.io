@@ -26,7 +26,7 @@
 
 V2Ray 客户端免费订阅链接：
 
-- [https://gcore.jsdelivr.net/gh/aews/jd/v20830.txt](https://gcore.jsdelivr.net/gh/aews/jd/v20830.txt)
+- [https://gcore.jsdelivr.net/gh/aews/jd/v20920.txt](https://gcore.jsdelivr.net/gh/aews/jd/v20920.txt)
 - [https://fq.jasonbai.dpdns.org?type=base64](https://fq.jasonbai.dpdns.org?type=base64)
 
 ## Softwares
@@ -35,7 +35,7 @@ V2Ray 客户端免费订阅链接：
 | :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------- |
 | **Windows** | [v2rayN](https://v2rayn.2dust.link), [FlClash](https://github.com/chen08209/FlClash), [mihomo-party](https://github.com/mihomo-party-org/mihomo-party), [Clash Verge Rev](https://github.com/ClashVerge/ClashVerge-Rev) | 全面支持           |
 | **Android** | [ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid), [FlClash](https://github.com/chen08209/FlClash), [v2rayNG](https://v2rayng.2dust.link/)                                                        | 建议使用 Meta 核心 |
-| **iOS**     | [Surge](https://surgeapp.com/), [Shadowrocket](https://shadowrocket.com/), [Stash](https://stashapp.com/)                                                                                                               | 完美适配           |
+| **iOS**     | [Shadowrocket](https://shadowrocket.com/), [Stash](https://stashapp.com/)                                                                                                               | 完美适配           |
 | **MacOS**   | [FlClash](https://github.com/chen08209/FlClash), [mihomo-party](https://github.com/mihomo-party-org/mihomo-party), [Clash Verge Rev](https://github.com/ClashVerge/ClashVerge-Rev), [Surge](https://surgeapp.com/)      | M1/M2 完美兼容     |
 
 ## EdgeTunnel

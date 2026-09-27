@@ -8,7 +8,7 @@
 
 | 功能场景          | 官网                                                                                                                         | 推荐模型                                                       | 备注 / 额度      |
 | :---------------- | :--------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------- | :--------------- |
-| **简单编码**      | <a href="https://trae.cn/" target="_blank">Trae CN 国内版</a>                                                                | GLM-5.2                                                        | 每月500积分      |
+| **简单编码**      | <a href="https://trae.cn/" target="_blank">Trae CN 国内版</a>                                                                | GLM-5.3-Flash                                                        | 每天150积分      |
 | **复杂编码**      | <a href="https://trae.ai/" target="_blank">Trae 国际版</a>                                                                   | **<span style="color: #4285F4">Gemini-3-Flash-Preview</span>** | 每月$1 免费额度  |
 | **额度补充**      | <a href="https://deepsider.ai/zh" target="_blank">DeepSider</a>                                                              | **<span style="color: #d97757">*</span>**                      | 白嫖各路大模型   |
 | **日常提问**      | <a href="https://chat.deepseek.com/" target="_blank">DeepSeek</a>                                                            | **<span style="color: #6066FF">DeepSeek</span>**               | 官网尽情使用     |
@@ -34,7 +34,7 @@
 
 - 日常提问：**<span style="color: #6066FF">DeepSeek</span>**
 - 翻墙提问：**<span style="color: #10a37f">GPT-5.6</span>**
-- 日常开发：**<span style="color: #3064F4">GLM-5.2</span>**
+- 日常开发：**<span style="color: #3064F4">GLM-5.3-Flash</span>**
 - 前端开发：**<span style="color: #4285F4">Gemini-3-Flash-Preview</span>**
 - 后端开发：**<span style="color: #10a37f">GPT-5.x</span>**
 
@@ -49,7 +49,7 @@
 | ---------------------------------------------------------------------- | ---------------------- | ------------ |
 | [Cursor](https://cursor.com/cn)                                        | **$20/月**             | 最贵，最好用 |
 | [Trae](https://trae.ai/) <Badge text="国际版" type="warning"/>         | 每月 **$1/月**免费额度 | 复杂功能用它 |
-| [Trae CN](https://trae.ai/) <Badge text="国内版" type="tip"/>          | 每月 500 积分            | 简单功能用它 |
+| [Trae CN](https://trae.ai/) <Badge text="国内版" type="tip"/>          | 每天 150 积分            | 简单功能用它 |
 | [DeepSider](https://deepsider.ai/) <Badge text="免费" type="tip"/>     | 每天 200 积分          | Chrome 插件  |
 | [DeepSeek](https://chat.deepseek.com/) <Badge text="免费" type="tip"/> | 日常提问足够用         | 官网         |
 
