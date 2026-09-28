@@ -58,7 +58,7 @@
     <h4>你问我答</h4>
   </a>
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/salary"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-salary.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://salary-kit.netlify.app/">
     <img :src="$withBase('/projects/tools6.png')">
     <h4>工资刺客</h4>
   </a>  
@@ -104,7 +104,7 @@
     <h4>梁冬对话倪海厦</h4>
   </a>
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/selfhelp/"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-selfhelp.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://weekes.netlify.app/">
     <img :src="$withBase('/projects/book2.png')">
     <h4>焦虑症的自救</h4>
   </a>         
@@ -142,7 +142,7 @@
     <h4>韭菜看盘</h4>
   </a>
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/salary"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-salary.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://salary-kit.netlify.app/">
     <img :src="$withBase('/projects/tools6.png')">
     <h4>工资刺客</h4>
   </a>
@@ -170,7 +170,7 @@
     <h4>留言板</h4>
   </a>
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/douyin"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-douyin.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://ddouyin.netlify.app/">
     <img :src="$withBase('/projects/tools8.png')">
     <h4>精神抖擞</h4>
   </a>
@@ -183,12 +183,12 @@
     <h4>印象文档</h4>
   </a>
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/web-viewer"> -->
-  <a class="itemWrap" target="_blank" href="https://bai-preview.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://vue-viewer.netlify.app/">
     <img :src="$withBase('/projects/preview.png')">
     <h4>web-viewer</h4>
   </a> 
   <!-- <a class="itemWrap" target="_blank" href="https://jasonbai008.github.io/doc/ -->
-  <a class="itemWrap" target="_blank" href="https://bai-doc.netlify.app/">
+  <a class="itemWrap" target="_blank" href="https://lite-doc.netlify.app/">
     <img :src="$withBase('/projects/book3.png')">
     <h4>点滴文档</h4>
   </a>

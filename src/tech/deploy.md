@@ -14,7 +14,7 @@ DpDNS免费域名 + 大善人Cloudflare = 零成本建站！
 
 注册并登录 [Cloudflare](https://www.cloudflare-cn.com/)，新建 Pages，关联自己的 Github 仓库，仓库更新后，Pages也会自动更新，非常方便。但需要**绑定自己的域名**，才能在国内顺利打开。
 
-### 3. **Netlify Pages** <Badge text="备选" type="warning"/>
+### 3. **Netlify Pages** <Badge text="推荐" type="tip"/>
 
 注册登录 [Netlify](https://www.netlify.com/)，新建 Site，选择 GitHub，选择对应的仓库，点击 Deploy。由于国内网络封锁，**页面打开速度时快时慢**，总体还行，可以绑定自己的域名。
 
