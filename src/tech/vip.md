@@ -26,7 +26,6 @@
 
 V2Ray 客户端免费订阅链接：
 
-- [https://gcore.jsdelivr.net/gh/aews/jd/v20920.txt](https://gcore.jsdelivr.net/gh/aews/jd/v20920.txt)
 - [https://fq.jasonbai.dpdns.org?type=base64](https://fq.jasonbai.dpdns.org?type=base64)
 
 ## Softwares

@@ -23,7 +23,6 @@
 ## 订阅地址 (v2rayNG)
 
 - [https://fq.jasonbai.dpdns.org?type=base64](https://fq.jasonbai.dpdns.org)
-- [https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub](https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub)
 
 ## 移动端教程 (v2rayNG)
 
