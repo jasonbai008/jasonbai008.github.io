@@ -56,16 +56,23 @@
 ## Cursor 设置中文提交总结
 
 在项目根目录新建 **.cursorrules** 文件，写入以下内容：
-```sh
-# Commit message generation rules for this repository
 
-When Cursor auto-generates a Git commit message for this repository:
+```md
+When generating a Git commit message for this repository, output exactly one line and nothing else.
 
-1. ALWAYS write the commit message in Simplified Chinese (简体中文). Never use English as the primary language.
-2. Keep it concise: prefer a single subject line; only add a short body when the change is non-obvious.
-3. Focus on why the change was made, not a line-by-line restatement of the diff.
-4. English is allowed only for code identifiers (file names, function/class names), common abbreviations (API, JSON, HTTP, UI), and library/framework names.
-5. Do not mention this `.cursorrules` file in the generated commit message.
+Format: <type>(<scope>): <中文摘要>
+
+Rules:
+- One line only. No subject body, no bullet list, no English explanation, no trailing period.
+- <type> is lowercase English, chosen from the staged diff: feat (new behavior), fix (bug fix), docs (docs or comments), style (formatting only), refactor (restructure without behavior change), perf (performance), test (tests), chore (config, deps, or chores).
+- <中文摘要> states what changed and why, based on the diff content. Write one Chinese phrase of roughly 20 to 60 characters: name the module or page, the concrete change, and the user-visible outcome when the diff shows one. Avoid titles of only a few characters.
+- Keep the whole message under 120 Chinese characters when possible.
+
+Examples:
+feat(book): 图书选择弹窗新增专业分类级联筛选并按所选末级分类查询列表
+fix(login): 修复页面刷新后登录态丢失导致用户需要重新登录的问题
+docs(api): 补充图书列表接口的筛选参数、返回字段以及错误码说明
+chore(build): 调整生产环境构建配置以修正静态资源路径和打包输出
 ```
 
 再把`.cursorrules`写进 .git/info/exclude 文件，确保它不会被提交到仓库中。
