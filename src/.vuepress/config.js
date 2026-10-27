@@ -51,6 +51,7 @@ module.exports = {
               { text: "金融理财", link: "/life/financing" },
               { text: "职场法律", link: "/life/law" },
               { text: "诗词收藏", link: "/life/poems" },
+              { text: "维权指南", link: "https://jasonbai008.github.io/right.html" },
             ],
           },
         ],
