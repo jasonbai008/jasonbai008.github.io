@@ -4,19 +4,44 @@
 工欲善其事，必先利其器
 :::
 
+## 双 Token 登录思路
+
+- **Access Token（短时，如 15 分钟）** 放响应体，前端只放**内存**，请求头 `Authorization` 携带；
+- **Refresh Token（长时，如 7 天）** 由后端 `Set-Cookie` 写入浏览器，前端**读不到、存不了、也不手动带**。Cookie 必须 **HttpOnly + Secure + SameSite**，`Path` 尽量只给刷新/退出接口，前端所有跨域请求开 **`withCredentials`**，后端 CORS 必须指定**具体源**且 `Access-Control-Allow-Credentials: true`。
+
+1. **首次登录逻辑**
+   - 用户提交**账号密码**（或验证码），服务端校验账号、密码、状态
+   - 通过后签发一对 Token：Access Token 写进 **JSON 响应体**；Refresh Token **不回给前端 JS**，通过 `Set-Cookie` 种到浏览器
+   - 前端把 Access Token 放进 **内存（Vuex / Pinia / 闭包）**，不要放 `localStorage`，避免 XSS 直接偷走
+   - 拉用户信息、权限菜单，标记已登录，**进入系统**
+   - 之后业务接口只带 Access Token；浏览器会在刷新接口上**自动带上 Cookie** 里的 Refresh Token
+2. **已登录再进入系统**
+   - 刷新页面后内存里的 Access Token **必然丢失**，先走一次 **静默刷新**：请求刷新接口，浏览器自动带 Cookie
+   - 服务端取出 Cookie 中的 Refresh Token，核对**签名、过期、是否在库、是否已作废**
+   - 有效则签发**新的 Access Token** 回响应体；建议同时 **轮换 Refresh Token**（旧的立即作废，新的再 `Set-Cookie`），防止令牌被复用
+   - 前端拿到新 Access Token 写入内存，再拉用户信息，**直接进系统**，用户无感
+   - 业务请求遇到 Access Token **过期 / 401**：请求拦截器暂停后续请求，**只并发刷新一次**，成功后用新 Token **重放排队请求**
+   - Refresh Token **过期、被吊销、复用检测失败**：清内存态，服务端清 Cookie，**跳转登录页**
+   - 两个 Token 都没有或都无效，同样视为未登录，**不要死循环刷新**
+3. **退出系统**
+   - 前端调用退出接口（带 Cookie），服务端根据 Cookie 找到 Refresh Token，在库里**删除 / 拉黑**
+   - 服务端再发 `Set-Cookie`：**过期时间为过去、值为空**，让浏览器删掉该 Cookie
+   - 前端清空内存中的 Access Token、用户信息、权限；不要只清前端，否则别人仍可用 Cookie **续票**
+   - **跳转登录页**；如需“全端踢下线”，按用户维度作废该账号下全部 Refresh Token
+
 ## 一键提交代码
 
 ```json
 // 在 package.json 中添加 push 脚本，用于一键提交代码
 // 执行 `npm run push` 即可提交代码
-"scripts": {   
+"scripts": {
   "push": "git add . && bash -c 'read -p \"提交信息: \" msg; git commit -m \"$msg\"; git push'"
 }
 ```
 
 ## 合并分支取消弹出编辑器
 
-设置环境变量，然后重启bash终端
+设置环境变量，然后重启 bash 终端
 
 ```sh
 vim ~/.bashrc
@@ -37,7 +62,7 @@ export GIT_MERGE_AUTOEDIT=no
 
 ```json
 {
-  "scripts": {    
+  "scripts": {
     "todev": "bash -c \"cur_branch=$(git branch --show-current); git checkout develop && git pull && git merge --no-edit $cur_branch && git push && git checkout $cur_branch;\""
   }
 }
@@ -295,7 +320,7 @@ function sendEmail({ senderEmail, receiverEmail, subject, content, smtp }) {
     (error, info) => {
       if (error) return console.log(error);
       console.log("邮件发送成功 ID：", info.messageId);
-    }
+    },
   );
 }
 
