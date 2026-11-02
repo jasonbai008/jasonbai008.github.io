@@ -94,7 +94,8 @@
 32. Electron
 33. WebSocket
 34. wangEditor
-35. Mock.js
+35. Swiper.js
+36. Mock.js
 
 ## 乱世生存指南
 
