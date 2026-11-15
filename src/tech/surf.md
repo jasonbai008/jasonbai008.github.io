@@ -6,23 +6,17 @@
 
 ## 软件下载
 
-- [v2rayNG](https://gitee.com/lubanseven/store/releases/download/v1.0/v2Rui4Mobile.apk)（**Android**）
-- [v2rayNG](https://gitee.com/lubanseven/store/releases/download/v1.0/v2RuiN.zip)（**Windows**）
-- [FLClash](https://clashproxy.net/zh-CN/flclash.html)
-- [Clash](https://github.com/clash-version/clash-download)（各种版本）
+- [v2rayNG](https://v2rayng.2dust.link/)（**Android**）
+- [v2rayNG](https://v2rayn.2dust.link/)（**Windows**）
 
 ## 节点网站
 
-- [https://yoyapai.com/category/mianfeijiedian](https://yoyapai.com/category/mianfeijiedian)
-- [https://proxygithub.com/free-node/](https://proxygithub.com/free-node/)
-
-## 订阅地址 (Clash)
-
-- <p>{{ 'https://yoyapai.com/mianfeijiedian/' + new Date().getFullYear() + (new Date().getMonth() + 1).toString().padStart(2, '0') + new Date().getDate().toString().padStart(2, '0') + '-clashvpn-mfjiedian-yoyapai.com.yaml'  }}</p>
+- [https://github.com/free-nodes/v2rayfree](https://github.com/free-nodes/v2rayfree)
 
 ## 订阅地址 (v2rayNG)
 
-- [https://fq.jasonbai.dpdns.org?type=base64](https://fq.jasonbai.dpdns.org)
+- [https://raw.githubusercontent.com/free-nodes/v2rayfree/main/sub](https://raw.githubusercontent.com/free-nodes/v2rayfree/main/sub)
+- [https://fq.jasonbai.dpdns.org?type=base64](https://fq.jasonbai.dpdns.org) （备用）
 
 ## 移动端教程 (v2rayNG)
 
